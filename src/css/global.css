@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  /* overflow: hidden; */
+}
+
+:root{
+  --COLOR_BLACK:#000;
+  --COLOR_WHITE:#FFFFFF;
+  --COLOR_ORANGE:#EE4F3C;
+
+  --FONT_SIZE_18: 18px;
+  --FONT_SIZE_20: 20px;
+  --FONT_SIZE_50: 50px;
+  --FONT_SIZE_72: 72px;
+}
+
+.fs-18{
+  font-size: var(--FONT_SIZE_18);
+}
+.fs-20{
+  font-size: var(--FONT_SIZE_20);
+}
+.fs-50{
+  font-size: var(--FONT_SIZE_50);
+}
+
+.fs-72{
+  font-size: 72px;
+}
+
+.container{
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.first-section{
+  min-height: 920px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.decor-orange{
+  color:var(--COLOR_ORANGE);
+}
+
+.link-black{
+  color: var(--COLOR_BLACK);
+}
+
+.link-white{
+  color:var(--COLOR_WHITE);
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: var(--COLOR_ORANGE);
+  border-radius: 10px;
+  border: none;
+  height: 70px;
+  width: 220px;
+  font-weight: 600;
+}
+
+/* form{
+  padding: 23px 31px 28px 20px;
+  box-shadow: 0px 30px 70px rgba(204, 204, 204, 0.5);
+} */
+
+/* .search-input{
+  padding: 17px 31px 28px 20px;
+} */
