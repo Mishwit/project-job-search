@@ -4,25 +4,63 @@
 
 html{
   /* overflow: hidden; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 :root{
   --COLOR_BLACK:#000;
   --COLOR_WHITE:#FFFFFF;
   --COLOR_ORANGE:#EE4F3C;
+  --COLOR_DARK:#353540;
 
+  --FONT_SIZE_12: 12px;
+  --FONT_SIZE_14: 14px;
   --FONT_SIZE_18: 18px;
   --FONT_SIZE_20: 20px;
+  --FONT-SIZE_24: 24px;
+  --FONT_SIZE_48: 48px;
   --FONT_SIZE_50: 50px;
   --FONT_SIZE_72: 72px;
+
+  --FONT_WEIGHT_700: 700;
+}
+
+.dark-txt{
+color: var(--COLOR_DARK);
+}
+
+.white-txt{
+  color: var(--COLOR_WHITE);
+}
+
+.fw-700{
+  font-weight: 700;
+}
+
+.fs-12{
+  font-size: 12px;
+}
+
+.fs-14{
+  font-size: var(--FONT_SIZE_14);
 }
 
 .fs-18{
   font-size: var(--FONT_SIZE_18);
 }
+
 .fs-20{
   font-size: var(--FONT_SIZE_20);
 }
+
+.fs-24{
+  font-size: 24px;
+}
+
+.fs-48{
+  font-size: 48px;
+}
+
 .fs-50{
   font-size: var(--FONT_SIZE_50);
 }
@@ -37,8 +75,12 @@ html{
   margin: 0 auto;
 }
 
-.first-section{
+.hero-section{
   min-height: 920px;
+}
+
+.title{
+  font-weight: 500;
 }
 
 a{

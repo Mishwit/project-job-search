@@ -5,72 +5,361 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job search</title>
-    <link rel="stylesheet" href="./css/normalizes.css">
-    <link rel="stylesheet" href="./css/resets.css">
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/normalizes.css" />
+    <link rel="stylesheet" href="./css/resets.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
   </head>
 
   <body>
-    <header>
-      <section class="first-section">
-        <div class="container first-section__nav-container">
-          <nav class="first-section__nav nav-menu">
-            <a class="link-black" href="#"><span class="first-section__logo fs-50">J<Span class="decor-orange">o</Span>bply</span></a>
+    <header class="header">
+      <!-- Hero section -->
+      <section class="hero-section">
+        <div class="container hero-section__nav-container">
+          <!-- Navigation menu -->
+          <nav class="hero-section__nav nav-menu">
+            <a class="link-black" href="#">
+              <span class="hero-section__logo fs-50">
+                J<span class="decor-orange">o</span>bply
+              </span>
+            </a>
+            <!-- Navigation list items -->
             <ul class="nav-menu__list">
-              <li class="nav-menu__list-item"><a class="link-black" href="#">Home</a> </li>
-              <li class="nav-menu__list-item"><a class="link-black" href="#">Categories</a></li>
-              <li class="nav-menu__list-item"><a class="link-black" href="#">Service</a> </li>
-              <li class="nav-menu__list-item"><a class="link-black" href="#">Jobs</a></li>
+              <li class="nav-menu__list-item">
+                <a class="link-black" href="#">Home</a>
+              </li>
+              <li class="nav-menu__list-item">
+                <a class="link-black" href="#">Categories</a>
+              </li>
+              <li class="nav-menu__list-item">
+                <a class="link-black" href="#">Service</a>
+              </li>
+              <li class="nav-menu__list-item">
+                <a class="link-black" href="#">Jobs</a>
+              </li>
             </ul>
-            <div class="first-section__button">
-              <a class="buttons buttons__nav-button link-white fs-20" href="#">Post a vacancy</a>
+
+            <!-- Navigation button -->
+            <div class="hero-section__button">
+              <a class="buttons buttons__nav-button link-white fs-20" href="#">
+                Post a vacancy
+              </a>
             </div>
           </nav>
+          <!-- Hero section wrapper -->
+          <div class="hero-section__wrapper">
+            <!-- Left wrapper -->
+            <div class="left-wrapper">
+              <h1 class="left-wrapper__title title fs-72">
+                Find & Apply For Your Dream Job
+              </h1>
+              <p class="left-wrapper__subtitle fs-18">
+                The website is chockablock with useful features, allowing you to
+                efficiently search and apply for roles across all sectors,
+                experience levels and locations.
+              </p>
 
-          <div class="first-section__wrapper">
-          <div class="left-wrapper">
-            <h1 class="left-wrapper__title fs-72">Find & Apply For Your Dream Job</h1>
-            <p class="left-wrapper__subtitle fs-18">The website is chockablock with useful features, allowing you to efficiently search and apply for roles across all sectors, experience levels and locations.</p>
+              <!-- Search container -->
               <div class="search-container">
+                <!-- Search form -->
+                <form class="search-container__search-form" method="get">
+                  <img
+                    class="search-container__search-icon"
+                    src="./icons/search-icon.svg"
+                    alt="search"
+                  />
+                  <input
+                    class="search-input"
+                    type="text"
+                    placeholder="Job title or Keyword"
+                    name="text"
+                    value=""
+                  />
+                </form>
 
-              <form class="search-container__search-form" method="get">
-                <img class="search-container__search-icon" src="./icons/search-icon.svg" alt="search">
-                <input
-                class="search-input"
-                type="text"
-                placeholder="Job title or Keyword"
-                name="text"
-                value="">
-              </form>
+                <!-- Location form -->
+                <img src="./icons/line.svg" alt="icon" />
+                <form class="search-container__location-form" method="get">
+                  <img
+                    class="search-container__location-icon"
+                    src="./icons/location-icon.svg"
+                    alt="location"
+                  />
+                  <input
+                    class="location-input"
+                    type="text"
+                    placeholder="Location"
+                    name="text"
+                    value=""
+                  />
+                </form>
+                <!-- Search button -->
+                <div class="hero-section__button">
+                  <a
+                    class="buttons buttons__search-button link-white fs-20"
+                    href="#"
+                  >
+                    Search
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Right wrapper -->
+            <div class="right-wrapper">
+              <img
+                class="right-wrapper__img"
+                src="./img/satisfied-lovely-woman-holds-modern-cell-phone-1.png"
+                alt="satisfied-lovely-woman-holds-modern-cell-phone"
+              />
 
-              <img src="./icons/line.svg" alt="icon">
-              <form class="search-container__location-form" method="get">
-                <img class="search-container__location-icon" src="./icons/location-icon.svg" alt="location">
-                <input
-                class="location-input"
-                type="text"
-                placeholder="Location"
-                name="text"
-                value="">
-              </form>
+              <!-- Big ellipse -->
+              <img
+                class="right-wrapper__ellipse-big"
+                src="./img/ellipse-big.svg"
+                alt="big ellipse"
+              />
+              <!-- Small ellipse -->
+              <img
+                class="right-wrapper__ellipse-small"
+                src="./img/ellipse-small.svg"
+                alt="small ellipse"
+              />
 
-              <div class="first-section__button">
-                <a class="buttons buttons__search-button link-white fs-20" href="#">Search</a>
+              <!-- Flying icons -->
+              <div class="right-wrapper__flying-icon google-icon">
+                <img
+                  class="google-img"
+                  src="./icons/flat-color-icons_google.svg"
+                  alt="google icon"
+                />
+              </div>
+
+              <div class="right-wrapper__flying-icon paypal-icon">
+                <img
+                  class="paypal-img"
+                  src="./icons/logos_paypal.svg"
+                  alt="paypal icon"
+                />
+              </div>
+
+              <div class="right-wrapper__flying-icon indeed-icon">
+                <img
+                  class="indeed-img"
+                  src="./icons/simple-icons_indeed.svg"
+                  alt="indeed icon"
+                />
+              </div>
+
+              <div class="right-wrapper__flying-icon slack-icon">
+                <img
+                  class="slack-img"
+                  src="./icons/grommet-icons_slack.svg"
+                  alt="slack icon"
+                />
+              </div>
+              <!-- First flying card -->
+              <div class="right-wrapper__flying-card first-flying-card">
+                <div class="flying-card__img-block first-img">
+                  <div class="circle">
+                    <img src="./icons/star.svg" alt="star" />
+                    <p class="fs-12">4.8</p>
+                  </div>
+                </div>
+                <h2 class="flying-card__title fs-20 fw-700">Maliha</h2>
+                <p class="flying-card__subtitle fs-14">UX Designer</p>
+              </div>
+
+              <!-- Sedcond flying card -->
+              <div class="right-wrapper__flying-card second-flying-card">
+                <div class="flying-card__img-block second-img">
+                  <div class="circle">
+                    <img src="./icons/star.svg" alt="star" />
+                    <p class="fs-12">4.5</p>
+                  </div>
+                </div>
+                <h2 class="flying-card__title fs-20 fw-700">Adam</h2>
+                <p class="flying-card__subtitle fs-14">Project Manager</p>
+              </div>
             </div>
           </div>
         </div>
-
-            <div class="right-wrapper">
-              <img class="right-wrapper__img" src="./img/satisfied-lovely-woman-holds-modern-cell-phone-1.png" alt="satisfied-lovely-woman-holds-modern-cell-phone">
-            </div>
-            <img class="right-wrapper__ellipse-big" src="./img/ellipse-big.svg" alt="">
-            <img class="right-wrapper__ellipse-small" src="./img/ellipse-small.svg" alt="">
-          </div>
       </section>
-    <main></main>
+    </header>
+
+    <main>
+      <!-- First section -->
+      <section class="first-section">
+        <div class="container first-section__container">
+          <h2 class="first-section__title title white-txt">
+            Popular Job Posts
+          </h2>
+
+          <div class="first-section__cards-wrapper">
+            <div class="first-section__first-card cards">
+              <div class="cards__content-container">
+                <div class="cards-content__top">
+                  <div class="cards-content__left-side">
+                    <div class="cards-content__cards-circle">
+                      <img src="./icons/slack-2.svg" alt="slack-icon" />
+                    </div>
+                    <p class="cards-content__title fs-20 white-txt">Slack</p>
+                  </div>
+                  <div class="cards-content__right-side">
+                    <div class="right-side__first-circle">
+                      <img src="../src/icons/avatar-1.svg" alt="first avatar" />
+                    </div>
+                    <div class="right-side__second-circle">
+                      <img
+                        src="../src/icons/avatar-2.svg"
+                        alt="second avatar"
+                      />
+                    </div>
+                    <div class="right-side__third-circle">
+                      <p class="avatar-text">5+</p>
+                      <img src="../src/icons/avatar-3.svg" alt="third avatar" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cards-content__middle">
+                  <h2 class="cards-content__middle_title tltle fs-24 white-txt">
+                    Sr. Product Designer
+                  </h2>
+                  <p class="cards-content__middle_subtitle white-txt">
+                    Full Time - New York City
+                  </p>
+                </div>
+
+                <div class="cards-content__bottom">
+                  <a class="cards-content__button white-btn" href="#">
+                    <p class="cards-content__button-text fs-14 white-txt">
+                      Remote
+                    </p>
+                  </a>
+                  <a class="cards-content__button white-btn" href="#">
+                    <p class="cards-content__button-text fs-14 white-txt">
+                      Anywhere
+                    </p>
+                  </a>
+                  <p class="cards-content__button-text white-txt">
+                    $10k - $25k
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="first-section__second-card cards">
+              <div class="cards__content-container">
+                <div class="cards-content__top">
+                  <div class="cards-content__left-side">
+                    <div class="cards-content__cards-circle">
+                      <img src="./icons/google-2.svg" alt="slack-icon" />
+                    </div>
+                    <p class="cards-content__title fs-20 dark-txt">Google</p>
+                  </div>
+                  <div class="cards-content__right-side">
+                    <div class="right-side__first-circle">
+                      <img src="../src/icons/avatar-5.svg" alt="first avatar" />
+                    </div>
+                    <div class="right-side__second-circle">
+                      <img
+                        src="../src/icons/avatar-4.svg"
+                        alt="second avatar"
+                      />
+                    </div>
+                    <div class="right-side__third-circle">
+                      <p class="avatar-text">5+</p>
+                      <img src="../src/icons/avatar-3.svg" alt="third avatar" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cards-content__middle">
+                  <h2 class="cards-content__middle_title tltle fs-24">
+                    UX Researcher
+                  </h2>
+                  <p class="cards-content__middle_subtitle">
+                    Full Time - United States
+                  </p>
+                </div>
+
+                <div class="cards-content__bottom">
+                  <a class="cards-content__button grey-btn" href="#">
+                    <p class="cards-content__button-text fs-14 dark-txt">
+                      Remote
+                    </p>
+                  </a>
+                  <a class="cards-content__button grey-btn" href="#">
+                    <p class="cards-content__button-text fs-14 dark-txt">
+                      Anywhere
+                    </p>
+                  </a>
+                  <p class="cards-content__button-text">$10k - $25k</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="first-section__third-card cards">
+              <div class="cards__content-container">
+                <div class="cards-content__top">
+                  <div class="cards-content__left-side">
+                    <div class="cards-content__cards-circle">
+                      <img src="./icons/indeed-2.svg" alt="slack-icon" />
+                    </div>
+                    <p class="cards-content__title fs-20 dark-txt">Indeed</p>
+                  </div>
+                  <div class="cards-content__right-side">
+                    <div class="right-side__first-circle">
+                      <img src="../src/icons/avatar-7.svg" alt="first avatar" />
+                    </div>
+                    <div class="right-side__second-circle">
+                      <img
+                        src="../src/icons/avatar-6.svg"
+                        alt="second avatar"
+                      />
+                    </div>
+                    <div class="right-side__third-circle">
+                      <p class="avatar-text">5+</p>
+                      <img src="../src/icons/avatar-3.svg" alt="third avatar" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cards-content__middle">
+                  <h2 class="cards-content__middle_title tltle fs-24">
+                    Project Manager
+                  </h2>
+                  <p class="cards-content__middle_subtitle">
+                    Full Time - Singapore
+                  </p>
+                </div>
+
+                <div class="cards-content__bottom">
+                  <a class="cards-content__button grey-btn" href="#">
+                    <p class="cards-content__button-text fs-14 dark-txt">
+                      Remote
+                    </p>
+                  </a>
+                  <a class="cards-content__button grey-btn" href="#">
+                    <p class="cards-content__button-text fs-14 dark-txt">
+                      Anywhere
+                    </p>
+                  </a>
+                  <p class="cards-content__button-text">$10k - $25k</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="first-section__scroll-block" href="#">
+            <h2 class="scroll-block__text white-txt fs-24">View All</h2>
+            <img src="./icons/arrow.svg" alt="arrow" />
+          </a>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

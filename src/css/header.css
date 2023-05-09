@@ -1,9 +1,9 @@
-.first-section{
+.hero-section{
   max-height: 920px;
   overflow: hidden;
 }
 
-.first-section__nav{
+.hero-section__nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,6 +19,7 @@
 margin-right: 40px;
 
 }
+
 .nav-menu__list-item:last-child{
   margin-right: 0
 }
@@ -28,28 +29,27 @@ margin-right: 40px;
   font-size: 20px;
 }
 
-.first-section__wrapper{
+.hero-section__wrapper{
   display: flex;
 }
 
-.first-section__ellipse-big{
+.hero-section__ellipse-big{
   position: relative;
 }
 
-.first-section__ellipse-small{
+.hero-section__ellipse-small{
   position: relative;
 }
 
 .left-wrapper{
   display: flex;
   flex-direction: column;
-  max-width: 670px;
+  max-width: 615px;
   margin-right: 154px;
 }
 
 .left-wrapper__title{
   margin-bottom: 30px;
-  font-weight: 700;
 }
 
 .left-wrapper__subtitle{
@@ -102,19 +102,133 @@ margin-right: 40px;
 
 .right-wrapper__img{
   position: relative;
-  top: -60px;
+  top: -87px;
+  right: -14px;
 }
 
 .right-wrapper__ellipse-big{
-  position: relative;
+  position: absolute;
   z-index: -1;
-  bottom: 60px;
-  right: 680px;
+  bottom: 29px;
+  right: -337px;
 }
 
 .right-wrapper__ellipse-small{
-  position: relative;
+  position: absolute;
   z-index: -1;
-  top: -58px;
-  right: 1352px;
+  bottom: 170px;
+  right: -198px;
+}
+
+.right-wrapper__flying-icon{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  position: absolute;
+  z-index: 2;
+  box-shadow: 0px 20px 50px #EEEEEE;
+  border-radius: 20px;
+  background-color:var(--COLOR_WHITE);
+  height: 80px;
+  width: 80px;
+}
+
+.right-wrapper__flying-card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+  height: 200px;
+  width: 170px;
+  position: absolute;
+  box-shadow: 0px 20px 50px rgba(204, 204, 204, 0.5);
+  border-radius: 25px;
+  background-color:var(--COLOR_WHITE);
+}
+
+.flying-card__title{
+  margin-bottom: 2px;
+}
+
+.flying-card__img-block{
+  position: relative;
+  height: 120px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.circle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  background-color:antiquewhite;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0px 4px 50px rgba(153, 153, 153, 0.25);
+  border-radius: 50px;
+  top: 100px;
+  right: 0px;
+}
+
+.first-flying-card{
+  top: 597px;
+  right: 292px;
+}
+
+.first-img{
+  background:url(../img/woman-card-1.png) no-repeat #6B5ACC;
+}
+
+.second-img{
+  background:url(../img/man-card-1.png) no-repeat #FEC247 center;
+}
+
+.second-flying-card{
+  top: 324px;
+  right: -329px;
+}
+
+.google-icon{
+  top: 320px;
+  right: 374px;
+  transform: rotate(324deg);
+}
+
+.google-img{
+  transform: rotate(36deg);
+}
+
+.paypal-icon{
+  bottom: 287px;
+  right: -287px;
+  transform: rotate(18deg);
+}
+
+.paypal-img{
+  transform: rotate(341deg);
+}
+
+.indeed-icon{
+  top: 126px;
+  right: 246px;
+  transform: rotate(-72.74deg);
+}
+
+.indeed-img{
+  transform: rotate(74deg);
+}
+
+.slack-icon{
+  top: 196px;
+  right: -216px;
+  transform: rotate(15deg);
+}
+
+.slack-img{
+  transform: rotate(72deg);
 }
