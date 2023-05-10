@@ -8,7 +8,7 @@ html{
 }
 
 :root{
-  --COLOR_BLACK:#000;
+  --COLOR_BLACK:#353540;
   --COLOR_WHITE:#FFFFFF;
   --COLOR_ORANGE:#EE4F3C;
   --COLOR_DARK:#353540;
@@ -80,7 +80,9 @@ color: var(--COLOR_DARK);
 }
 
 .title{
-  font-weight: 500;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--COLOR_BLACK);
 }
 
 a{
