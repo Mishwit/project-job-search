@@ -7,11 +7,24 @@ html{
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+p{
+  color: var(--COLOR_DARK);
+}
+
 :root{
-  --COLOR_BLACK:#353540;
-  --COLOR_WHITE:#FFFFFF;
-  --COLOR_ORANGE:#EE4F3C;
-  --COLOR_DARK:#353540;
+  --COLOR_DEEP_BLACK: rgba(0, 0, 0, 1);
+  --COLOR_BLACK:rgba(53, 53, 64, 1);
+  --COLOR_WHITE:rgba(255, 255, 255, 1);
+  --COLOR_ORANGE:rgba(238, 79, 60, 1);
+  --COLOR_DARK:rgba(93, 93, 97, 1);
+  --COLOR_GREY:rgba(245, 245, 245, 1);
+  --COLOR_LIGHT_BROWN:rgba(211, 198, 196, 1);
+  --COLOR_LIGHT_GREY:rgba(238, 238, 238, 1);
+  --COLOR_SHADOW:rgba(204, 204, 204, 0.5);
+  --COLOR_PURPLE:rgba(107, 90, 204, 1);
+  --COLOR_YELLOW:rgba(254, 194, 71, 1);
+  --COLOR_DARK_BLUE:rgba(35, 36, 67, 1);
+  --COLOR_BACKGROUND_PEACH:rgba(255, 248, 248, 1);
 
   --FONT_SIZE_12: 12px;
   --FONT_SIZE_14: 14px;
@@ -25,8 +38,8 @@ html{
   --FONT_WEIGHT_700: 700;
 }
 
-.dark-txt{
-color: var(--COLOR_DARK);
+.black-txt{
+color: var(--COLOR_BLACK);
 }
 
 .white-txt{
@@ -87,18 +100,16 @@ color: var(--COLOR_DARK);
 
 a{
   text-decoration: none;
+  color: var(--COLOR_BLACK);
 }
 
 .decor-orange{
   color:var(--COLOR_ORANGE);
 }
 
-.link-black{
-  color: var(--COLOR_BLACK);
-}
-
-.link-white{
-  color:var(--COLOR_WHITE);
+.hover-orange:hover{
+  cursor: pointer;
+  color:var(--COLOR_ORANGE);
 }
 
 .buttons{
@@ -111,13 +122,17 @@ a{
   height: 70px;
   width: 220px;
   font-weight: 600;
+  color: var(--COLOR_WHITE);
 }
 
-/* form{
-  padding: 23px 31px 28px 20px;
-  box-shadow: 0px 30px 70px rgba(204, 204, 204, 0.5);
-} */
+input{
+  min-height: 50px;
+}
 
-/* .search-input{
-  padding: 17px 31px 28px 20px;
-} */
+.list-link{
+  color: var(--COLOR_DARK);
+}
+
+.list-link:hover{
+  color: var(--COLOR_ORANGE);
+}

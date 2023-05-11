@@ -1,7 +1,8 @@
 .hero-section{
   max-height: 920px;
   overflow: hidden;
-  background: url(../backgound-svg/background-1.svg) no-repeat #F8F8F8;
+  background: url(../backgound-svg/background-1.svg) no-repeat;
+
 }
 
 .hero-section__nav{
@@ -27,7 +28,7 @@ margin-right: 40px;
 
 .buttons__nav-button{
   width: 220px;
-  font-size: 20px;
+  font-size: var(--FONT_SIZE_20);
 }
 
 .hero-section__wrapper{
@@ -64,7 +65,8 @@ margin-right: 40px;
   max-width: 615px;
   max-height: 70px;
   border-radius: 10px;
-  box-shadow: 0px 30px 70px rgba(204, 204, 204, 0.5);
+  box-shadow: 0px 30px 70px var(--COLOR_SHADOW);
+  background-color: var(--COLOR_WHITE);
 }
 
 .search-container__search-form{
@@ -127,7 +129,7 @@ margin-right: 40px;
   align-items:center;
   position: absolute;
   z-index: 2;
-  box-shadow: 0px 20px 50px #EEEEEE;
+  box-shadow: 0px 20px 50px var(--COLOR_LIGHT_GREY);
   border-radius: 20px;
   background-color:var(--COLOR_WHITE);
   height: 80px;
@@ -142,13 +144,14 @@ margin-right: 40px;
   height: 200px;
   width: 170px;
   position: absolute;
-  box-shadow: 0px 20px 50px rgba(204, 204, 204, 0.5);
+  box-shadow: 0px 20px 50px var(--COLOR_SHADOW);
   border-radius: 25px;
   background-color:var(--COLOR_WHITE);
 }
 
 .flying-card__title{
   margin-bottom: 2px;
+  color: var(--COLOR_BLACK);
 }
 
 .flying-card__img-block{
@@ -166,7 +169,7 @@ margin-right: 40px;
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  background-color:antiquewhite;
+  background-color:var(--COLOR_WHITE);
   position: absolute;
   height: 40px;
   width: 40px;
@@ -182,11 +185,11 @@ margin-right: 40px;
 }
 
 .first-img{
-  background:url(../img/woman-card-1.png) no-repeat #6B5ACC;
+  background:url(../img/woman-card-1.png) no-repeat var(--COLOR_PURPLE);
 }
 
 .second-img{
-  background:url(../img/man-card-1.png) no-repeat #FEC247 center;
+  background:url(../img/man-card-1.png) no-repeat var(--COLOR_YELLOW) center;
 }
 
 .second-flying-card{
