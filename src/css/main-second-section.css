@@ -31,7 +31,6 @@
 
 .job-block:hover{
   box-shadow: 0px 70px 70px var(--COLOR_LIGHT_GREY);
-  cursor: pointer;
   transition: 0.5s;
 }
 
