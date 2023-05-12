@@ -3,12 +3,18 @@
 }
 
 html{
-  /* overflow: hidden; */
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p{
+  font-family: 'Axiforma';
   color: var(--COLOR_DARK);
+}
+
+.logo{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: var(--FONT_WEIGHT_700);
+  font-size: var(--FONT_SIZE_50);
 }
 
 :root{
@@ -36,6 +42,13 @@ p{
   --FONT_SIZE_72: 72px;
 
   --FONT_WEIGHT_700: 700;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url(../fonts/Axiforma-Regular.ttf);
+  font-display: swap;
+  font-style: normal;
 }
 
 .black-txt{
@@ -98,7 +111,10 @@ color: var(--COLOR_BLACK);
   color: var(--COLOR_BLACK);
 }
 
+
+
 a{
+  font-family: 'Axiforma';
   text-decoration: none;
   color: var(--COLOR_BLACK);
 }
@@ -110,6 +126,7 @@ a{
 .hover-orange:hover{
   cursor: pointer;
   color:var(--COLOR_ORANGE);
+  transition: 0.3s;
 }
 
 .buttons{
@@ -126,6 +143,7 @@ a{
 }
 
 input{
+  font-family: 'Axiforma';
   min-height: 50px;
 }
 
@@ -135,4 +153,5 @@ input{
 
 .list-link:hover{
   color: var(--COLOR_ORANGE);
+  transition: 0.3s;
 }

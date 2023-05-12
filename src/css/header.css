@@ -52,10 +52,11 @@ margin-right: 40px;
 
 .left-wrapper__title{
   margin-bottom: 30px;
+  max-width: 420px;
 }
 
 .left-wrapper__subtitle{
-  max-width: 460px;
+  max-width: 565px;
   margin-bottom: 50px;
 }
 

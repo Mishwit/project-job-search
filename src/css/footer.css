@@ -49,6 +49,7 @@
   margin-bottom: 30px;
   font-weight: var(--FONT_WEIGHT_700);
   color: var(--COLOR_BLACK);
+  font-size: var(--FONT_SIZE_20);
 }
 
 .list-item:hover{
@@ -66,7 +67,7 @@
 .footer-section__news{
   display: flex;
   flex-direction: column;
-  max-width: 313px;
+  max-width: 385px;
 }
 
 .news-card{
@@ -92,6 +93,7 @@
 .news-text{
   display: flex;
   flex-direction: column;
+  max-width: 300px;
 }
 
 .news-paragraph{
