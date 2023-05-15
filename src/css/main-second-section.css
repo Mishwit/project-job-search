@@ -91,6 +91,11 @@
 .sign-up-block__subtitle{
   margin-bottom: 50px;
   max-width: 355px;
+  font-size: var(--FONT_SIZE_18);
+}
+
+.sign-up-block__button{
+  font-size: var(--FONT_SIZE_18);
 }
 
 .sign-up-block__right-wrapper{

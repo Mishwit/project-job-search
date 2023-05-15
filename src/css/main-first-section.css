@@ -11,6 +11,7 @@
   margin-bottom: 50px;
   font-weight: var(--FONT_WEIGHT_700);
   color: var(--COLOR_WHITE);
+  font-size: var(--FONT_SIZE_48);
 }
 
 .first-section__cards-wrapper{
@@ -113,6 +114,7 @@ font-size: var(--FONT_SIZE_20);
 .cards-content__middle_title{
   margin-bottom: 12px;
   font-weight: var(--FONT_WEIGHT_700);
+  font-size: var(--FONT_SIZE_24);
 }
 
 .cards-content__middle_subtitle{
@@ -139,6 +141,10 @@ font-size: var(--FONT_SIZE_20);
   margin-right: 19px;
 }
 
+.cards-content__button-text{
+  font-size: var(--FONT_SIZE_14);
+}
+
 .white-btn{
   background: rgba(255, 255, 255, 0.1);
 }
@@ -155,4 +161,5 @@ font-size: var(--FONT_SIZE_20);
 .scroll-block__text{
   margin-right: 15px;
   color: var(--COLOR_WHITE);
+  font-size: var(--FONT_SIZE_24);
 }

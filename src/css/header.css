@@ -27,7 +27,6 @@ margin-right: 40px;
 }
 
 .buttons__nav-button{
-  width: 220px;
   font-size: var(--FONT_SIZE_20);
 }
 
@@ -53,11 +52,13 @@ margin-right: 40px;
 .left-wrapper__title{
   margin-bottom: 30px;
   max-width: 420px;
+  font-size: 40px;
 }
 
 .left-wrapper__subtitle{
   max-width: 565px;
   margin-bottom: 50px;
+  font-size: var(--FONT_SIZE_18);
 }
 
 .search-container{
@@ -102,6 +103,7 @@ margin-right: 40px;
 .buttons__search-button{
   max-width: 180px;
   border-radius: 0 10px 10px 0;
+  font-size: var(--FONT_SIZE_20);
 }
 
 .right-wrapper__img{
@@ -153,6 +155,12 @@ margin-right: 40px;
 .flying-card__title{
   margin-bottom: 2px;
   color: var(--COLOR_BLACK);
+  font-size: var(--FONT_SIZE_20);
+  font-weight: 700;
+}
+
+.flying-card__subtitle{
+  font-size: var(--FONT_SIZE_14);
 }
 
 .flying-card__img-block{
@@ -165,7 +173,7 @@ margin-right: 40px;
   margin-bottom: 15px;
 }
 
-.circle{
+.flying-card__circle{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,6 +186,11 @@ margin-right: 40px;
   border-radius: 50px;
   top: 100px;
   right: 0px;
+  gap: 5px;
+}
+
+.flying-card__rating{
+font-size: var(--FONT_SIZE_12);
 }
 
 .first-flying-card{
