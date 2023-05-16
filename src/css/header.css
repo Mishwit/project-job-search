@@ -1,9 +1,9 @@
 .hero-section{
   max-height: 920px;
   overflow: hidden;
-  background: url(../backgound-svg/background-1.svg) no-repeat;
-
+  /* background: url(../backgound-svg/background-1.svg) no-repeat; */
 }
+
 
 .hero-section__nav{
   display: flex;
