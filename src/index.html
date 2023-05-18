@@ -7,20 +7,20 @@
     <title>Job search</title>
     <link rel="stylesheet" href="./css/normalizes.css" />
     <link rel="stylesheet" href="./css/resets.css" />
-
+    <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/main-first-section.css" />
     <link rel="stylesheet" href="./css/main-second-section.css" />
-    <link rel="stylesheet" href="" />
     <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/adaptives/adaptives.css" />
   </head>
 
   <body>
     <header>
       <!-- Hero section -->
       <section class="hero-section">
+        <!-- Hamburger -->
         <div class="hamburger">
           <span class="hamburger__item"></span>
           <span class="hamburger__item"></span>
@@ -102,6 +102,7 @@
                     value=""
                   />
                 </form>
+
                 <!-- Search button -->
                 <div class="hero-section__button">
                   <a class="buttons buttons__search-button" href="#">
@@ -110,6 +111,7 @@
                 </div>
               </div>
             </div>
+
             <!-- Right wrapper -->
             <div class="right-wrapper">
               <img
@@ -163,6 +165,7 @@
                   alt="slack icon"
                 />
               </div>
+
               <!-- First flying card -->
               <div class="right-wrapper__flying-card first-flying-card">
                 <div class="flying-card__img-block first-img">
@@ -175,7 +178,7 @@
                 <p class="flying-card__subtitle">UX Designer</p>
               </div>
 
-              <!-- Sedcond flying card -->
+              <!-- Second flying card -->
               <div class="right-wrapper__flying-card second-flying-card">
                 <div class="flying-card__img-block second-img">
                   <div class="flying-card__circle">
@@ -197,10 +200,13 @@
       <section class="first-section">
         <div class="container first-section__container">
           <h2 class="first-section__title">Popular Job Posts</h2>
-
+          <!-- Cards -->
           <div class="first-section__cards-wrapper">
+            <!-- First card -->
             <div class="first-section__first-card cards">
               <div class="cards__content-container">
+                <!-- Cards content top -->
+
                 <div class="cards-content__top">
                   <div class="cards-content__left-side">
                     <div class="cards-content__cards-circle">
@@ -225,6 +231,7 @@
                   </div>
                 </div>
 
+                <!-- Cards content middle -->
                 <div class="cards-content__middle">
                   <h2 class="cards-content__middle_title tltle white-txt">
                     Sr. Product Designer
@@ -234,6 +241,7 @@
                   </p>
                 </div>
 
+                <!-- Cards content bottom -->
                 <div class="cards-content__bottom">
                   <a class="cards-content__button white-btn" href="#">
                     <p class="cards-content__button-text white-txt">Remote</p>
@@ -248,8 +256,11 @@
               </div>
             </div>
 
+            <!-- Second card -->
             <div class="first-section__second-card cards">
               <div class="cards__content-container">
+                <!-- Cards content top -->
+
                 <div class="cards-content__top">
                   <div class="cards-content__left-side">
                     <div class="cards-content__cards-circle">
@@ -274,6 +285,7 @@
                   </div>
                 </div>
 
+                <!-- Cards content middle -->
                 <div class="cards-content__middle">
                   <h2 class="cards-content__middle_title tltle">
                     UX Researcher
@@ -283,6 +295,7 @@
                   </p>
                 </div>
 
+                <!-- Cards content bottom -->
                 <div class="cards-content__bottom">
                   <a class="cards-content__button grey-btn" href="#">
                     <p class="cards-content__button-text">Remote</p>
@@ -297,8 +310,11 @@
               </div>
             </div>
 
+            <!-- Third card -->
             <div class="first-section__third-card cards">
               <div class="cards__content-container">
+                <!-- Cards content top -->
+
                 <div class="cards-content__top">
                   <div class="cards-content__left-side">
                     <div class="cards-content__cards-circle">
@@ -323,6 +339,7 @@
                   </div>
                 </div>
 
+                <!-- Cards content middle -->
                 <div class="cards-content__middle">
                   <h2 class="cards-content__middle_title tltle">
                     Project Manager
@@ -332,6 +349,7 @@
                   </p>
                 </div>
 
+                <!-- Cards content bottom -->
                 <div class="cards-content__bottom">
                   <a class="cards-content__button grey-btn" href="#">
                     <p class="cards-content__button-text">Remote</p>
@@ -347,6 +365,7 @@
             </div>
           </div>
 
+          <!-- Scroll block -->
           <a class="first-section__scroll-block" href="#">
             <h2 class="scroll-block__text">View All</h2>
             <img src="./icons/arrow.svg" alt="arrow" />
@@ -354,10 +373,12 @@
         </div>
       </section>
 
+      <!-- Second section -->
       <section class="second-section">
         <div class="container second-section__container">
           <h2 class="second-section__title title">Job Categories</h2>
           <div class="second-section__jobs-categories">
+            <!-- Job cards -->
             <div class="jobs-group first-jobs-group">
               <a href="#" class="content-container__job-blocks job-block">
                 <div class="job-block__circle">
@@ -370,10 +391,7 @@
                 <p class="job-block__subtitle">125 Job Vacancy</p>
               </a>
 
-              <a
-                href="#"
-                class="content-container__job-blocks job-block special-job"
-              >
+              <a href="#" class="content-container__job-blocks job-block">
                 <div class="job-block__circle special-circle">
                   <img src="./icons/ui-ux-design.svg" alt="ui/ux design" />
                 </div>
@@ -448,7 +466,9 @@
             </div>
           </div>
 
+          <!-- Sign up block -->
           <div class="second-section__sign-up-block">
+            <!-- Sign up block left wrapper -->
             <div class="sign-up-block__left-wrapper">
               <img
                 class="left-wrapper_dots"
@@ -460,26 +480,21 @@
                 Create an account so you can get job information that suits you,
                 and you can apply the salary your demand.
               </p>
+
+              <!-- Sign up button -->
               <div class="sign-up-block__button">
                 <a class="buttons" href="#"> Create an Account </a>
               </div>
             </div>
+            <!-- Sign up block right wrapper -->
             <div class="sign-up-block__right-wrapper">
               <img
                 class="right-wrapper__dots"
                 src="./backgound-svg/dots-design.svg"
                 alt="dots"
               />
-              <!-- <img
-                class="right-wrapper__vector-1"
-                src="./backgound-svg/vector 9.svg"
-                alt=""
-              />
-              <img
-                class="right-wrapper__vector-2"
-                src="./backgound-svg/vector 9.svg"
-                alt=""
-              /> -->
+
+              <!-- Vectors -->
               <img
                 class="right-wrapper__vector-3"
                 src="./backgound-svg/vector-2.svg"
@@ -490,15 +505,19 @@
                 src="./backgound-svg/vector-3.svg"
                 alt=""
               />
+
+              <!-- Rectangles -->
               <div class="right-wrapper__rectangle-1 rectangle"></div>
               <div class="right-wrapper__rectangle-2 rectangle"></div>
             </div>
           </div>
         </div>
       </section>
+      <!-- Third section -->
       <section class="third-section">
         <div class="third-section__background">
           <div class="container third-section__container">
+            <!-- Third section left wrapper -->
             <div class="third-section__left-wrapper">
               <img
                 class="third-section__img"
@@ -507,6 +526,7 @@
               />
               <a href="#" class="play-button"></a>
             </div>
+            <!-- Third section right wrapper -->
             <div class="third-section__right-wrapper">
               <h2 class="third-section__title title">
                 Post a Job for UX Designer
@@ -522,12 +542,15 @@
           </div>
         </div>
       </section>
+
+      <!-- Fourth-section -->
       <section class="fourth-section">
         <div class="container fourth-section__container">
           <h2 class="fourth-section__title title">
             Great Feedback From Candidates
           </h2>
           <div class="fourth-section__feedback-wrapper">
+            <!-- Feedback card -->
             <div class="feedback-wrapper__card feedback-card">
               <div class="feedback-card__title">
                 <img
@@ -535,6 +558,7 @@
                   src="./icons/double-quotes-1.svg"
                   alt="double quotes"
                 />
+
                 <p class="feedback-card__paragraph">
                   Very decent services & care about my health. Really happy with
                   his advice. Lorem Ipsum is simply dummy text of the printing
@@ -542,6 +566,7 @@
                   health. Really happy with his advice.
                 </p>
               </div>
+
               <div class="feedback-card__user-preview user-preview">
                 <div class="feedback-card__user-img">
                   <img
@@ -550,6 +575,7 @@
                     alt="Maria Jannat"
                   />
                 </div>
+
                 <div class="feedback-card__user-description">
                   <h2 class="feedback-card__username">Maria Jannat</h2>
                   <p class="feedback-card__profession">Content Writer</p>
@@ -563,7 +589,7 @@
                 </div>
               </div>
             </div>
-
+            <!-- Feedback card -->
             <div class="feedback-wrapper__card feedback-card">
               <div class="feedback-card__title">
                 <img
@@ -571,6 +597,7 @@
                   src="./icons/double-quotes-2.svg"
                   alt="double quotes"
                 />
+
                 <p class="feedback-card__paragraph">
                   Very decent services & care about my health. Really happy with
                   his advice. Lorem Ipsum is simply dummy text of the printing
@@ -578,6 +605,7 @@
                   typesetting industry.
                 </p>
               </div>
+
               <div class="feedback-card__user-preview user-preview">
                 <div class="feedback-card__user-img">
                   <img
@@ -586,6 +614,7 @@
                     alt="Maria Jannat"
                   />
                 </div>
+
                 <div class="feedback-card__user-description">
                   <h2 class="feedback-card__username">Mithela</h2>
                   <p class="feedback-card__profession">UI Designer</p>
@@ -599,7 +628,7 @@
                 </div>
               </div>
             </div>
-
+            <!-- Feedback card -->
             <div class="feedback-wrapper__card feedback-card">
               <div class="feedback-card__title">
                 <img
@@ -607,6 +636,7 @@
                   src="./icons/double-quotes-2.svg"
                   alt="double quotes"
                 />
+
                 <p class="feedback-card__paragraph">
                   Very decent services & care about my health. Really happy with
                   his advice. Lorem Ipsum is simply dummy text of the printing
@@ -614,6 +644,7 @@
                   health. Really happy with his advice.
                 </p>
               </div>
+
               <div class="feedback-card__user-preview user-preview">
                 <div class="feedback-card__user-img">
                   <img
@@ -622,6 +653,7 @@
                     alt="Maria Jannat"
                   />
                 </div>
+
                 <div class="feedback-card__user-description">
                   <h2 class="feedback-card__username">Adam</h2>
                   <p class="feedback-card__profession">Developer</p>
@@ -636,6 +668,7 @@
               </div>
             </div>
           </div>
+          <!-- Feedback card scroll -->
           <div class="feedback-card__scroll">
             <div class="scroll-circle"></div>
             <div class="scroll-circle"></div>
@@ -644,6 +677,8 @@
           </div>
         </div>
       </section>
+
+      <!-- Fifth-section -->
       <section class="fifth-section">
         <div class="container fifth-section__container">
           <div class="fifth-section__subscribe-block subscribe-block">
@@ -657,6 +692,7 @@
             </h2>
             <div class="search-container subscribe-wrapper">
               <!-- Search form -->
+
               <form
                 class="search-container__search-form mail-form"
                 method="get"
@@ -669,6 +705,7 @@
                   value=""
                 />
               </form>
+
               <!-- Subscribe button -->
               <div class="subscribe-block__button">
                 <a class="buttons subscribe-button" href="#">
@@ -686,9 +723,13 @@
         </div>
       </section>
     </main>
+
     <footer>
+      <!-- Footer section -->
       <section class="footer-section">
+        <!-- Nav container -->
         <div class="container footer-section__nav-container">
+          <!-- Footer dots -->
           <img
             class="footer-dots-left"
             src="./backgound-svg/footer-dots-left.svg"
@@ -699,6 +740,7 @@
             src="./backgound-svg/footer-dots-right.svg"
             alt=""
           />
+
           <div class="footer-section__our-contacts">
             <a class="footer-section__logo logo link-black" href="#">
               J<span class="decor-orange">o</span>bply
@@ -723,40 +765,44 @@
             </div>
           </div>
 
-          <nav class="footer-section__nav footer-nav">
-            <h3 class="footer-section__nav-title">Explore</h3>
-            <ul class="footer-nav__list">
-              <li class="footer-nav__list-item list-item">
-                <a class="list-link" href="#"> Featured Job</a>
-              </li>
-              <li class="footer-nav__list-item list-item">
-                <a class="list-link" href="#"> Recent Job Post</a>
-              </li>
-              <li class="footer-nav__list-item list-item">
-                <a class="list-link" href="#"> Total Candidates</a>
-              </li>
-              <li class="footer-nav__list-item list-item">
-                <a class="list-link" href="#">Support</a>
-              </li>
-            </ul>
-          </nav>
-          <nav class="footer-section__nav footer-nav">
-            <h3 class="footer-section__nav-title">Useful Link</h3>
-            <ul class="footer-nav__list">
-              <li class="footer-nav__list-item list-item">
-                <a class="list-link" href="#"> About Us </a>
-              </li>
-              <li class="footer-nav__list-item list-item">
-                <a class="list-link" href="#"> Blog</a>
-              </li>
-              <li class="footer-nav__list-item list-item">
-                <a class="list-link" href="#"> Company</a>
-              </li>
-              <li class="footer-nav__list-item list-item">
-                <a class="list-link" href="#">Contact Us</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="footer-section__nav-wrapper">
+            <nav class="footer-section__nav footer-nav">
+              <h3 class="footer-section__nav-title">Explore</h3>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__list-item list-item">
+                  <a class="list-link" href="#"> Featured Job</a>
+                </li>
+                <li class="footer-nav__list-item list-item">
+                  <a class="list-link" href="#"> Recent Job Post</a>
+                </li>
+                <li class="footer-nav__list-item list-item">
+                  <a class="list-link" href="#"> Total Candidates</a>
+                </li>
+                <li class="footer-nav__list-item list-item">
+                  <a class="list-link" href="#">Support</a>
+                </li>
+              </ul>
+            </nav>
+
+            <nav class="footer-section__nav footer-nav">
+              <h3 class="footer-section__nav-title">Useful Link</h3>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__list-item list-item">
+                  <a class="list-link" href="#"> About Us </a>
+                </li>
+                <li class="footer-nav__list-item list-item">
+                  <a class="list-link" href="#"> Blog</a>
+                </li>
+                <li class="footer-nav__list-item list-item">
+                  <a class="list-link" href="#"> Company</a>
+                </li>
+                <li class="footer-nav__list-item list-item">
+                  <a class="list-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
           <div class="footer-section__news">
             <h3 class="footer-section__nav-title">Latest News</h3>
             <div class="news-card">
@@ -768,21 +814,20 @@
                 <span class="news-date decor-orange">21 June, 2021</span>
               </div>
             </div>
-            <div>
-              <div class="news-card">
-                <img class="news-img" src="./img/news-2.png" alt="" />
-                <div class="news-text">
-                  <span class="news-paragraph">
-                    How to Design for Maximum Product Trust
-                  </span>
-                  <span class="news-date decor-orange">21 June, 2021</span>
-                </div>
+
+            <div class="news-card">
+              <img class="news-img" src="./img/news-2.png" alt="" />
+              <div class="news-text">
+                <span class="news-paragraph">
+                  How to Design for Maximum Product Trust
+                </span>
+                <span class="news-date decor-orange">21 June, 2021</span>
               </div>
             </div>
           </div>
         </div>
         <hr class="footer-hr" />
-        <p class="copyright-text">Copyright 2021, All right reserved</p>
+        <p class="copyright-text">Copyright 2023, All right reserved</p>
       </section>
     </footer>
     <script src="./js/script.js"></script>
