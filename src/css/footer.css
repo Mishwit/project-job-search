@@ -3,7 +3,8 @@
   padding-top: 100px;
 }
 
-.footer-section__nav{
+footer .menu{
+  display: flex;
   margin-right: 65px;
 }
 
@@ -17,7 +18,7 @@
   margin-right: 110px;
 }
 
-.footer-section__logo{
+footer .logo{
   margin-bottom: 30px;
 }
 
@@ -51,7 +52,7 @@
   flex-direction: row;
 }
 
-.footer-section__nav-title{
+.menu-title{
   margin-bottom: 30px;
   font-weight: var(--FONT_WEIGHT_700);
   color: var(--COLOR_BLACK);
@@ -62,11 +63,15 @@
   color:var(--COLOR_ORANGE);
 }
 
-.footer-nav__list-item{
+footer .menu__list{
+  flex-direction: column;
+}
+
+footer .menu__list-item{
   margin-bottom: 40px;
 }
 
-.footer-nav__list-item:last-child{
+footer .menu__list-item:last-child{
   margin-bottom: 0;
 }
 

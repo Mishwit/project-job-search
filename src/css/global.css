@@ -2,19 +2,11 @@
   box-sizing: border-box;
 }
 
-html{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-p{
+@font-face {
   font-family: 'Axiforma';
-  color: var(--COLOR_DARK);
-}
-
-.logo{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: var(--FONT_WEIGHT_700);
-  font-size: var(--FONT_SIZE_50);
+  src: url(../fonts/Axiforma-Regular.ttf);
+  font-display: swap;
+  font-style: normal;
 }
 
 :root{
@@ -48,11 +40,41 @@ p{
   --FONT_WEIGHT_700: 700;
 }
 
-@font-face {
+html{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p,a,input{
   font-family: 'Axiforma';
-  src: url(../fonts/Axiforma-Regular.ttf);
-  font-display: swap;
-  font-style: normal;
+}
+
+p{
+  color: var(--COLOR_DARK);
+}
+
+a{
+  text-decoration: none;
+  color: var(--COLOR_BLACK);
+}
+
+input{
+  min-height: 50px;
+}
+
+header{
+  padding: 50px 0 125px 0;
+}
+
+.container{
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.logo{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: var(--FONT_WEIGHT_700);
+  font-size: var(--FONT_SIZE_50);
 }
 
 .black-txt{
@@ -63,23 +85,9 @@ color: var(--COLOR_BLACK);
   color: var(--COLOR_WHITE);
 }
 
-.container{
-  position: relative;
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
 .title{
   font-size: var(--FONT_SIZE_48);
   font-weight: 700;
-}
-
-
-
-a{
-  font-family: 'Axiforma';
-  text-decoration: none;
-  color: var(--COLOR_BLACK);
 }
 
 .decor-orange{
@@ -105,16 +113,11 @@ a{
   color: var(--COLOR_WHITE);
 }
 
-input{
-  font-family: 'Axiforma';
-  min-height: 50px;
-}
-
-.list-link{
+.nav-link{
   color: var(--COLOR_DARK);
 }
 
-.list-link:hover{
+.nav-link:hover{
   color: var(--COLOR_ORANGE);
   transition: 0.3s;
 }

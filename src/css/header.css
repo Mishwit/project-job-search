@@ -1,252 +1,31 @@
-.hero-section{
-  max-height: 920px;
-  overflow: hidden;
-  /* background: url(../backgound-svg/background-1.svg) no-repeat; */
-}
-
-
-.hero-section__nav{
+.header-wrapper{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 50px 0 125px 0;
 }
 
-.nav-menu__list{
+header .menu{
+  display: flex;
+  align-items: center;
+}
+
+.hamburger{
+display: none;
+}
+
+.menu__list{
   display: flex;
   font-size: var(--FONT_SIZE_18);
 }
 
-.nav-menu__list-item{
+.menu__list-item{
 margin-right: 40px;
 
 }
 
-.nav-menu__list-item:last-child{
+.menu__list-item:last-child{
   margin-right: 0
 }
 
-.buttons__nav-button{
+.buttons__cta-button{
   font-size: var(--FONT_SIZE_20);
-}
-
-.hero-section__wrapper{
-  display: flex;
-}
-
-.hero-section__ellipse-big{
-  position: relative;
-}
-
-.hero-section__ellipse-small{
-  position: relative;
-}
-
-.left-wrapper{
-  display: flex;
-  flex-direction: column;
-  max-width: 615px;
-  margin-right: 154px;
-}
-
-.left-wrapper__title{
-  margin-bottom: 30px;
-  max-width: 420px;
-  font-size: 40px;
-}
-
-.left-wrapper__subtitle{
-  max-width: 565px;
-  margin-bottom: 50px;
-  font-size: var(--FONT_SIZE_18);
-}
-
-.search-container{
-  display: flex;
-  align-items: center;
-  max-width: 615px;
-  max-height: 75px;
-  border-radius: 10px;
-  box-shadow: 0px 30px 70px var(--COLOR_SHADOW);
-  background-color: var(--COLOR_WHITE);
-}
-
-.search-container__search-form{
-  display: flex;
-  padding: 0 25px 0 20px;
-}
-.search-container__location-form{
-  display: flex;
-  padding: 0 20px 0 25px;
-}
-
-.search-input{
-  border: none;
-  outline: none;
-  max-width: 170px;
-}
-
-.location-input{
-  border: none;
-  outline: none;
-  max-width: 102px;
-}
-
-.search-container__search-icon{
-  margin-right: 20px;
-}
-
-.search-container__location-icon{
-  margin-right: 13px;
-}
-
-.buttons__search-button{
-  max-width: 180px;
-  border-radius: 0 10px 10px 0;
-  font-size: var(--FONT_SIZE_20);
-}
-
-.right-wrapper__img{
-  position: relative;
-  top: -87px;
-  right: -14px;
-}
-
-.right-wrapper__ellipse-big{
-  position: absolute;
-  z-index: -1;
-  bottom: 29px;
-  right: -337px;
-}
-
-.right-wrapper__ellipse-small{
-  position: absolute;
-  z-index: -1;
-  bottom: 170px;
-  right: -198px;
-}
-
-.right-wrapper__flying-icon{
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  position: absolute;
-  z-index: 2;
-  box-shadow: 0px 20px 50px var(--COLOR_LIGHT_GREY);
-  border-radius: 20px;
-  background-color:var(--COLOR_WHITE);
-  height: 80px;
-  width: 80px;
-}
-
-.right-wrapper__flying-card{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items:center;
-  height: 200px;
-  width: 170px;
-  position: absolute;
-  box-shadow: 0px 20px 50px var(--COLOR_SHADOW);
-  border-radius: 25px;
-  background-color:var(--COLOR_WHITE);
-}
-
-.flying-card__title{
-  margin-bottom: 2px;
-  color: var(--COLOR_BLACK);
-  font-size: var(--FONT_SIZE_20);
-  font-weight: 700;
-}
-
-.flying-card__subtitle{
-  font-size: var(--FONT_SIZE_14);
-}
-
-.flying-card__img-block{
-  position: relative;
-  height: 120px;
-  width: 150px;
-  display: flex;
-  justify-content: center;
-  border-radius: 20px;
-  margin-bottom: 15px;
-}
-
-.flying-card__circle{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  background-color:var(--COLOR_WHITE);
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  box-shadow: 0px 4px 50px rgba(153, 153, 153, 0.25);
-  border-radius: 50px;
-  top: 100px;
-  right: 0px;
-  gap: 5px;
-}
-
-.flying-card__rating{
-font-size: var(--FONT_SIZE_12);
-}
-
-.first-flying-card{
-  top: 597px;
-  right: 292px;
-}
-
-.first-img{
-  background:url(../img/woman-card-1.png) no-repeat var(--COLOR_PURPLE);
-}
-
-.second-img{
-  background:url(../img/man-card-1.png) no-repeat var(--COLOR_YELLOW) center;
-}
-
-.second-flying-card{
-  top: 324px;
-  right: -329px;
-}
-
-.google-icon{
-  top: 320px;
-  right: 374px;
-  transform: rotate(324deg);
-}
-
-.google-img{
-  transform: rotate(36deg);
-}
-
-.paypal-icon{
-  bottom: 287px;
-  right: -287px;
-  transform: rotate(18deg);
-}
-
-.paypal-img{
-  transform: rotate(341deg);
-}
-
-.indeed-icon{
-  top: 126px;
-  right: 246px;
-  transform: rotate(-72.74deg);
-}
-
-.indeed-img{
-  transform: rotate(74deg);
-}
-
-.slack-icon{
-  top: 196px;
-  right: -216px;
-  transform: rotate(15deg);
-}
-
-.slack-img{
-  transform: rotate(72deg);
 }

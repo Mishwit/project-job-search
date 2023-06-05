@@ -1,6 +1,6 @@
 @media (max-width: 1840px){
 
-  .hero-section{
+  .hero{
     max-height: 795px;
   }
 
@@ -9,12 +9,13 @@
     width: 200px;
   }
 
-  .left-wrapper{
+  .info{
     max-width: 510px;
   }
 
   .search-container{
     max-height: 65px;
+    max-width: 590px;
   }
 
   .search-container__search-icon{
@@ -22,7 +23,7 @@
   }
 
   .search-container__search-form{
-    padding: 0 15px 0 15px;
+    padding: 0 0 0 15px;
   }
 
   .search-input{
@@ -38,28 +39,28 @@
     width: 150px;
   }
 
-  .right-wrapper__img{
+  .graphics__img{
     height: 650px;
     width: 450px;
     top: -90px;
     right: 20px;
   }
 
-  .right-wrapper__ellipse-big{
+  .graphics__ellipse-big{
     height: 600px;
     width: 600px;
     bottom: 140px;
     right: -35px;
   }
 
-  .right-wrapper__ellipse-small{
+  .graphics__ellipse-small{
     height: 425px;
     width: 425px;
     bottom: 232px;
     right: 50px;
   }
 
-  .right-wrapper__flying-icon{
+  .graphics__flying-icon{
     height: 70px;
     width: 70px;
   }
@@ -84,7 +85,7 @@
     right: 10px;
   }
 
-  .right-wrapper__flying-card{
+  .graphics__flying-card{
     height: 180px;
     width: 150px;
   }
@@ -140,32 +141,32 @@
     max-width: 960px;
   }
 
-  .hero-section{
+  .hero{
     max-height: 765px;
   }
 
-  .right-wrapper__img{
+  .graphics__img{
     height: 550px;
     width: 400px;
     top: -20px;
     right: 110px;
   }
 
-  .right-wrapper__ellipse-big{
+  .graphics__ellipse-big{
     height: 425px;
     width: 425px;
     bottom: 155px;
     right: -10px;
     }
 
-  .right-wrapper__ellipse-small{
+  .graphics__ellipse-small{
     height: 275px;
     width: 275px;
     bottom: 230px;
     right: 65px;
   }
 
-  .right-wrapper__flying-icon{
+  .graphics__flying-icon{
     height: 60px;
     width: 60px;
   }
@@ -190,7 +191,7 @@
     right: 10px;
   }
 
-  .right-wrapper__flying-card{
+  .graphics__flying-card{
     height: 170px;
     width: 140px;
   }
@@ -204,15 +205,15 @@
     right: -20px;
   }
 
-  .first-section{
+  .job-posts{
     min-height: 480px;
   }
 
-  .first-section__container{
+  .job-posts__container{
     padding-top: 50px;
   }
 
-  .first-section__cards-wrapper {
+  .job-posts__cards-wrapper {
     margin-bottom: 25px;
   }
 
@@ -224,6 +225,10 @@
   .second-section{
     padding-top: 50px;
     min-height: 1485px;
+  }
+
+  .job-block{
+    width: 225px;
   }
 
   .second-section__sign-up-block{
@@ -255,19 +260,24 @@
 }
 
 @media (max-width: 1023px){
+
+  header{
+    padding: 50px 0 50px 0;
+  }
+
   .container{
     max-width: 700px;
   }
 
-  .hero-section{
+  .hero{
     min-height: 1039px;
   }
 
-  .hero-section__nav{
+  .header-wrapper{
     margin-bottom: 85px;
   }
 
-  .nav-menu__list-item{
+  .menu__list-item{
     margin-right: 20px;
   }
 
@@ -276,14 +286,18 @@
     width: 180px;
   }
 
-  .hero-section__wrapper{
+  /* .hero__wrapper{
     flex-direction: column;
+    align-items: center;
+  } */
+
+  .info{
+    margin-right: 50px;
     align-items: center;
   }
 
-  .left-wrapper{
-    margin-right: 50px;
-    align-items: center;
+  .search-container{
+    max-width: 565px;
   }
 
   .search-container__search-icon{
@@ -291,7 +305,7 @@
   }
 
   .search-container__search-form{
-    padding: 0 10px 0 10px;
+    padding: 0 0 0 10px;
   }
 
   .search-container__location-icon{
@@ -307,26 +321,26 @@
     width: 140px;
   }
 
-  .right-wrapper__img{
+  .graphics__img{
     top: 20px;
     right: 0;
   }
 
-  .right-wrapper__ellipse-big{
+  .graphics__ellipse-big{
     height: 650px;
     width: 650px;
     bottom: -110px;
     right: 15px;
   }
 
-  .right-wrapper__ellipse-small{
+  .graphics__ellipse-small{
     height: 450px;
     width: 450px;
     bottom: -5px;
     right: 115px;
   }
 
-  .right-wrapper__flying-icon{
+  .graphics__flying-icon{
     height: 60px;
     width: 60px;
   }
@@ -351,7 +365,7 @@
     right: 85px;
   }
 
-  .right-wrapper__flying-card{
+  .graphics__flying-card{
     height: 170px;
     width: 140px;
   }
@@ -383,19 +397,19 @@
     right: 5px;
   }
 
-  .first-section{
+  .job-posts{
     min-height: 650px;
   }
 
-  .first-section__container{
+  .job-posts__container{
     padding-top: 50px;
   }
 
-  .first-section__title{
+  .job-posts__title{
     text-align: center;
   }
 
-  .first-section__cards-wrapper{
+  .job-posts__cards-wrapper{
     flex-wrap: wrap;
     margin-bottom: 0px;
   }
@@ -426,10 +440,9 @@
   }
 
   .job-block{
-    margin-right: 15px;
     padding-top: 10px;
     text-align: center;
-    width: 165px;
+    width: 215px;
     height: 230px;
   }
 
@@ -536,11 +549,11 @@
       margin-right: 35px;
     }
 
-    .footer-section__nav{
+    footer .menu{
       margin-right: 30px;
     }
 
-    .footer-nav__list-item{
+    footer .menu__list-item{
       margin-bottom: 25px;
     }
 
@@ -552,6 +565,9 @@
   }
 
   .hamburger{
+    display: block;
+    background: none;
+    border: none;
     width: 30px;
     position: fixed;
     top: 40px;
@@ -573,10 +589,10 @@
       margin-bottom: 0;
     }
 
-  .hamburger__item{
+  /* .hamburger__item{
     margin-bottom: -2px;
-  }
-
+  } */
+/*
   .hamburger__item:nth-child(1){
     transform: translateY(3px) rotate(-45deg);
   }
@@ -587,41 +603,41 @@
 
   .hamburger__item:nth-child(3){
     transform: translateY(3px) rotate(45deg);
-  }
+  } */
 
-  .nav-menu_active{
-    right: 0;
-  }
-
-  .hero-section{
+  .hero{
     min-height: 1020px;
   }
 
-  .hero-section__nav{
+  .header-wrapper{
     justify-content: center;
     margin-bottom: 50px;
   }
 
-  .hero-section__logo{
+  header .logo{
     font-size: var(--FONT_SIZE_72);
   }
 
-  .nav-menu__list{
+  header .menu__list{
     display: none;
   }
 
-  .buttons__nav-button{
+  .buttons__cta-button{
     display: none;
   }
 
-  .left-wrapper{
+  .info{
     margin-right: 0;
     display: flex;
     justify-content: center;
   }
 
-  .left-wrapper__subtitle{
+  .info__subtitle{
     margin-bottom: 30px;
+  }
+
+  .subscribe-wrapper{
+    max-width: 565px;
   }
 
   .buttons__search-button{
@@ -629,19 +645,19 @@
     width: 140px;
   }
 
-  .right-wrapper__img{
+  .graphics__img{
     top: 28px;
     right: 0;
   }
 
-  .right-wrapper__ellipse-big{
+  .graphics__ellipse-big{
     height: 650px;
     width: 650px;
     bottom: -110px;
     right: -35px;
   }
 
-  .right-wrapper__ellipse-small{
+  .graphics__ellipse-small{
     height: 450px;
     width: 450px;
     bottom: -10px;
@@ -668,7 +684,7 @@
     right: 65px;
   }
 
-  .right-wrapper__flying-card{
+  .graphics__flying-card{
     height: 170px;
     width: 140px;
   }
@@ -681,11 +697,11 @@
     right: -5px;
   }
 
-  .first-section__title{
+  .job-posts__title{
     font-size: var(--FONT_SIZE_30);
   }
 
-  .first-section__cards-wrapper{
+  .job-posts__cards-wrapper{
     justify-content: center;
   }
 
@@ -707,7 +723,7 @@
     margin-right: 0px;
   }
 
-  .first-jobs-group{
+  .jobs-group{
     margin-bottom: 15px;
   }
 
@@ -756,7 +772,7 @@
   }
 
   .subscribe-wrapper{
-    max-width: 570px;
+    max-width: 565px;
   }
 
   .subscribe-block__dots{
@@ -777,7 +793,7 @@
     margin-bottom: 30px;
   }
 
-  .footer-section__nav{
+  footer .menu{
     margin-right: 25px;
   }
 
@@ -803,16 +819,16 @@
     max-width: 250px;
   }
 
-  .hero-section{
+  .hero{
     min-height: 540px;
   }
 
-  .left-wrapper__title{
+  .info__title{
     max-width: 250px;
     text-align: center;
   }
 
-  .left-wrapper__subtitle{
+  .info__subtitle{
     max-width: 250px;
     text-align: center;
     font-size: var(--FONT_SIZE_14);
@@ -830,7 +846,7 @@
   }
 
   .search-container__search-form{
-    padding: 0 5px 0 5px;
+    padding: 0 0 0 5px;
   }
 
   .search-container__search-icon{
@@ -974,7 +990,7 @@
     font-size: var(--FONT_SIZE_14);
   }
 
-  .feedback-card__user-img{
+  .profile-img{
     margin-right: 15px;
   }
 
@@ -1036,7 +1052,7 @@
     margin: 0;
   }
 
-  .footer-section__nav{
+  footer .menu{
     text-align: center;
     margin-right: 0;
   }
@@ -1084,15 +1100,15 @@
     max-width: 180px;
   }
 
-  .hero-section__logo{
+  header .logo{
     font-size: var(--FONT_SIZE_48);
   }
 
-  .left-wrapper__title{
+  .info__title{
     max-width: 180px;
   }
 
-  .left-wrapper__subtitle{
+  .info__subtitle{
     max-width: 180px;
   }
 
@@ -1192,7 +1208,7 @@
     align-items: center;
   }
 
-  .feedback-card__user-img{
+  .profile-img{
     margin-right: 0;
     margin-bottom: 15px;
   }

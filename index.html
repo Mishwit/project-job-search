@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Job search</title>
-    <link rel="stylesheet" href="./src/css/normalizes.css" />
-    <link rel="stylesheet" href="./src/css/resets.css" />
+    <title>Jobply - job search</title>
+    <link rel="stylesheet" href="./src/css/normalize+resets.css" />
     <link rel="stylesheet" href="./src/css/global.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
+    <link rel="stylesheet" href="./src/css/hero.css" />
     <link rel="stylesheet" href="./src/css/main.css" />
-    <link rel="stylesheet" href="./src/css/main-first-section.css" />
+    <link rel="stylesheet" href="./src/css/main-job-posts.css" />
     <link rel="stylesheet" href="./src/css/main-second-section.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
     <link rel="stylesheet" href="./src/css/adaptives/adaptives.css" />
@@ -18,346 +18,319 @@
 
   <body>
     <header>
-      <!-- Hero section -->
-      <section class="hero-section">
-        <!-- Hamburger -->
-        <div class="hamburger">
-          <span class="hamburger__item"></span>
-          <span class="hamburger__item"></span>
-          <span class="hamburger__item"></span>
-        </div>
-        <div class="container hero-section__nav-container">
-          <!-- Navigation menu -->
-          <nav class="hero-section__nav nav-menu">
-            <a class="hero-section__logo logo link-black" href="#">
-              J<span class="decor-orange">o</span>bply
-            </a>
-            <!-- Navigation list items -->
-            <ul class="nav-menu__list">
-              <li class="nav-menu__list-item list-item">
-                <a class="list-link" href="#">Home</a>
-              </li>
-              <li class="nav-menu__list-item list-item">
-                <a class="list-link" href="#">Categories</a>
-              </li>
-              <li class="nav-menu__list-item list-item">
-                <a class="list-link" href="#">Service</a>
-              </li>
-              <li class="nav-menu__list-item list-item">
-                <a class="list-link" href="#">Jobs</a>
-              </li>
-            </ul>
+      <!-- Hamburger -->
+      <button class="hamburger">
+        <span class="hamburger__item"></span>
+        <span class="hamburger__item"></span>
+        <span class="hamburger__item"></span>
+      </button>
 
-            <!-- Navigation button -->
-            <div class="hero-section__button">
-              <a class="buttons buttons__nav-button" href="#">
-                Post a vacancy
-              </a>
-            </div>
-          </nav>
-          <!-- Hero section wrapper -->
-          <div class="hero-section__wrapper">
-            <!-- Left wrapper -->
-            <div class="left-wrapper">
-              <h1 class="left-wrapper__title title">
-                Find & Apply For Your Dream Job
-              </h1>
-              <p class="left-wrapper__subtitle">
-                The website is chockablock with useful features, allowing you to
-                efficiently search and apply for roles across all sectors,
-                experience levels and locations.
-              </p>
+      <div class="container header-wrapper">
+        <a class="logo link-black" href="#">
+          J<span class="decor-orange">o</span>bply
+        </a>
 
-              <!-- Search container -->
-              <div class="search-container">
-                <!-- Search form -->
-                <form class="search-container__search-form" method="get">
-                  <img
-                    class="search-container__search-icon"
-                    src="./src/icons/search-icon.svg"
-                    alt="search"
-                  />
-                  <input
-                    class="search-input"
-                    type="text"
-                    placeholder="Job title or Keyword"
-                    name="text"
-                    value=""
-                  />
-                </form>
+        <!-- Navigation menu -->
+        <nav class="menu">
+          <!-- Navigation list items -->
+          <ul class="menu__list">
+            <li class="menu__list-item list-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="menu__list-item list-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+            <li class="menu__list-item list-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="menu__list-item list-item">
+              <a class="nav-link" href="#">Jobs</a>
+            </li>
+          </ul>
+        </nav>
 
-                <!-- Location form -->
-                <img src="./src/icons/line.svg" alt="icon" />
-                <form class="search-container__location-form" method="get">
-                  <img
-                    class="search-container__location-icon"
-                    src="./src/icons/location-icon.svg"
-                    alt="location"
-                  />
-                  <input
-                    class="location-input"
-                    type="text"
-                    placeholder="Location"
-                    name="text"
-                    value=""
-                  />
-                </form>
-
-                <!-- Search button -->
-                <div class="hero-section__button">
-                  <a class="buttons buttons__search-button" href="#">
-                    Search
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Right wrapper -->
-            <div class="right-wrapper">
-              <img
-                class="right-wrapper__img"
-                src="./src/img/satisfied-lovely-woman-holds-modern-cell-phone-1.png"
-                alt="satisfied-lovely-woman-holds-modern-cell-phone"
-              />
-
-              <!-- Big ellipse -->
-              <img
-                class="right-wrapper__ellipse-big"
-                src="./src/img/ellipse-big.svg"
-                alt="big ellipse"
-              />
-              <!-- Small ellipse -->
-              <img
-                class="right-wrapper__ellipse-small"
-                src="./src/img/ellipse-small.svg"
-                alt="small ellipse"
-              />
-
-              <!-- Flying icons -->
-              <div class="right-wrapper__flying-icon google-icon">
-                <img
-                  class="google-img"
-                  src="./src/icons/flat-color-icons_google.svg"
-                  alt="google icon"
-                />
-              </div>
-
-              <div class="right-wrapper__flying-icon paypal-icon">
-                <img
-                  class="paypal-img"
-                  src="./src/icons/logos_paypal.svg"
-                  alt="paypal icon"
-                />
-              </div>
-
-              <div class="right-wrapper__flying-icon indeed-icon">
-                <img
-                  class="indeed-img"
-                  src="./src/icons/simple-icons_indeed.svg"
-                  alt="indeed icon"
-                />
-              </div>
-
-              <div class="right-wrapper__flying-icon slack-icon">
-                <img
-                  class="slack-img"
-                  src="./src/icons/grommet-icons_slack.svg"
-                  alt="slack icon"
-                />
-              </div>
-
-              <!-- First flying card -->
-              <div class="right-wrapper__flying-card first-flying-card">
-                <div class="flying-card__img-block first-img">
-                  <div class="flying-card__circle">
-                    <img src="./src/icons/star.svg" alt="star" />
-                    <p class="flying-card__rating">4.8</p>
-                  </div>
-                </div>
-                <h2 class="flying-card__title">Maliha</h2>
-                <p class="flying-card__subtitle">UX Designer</p>
-              </div>
-
-              <!-- Second flying card -->
-              <div class="right-wrapper__flying-card second-flying-card">
-                <div class="flying-card__img-block second-img">
-                  <div class="flying-card__circle">
-                    <img src="./src/icons/star.svg" alt="star" />
-                    <p class="flying-card__rating">4.5</p>
-                  </div>
-                </div>
-                <h2 class="flying-card__title">Adam</h2>
-                <p class="flying-card__subtitle">Project Manager</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <!-- Navigation button -->
+        <a class="buttons buttons__cta-button" href="#"> Post a vacancy </a>
+      </div>
     </header>
 
     <main>
-      <!-- First section -->
-      <section class="first-section">
-        <div class="container first-section__container">
-          <h2 class="first-section__title">Popular Job Posts</h2>
-          <!-- Cards -->
-          <div class="first-section__cards-wrapper">
+      <!-- Hero section -->
+      <section class="hero">
+        <!-- Hero section wrapper -->
+
+        <!-- Info -->
+        <div class="info">
+          <h1 class="info__title title">Find & Apply For Your Dream Job</h1>
+          <p class="info__subtitle">
+            The website is chockablock with useful features, allowing you to
+            efficiently search and apply for roles across all sectors,
+            experience levels and locations.
+          </p>
+
+          <!-- Search container -->
+          <div class="search-container">
+            <!-- Search form -->
+            <form class="search-container__search-form" method="get">
+              <img
+                class="search-container__search-icon"
+                src="./src/icons/search-icon.svg"
+                alt="search"
+              />
+              <input
+                class="search-input"
+                type="text"
+                placeholder="Job title or Keyword"
+                name="text"
+                value=""
+              />
+            </form>
+
+            <!-- Search form -->
+            <img src="./src/icons/line.svg" alt="icon" />
+            <form class="search-container__location-form" method="get">
+              <img
+                class="search-container__location-icon"
+                src="./src/icons/location-icon.svg"
+                alt="location"
+              />
+
+              <input
+                class="location-input"
+                type="text"
+                placeholder="Location"
+                name="text"
+                value=""
+              />
+
+              <!-- Search button -->
+              <button
+                type="submit"
+                class="buttons buttons__search-button"
+                href="#"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Graphics -->
+        <div class="graphics">
+          <img
+            class="graphics__img"
+            src="./src/img/satisfied-lovely-woman-holds-modern-cell-phone-1.png"
+            alt="satisfied-lovely-woman-holds-modern-cell-phone"
+          />
+
+          <!-- Big ellipse -->
+          <img
+            class="graphics__ellipse-big"
+            src="./src/img/ellipse-big.svg"
+            alt="big ellipse"
+          />
+          <!-- Small ellipse -->
+          <img
+            class="graphics__ellipse-small"
+            src="./src/img/ellipse-small.svg"
+            alt="small ellipse"
+          />
+
+          <!-- Flying icons -->
+          <div class="graphics__flying-icon google-icon">
+            <img
+              class="google-img"
+              src="./src/icons/flat-color-icons_google.svg"
+              alt="google icon"
+            />
+          </div>
+
+          <div class="graphics__flying-icon paypal-icon">
+            <img
+              class="paypal-img"
+              src="./src/icons/simple-icons_paypal.svg"
+              alt="paypal icon"
+            />
+          </div>
+
+          <div class="graphics__flying-icon indeed-icon">
+            <img
+              class="indeed-img"
+              src="./src/icons/simple-icons_indeed.svg"
+              alt="indeed icon"
+            />
+          </div>
+
+          <div class="graphics__flying-icon slack-icon">
+            <img
+              class="slack-img"
+              src="./src/icons/grommet-icons_slack.svg"
+              alt="slack icon"
+            />
+          </div>
+
+          <!-- First flying card -->
+          <div class="graphics__flying-card first-flying-card">
+            <div class="flying-card__img-block first-img">
+              <div class="flying-card__circle">
+                <img src="./src/icons/star.svg" alt="star" />
+                <p class="flying-card__rating">4.8</p>
+              </div>
+            </div>
+            <p class="flying-card__title">Maliha</p>
+            <p class="flying-card__subtitle">UX Designer</p>
+          </div>
+
+          <!-- Second flying card -->
+          <div class="graphics__flying-card second-flying-card">
+            <div class="flying-card__img-block second-img">
+              <div class="flying-card__circle">
+                <img src="./src/icons/star.svg" alt="star" />
+                <p class="flying-card__rating">4.5</p>
+              </div>
+            </div>
+            <p class="flying-card__title">Adam</p>
+            <p class="flying-card__subtitle">Project Manager</p>
+          </div>
+        </div>
+      </section>
+      <!-- Job posts -->
+      <section class="job-posts">
+        <div class="container job-posts__container">
+          <h2 class="job-posts__title">Popular Job Posts</h2>
+          <!-- card -->
+          <div class="job-posts__card-wrapper">
             <!-- First card -->
-            <div class="first-section__first-card cards">
-              <div class="cards__content-container">
-                <!-- Cards content top -->
-
-                <div class="cards-content__top">
-                  <div class="cards-content__left-side">
-                    <div class="cards-content__cards-circle">
-                      <img src="./src/icons/slack-2.svg" alt="slack-icon" />
-                    </div>
-                    <p class="cards-content__title white-txt">Slack</p>
+            <div class="card">
+              <!-- card content top -->
+              <div class="card-content__top">
+                <div class="card-content__left-side">
+                  <div class="card-content__card-circle">
+                    <img src="./src/icons/slack-2.svg" alt="slack-icon" />
                   </div>
-                  <div class="cards-content__right-side">
-                    <div class="right-side__first-circle">
-                      <img src="./src/icons/avatar-1.svg" alt="first avatar" />
-                    </div>
-                    <div class="right-side__second-circle">
-                      <img src="./src/icons/avatar-2.svg" alt="second avatar" />
-                    </div>
-                    <div class="right-side__third-circle">
-                      <p class="avatar-text">5+</p>
-                      <img src="./src/icons/avatar-3.svg" alt="third avatar" />
-                    </div>
+                  <span class="card-content__title white-txt">Slack</span>
+                </div>
+                <div class="card-content__right-side">
+                  <div class="right-side__first-circle">
+                    <img src="./src/icons/avatar-1.svg" alt="first avatar" />
+                  </div>
+                  <div class="right-side__second-circle">
+                    <img src="./src/icons/avatar-2.svg" alt="second avatar" />
+                  </div>
+                  <div class="right-side__third-circle">
+                    <p class="avatar-text">5+</p>
+                    <img src="./src/icons/avatar-3.svg" alt="third avatar" />
                   </div>
                 </div>
+              </div>
 
-                <!-- Cards content middle -->
-                <div class="cards-content__middle">
-                  <h2 class="cards-content__middle_title tltle white-txt">
-                    Sr. Product Designer
-                  </h2>
-                  <p class="cards-content__middle_subtitle white-txt">
-                    Full Time - New York City
-                  </p>
-                </div>
+              <!-- cards content middle -->
+              <div class="card-content__middle">
+                <p class="card-content__middle_title tltle white-txt">
+                  Sr. Product Designer
+                </p>
+                <p class="card-content__middle_subtitle white-txt">
+                  Full Time - New York City
+                </p>
+              </div>
 
-                <!-- Cards content bottom -->
-                <div class="cards-content__bottom">
-                  <a class="cards-content__button white-btn" href="#">
-                    <p class="cards-content__button-text white-txt">Remote</p>
-                  </a>
-                  <a class="cards-content__button white-btn" href="#">
-                    <p class="cards-content__button-text white-txt">Anywhere</p>
-                  </a>
-                  <p class="cards-content__button-text white-txt">
-                    $10k - $25k
-                  </p>
-                </div>
+              <!-- cards content bottom -->
+              <div class="card-content__bottom">
+                <a class="card-content__button white-btn white-txt" href="#">
+                  Remote
+                </a>
+                <a class="card-content__button white-btn white-txt" href="#">
+                  Anywhere
+                </a>
+                <p class="card-content__button-text white-txt">$10k - $25k</p>
               </div>
             </div>
 
             <!-- Second card -->
-            <div class="first-section__second-card cards">
-              <div class="cards__content-container">
-                <!-- Cards content top -->
+            <div class="card">
+              <!-- card content top -->
 
-                <div class="cards-content__top">
-                  <div class="cards-content__left-side">
-                    <div class="cards-content__cards-circle">
-                      <img src="./src/icons/google-2.svg" alt="google icon" />
-                    </div>
-                    <p class="cards-content__title black-txt">Google</p>
+              <div class="card-content__top">
+                <div class="card-content__left-side">
+                  <div class="card-content__card-circle">
+                    <img src="./src/icons/google-2.svg" alt="google icon" />
                   </div>
-                  <div class="cards-content__right-side">
-                    <div class="right-side__first-circle">
-                      <img src="./src/icons/avatar-5.svg" alt="first avatar" />
-                    </div>
-                    <div class="right-side__second-circle">
-                      <img src="./src/icons/avatar-4.svg" alt="second avatar" />
-                    </div>
-                    <div class="right-side__third-circle">
-                      <p class="avatar-text">5+</p>
-                      <img src="./src/icons/avatar-3.svg" alt="third avatar" />
-                    </div>
+                  <span class="card-content__title black-txt">Google</span>
+                </div>
+                <div class="card-content__right-side">
+                  <div class="right-side__first-circle">
+                    <img src="./src/icons/avatar-5.svg" alt="first avatar" />
+                  </div>
+                  <div class="right-side__second-circle">
+                    <img src="./src/icons/avatar-4.svg" alt="second avatar" />
+                  </div>
+                  <div class="right-side__third-circle">
+                    <p class="avatar-text">5+</p>
+                    <img src="./src/icons/avatar-3.svg" alt="third avatar" />
                   </div>
                 </div>
+              </div>
 
-                <!-- Cards content middle -->
-                <div class="cards-content__middle">
-                  <h2 class="cards-content__middle_title tltle">
-                    UX Researcher
-                  </h2>
-                  <p class="cards-content__middle_subtitle">
-                    Full Time - United States
-                  </p>
-                </div>
+              <!-- card content middle -->
+              <div class="card-content__middle">
+                <p class="card-content__middle_title tltle">UX Researcher</p>
+                <p class="card-content__middle_subtitle">
+                  Full Time - United States
+                </p>
+              </div>
 
-                <!-- Cards content bottom -->
-                <div class="cards-content__bottom">
-                  <a class="cards-content__button grey-btn" href="#">
-                    <p class="cards-content__button-text">Remote</p>
-                  </a>
-                  <a class="cards-content__button grey-btn" href="#">
-                    <p class="cards-content__button-text">Anywhere</p>
-                  </a>
-                  <p class="cards-content__button-text black-txt">
-                    $10k - $25k
-                  </p>
-                </div>
+              <!-- card content bottom -->
+              <div class="card-content__bottom">
+                <a class="card-content__button grey-btn" href="#"> Remote </a>
+                <a class="card-content__button grey-btn" href="#"> Anywhere </a>
+                <p class="card-content__button-text black-txt">$10k - $25k</p>
               </div>
             </div>
 
             <!-- Third card -->
-            <div class="first-section__third-card cards">
-              <div class="cards__content-container">
-                <!-- Cards content top -->
+            <div class="job-posts__third-card card">
+              <!-- card content top -->
 
-                <div class="cards-content__top">
-                  <div class="cards-content__left-side">
-                    <div class="cards-content__cards-circle">
-                      <img src="./src/icons/indeed-2.svg" alt="indeed icon" />
-                    </div>
-                    <p class="cards-content__title black-txt">Indeed</p>
+              <div class="card-content__top">
+                <div class="card-content__left-side">
+                  <div class="card-content__card-circle">
+                    <img src="./src/icons/indeed-2.svg" alt="indeed icon" />
                   </div>
-                  <div class="cards-content__right-side">
-                    <div class="right-side__first-circle">
-                      <img src="./src/icons/avatar-7.svg" alt="first avatar" />
-                    </div>
-                    <div class="right-side__second-circle">
-                      <img src="./src/icons/avatar-6.svg" alt="second avatar" />
-                    </div>
-                    <div class="right-side__third-circle">
-                      <p class="avatar-text">5+</p>
-                      <img src="./src/icons/avatar-3.svg" alt="third avatar" />
-                    </div>
+                  <span class="card-content__title black-txt">Indeed</span>
+                </div>
+                <div class="card-content__right-side">
+                  <div class="right-side__first-circle">
+                    <img src="./src/icons/avatar-7.svg" alt="first avatar" />
+                  </div>
+                  <div class="right-side__second-circle">
+                    <img src="./src/icons/avatar-6.svg" alt="second avatar" />
+                  </div>
+                  <div class="right-side__third-circle">
+                    <p class="avatar-text">5+</p>
+                    <img src="./src/icons/avatar-3.svg" alt="third avatar" />
                   </div>
                 </div>
+              </div>
 
-                <!-- Cards content middle -->
-                <div class="cards-content__middle">
-                  <h2 class="cards-content__middle_title tltle">
-                    Project Manager
-                  </h2>
-                  <p class="cards-content__middle_subtitle">
-                    Full Time - Singapore
-                  </p>
-                </div>
+              <!-- card content middle -->
+              <div class="card-content__middle">
+                <p class="card-content__middle_title tltle">Project Manager</p>
+                <p class="card-content__middle_subtitle">
+                  Full Time - Singapore
+                </p>
+              </div>
 
-                <!-- Cards content bottom -->
-                <div class="cards-content__bottom">
-                  <a class="cards-content__button grey-btn" href="#">
-                    <p class="cards-content__button-text">Remote</p>
-                  </a>
-                  <a class="cards-content__button grey-btn" href="#">
-                    <p class="cards-content__button-text">Anywhere</p>
-                  </a>
-                  <p class="cards-content__button-text black-txt">
-                    $10k - $25k
-                  </p>
-                </div>
+              <!-- card content bottom -->
+              <div class="card-content__bottom">
+                <a class="card-content__button grey-btn" href="#"> Remote </a>
+                <a class="card-content__button grey-btn" href="#"> Anywhere </a>
+                <p class="card-content__button-text black-txt">$10k - $25k</p>
               </div>
             </div>
           </div>
 
           <!-- Scroll block -->
-          <a class="first-section__scroll-block" href="#">
+          <a class="job-posts__scroll-block" href="#">
             <h2 class="scroll-block__text">View All</h2>
             <img src="./src/icons/arrow.svg" alt="arrow" />
           </a>
@@ -369,8 +342,8 @@
         <div class="container second-section__container">
           <h2 class="second-section__title title">Job Categories</h2>
           <div class="second-section__jobs-categories">
-            <!-- Job cards -->
-            <div class="jobs-group first-jobs-group">
+            <!-- Job card -->
+            <div class="jobs-group">
               <a href="#" class="content-container__job-blocks job-block">
                 <div class="job-block__circle">
                   <img
@@ -378,7 +351,7 @@
                     alt="accouting&finance"
                   />
                 </div>
-                <h2 class="job-block__title">Accouting & Finance</h2>
+                <p class="job-block__title">Accouting & Finance</p>
                 <p class="job-block__subtitle">125 Job Vacancy</p>
               </a>
 
@@ -386,7 +359,7 @@
                 <div class="job-block__circle special-circle">
                   <img src="./src/icons/ui-ux-design.svg" alt="ui/ux design" />
                 </div>
-                <h2 class="job-block__title">UI/UX Design</h2>
+                <p class="job-block__title">UI/UX Design</p>
                 <p class="job-block__subtitle">52 Job Vacancy</p>
               </a>
 
@@ -397,7 +370,7 @@
                     alt="content writing"
                   />
                 </div>
-                <h2 class="job-block__title">Content Writing</h2>
+                <p class="job-block__title">Content Writing</p>
                 <p class="job-block__subtitle">150 Job Vacancy</p>
               </a>
 
@@ -408,12 +381,10 @@
                     alt="accouting&finance"
                   />
                 </div>
-                <h2 class="job-block__title">Accouting & Finance</h2>
+                <p class="job-block__title">Accouting & Finance</p>
                 <p class="job-block__subtitle">125 Job Vacancy</p>
               </a>
-            </div>
 
-            <div class="jobs-group second-jobs-group">
               <a href="#" class="content-container__job-blocks job-block">
                 <div class="job-block__circle">
                   <img
@@ -421,7 +392,7 @@
                     alt="digital marketing"
                   />
                 </div>
-                <h2 class="job-block__title">Digital Marketing</h2>
+                <p class="job-block__title">Digital Marketing</p>
                 <p class="job-block__subtitle">150 Job Vacancy</p>
               </a>
 
@@ -432,7 +403,7 @@
                     alt="technical support"
                   />
                 </div>
-                <h2 class="job-block__title">Technical Support</h2>
+                <p class="job-block__title">Technical Support</p>
                 <p class="job-block__subtitle">350 Job Vacancy</p>
               </a>
 
@@ -443,7 +414,7 @@
                     alt="human resourse"
                   />
                 </div>
-                <h2 class="job-block__title">Human Resource</h2>
+                <p class="job-block__title">Human Resource</p>
                 <p class="job-block__subtitle">35 Job Vacancy</p>
               </a>
 
@@ -454,7 +425,7 @@
                     alt="art&illustration"
                   />
                 </div>
-                <h2 class="job-block__title">Art & Illustration</h2>
+                <p class="job-block__title">Art & Illustration</p>
                 <p class="job-block__subtitle">52 Job Vacancy</p>
               </a>
             </div>
@@ -562,16 +533,14 @@
               </div>
 
               <div class="feedback-card__user-preview user-preview">
-                <div class="feedback-card__user-img">
-                  <img
-                    class="profile-img"
-                    src="./src/img/user-1.png"
-                    alt="Maria Jannat"
-                  />
-                </div>
+                <img
+                  class="profile-img"
+                  src="./src/img/user-1.png"
+                  alt="Maria Jannat"
+                />
 
                 <div class="feedback-card__user-description">
-                  <h2 class="feedback-card__username">Maria Jannat</h2>
+                  <p class="feedback-card__username">Maria Jannat</p>
                   <p class="feedback-card__profession">Content Writer</p>
                   <div class="feedback-card__stars stars">
                     <img class="star" src="./src/icons/star.svg" alt="" />
@@ -601,16 +570,14 @@
               </div>
 
               <div class="feedback-card__user-preview user-preview">
-                <div class="feedback-card__user-img">
-                  <img
-                    class="profile-img"
-                    src="./src/img/user-2.png"
-                    alt="Maria Jannat"
-                  />
-                </div>
+                <img
+                  class="profile-img"
+                  src="./src/img/user-2.png"
+                  alt="Maria Jannat"
+                />
 
                 <div class="feedback-card__user-description">
-                  <h2 class="feedback-card__username">Mithela</h2>
+                  <p class="feedback-card__username">Mithela</p>
                   <p class="feedback-card__profession">UI Designer</p>
                   <div class="feedback-card__stars stars">
                     <img class="star" src="./src/icons/star.svg" alt="" />
@@ -640,16 +607,14 @@
               </div>
 
               <div class="feedback-card__user-preview user-preview">
-                <div class="feedback-card__user-img">
-                  <img
-                    class="profile-img"
-                    src="./src/img/user-3.png"
-                    alt="Maria Jannat"
-                  />
-                </div>
+                <img
+                  class="profile-img"
+                  src="./src/img/user-3.png"
+                  alt="Maria Jannat"
+                />
 
                 <div class="feedback-card__user-description">
-                  <h2 class="feedback-card__username">Adam</h2>
+                  <p class="feedback-card__username">Adam</p>
                   <p class="feedback-card__profession">Developer</p>
                   <div class="feedback-card__stars stars">
                     <img class="star" src="./src/icons/star.svg" alt="" />
@@ -687,10 +652,7 @@
             <div class="search-container subscribe-wrapper">
               <!-- Search form -->
 
-              <form
-                class="search-container__search-form mail-form"
-                method="get"
-              >
+              <form class="search-container__search-form mail-form">
                 <input
                   class="mail-input"
                   type="text"
@@ -698,20 +660,18 @@
                   name="text"
                   value=""
                 />
-              </form>
 
-              <!-- Subscribe button -->
-              <div class="subscribe-block__button">
-                <a class="buttons subscribe-button" href="#">
+                <!-- Subscribe button -->
+                <button type="submit" class="buttons subscribe-button">
                   Subscribe
-                  <img src="./src/icons/telegram.svg" alt="telegram icon" />
-                </a>
-              </div>
+                  <img src="./src/icons/telegram.svg" alt="" />
+                </button>
+              </form>
             </div>
             <img
               class="subscribe-block__dots"
               src="./src/backgound-svg/white-dots.svg"
-              alt="white dots"
+              alt=""
             />
           </div>
         </div>
@@ -736,7 +696,7 @@
           />
 
           <div class="footer-section__our-contacts">
-            <a class="footer-section__logo logo link-black" href="#">
+            <a class="logo link-black" href="#">
               J<span class="decor-orange">o</span>bply
             </a>
             <p class="footer-section__address">
@@ -760,45 +720,47 @@
           </div>
 
           <div class="footer-section__nav-wrapper">
-            <nav class="footer-section__nav footer-nav">
-              <h3 class="footer-section__nav-title">Explore</h3>
-              <ul class="footer-nav__list">
-                <li class="footer-nav__list-item list-item">
-                  <a class="list-link" href="#"> Featured Job</a>
-                </li>
-                <li class="footer-nav__list-item list-item">
-                  <a class="list-link" href="#"> Recent Job Post</a>
-                </li>
-                <li class="footer-nav__list-item list-item">
-                  <a class="list-link" href="#"> Total Candidates</a>
-                </li>
-                <li class="footer-nav__list-item list-item">
-                  <a class="list-link" href="#">Support</a>
-                </li>
-              </ul>
-            </nav>
+            <nav class="menu">
+              <div>
+                <h3 class="menu-title">Explore</h3>
+                <ul class="menu__list">
+                  <li class="menu__list-item list-item">
+                    <a class="nav-link" href="#"> Featured Job</a>
+                  </li>
+                  <li class="menu__list-item list-item">
+                    <a class="nav-link" href="#"> Recent Job Post</a>
+                  </li>
+                  <li class="menu__list-item list-item">
+                    <a class="nav-link" href="#"> Total Candidates</a>
+                  </li>
+                  <li class="menu__list-item list-item">
+                    <a class="nav-link" href="#">Support</a>
+                  </li>
+                </ul>
+              </div>
 
-            <nav class="footer-section__nav footer-nav">
-              <h3 class="footer-section__nav-title">Useful Link</h3>
-              <ul class="footer-nav__list">
-                <li class="footer-nav__list-item list-item">
-                  <a class="list-link" href="#"> About Us </a>
-                </li>
-                <li class="footer-nav__list-item list-item">
-                  <a class="list-link" href="#"> Blog</a>
-                </li>
-                <li class="footer-nav__list-item list-item">
-                  <a class="list-link" href="#"> Company</a>
-                </li>
-                <li class="footer-nav__list-item list-item">
-                  <a class="list-link" href="#">Contact Us</a>
-                </li>
-              </ul>
+              <div>
+                <h3 class="menu-title">Useful Link</h3>
+                <ul class="menu__list">
+                  <li class="menu__list-item list-item">
+                    <a class="nav-link" href="#"> About Us </a>
+                  </li>
+                  <li class="menu__list-item list-item">
+                    <a class="nav-link" href="#"> Blog</a>
+                  </li>
+                  <li class="menu__list-item list-item">
+                    <a class="nav-link" href="#"> Company</a>
+                  </li>
+                  <li class="menu__list-item list-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
             </nav>
           </div>
 
           <div class="footer-section__news">
-            <h3 class="footer-section__nav-title">Latest News</h3>
+            <h3 class="menu-title">Latest News</h3>
             <div class="news-card">
               <img class="news-img" src="./src/img/news-1.png" alt="" />
               <div class="news-text">
@@ -824,6 +786,6 @@
         <p class="copyright-text">Copyright 2023, All right reserved</p>
       </section>
     </footer>
-    <script src="./src/js/script.js"></script>
+    <!-- <script src="./src/js/script.js"></script> -->
   </body>
 </html>

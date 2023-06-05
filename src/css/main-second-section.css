@@ -23,7 +23,6 @@
   justify-content: flex-start;
   width: 270px;
   height: 270px;
-  margin-right: 30px;
   border: 1px solid var(--COLOR_LIGHT_GREY);
   border-radius: 20px;
   padding-top: 30px;
@@ -34,17 +33,14 @@
   transition: 0.5s;
 }
 
-.job-block:last-child{
-  margin-right: 0;
-}
-
 .jobs-group{
   display: flex;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.first-jobs-group{
-  margin-bottom: 30px;
-}
+
 
 .job-block__circle{
   display: flex;

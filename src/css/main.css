@@ -57,6 +57,7 @@
   display: flex;
   /* min-width: 1545px; */
   min-width: 1775px;
+  overflow: scroll;
 }
 
 .feedback-card{
@@ -92,7 +93,7 @@
   display: flex;
 }
 
-.feedback-card__user-img{
+.profile-img{
   margin-right: 30px;
 }
 
@@ -187,6 +188,7 @@ margin-right: 0;
 
 .mail-form{
   min-width: 389px;
+  gap: 15px;
 }
 
 .mail-input{
@@ -199,6 +201,7 @@ margin-right: 0;
   height: 60px;
   gap: 16px;
   font-size: var(--FONT_SIZE_18);
+  cursor: pointer;
 }
 
 .subscribe-block__dots{
