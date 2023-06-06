@@ -1,5 +1,4 @@
 .footer-section{
-  min-height: 500px;
   padding-top: 100px;
 }
 
@@ -74,8 +73,6 @@ footer .menu__list-item{
 footer .menu__list-item:last-child{
   margin-bottom: 0;
 }
-
-
 
 .footer-section__news{
   display: flex;

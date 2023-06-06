@@ -1,10 +1,10 @@
 .job-posts{
-  min-height: 650px;
   background: url(../backgound-svg/2-background.svg) no-repeat var(--COLOR_DARK_BLUE) center;
 }
 
 .job-posts__container{
   padding-top: 95px;
+  padding-bottom: 70px;
 }
 
 .job-posts__title{
@@ -12,29 +12,27 @@
   font-weight: var(--FONT_WEIGHT_700);
   color: var(--COLOR_WHITE);
   font-size: var(--FONT_SIZE_48);
+  letter-spacing: 0.05em;
+  line-height: 75px;
 }
 
 .job-posts__card-wrapper{
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
+  gap: 30px;
 }
+
 .card{
   width: 370px;
   height: 250px;
   border-radius: 20px;
-  margin-right: 30px;
-  padding: 20px 30px 20px 20px;
+  padding: 15px 30px 20px 20px;
   background: var(--COLOR_WHITE);
 }
 
 .card:first-child{
   background: rgba(238, 79, 60, 0.5);
 }
-
-.card:last-child{
-  margin-right: 0;
-}
-
 
 .card-content__top{
   display: flex;
@@ -60,12 +58,12 @@
 }
 
 .card-content__title{
-font-size: var(--FONT_SIZE_20);
+  font-size: var(--FONT_SIZE_20);
 }
 
 .card-content__right-side{
   position: relative;
-  margin: 10px 10px 0 0;
+  margin: 10px -5px 0 0;
   display: flex;
   z-index: 4;
 }
@@ -102,6 +100,7 @@ font-size: var(--FONT_SIZE_20);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  line-height: 25px;
 }
 
 .card-content__middle_title{
@@ -118,6 +117,7 @@ font-size: var(--FONT_SIZE_20);
 .card-content__bottom{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .card-content__button{
@@ -127,17 +127,15 @@ font-size: var(--FONT_SIZE_20);
   height: 35px;
   width: 100px;
   background: rgba(255, 255, 255, 0.1);
-  margin-right: 10px;
   border-radius: 5px;
   font-size: var(--FONT_SIZE_14);
-}
-
-.card-content__button:last-child{
-  margin-right: 19px;
+  letter-spacing: 0.05em;
 }
 
 .card-content__button-text{
   font-size: var(--FONT_SIZE_14);
+  letter-spacing: 0.05em;
+  font-weight: 600;
 }
 
 .white-btn{
@@ -157,4 +155,6 @@ font-size: var(--FONT_SIZE_20);
   margin-right: 15px;
   color: var(--COLOR_WHITE);
   font-size: var(--FONT_SIZE_24);
+  letter-spacing: 0.05em;
+  line-height: 39px;
 }

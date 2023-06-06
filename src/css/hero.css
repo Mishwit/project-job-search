@@ -1,6 +1,8 @@
 .hero{
-  max-height: 920px;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  max-height: 677px;
+  /* overflow: hidden; */
 }
 
 .hero__ellipse-big{
@@ -14,20 +16,20 @@
 .info{
   display: flex;
   flex-direction: column;
-  max-width: 615px;
-  margin-right: 154px;
+  max-width: 655px;
 }
 
 .info__title{
   margin-bottom: 30px;
-  max-width: 420px;
-  font-size: 40px;
+  font-size: var(--FONT_SIZE_72);
 }
 
 .info__subtitle{
-  max-width: 565px;
-  margin-bottom: 50px;
+  max-width: 600px;
+  margin-bottom: 40px;
   font-size: var(--FONT_SIZE_18);
+  line-height: 34px;
+  letter-spacing: 0.02em;
 }
 
 .search-container{
@@ -42,12 +44,12 @@
 
 .search-container__search-form{
   display: flex;
-  padding: 0 0 0 20px;
+  padding: 0 25px 0 20px;
 }
 
 .search-container__location-form{
   display: flex;
-  padding: 0 20px 0 25px;
+  padding: 0 0 0 25px;
 }
 
 .search-input{
@@ -59,7 +61,7 @@
 .location-input{
   border: none;
   outline: none;
-  max-width: 102px;
+  max-width: 165px;
 }
 
 .search-container__search-icon{
@@ -76,31 +78,35 @@
   font-size: var(--FONT_SIZE_20);
 }
 
+.graphics{
+  position: relative;
+}
+
 .graphics__img{
   position: relative;
-  top: -87px;
-  right: -14px;
+  top: -82px;
+  right: -159px;
 }
 
 .graphics__ellipse-big{
   position: absolute;
   z-index: -1;
-  bottom: 29px;
-  right: -337px;
+  bottom: -60px;
+  right: -295px;
 }
 
 .graphics__ellipse-small{
   position: absolute;
   z-index: -1;
-  bottom: 170px;
-  right: -198px;
+  bottom: 80px;
+  right: -159px;
 }
 
 .graphics__flying-icon{
   display: flex;
   justify-content: center;
   align-items:center;
-  position: absolute;
+  position: relative;
   z-index: 2;
   box-shadow: 0px 20px 50px var(--COLOR_LIGHT_GREY);
   border-radius: 20px;
@@ -110,20 +116,20 @@
 }
 
 .graphics__flying-card{
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items:center;
   height: 200px;
   width: 170px;
-  position: absolute;
   box-shadow: 0px 20px 50px var(--COLOR_SHADOW);
   border-radius: 25px;
   background-color:var(--COLOR_WHITE);
 }
 
 .flying-card__title{
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   color: var(--COLOR_BLACK);
   font-size: var(--FONT_SIZE_20);
   font-weight: 700;
@@ -164,26 +170,26 @@ font-size: var(--FONT_SIZE_12);
 }
 
 .first-flying-card{
-  top: 597px;
-  right: 292px;
+  top: -675px;
+  right: -51px;
 }
 
 .first-img{
   background:url(../img/woman-card-1.png) no-repeat var(--COLOR_PURPLE);
 }
 
+.second-flying-card{
+  top: -1154px;
+  right: -681px;
+}
+
 .second-img{
   background:url(../img/man-card-1.png) no-repeat var(--COLOR_YELLOW) center;
 }
 
-.second-flying-card{
-  top: 324px;
-  right: -329px;
-}
-
 .google-icon{
-  top: 320px;
-  right: 374px;
+  top: -637px;
+  right: -59px;
   transform: rotate(324deg);
 }
 
@@ -192,8 +198,8 @@ font-size: var(--FONT_SIZE_12);
 }
 
 .paypal-icon{
-  bottom: 287px;
-  right: -287px;
+  bottom: 437px;
+  left: 729px;
   transform: rotate(18deg);
 }
 
@@ -202,8 +208,8 @@ font-size: var(--FONT_SIZE_12);
 }
 
 .indeed-icon{
-  top: 126px;
-  right: 246px;
+  top: -993px;
+  right: -190px;
   transform: rotate(-72.74deg);
 }
 
@@ -212,8 +218,8 @@ font-size: var(--FONT_SIZE_12);
 }
 
 .slack-icon{
-  top: 196px;
-  right: -216px;
+  top: -1000px;
+  right: -657px;
   transform: rotate(15deg);
 }
 

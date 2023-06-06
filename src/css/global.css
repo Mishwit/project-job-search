@@ -46,6 +46,7 @@ html{
 
 p,a,input{
   font-family: 'Axiforma';
+  letter-spacing: 0.02em;
 }
 
 p{
@@ -75,10 +76,12 @@ header{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: var(--FONT_WEIGHT_700);
   font-size: var(--FONT_SIZE_50);
+  line-height: 57px;
+  letter-spacing: 0.02em;
 }
 
 .black-txt{
-color: var(--COLOR_BLACK);
+  color: var(--COLOR_BLACK);
 }
 
 .white-txt{
@@ -88,6 +91,7 @@ color: var(--COLOR_BLACK);
 .title{
   font-size: var(--FONT_SIZE_48);
   font-weight: 700;
+  line-height: 95px;
 }
 
 .decor-orange{

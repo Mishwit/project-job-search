@@ -1,6 +1,5 @@
 .third-section{
-  min-height: 850px;
-  padding-top: 100px;
+  padding-top: 130px;
   margin-bottom: 250px;
 }
 
@@ -15,7 +14,7 @@
 .third-section__left-wrapper{
   position: relative;
   top: 100px;
-  margin-right: 100px;
+  margin-right: 85px;
 }
 
 .play-button{
@@ -24,8 +23,9 @@
   height: 100px;
   background: url(../icons/play-button.svg) rgba(255, 255, 255, 0.7) no-repeat center;
   border-radius: 50px;
-  bottom: 325px;
-  left: 237px;
+  bottom: 45%;
+  left: 40%;
+  border: none;
 }
 
 .third-section__right-wrapper{
@@ -36,44 +36,60 @@
 
 .third-section__title{
   margin-bottom: 50px;
+  line-height: 55px;
+  letter-spacing: 0.02em;
 }
 
 .third-section__subtitle{
-  max-width: 340px;
-  margin-bottom: 50px;
+  max-width: 360px;
+  margin-bottom: 30px;
+  line-height: 34px;
 }
 
-
-.fourth-section{
-  min-height: 950px;
+.fourth-section__container{
+padding-bottom: 150px;
 }
 
 .fourth-section__title{
-  max-width: 430px;
+  max-width: 440px;
   margin-bottom: 50px;
+  line-height: 55px;
+  letter-spacing: 0.02em;
 }
 
 .fourth-section__feedback-wrapper{
   display: flex;
-  /* min-width: 1545px; */
   min-width: 1775px;
   overflow: scroll;
 }
 
 .feedback-card{
+  position: relative;
   width: 570px;
   height: 500px;
   border-radius: 5px;
   margin-right: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 45px;
   padding: 53px 24px 50px 26px;
   border: 1px solid var(--COLOR_LIGHT_GREY);
+  line-height: 34px;
 }
 
 .feedback-card:hover{
   box-shadow: 0px 50px 70px var(--COLOR_LIGHT_GREY);
   cursor: pointer;
   transition: 0.5s;
+}
+
+.feedback-card:hover .feedback-card__quotes-active{
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.feedback-card__quotes-active{
+  position: absolute;
+  left: 26px;
+  opacity: 0;
 }
 
 .feedback-card:last-child{
@@ -85,9 +101,9 @@
 }
 
 .feedback-card__paragraph{
-  margin-bottom: 32px;
+  margin-bottom: 15px;
   font-size: var(--FONT_SIZE_18);
-  max-width: 480px;
+  max-width: 500px;
 }
 .feedback-card__user-preview{
   display: flex;
@@ -121,6 +137,7 @@
 }
 
 .star{
+  height: 20px;
   margin-right: 5px;
 }
 
@@ -160,12 +177,9 @@ margin-right: 0;
   background: url(../backgound-svg/background-3.svg) var(--COLOR_BACKGROUND_PEACH) no-repeat center;
 }
 
-.fifth-section__subscribe-block{
+.subscribe-block{
   position: relative;
   bottom: 90px;
-}
-
-.subscribe-block{
   width: 1170px;
   height: 400px;
   background: var(--COLOR_ORANGE);
