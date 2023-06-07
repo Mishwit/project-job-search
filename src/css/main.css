@@ -47,7 +47,7 @@
 }
 
 .fourth-section__container{
-padding-bottom: 150px;
+padding-bottom: 239px;
 }
 
 .fourth-section__title{
@@ -60,7 +60,6 @@ padding-bottom: 150px;
 .fourth-section__feedback-wrapper{
   display: flex;
   min-width: 1775px;
-  overflow: scroll;
 }
 
 .feedback-card{
@@ -189,8 +188,10 @@ margin-right: 0;
 
 .subscribe-block__title{
   color: var(--COLOR_WHITE);
-  max-width: 500px;
+  max-width: 515px;
   margin-bottom: 50px;
+  line-height: 55px;
+  letter-spacing: 0.02em;
 }
 
 .subscribe-wrapper{
@@ -198,17 +199,20 @@ margin-right: 0;
   justify-content: space-between;
   padding: 5px 5px 5px 0;
   box-shadow: none;
+  max-width: 780px;
 }
 
 .mail-form{
   min-width: 389px;
   gap: 15px;
+  padding: 0 0 0 30px;
 }
 
 .mail-input{
   border: none;
   outline: none;
-  min-width: 355px;
+  min-width: 508px;
+  letter-spacing: 0.05em;
 }
 
 .subscribe-button{
@@ -216,6 +220,7 @@ margin-right: 0;
   gap: 16px;
   font-size: var(--FONT_SIZE_18);
   cursor: pointer;
+  letter-spacing: 0.05em;
 }
 
 .subscribe-block__dots{
@@ -227,5 +232,5 @@ margin-right: 0;
 .subscribe-rectangles{
   position: absolute;
   top: 0px;
-  right: -30px;
+  right: -15px;
 }
