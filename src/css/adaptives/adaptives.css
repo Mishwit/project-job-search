@@ -1,21 +1,25 @@
 @media (max-width: 1840px){
 
   .hero{
-    max-height: 795px;
-  }
-
-  .buttons{
-    height: 60px;
-    width: 200px;
+    max-height: 560px;
   }
 
   .info{
-    max-width: 510px;
+    max-width: 575px;
+  }
+
+  .info__title{
+    font-size: var(--FONT_SIZE_50);
+  }
+
+  .info__subtitle{
+    font-size: var(--FONT_SIZE_16);
+    max-width: 465px;
   }
 
   .search-container{
     max-height: 65px;
-    max-width: 590px;
+    max-width: 575px;
   }
 
   .search-container__search-icon{
@@ -43,21 +47,21 @@
     height: 650px;
     width: 450px;
     top: -90px;
-    right: 20px;
+    right: -40px;
   }
 
   .graphics__ellipse-big{
     height: 600px;
     width: 600px;
-    bottom: 140px;
-    right: -35px;
+    bottom: 55px;
+    right: -115px;
   }
 
   .graphics__ellipse-small{
     height: 425px;
     width: 425px;
-    bottom: 232px;
-    right: 50px;
+    bottom: 140px;
+    right: -28px;
   }
 
   .graphics__flying-icon{
@@ -66,28 +70,28 @@
   }
 
   .google-icon{
-    top: 275px;
-    right: 525px;
+    top: -545px;
+    right: 35px;
   }
 
   .paypal-icon{
-    bottom: 280px;
-    right: -30px;
+    bottom: 435px;
+    left: 485px;
   }
 
   .indeed-icon{
-    top: 110px;
-    right: 410px;
+    top: -870px;
+    right: -80px;
   }
 
   .slack-icon{
-    top: 165px;
-    right: 10px;
+    top: -900px;
+    right: -410px;
   }
 
   .graphics__flying-card{
-    height: 180px;
-    width: 150px;
+    height: 175px;
+    width: 145px;
   }
 
   .flying-card__img-block{
@@ -95,18 +99,27 @@
     width: 130px;
   }
 
+  .flying-card__circle{
+    height: 35px;
+    width: 35px;
+  }
+
   .first-flying-card{
-    top: 508px;
-    right: 450px;
+    top: -565px;
+    right: -5px;
   }
 
   .second-flying-card {
-    top: 245px;
-    right: -55px;
+    top: -1055px;
+    right: -410px;
   }
 
   .second-section{
     min-height: 1665px;
+  }
+
+  .sign-up-block__left-wrapper{
+    margin-right: 45px;
   }
 
   .rectangle{
@@ -134,36 +147,41 @@
     width: 85px;
   }
 
+  input{
+    font-size: var(--FONT_SIZE_14)
+  }
+
+  .mail-input{
+    min-width: 320px;
+  }
+
 }
 
 @media (max-width: 1279px){
-  .container{
-    max-width: 960px;
-  }
 
   .hero{
-    max-height: 765px;
+    max-height: 580px;
   }
 
   .graphics__img{
     height: 550px;
     width: 400px;
-    top: -20px;
-    right: 110px;
+    top: 30px;
+    right: -5px;
   }
 
   .graphics__ellipse-big{
     height: 425px;
     width: 425px;
-    bottom: 155px;
-    right: -10px;
+    bottom: 130px;
+    right: -15px;
     }
 
   .graphics__ellipse-small{
     height: 275px;
     width: 275px;
-    bottom: 230px;
-    right: 65px;
+    bottom: 205px;
+    right: 60px;
   }
 
   .graphics__flying-icon{
@@ -172,23 +190,23 @@
   }
 
   .google-icon{
-    top: 245px;
-    right: 340px;
+    top: -410px;
+    right: 20px;
   }
 
   .paypal-icon{
-    bottom: 295px;
-    right: -10px;
+    bottom: 460px;
+    left: 350px;
   }
 
   .indeed-icon{
-    top: 155px;
-    right: 285px;
+    top: -630px;
+    right: -50px;
   }
 
   .slack-icon{
-    top: 185px;
-    right: 10px;
+    top: -680px;
+    right: -305px;
   }
 
   .graphics__flying-card{
@@ -196,13 +214,21 @@
     width: 140px;
   }
   .first-flying-card{
-    top: 500px;
-    right: 330px;
+    top: -440px;
+    right: -5px;
   }
 
   .second-flying-card {
-    top: 500px;
-    right: -20px;
+    top: -610px;
+    right: -275px;
+  }
+
+  .card-content__middle_title{
+    font-size: var(--FONT_SIZE_20);
+  }
+
+  .card-content__button{
+    width: 80px;
   }
 
   .job-posts{
@@ -210,7 +236,7 @@
   }
 
   .job-posts__container{
-    padding-top: 50px;
+    padding: 50px 10px 0 10px;
   }
 
   .job-posts__cards-wrapper {
@@ -222,9 +248,14 @@
     margin-bottom: 15px;
     padding: 15px 15px 15px 15px;
   }
+
   .second-section{
-    padding-top: 50px;
     min-height: 1485px;
+    padding: 50px 10px 0 10px;
+  }
+
+  .left-wrapper_dots{
+    display: none;
   }
 
   .job-block{
@@ -248,6 +279,19 @@
     right: -205px;
   }
 
+  .third-section__container{
+    padding: 0 10px 0 10px;
+  }
+
+  .fourth-section__container{
+    padding-left: 10px;
+  }
+
+  .fifth-section__container{
+    display: flex;
+    justify-content: center;
+  }
+
   .subscribe-block{
     width: 960px;
   }
@@ -256,6 +300,15 @@
     height: 340px;
     width: 365px;
     }
+
+  .footer-section__nav-container{
+    padding-left: 10px
+  }
+
+  .footer-section__our-contacts{
+    margin-right: 20px;
+    max-width: none;
+  }
 
 }
 
@@ -270,11 +323,17 @@
   }
 
   .hero{
-    min-height: 1039px;
+    min-height: 940px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .header-wrapper{
-    margin-bottom: 85px;
+  }
+
+  .info__title{
+    text-align: center;
+    line-height: 70px;
   }
 
   .menu__list-item{
@@ -292,12 +351,11 @@
   } */
 
   .info{
-    margin-right: 50px;
     align-items: center;
   }
 
   .search-container{
-    max-width: 565px;
+    max-width: 550px;
   }
 
   .search-container__search-icon{
@@ -329,15 +387,15 @@
   .graphics__ellipse-big{
     height: 650px;
     width: 650px;
-    bottom: -110px;
-    right: 15px;
+    bottom: 470px;
+    right: -135px;
   }
 
   .graphics__ellipse-small{
     height: 450px;
     width: 450px;
-    bottom: -5px;
-    right: 115px;
+    bottom: 575px;
+    right: -35px;
   }
 
   .graphics__flying-icon{
@@ -346,23 +404,23 @@
   }
 
   .google-icon{
-    top: 650px;
-    right: 595px;
+    top: -320px;
+    right: 110px;
   }
 
   .paypal-icon{
-    bottom: 95px;
-    right: 45px;
+    bottom: 210px;
+    left: 445px;
   }
 
   .indeed-icon{
-    top: 485px;
-    right: 475px;
+    top: -605px;
+    right: -15px;
   }
 
   .slack-icon{
-    top: 555px;
-    right: 85px;
+    top: -595px;
+    right: -405px;
   }
 
   .graphics__flying-card{
@@ -384,21 +442,28 @@
     width: 25px;
     gap: 0;
     top: 85px;
-
   }
 
   .first-flying-card{
-    top: 820px;
-    right: 515px;
+    top: -455px;
+    right: 105px;
   }
 
   .second-flying-card {
-    top: 645px;
-    right: 5px;
+    top: -735px;
+    right: -405px;
+  }
+
+  .second-section__jobs-categories{
+    min-width: auto;
+  }
+
+  .jobs-group{
+    gap: 25px;
   }
 
   .job-posts{
-    min-height: 650px;
+    min-height: auto;
   }
 
   .job-posts__container{
@@ -409,17 +474,21 @@
     text-align: center;
   }
 
-  .job-posts__cards-wrapper{
+  .job-posts__card-wrapper{
     flex-wrap: wrap;
     margin-bottom: 0px;
   }
 
-  .cards{
+  .card{
     margin-right: 15px;
     margin-bottom: 15px;
     padding: 15px 15px 15px 15px;
-    width: 330px;
+    width: 310px;
     height: 220px;
+  }
+
+  .card-content__middle_subtitle{
+    margin-bottom: 10px;
   }
 
   .scroll-block__text{
@@ -528,34 +597,45 @@
     padding: 50px 0 0 50px;
     height: 300px;
     width: 700px;
-    }
+  }
+
+  .mail-input{
+    min-width: 340px;
+  }
 
   .subscribe-rectangles{
     height: 205px;
     width: 250px;
-    }
+  }
 
   .subscribe-block__dots {
     bottom: -70px;
     left: -160px;
-    }
+  }
 
-    .footer-section{
-      min-height: 435px;
-      padding-top: 50px;
-    }
+  .footer-section{
+    min-height: 435px;
+    padding-top: 50px;
+  }
 
-    .footer-section__our-contacts{
-      margin-right: 35px;
-    }
+  .footer-section__nav-wrapper {
+    margin-right: 0;
+  }
 
-    footer .menu{
-      margin-right: 30px;
-    }
+  .footer-section__our-contacts{
+    margin-right: 15px;
+    min-width: 200px;
+  }
 
-    footer .menu__list-item{
-      margin-bottom: 25px;
-    }
+  footer .menu{
+    margin-right: 15px;
+    gap: 15px;
+  }
+
+  footer .menu__list-item{
+    margin-bottom: 0;
+    line-height: 28px;
+  }
 
 }
 

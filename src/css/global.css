@@ -33,10 +33,11 @@
   --FONT_SIZE_24: 24px;
   --FONT_SIZE_30: 30px;
   --FONT_SIZE_36: 36px;
+  --FONT_SIZE_44: 44px;
   --FONT_SIZE_48: 48px;
   --FONT_SIZE_50: 50px;
   --FONT_SIZE_72: 72px;
-  --FONT_SIZE_44: 44px;
+
 
   --FONT_WEIGHT_700: 700;
 }
@@ -64,7 +65,7 @@ input{
 }
 
 header{
-  padding: 50px 0 125px 0;
+  padding: 50px 10px 125px 10px;
 }
 
 .container{
