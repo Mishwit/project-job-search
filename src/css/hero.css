@@ -1,8 +1,7 @@
 .hero{
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   max-height: 677px;
-  /* overflow: hidden; */
 }
 
 .hero__ellipse-big{

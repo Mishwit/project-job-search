@@ -1,5 +1,5 @@
 .job-posts{
-  background: url(../backgound-svg/2-background.svg) no-repeat var(--COLOR_DARK_BLUE) center;
+  background:var(--COLOR_DARK_BLUE) center;
 }
 
 .job-posts__container{

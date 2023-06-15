@@ -155,12 +155,23 @@
     min-width: 320px;
   }
 
+  .footer-dots-left{
+    bottom: -110px;
+    left: -55px;
+  }
+
+  .footer-dots-right{
+    top: -200px;
+    right: -55px;
+  }
+
 }
 
 @media (max-width: 1279px){
 
   .hero{
     max-height: 580px;
+    overflow: hidden;
   }
 
   .graphics__img{
@@ -310,6 +321,15 @@
     max-width: none;
   }
 
+  .footer-dots-left{
+    bottom: -95px;
+    left: 5px;
+  }
+
+  .footer-dots-right{
+    right: 5px;
+  }
+
 }
 
 @media (max-width: 1023px){
@@ -326,9 +346,7 @@
     min-height: 940px;
     flex-direction: column;
     align-items: center;
-  }
-
-  .header-wrapper{
+    justify-content: normal;
   }
 
   .info__title{
@@ -557,7 +575,8 @@
   }
 
   .right-wrapper__vector-3{
-    top: 95px;
+    top: -45px;
+    right: -225px;
   }
 
   .right-wrapper__vector-4{
@@ -632,14 +651,28 @@
     gap: 15px;
   }
 
+  footer .menu__list{
+    gap: 10px;
+  }
+
   footer .menu__list-item{
+    font-size: var(--FONT_SIZE_14);
     margin-bottom: 0;
     line-height: 28px;
+  }
+
+  .footer-dots-left{
+    display: none;
+  }
+
+  .footer-dots-right{
+    display: none;
   }
 
 }
 
 @media (max-width: 767px){
+
   .container{
     max-width:600px;
   }
@@ -686,7 +719,7 @@
   } */
 
   .hero{
-    min-height: 1020px;
+    min-height: 940px;
   }
 
   .header-wrapper{
@@ -733,55 +766,57 @@
   .graphics__ellipse-big{
     height: 650px;
     width: 650px;
-    bottom: -110px;
-    right: -35px;
+    bottom: 470px;
+    right: -135px;
   }
 
   .graphics__ellipse-small{
     height: 450px;
     width: 450px;
-    bottom: -10px;
-    right: 65px;
+    bottom: 575px;
+    right: -35px;
   }
 
   .google-icon{
-    top: 650px;
-    right: 540px;
+    top: -280px;
+    right: 90px;
   }
 
   .paypal-icon{
-    bottom: 30px;
-    right: 15px;
+    bottom: 145px;
+    left: 425px;
   }
 
   .indeed-icon{
-    top: 485px;
-    right: 435px;
+    top: -565px;
+    right: -5px;
   }
 
   .slack-icon{
-    top: 520px;
-    right: 65px;
+    top: -590px;
+    right: -375px;
   }
 
   .graphics__flying-card{
     height: 170px;
     width: 140px;
   }
+
   .first-flying-card{
-    top: 800px;
-    right: 460px;
+    top: -405px;
+    right: 65px;
   }
 
   .second-flying-card {
-    right: -5px;
+    top: -690px;
+    right: -370px;
   }
 
   .job-posts__title{
     font-size: var(--FONT_SIZE_30);
   }
 
-  .job-posts__cards-wrapper{
+  .job-posts__card-wrapper{
     justify-content: center;
   }
 
@@ -841,8 +876,10 @@
 
   .feedback-card{
     padding: 25px 25px 25px 25px;
-    width: 385px;
-    height: 400px;
+  }
+
+  .profile-img{
+    margin-right: 25px;
   }
 
   .subscribe-block{
@@ -856,7 +893,7 @@
   }
 
   .subscribe-block__dots{
-    left: -185px;
+    display: none;
   }
 
   .subscribe-rectangles{
@@ -864,17 +901,25 @@
     width: 215px;
   }
 
+  .mail-input{
+    min-width: 355px;
+  }
+
   .footer-section__nav-container{
-    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 0px;
   }
 
   .footer-section__our-contacts{
+    align-items: center;
     margin-right: 35px;
     margin-bottom: 30px;
   }
 
   footer .menu{
-    margin-right: 25px;
+    margin-bottom: 30px;
+    gap: 70px;
   }
 
   .footer-section__news{
@@ -896,7 +941,7 @@
   }
 
   .container{
-    max-width: 250px;
+    max-width: 345px;
   }
 
   .hero{
@@ -904,12 +949,13 @@
   }
 
   .info__title{
-    max-width: 250px;
+    max-width: 345px;
     text-align: center;
+    line-height: 50px;
   }
 
   .info__subtitle{
-    max-width: 250px;
+    max-width: 345px;
     text-align: center;
     font-size: var(--FONT_SIZE_14);
   }
@@ -919,7 +965,7 @@
   }
 
   .search-container{
-    max-width: 250px;
+    max-width: 260px;
     max-height: 50px;
     flex-wrap: wrap;
     gap: 10px;
@@ -934,12 +980,15 @@
   }
 
   .search-input{
-    max-width: 65px;
+    min-width: 205px;
     min-height: 50px;
   }
 
   .search-container__location-form{
     padding: 0 5px 0 5px;
+    flex-wrap: wrap;
+    background-color: var(--COLOR_WHITE);
+    border-radius: 10px;
   }
 
   .search-container__location-icon{
@@ -947,11 +996,15 @@
   }
 
   .location-input{
-    max-width: 75px;
+    min-width: 205px;
     min-height: 50px;
   }
 
-  .right-wrapper{
+  .line{
+    display: none;
+  }
+
+  .graphics{
     display: none;
   }
 
@@ -1036,22 +1089,27 @@
   }
 
   .third-section__img{
-    height: 375px;
-    width: 235px;
+    height: 500px;
+    width: 345px;
   }
 
   .play-button{
-    bottom: 145px;
-    left: 65px;
+    bottom: 35%;
+    left: 35%;
+
   }
 
   .fourth-section{
     margin-bottom: 50px;
   }
 
+  .fourth-section__container{
+    padding-bottom: 50px;
+  }
+
   .fourth-section__title{
-    max-width: 300px;
-    font-size: var(--FONT_SIZE_44);
+    max-width: 345px;
+    font-size: var(--FONT_SIZE_30);
     margin-bottom: 30px;
   }
 
@@ -1060,10 +1118,14 @@
   }
 
   .feedback-card{
+    width: 325px;
     padding: 10px 10px 10px 10px;
-    width: 250px;
-    height: 320px;
     margin-bottom: 30px;
+
+  }
+
+  .feedback-card:hover{
+    box-shadow: 0px 15px 20px var(--COLOR_LIGHT_GREY);
   }
 
   .feedback-card__paragraph{
@@ -1082,15 +1144,23 @@
     font-size: var(--FONT_SIZE_14);
   }
 
+  .feedback-card__quotes-active{
+    left: 10px;
+  }
+
+
   .profile-img{
     height: 100px;
     width: 100px;
   }
 
   .subscribe-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 25px 10px 0 10px;
-    height: 225px;
-    width: 250px;
+    height: 250px;
+    width: 345px;
     bottom: 0;
   }
 
@@ -1112,10 +1182,16 @@
     max-width: 300px;
     margin-bottom: 10px;
     text-align: center;
+    line-height: 30px;
+  }
+
+  .mail-form{
+    min-width: auto;
+    flex-wrap: wrap;
   }
 
   .mail-input{
-    min-width: 215px;
+    min-width: 250px;
   }
 
   .subscribe-block__dots{
@@ -1165,11 +1241,11 @@
 
 @media (max-width: 413px){
   p{
-    font-size: var(--FONT_SIZE_12);
+    font-size: var(--FONT_SIZE_14);
   }
 
   a{
-    font-size: var(--FONT_SIZE_12);
+    font-size: var(--FONT_SIZE_14);
   }
 
   .title{
@@ -1177,23 +1253,29 @@
   }
 
   .container{
-    max-width: 180px;
+    max-width: 280px;
   }
 
   header .logo{
     font-size: var(--FONT_SIZE_48);
   }
 
+  .hero{
+    min-height: 500px;
+  }
+
   .info__title{
-    max-width: 180px;
+    max-width: 275px;
   }
 
   .info__subtitle{
-    max-width: 180px;
+    max-width: 275px;
+    font-size: var(--FONT_SIZE_12);
   }
 
   .search-container{
-    max-width: 185px;
+    max-width: 220px;
+    justify-content: center;
   }
 
   .search-input{
@@ -1209,37 +1291,37 @@
   }
 
   .buttons__search-button{
-    min-width: 185px;
+    min-width: 210px;
   }
 
-  .cards{
-    width: 185px;
+  .card{
+    width: 245px;
     padding: 15px 10px 15px 10px;
   }
 
-  .cards-content__right-side{
+  .card-content__right-side{
     margin: 10px -5px 0 0;
   }
 
-  .cards-content__title{
+  .card-content__title{
+    font-size: var(--FONT_SIZE_20);
+  }
+
+  .card-content__middle_title{
+    font-size: var(--FONT_SIZE_18);
+  }
+
+  .card-content__middle_subtitle{
     font-size: var(--FONT_SIZE_14);
   }
 
-  .cards-content__middle_title{
-    font-size: var(--FONT_SIZE_14);
-  }
-
-  .cards-content__middle_subtitle{
-    font-size: var(--FONT_SIZE_12);
-  }
-
-  .cards-content__bottom{
+  .card-content__bottom{
     flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
   }
 
-  .cards-content__button-text{
+  .card-content__button-text{
     font-size: var(--FONT_SIZE_12);
   }
 
@@ -1265,18 +1347,17 @@
   }
 
   .third-section__img{
-    height: 300px;
-    width: 185px;
+    height: 350px;
+    width: 250px;
   }
 
   .play-button{
-    bottom: 95px;
-    left: 40px;
+    bottom: 35%;
+    left: 30%;
   }
 
   .feedback-card{
-    width: 185px;
-    height: 420px;
+    width: 260px;
   }
 
   .feedback-card__user-preview{
@@ -1290,11 +1371,16 @@
 
   .profile-img{
     margin-right: 0;
-    margin-bottom: 15px;
+    margin-bottom: var(--FONT_SIZE_18);
+  }
+
+  .feedback-card__username{
+    font-size: 18px;
   }
 
   .feedback-card__profession{
     margin-bottom: 5px;
+    font-size: var(--FONT_SIZE_16);
   }
 
   .scroll-circle{
@@ -1304,23 +1390,28 @@
   }
 
   .subscribe-block{
-    height: 210px;
-    width: 185px;
+    height: 250px;
+    width: 280px;
   }
+
+  .subscribe-wrapper{
+    min-width: 260px;
+  }
+
   .subscribe-block__title{
-    font-size: var(--FONT_SIZE_14);
+    font-size: var(--FONT_SIZE_16);
   }
 
   .subscribe-button{
-    width: 165px;
+   max-width: 165px;
   }
 
   .mail-form{
-    min-width: 160px;
+     max-width: 185px;
   }
 
   .mail-input {
-    min-width: 155px
+    min-width: 200px;
   }
 
   .footer-section{
@@ -1339,7 +1430,7 @@
   }
 
   .news-paragraph{
-    font-size: var(--FONT_SIZE_14);
+    font-size: var(--FONT_SIZE_16);
   }
 
 }

@@ -1,5 +1,6 @@
 .second-section{
   padding-top: 150px;
+  overflow: hidden;
 }
 
 .second-section__title{
