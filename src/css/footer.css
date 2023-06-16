@@ -51,7 +51,20 @@ footer .logo{
 
 .social-media__icons:hover{
   cursor: pointer;
+}
 
+.icon-unactive{
+  position: relative;
+  top: -34px;
+  opacity: 1;
+}
+
+.icon-active:hover{
+  opacity: 1;
+}
+
+.icon-unactive:hover{
+  opacity: 0;
 }
 
 .footer-section__nav-wrapper{
