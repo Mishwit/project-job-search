@@ -1,0 +1,199 @@
+
+.subscribe {
+  min-height: 493px;
+  background: url(../backgound-svg/background-3.svg) var(--COLOR_BACKGROUND_PEACH) no-repeat center;
+}
+
+.subscribe-block {
+  position: relative;
+  bottom: 90px;
+  width: 1170px;
+  height: 400px;
+  background: var(--COLOR_ORANGE);
+  border-radius: 20px;
+  padding: 85px 0 50px 150px;
+}
+
+.subscribe-block__title {
+  color: var(--COLOR_WHITE);
+  max-width: 515px;
+  margin-bottom: 50px;
+  line-height: 55px;
+  letter-spacing: 0.02em;
+}
+
+.subscribe-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px 5px 0;
+  box-shadow: none;
+  max-width: 780px;
+}
+
+.mail-form {
+  min-width: 389px;
+  gap: 15px;
+  padding: 2px 2px 2px 30px;
+  background-color: var(--COLOR_WHITE);
+}
+
+.mail-input {
+  border: none;
+  outline: none;
+  min-width: 508px;
+  letter-spacing: 0.05em;
+}
+
+.subscribe-button {
+  height: 60px;
+  gap: 16px;
+  font-size: var(--FONT_SIZE_18);
+  cursor: pointer;
+  letter-spacing: 0.05em;
+}
+
+.subscribe-block__dots {
+  position: absolute;
+  bottom: -70px;
+  left: -100px;
+}
+
+.subscribe-rectangles {
+  position: absolute;
+  top: 0px;
+  right: -15px;
+}
+
+@media (max-width: 1840px) {
+
+  .mail-input {
+    min-width: 320px;
+  }
+}
+
+@media (max-width: 1279px) {
+
+  .subscribe__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .subscribe-block {
+    width: 960px;
+  }
+
+  .subscribe-rectangles {
+    height: 340px;
+    width: 365px;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .subscribe {
+    min-height: 300px;
+  }
+
+  .subscribe-block {
+    padding: 50px 0 0 50px;
+    height: 300px;
+    width: 700px;
+  }
+
+  .mail-form{
+    padding: 2px 2px 2px 30px;
+    width: auto;
+  }
+
+  .mail-input {
+    min-width: 340px;
+  }
+
+  .subscribe-rectangles {
+    height: 205px;
+    width: 250px;
+  }
+
+  .subscribe-block__dots  {
+    bottom: -70px;
+    left: -160px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .subscribe-block {
+    padding: 50px 0 0 25px;
+    height: 300px;
+    width: 600px;
+  }
+
+  .subscribe-wrapper {
+    max-width: 565px;
+  }
+
+  .subscribe-block__dots {
+    display: none;
+  }
+
+  .subscribe-rectangles {
+    height: 175px;
+    width: 215px;
+  }
+
+  .mail-input {
+    min-width: 333px;
+  }
+}
+
+@media (max-width: 639px) {
+
+  .subscribe-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 10px 0 10px;
+    height: 250px;
+    width: 345px;
+    bottom: 0;
+  }
+
+  .subscribe-button {
+    width: 250px;
+    border:2px solid var(--COLOR_WHITE);
+  }
+
+  .subscribe-rectangles {
+    display: none;
+  }
+
+  .subscribe-block__title {
+    font-size: var(--FONT_SIZE_20);
+    max-width: 300px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .mail-form {
+    min-width: auto;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .mail-input {
+    min-width: 250px;
+  }
+
+  .subscribe-block__dots {
+    left: -195px;
+    bottom: 25px;
+  }
+
+  .subscribe {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 413px) {
+
+}

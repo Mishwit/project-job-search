@@ -1,0 +1,137 @@
+.post-a-job {
+  padding-top: 130px;
+  margin-bottom: 250px;
+}
+
+.post-a-job__background {
+  background:url(../backgound-svg/background-3.svg) var(--COLOR_BACKGROUND_PEACH) no-repeat center;
+}
+
+.post-a-job__container {
+  display: flex;
+}
+
+.post-a-job__left-wrapper {
+  position: relative;
+  top: 100px;
+  margin-right: 85px;
+}
+
+.play-button {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url(../icons/play-button.svg) rgba(255, 255, 255, 0.7) no-repeat center;
+  border-radius: 50px;
+  bottom: 45%;
+  left: 40%;
+  border: none;
+}
+
+.post-a-job__right-wrapper {
+  padding-top: 190px;
+  max-width: 425px;
+  font-size: var(--FONT_SIZE_18);
+}
+
+.post-a-job__title {
+  margin-bottom: 50px;
+  line-height: 55px;
+  letter-spacing: 0.02em;
+}
+
+.post-a-job__subtitle {
+  max-width: 360px;
+  margin-bottom: 30px;
+  line-height: 34px;
+}
+
+@media (max-width: 1840px) {
+
+
+}
+
+@media (max-width: 1279px) {
+
+  .post-a-job__container {
+    padding: 0 10px 0 10px;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .post-a-job {
+    margin-bottom: 200px;
+  }
+  .post-a-job__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .post-a-job__right-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .post-a-job__left-wrapper {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .post-a-job__left-wrapper {
+    top: 50px;
+  }
+}
+
+@media (max-width: 639px) {
+
+  .post-a-job {
+    padding-top: 0;
+    margin-bottom: 50px;
+    min-height: 720px;
+  }
+
+  .post-a-job__title {
+    margin-bottom: 30px;
+  }
+
+  .post-a-job__subtitle {
+    max-width: 250px;
+  }
+
+  .post-a-job__img {
+    height: 500px;
+    width: 345px;
+  }
+
+  .play-button {
+    bottom: 35%;
+    left: 35%;
+  }
+}
+
+@media (max-width: 413px) {
+
+  .post-a-job {
+    min-height: 620px;
+  }
+
+  .post-a-job__subtitle {
+    margin-bottom: 30px;
+  }
+
+  .post-a-job__img {
+    height: 350px;
+    width: 250px;
+  }
+
+  .play-button {
+    bottom: 35%;
+    left: 30%;
+  }
+}

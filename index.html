@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="./src/css/global.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
     <link rel="stylesheet" href="./src/css/hero.css" />
-    <link rel="stylesheet" href="./src/css/main.css" />
-    <link rel="stylesheet" href="./src/css/main-job-posts.css" />
-    <link rel="stylesheet" href="./src/css/main-second-section.css" />
+    <link rel="stylesheet" href="./src/css/job-posts.css" />
+    <link rel="stylesheet" href="./src/css/categories&sign-up.css" />
+    <link rel="stylesheet" href="./src/css/post-a-job.css" />
+    <link rel="stylesheet" href="./src/css/feedback.css" />
+    <link rel="stylesheet" href="./src/css/subscribe.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
-    <link rel="stylesheet" href="./src/css/adaptives/adaptives.css" />
   </head>
 
   <body>
@@ -72,38 +73,40 @@
           <div class="search-container">
             <!-- Search form -->
             <form class="search-container__search-form" method="get">
-              <img
-                class="search-container__search-icon"
-                src="./src/icons/search-icon.svg"
-                alt="search"
-              />
-              <input
-                class="search-input"
-                type="text"
-                placeholder="Job title or Keyword"
-                name="text"
-                value=""
-              />
-            </form>
+              <div class="search-area">
+                <img
+                  class="search-container__search-icon"
+                  src="./src/icons/search-icon.svg"
+                  alt="search"
+                />
 
-            <!-- Search form -->
-            <img class="line" src="./src/icons/line.svg" alt="icon" />
-            <form class="search-container__location-form" method="get">
-              <img
-                class="search-container__location-icon"
-                src="./src/icons/location-icon.svg"
-                alt="location"
-              />
+                <input
+                  class="search-input"
+                  type="text"
+                  placeholder="Job title or Keyword"
+                  name="text"
+                  value=""
+                />
+              </div>
 
-              <input
-                class="location-input"
-                type="text"
-                placeholder="Location"
-                name="text"
-                value=""
-              />
+              <span class="line"></span>
 
-              <!-- Search button -->
+              <div class="search-area">
+                <img
+                  class="search-container__location-icon"
+                  src="./src/icons/location-icon.svg"
+                  alt="location"
+                />
+
+                <input
+                  class="location-input"
+                  type="text"
+                  placeholder="Location"
+                  name="text"
+                  value=""
+                />
+              </div>
+
               <button
                 type="submit"
                 class="buttons buttons__search-button"
@@ -112,6 +115,12 @@
                 Search
               </button>
             </form>
+
+            <!-- Search form -->
+
+            <!-- <form class="search-container__location-form" method="get">
+
+            </form> -->
           </div>
         </div>
 
@@ -343,10 +352,10 @@
       </section>
 
       <!-- Second section -->
-      <section class="second-section">
-        <div class="container second-section__container">
-          <h2 class="second-section__title title">Job Categories</h2>
-          <div class="second-section__jobs-categories">
+      <section class="categories">
+        <div class="container categories__container">
+          <h2 class="categories__title title">Job Categories</h2>
+          <div class="categories__jobs-categories">
             <!-- Job card -->
             <div class="jobs-group">
               <a href="#" class="content-container__job-blocks job-block">
@@ -495,7 +504,7 @@
           </div>
 
           <!-- Sign up block -->
-          <div class="second-section__sign-up-block">
+          <div class="categories__sign-up-block">
             <!-- Sign up block left wrapper -->
             <div class="sign-up-block__left-wrapper">
               <img
@@ -542,42 +551,38 @@
         </div>
       </section>
       <!-- Third section -->
-      <section class="third-section">
-        <div class="third-section__background">
-          <div class="container third-section__container">
+      <section class="post-a-job">
+        <div class="post-a-job__background">
+          <div class="container post-a-job__container">
             <!-- Third section left wrapper -->
-            <div class="third-section__left-wrapper">
+            <div class="post-a-job__left-wrapper">
               <img
-                class="third-section__img"
-                src="./src/img/third-section-img.png"
+                class="post-a-job__img"
+                src="./src/img/post-a-job-img.png"
                 alt=""
               />
               <button class="play-button"></button>
             </div>
             <!-- Third section right wrapper -->
-            <div class="third-section__right-wrapper">
-              <h2 class="third-section__title title">
+            <div class="post-a-job__right-wrapper">
+              <h2 class="post-a-job__title title">
                 Post a Job for UX Designer
               </h2>
-              <p class="third-section__subtitle">
+              <p class="post-a-job__subtitle">
                 Create an account so you can get job information that suits you,
                 and you can apply the salary your demand.
               </p>
-              <a class="third-section__buttons buttons" href="#">
-                Post a Job
-              </a>
+              <a class="post-a-job__buttons buttons" href="#"> Post a Job </a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Fourth-section -->
-      <section class="fourth-section">
-        <div class="container fourth-section__container">
-          <h2 class="fourth-section__title title">
-            Great Feedback From Candidates
-          </h2>
-          <div class="fourth-section__feedback-wrapper">
+      <!-- feedback -->
+      <section class="feedback">
+        <div class="container feedback__container">
+          <h2 class="feedback__title title">Great Feedback From Candidates</h2>
+          <div class="feedback__feedback-wrapper">
             <!-- Feedback card -->
             <div class="feedback-wrapper__card feedback-card">
               <div class="feedback-card__title">
@@ -718,10 +723,10 @@
         </div>
       </section>
 
-      <!-- Fifth-section -->
-      <section class="fifth-section">
-        <div class="container fifth-section__container">
-          <div class="fifth-section__subscribe-block subscribe-block">
+      <!-- subscribe -->
+      <section class="subscribe">
+        <div class="container subscribe__container">
+          <div class="subscribe__subscribe-block subscribe-block">
             <img
               class="subscribe-rectangles"
               src="./src/backgound-svg/subscribe-rectangles.svg"
