@@ -30,14 +30,6 @@ display: none;
   font-size: var(--FONT_SIZE_20);
 }
 
-@media (max-width: 1840px) {
-
-}
-
-@media (max-width: 1279px) {
-
-}
-
 @media (max-width: 1023px) {
 
   header {
@@ -88,10 +80,6 @@ display: none;
   .buttons__cta-button {
     display: none;
   }
-}
-
-@media (max-width: 639px) {
-
 }
 
 @media (max-width: 413px) {

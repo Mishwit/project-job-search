@@ -28,7 +28,6 @@
   margin-bottom: 40px;
   font-size: var(--FONT_SIZE_18);
   line-height: 34px;
-  letter-spacing: 0.02em;
 }
 
 .search-container  {
@@ -260,13 +259,16 @@ font-size: var(--FONT_SIZE_12);
     max-width: 465px;
   }
 
-  .search-container__search-form{
-    width: 575px;
+  .search-input{
+    max-width: 167px;
   }
 
-  .buttons__search-button {
-    height: 55px;
-    width: 150px;
+  .location-input{
+    max-width: 130px;
+  }
+
+  .search-container__search-form{
+    width: 575px;
   }
 
   .graphics__img {
@@ -427,11 +429,6 @@ font-size: var(--FONT_SIZE_12);
     margin-right: 20px;
   }
 
-  .buttons {
-    height: 60px;
-    width: 180px;
-  }
-
   .info {
     align-items: center;
   }
@@ -450,11 +447,6 @@ font-size: var(--FONT_SIZE_12);
 
   .search-container__location-form {
     padding: 0 10px 0 10px;
-  }
-
-  .buttons__search-button {
-    height: 60px;
-    width: 140px;
   }
 
   .graphics__img {
@@ -544,62 +536,14 @@ font-size: var(--FONT_SIZE_12);
     display: flex;
     justify-content: center;
   }
-  .buttons__search-button {
-    height: 60px;
-    width: 140px;
-  }
-
-  .graphics__img {
-    top: 28px;
-    right: 0;
-  }
-
-  .graphics__ellipse-big {
-    height: 650px;
-    width: 650px;
-    bottom: 470px;
-    right: -135px;
-  }
-
-  .graphics__ellipse-small {
-    height: 450px;
-    width: 450px;
-    bottom: 575px;
-    right: -35px;
-  }
-
-  .google-icon {
-    top: -280px;
-    right: 90px;
-  }
-
-  .paypal-icon {
-    bottom: 145px;
-    left: 425px;
-  }
-
-  .indeed-icon {
-    top: -565px;
-    right: -5px;
-  }
-
-  .slack-icon {
-    top: -590px;
-    right: -375px;
-  }
 
   .graphics__flying-card {
     height: 170px;
     width: 140px;
   }
 
-  .first-flying-card {
-    top: -405px;
-    right: 65px;
-  }
-
   .second-flying-card  {
-    top: -690px;
+    top: -750px;
     right: -370px;
   }
 }

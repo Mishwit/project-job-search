@@ -46,7 +46,7 @@ html {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-p,a,input {
+p, a, input, button, span {
   font-family: 'Axiforma';
   letter-spacing: 0.02em;
 }
@@ -65,6 +65,17 @@ input {
   border-radius: 10px;
 }
 
+button{
+  cursor: pointer;
+}
+
+button:hover{
+  color: var(--COLOR_DARK);
+  transition: 0.2s;
+}
+
+
+
 header {
   padding: 50px 10px 125px 10px;
 }
@@ -80,7 +91,6 @@ header {
   font-weight: var(--FONT_WEIGHT_700);
   font-size: var(--FONT_SIZE_50);
   line-height: 57px;
-  letter-spacing: 0.02em;
 }
 
 .black-txt {
@@ -129,16 +139,9 @@ header {
   transition: 0.3s;
 }
 
-@media (max-width: 1840px) {
 
-  input {
-    font-size: var(--FONT_SIZE_14)
-  }
-}
 
-@media (max-width: 1279px) {
 
-}
 
 @media (max-width: 1023px) {
   .container {

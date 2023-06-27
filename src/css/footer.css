@@ -1,6 +1,5 @@
 .footer-section {
   padding-top: 112px;
-  letter-spacing: 0.02em;
 }
 
 footer .menu {
@@ -131,6 +130,11 @@ footer .menu__list-item:last-child {
   line-height: 20px;
 }
 
+.news-paragraph:hover{
+  transition: 0.2s;
+  color: var(--COLOR_ORANGE);
+}
+
 .news-date {
   font-family: "Axiforma";
   font-weight: 600;
@@ -153,7 +157,6 @@ footer .menu__list-item:last-child {
   display: flex;
   justify-content: center;
   line-height: 30px;
-  letter-spacing: 0.02em;
 }
 
 .footer-dots-left {
@@ -301,8 +304,4 @@ footer .menu__list-item:last-child {
   .footer-dots-right {
     display: none;
   }
-}
-
-@media (max-width: 413px) {
-
 }

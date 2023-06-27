@@ -159,12 +159,36 @@
   line-height: 39px;
 }
 
-@media (max-width: 1840px) {
+.scroll-block__text:hover{
+  color: var(--COLOR_ORANGE);
+  transition: 0.2s;
+}
 
+.arrow{
+  opacity: 1;
+}
 
+.arrow-active{
+  opacity: 0;
+  position: relative;
+  right: 28px;
+}
+
+.arrow:hover {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.arrow-active:hover {
+  opacity: 1;
+  transition: 0.2s
 }
 
 @media (max-width: 1279px) {
+
+  .card{
+    padding: 15px 25px 20px 20px;
+  }
 
   .card-content__middle_title {
     font-size: var(--FONT_SIZE_20);
@@ -181,8 +205,6 @@
   .job-posts__container {
     padding: 50px 10px 0 10px;
   }
-
-
 }
 
 @media (max-width: 1023px) {
@@ -230,11 +252,6 @@
   .job-posts__card-wrapper {
     justify-content: center;
   }
-
-}
-
-@media (max-width: 639px) {
-
 
 }
 
