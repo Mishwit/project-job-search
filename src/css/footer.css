@@ -53,17 +53,23 @@ footer .logo {
 }
 
 .icon-unactive {
-  position: relative;
-  top: -34px;
   opacity: 1;
 }
 
-.icon-active:hover {
-  opacity: 1;
+.icon-active{
+  position: relative;
+  top: -34px;
+  opacity: 0;
 }
 
 .icon-unactive:hover {
   opacity: 0;
+  transition: 0.2s;
+}
+
+.icon-active:hover {
+  opacity: 1;
+  transition: 0.2s;
 }
 
 .footer-section__nav-wrapper {

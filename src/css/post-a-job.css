@@ -18,14 +18,37 @@
 }
 
 .play-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 100px;
   height: 100px;
-  background: url(../icons/play-button.svg) rgba(255, 255, 255, 0.7) no-repeat center;
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 50px;
   bottom: 45%;
   left: 40%;
   border: none;
+}
+
+.play-button-unactive{
+  opacity: 1;
+}
+
+.play-button-active{
+  position: absolute;
+  opacity: 0;
+}
+
+.play-button:hover .play-button-unactive{
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.play-button:hover .play-button-active{
+  opacity: 1;
+  transition: 0.2s;
 }
 
 .post-a-job__right-wrapper {
