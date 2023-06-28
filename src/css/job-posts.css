@@ -152,7 +152,6 @@
 }
 
 .scroll-block__text {
-  margin-right: 15px;
   color: var(--COLOR_WHITE);
   font-size: var(--FONT_SIZE_24);
   letter-spacing: 0.05em;
@@ -171,17 +170,17 @@
 .arrow-active{
   opacity: 0;
   position: relative;
-  right: 28px;
+  right: 35px;
 }
 
-.arrow:hover {
+.scroll-block__text:hover .arrow {
   opacity: 0;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
-.arrow-active:hover {
+.scroll-block__text:hover .arrow-active {
   opacity: 1;
-  transition: 0.2s
+  transition: 0.5s
 }
 
 @media (max-width: 1279px) {

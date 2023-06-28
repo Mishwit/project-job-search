@@ -32,25 +32,6 @@
   border: none;
 }
 
-.play-button-unactive{
-  opacity: 1;
-}
-
-.play-button-active{
-  position: absolute;
-  opacity: 0;
-}
-
-.play-button:hover .play-button-unactive{
-  opacity: 0;
-  transition: 0.2s;
-}
-
-.play-button:hover .play-button-active{
-  opacity: 1;
-  transition: 0.2s;
-}
-
 .post-a-job__right-wrapper {
   padding-top: 190px;
   max-width: 425px;

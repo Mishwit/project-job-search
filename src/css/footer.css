@@ -267,7 +267,6 @@ footer .menu__list-item:last-child {
 
   footer .menu {
     margin-bottom: 30px;
-    gap: 70px;
   }
 
   .footer-section__news {
@@ -283,7 +282,7 @@ footer .menu__list-item:last-child {
   }
 
   footer .menu {
-    text-align: center;
+    text-align: left;
     margin-right: 0;
   }
 

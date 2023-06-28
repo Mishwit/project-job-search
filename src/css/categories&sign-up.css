@@ -46,7 +46,7 @@
   background: var(--COLOR_BACKGROUND_PEACH);
   border-radius: 50px;
   margin-bottom: 30px;
-  transition: background-color 0.2s;
+  transition: background-color 0.5s;
 }
 
 .job-block:hover .job-block__circle {
@@ -62,7 +62,7 @@
 
 .job-block__img {
   opacity: 1;
-  transition: opacity 0.2s;
+  transition: opacity 0.5s;
 }
 
 .job-block:hover .job-block__img {
@@ -78,7 +78,6 @@
 .job-block:hover .job-block__img-active {
   opacity: 1;
 }
-
 
 .job-block__img-active:hover {
   display: block;

@@ -70,11 +70,9 @@ button{
 }
 
 button:hover{
-  color: var(--COLOR_DARK);
-  transition: 0.2s;
+  background-color: var(--COLOR_DARK);
+  transition: 0.5s;
 }
-
-
 
 header {
   padding: 50px 10px 125px 10px;
@@ -136,12 +134,8 @@ header {
 
 .nav-link:hover {
   color: var(--COLOR_ORANGE);
-  transition: 0.3s;
+  transition: 0.5s;
 }
-
-
-
-
 
 @media (max-width: 1023px) {
   .container {

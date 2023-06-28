@@ -54,8 +54,6 @@
 
 .subscribe-button:hover{
   box-shadow: 0 0 0;
-  color: var(--COLOR_DARK);
-  transition: 0.2s;
 }
 
 .subscribe-block__dots {
@@ -69,27 +67,6 @@
   top: 0px;
   right: -15px;
 }
-
-.telegram{
-  opacity: 1;
-}
-
-.telegram-active{
-  position: relative;
-  right: 44px;
-  opacity: 0;
-}
-
-.subscribe-button:hover .telegram{
-  opacity: 0;
-  transition: 0.2s
-}
-
-.subscribe-button:hover .telegram-active{
-  opacity: 1;
-  transition: 0.2s;
-}
-
 
 @media (max-width: 1840px) {
 
@@ -169,7 +146,7 @@
   }
 
   .mail-input {
-    min-width: 333px;
+    min-width: 293px;
   }
 }
 
@@ -209,7 +186,7 @@
   }
 
   .mail-input {
-    min-width: 250px;
+    min-width: 220px;
   }
 
   .subscribe-block__dots {
