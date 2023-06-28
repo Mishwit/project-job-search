@@ -20,6 +20,7 @@
   display: flex;
   margin-bottom: 60px;
   gap: 30px;
+  justify-content: center;
 }
 
 .card {
@@ -202,7 +203,7 @@
   }
 
   .job-posts__container {
-    padding: 50px 10px 0 10px;
+    padding: 95px 20px 0 20px;
   }
 }
 
@@ -239,6 +240,7 @@
 
   .scroll-block__text {
     margin-bottom: 10px;
+    font-size: var(--FONT_SIZE_20);
   }
 }
 
