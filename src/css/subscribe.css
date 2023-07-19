@@ -1,7 +1,7 @@
-
 .subscribe {
   min-height: 493px;
-  background: url(../backgound-svg/background-3.svg) var(--COLOR_BACKGROUND_PEACH) no-repeat center;
+  background: url(../backgound-svg/background-3.svg)
+    var(--COLOR_BACKGROUND_PEACH) no-repeat center;
 }
 
 .subscribe-block {
@@ -33,7 +33,7 @@
 .mail-form {
   min-width: 389px;
   gap: 15px;
-  padding: 2px 2px 2px 30px;
+  padding: 5px 5px 5px 30px;
   background-color: var(--COLOR_WHITE);
 }
 
@@ -52,7 +52,7 @@
   letter-spacing: 0.05em;
 }
 
-.subscribe-button:hover{
+.subscribe-button:hover {
   box-shadow: 0 0 0;
 }
 
@@ -69,14 +69,12 @@
 }
 
 @media (max-width: 1840px) {
-
-  .mail-form{
+  .mail-form {
     width: 658px;
   }
 }
 
 @media (max-width: 1279px) {
-
   .subscribe__container {
     display: flex;
     justify-content: center;
@@ -93,7 +91,6 @@
 }
 
 @media (max-width: 1023px) {
-
   .subscribe {
     min-height: 300px;
   }
@@ -104,7 +101,7 @@
     width: 700px;
   }
 
-  .mail-form{
+  .mail-form {
     padding: 2px 2px 2px 30px;
     width: auto;
   }
@@ -118,14 +115,13 @@
     width: 250px;
   }
 
-  .subscribe-block__dots  {
+  .subscribe-block__dots {
     bottom: -70px;
     left: -160px;
   }
 }
 
 @media (max-width: 767px) {
-
   .subscribe-block {
     padding: 50px 0 0 25px;
     height: 300px;
@@ -151,7 +147,6 @@
 }
 
 @media (max-width: 639px) {
-
   .subscribe-block {
     display: flex;
     flex-direction: column;
@@ -164,7 +159,7 @@
 
   .subscribe-button {
     width: 250px;
-    border:2px solid var(--COLOR_WHITE);
+    border: 2px solid var(--COLOR_WHITE);
   }
 
   .subscribe-rectangles {

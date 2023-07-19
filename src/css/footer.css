@@ -56,7 +56,7 @@ footer .logo {
   opacity: 1;
 }
 
-.icon-active{
+.icon-active {
   position: relative;
   top: -34px;
   opacity: 0;
@@ -86,7 +86,7 @@ footer .logo {
 }
 
 .list-item:hover {
-  color:var(--COLOR_ORANGE);
+  color: var(--COLOR_ORANGE);
 }
 
 footer .menu__list {
@@ -95,7 +95,7 @@ footer .menu__list {
 
 footer .menu__list-item {
   line-height: 50px;
-  font-size: var( --FONT_SIZE_16);
+  font-size: var(--FONT_SIZE_16);
 }
 
 footer .menu__list-item:last-child {
@@ -136,7 +136,7 @@ footer .menu__list-item:last-child {
   line-height: 20px;
 }
 
-.news-paragraph:hover{
+.news-paragraph:hover {
   transition: 0.2s;
   color: var(--COLOR_ORANGE);
 }
@@ -163,6 +163,7 @@ footer .menu__list-item:last-child {
   display: flex;
   justify-content: center;
   line-height: 30px;
+  padding-bottom: 30px;
 }
 
 .footer-dots-left {
@@ -178,7 +179,6 @@ footer .menu__list-item:last-child {
 }
 
 @media (max-width: 1840px) {
-
   .footer-dots-left {
     bottom: -110px;
     left: -55px;
@@ -191,9 +191,8 @@ footer .menu__list-item:last-child {
 }
 
 @media (max-width: 1279px) {
-
   .footer-section__nav-container {
-    padding-left: 10px
+    padding-left: 10px;
   }
 
   .footer-section__our-contacts {
@@ -212,13 +211,12 @@ footer .menu__list-item:last-child {
 }
 
 @media (max-width: 1023px) {
-
   .footer-section {
     min-height: 435px;
     padding-top: 50px;
   }
 
-  .footer-section__nav-wrapper  {
+  .footer-section__nav-wrapper {
     margin-right: 0;
   }
 
@@ -252,7 +250,6 @@ footer .menu__list-item:last-child {
 }
 
 @media (max-width: 767px) {
-
   .footer-section__nav-container {
     flex-direction: column-reverse;
     align-items: center;
@@ -275,8 +272,7 @@ footer .menu__list-item:last-child {
 }
 
 @media (max-width: 639px) {
-
-  .footer-section__our-contacts  {
+  .footer-section__our-contacts {
     text-align: center;
     margin: 0;
   }

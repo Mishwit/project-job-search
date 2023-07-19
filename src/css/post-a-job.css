@@ -4,7 +4,8 @@
 }
 
 .post-a-job__background {
-  background:url(../backgound-svg/background-3.svg) var(--COLOR_BACKGROUND_PEACH) no-repeat center;
+  background: url(../backgound-svg/background-3.svg)
+    var(--COLOR_BACKGROUND_PEACH) no-repeat center;
 }
 
 .post-a-job__container {
@@ -25,7 +26,7 @@
   position: absolute;
   width: 100px;
   height: 100px;
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--COLOR_PLAY_BTN_BACKGROUND);
   border-radius: 50px;
   bottom: 45%;
   left: 40%;
@@ -51,14 +52,12 @@
 }
 
 @media (max-width: 1279px) {
-
   .post-a-job__container {
     padding: 0 10px 0 10px;
   }
 }
 
 @media (max-width: 1023px) {
-
   .post-a-job {
     margin-bottom: 200px;
   }
@@ -81,14 +80,12 @@
 }
 
 @media (max-width: 767px) {
-
   .post-a-job__left-wrapper {
     top: 50px;
   }
 }
 
 @media (max-width: 639px) {
-
   .post-a-job {
     padding-top: 0;
     margin-bottom: 50px;
@@ -115,7 +112,6 @@
 }
 
 @media (max-width: 413px) {
-
   .post-a-job {
     min-height: 620px;
   }

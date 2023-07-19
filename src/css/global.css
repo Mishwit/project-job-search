@@ -2,8 +2,8 @@
   box-sizing: border-box;
 }
 
-@font-face  {
-  font-family: 'Axiforma';
+@font-face {
+  font-family: "Axiforma";
   src: url(../fonts/Axiforma-Regular.ttf);
   font-display: swap;
   font-style: normal;
@@ -12,18 +12,25 @@
 :root {
   --COLOR_DEEP_BLACK: rgba(0, 0, 0, 1);
   --COLOR_BLACK: rgba(53, 53, 64, 1);
-  --COLOR_WHITE: rgba(255, 255, 255, 1);
-  --COLOR_ORANGE: rgba(238, 79, 60, 1);
+  --COLOR_DARK_BLUE: rgba(35, 36, 67, 1);
   --COLOR_DARK: rgba(93, 93, 97, 1);
-  --COLOR_GREY: rgba(245, 245, 245, 1);
   --COLOR_LIGHT_BROWN: rgba(211, 198, 196, 1);
   --COLOR_LIGHT_GREY: rgba(238, 238, 238, 1);
-  --COLOR_SHADOW: rgba(204, 204, 204, 0.5);
-  --COLOR_BORDER: rgba(204, 204, 204, 1);
-  --COLOR_PURPLE: rgba(107, 90, 204, 1);
+  --COLOR_GREY: rgba(245, 245, 245, 1);
+  --COLOR_WHITE: rgba(255, 255, 255, 1);
+  --COLOR_ORANGE: rgba(238, 79, 60, 1);
   --COLOR_YELLOW: rgba(254, 194, 71, 1);
-  --COLOR_DARK_BLUE: rgba(35, 36, 67, 1);
+  --COLOR_PURPLE: rgba(107, 90, 204, 1);
+
+  --COLOR_BORDER: rgba(204, 204, 204, 1);
+
   --COLOR_BACKGROUND_PEACH: rgba(255, 248, 248, 1);
+  --COLOR_CARD_BTN_BACKGROUND: rgba(255, 255, 255, 0.1);
+  --COLOR_PLAY_BTN_BACKGROUND: rgba(255, 255, 255, 0.7);
+  --COLOR_SHADOW: rgba(204, 204, 204, 0.5);
+  --COLOR_CARD_CIRCLE_SHADOW: rgba(153, 153, 153, 0.25);
+  --COLOR_HOVER_BTN: rgba(255, 111, 0, 1);
+  --COLOR_HOVER_CARD: rgba(238, 79, 60, 0.5);
 
   --FONT_SIZE_10: 10px;
   --FONT_SIZE_12: 12px;
@@ -43,11 +50,15 @@
 }
 
 html {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-p, a, input, button, span {
-  font-family: 'Axiforma';
+p,
+a,
+input,
+button,
+span {
+  font-family: "Axiforma";
   letter-spacing: 0.02em;
 }
 
@@ -63,14 +74,15 @@ a {
 input {
   min-height: 50px;
   border-radius: 10px;
+  letter-spacing: 0.32px;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-button:hover{
-  background-color: var(--COLOR_DARK);
+button:hover {
+  background-color: var(--COLOR_HOVER_BTN);
   transition: 0.5s;
 }
 
@@ -85,18 +97,10 @@ header {
 }
 
 .logo {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: var(--FONT_WEIGHT_700);
   font-size: var(--FONT_SIZE_50);
   line-height: 57px;
-}
-
-.black-txt {
-  color: var(--COLOR_BLACK);
-}
-
-.white-txt {
-  color: var(--COLOR_WHITE);
 }
 
 .title {
@@ -106,19 +110,19 @@ header {
 }
 
 .decor-orange {
-  color:var(--COLOR_ORANGE);
+  color: var(--COLOR_ORANGE);
 }
 
 .hover-orange:hover {
   cursor: pointer;
-  color:var(--COLOR_ORANGE);
+  color: var(--COLOR_ORANGE);
   transition: 0.3s;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   background-color: var(--COLOR_ORANGE);
   border-radius: 10px;
   border: none;
@@ -126,6 +130,7 @@ header {
   width: 220px;
   font-weight: 600;
   color: var(--COLOR_WHITE);
+  letter-spacing: 0.4px;
 }
 
 .nav-link {
@@ -144,14 +149,12 @@ header {
 }
 
 @media (max-width: 767px) {
-
   .container {
-    max-width:600px;
+    max-width: 600px;
   }
 }
 
 @media (max-width: 639px) {
-
   a {
     font-size: var(--FONT_SIZE_14);
   }
@@ -166,7 +169,6 @@ header {
 }
 
 @media (max-width: 413px) {
-
   p {
     font-size: var(--FONT_SIZE_14);
   }
