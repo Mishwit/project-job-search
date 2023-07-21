@@ -34,7 +34,7 @@
 
 .job-block:hover {
   box-shadow: 0px 70px 70px var(--COLOR_LIGHT_GREY);
-  transition: 0.5s;
+  transition: var(--TRANSITION_NORMAL);
 }
 
 .job-block__circle {
@@ -88,7 +88,7 @@
   font-weight: var(--FONT_WEIGHT_700);
   margin-bottom: 10px;
   color: var(--COLOR_BLACK);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .job-block__subtitle {
@@ -134,7 +134,6 @@
   position: absolute;
   top: -8px;
   right: -88px;
-
 }
 .right-wrapper__vector-4 {
   position: absolute;
@@ -145,7 +144,7 @@
 .right-wrapper__rectangle-1 {
   margin-right: 30px;
   background: url(../img/big-man-1.png) var(--COLOR_YELLOW) no-repeat bottom;
-  border-radius:  200px 0px 200px 200.5px ;
+  border-radius: 200px 0px 200px 200.5px;
 }
 
 .right-wrapper__rectangle-2 {
@@ -174,7 +173,6 @@
 }
 
 @media (max-width: 1840px) {
-
   .categories {
     min-height: 1665px;
   }
@@ -192,22 +190,20 @@
     left: -185px;
   }
 
-  .right-wrapper__dots  {
+  .right-wrapper__dots {
     bottom: 25px;
   }
 
   .right-wrapper__vector-3 {
-  right: -140px;
+    right: -140px;
   }
 
   .right-wrapper__vector-4 {
     left: -125px;
   }
-
 }
 
 @media (max-width: 1279px) {
-
   .categories {
     min-height: 1485px;
     padding: 50px 10px 0 10px;
@@ -240,10 +236,9 @@
 }
 
 @media (max-width: 1023px) {
-
   .categories {
     min-height: 1600px;
-    padding-top: 50px
+    padding-top: 50px;
   }
 
   .categories__title {
@@ -301,7 +296,7 @@
     bottom: 670px;
   }
 
-  .right-wrapper__dots  {
+  .right-wrapper__dots {
     bottom: 25px;
     right: -70px;
   }
@@ -317,7 +312,6 @@
 }
 
 @media (max-width: 767px) {
-
   .jobs-group {
     flex-wrap: wrap;
     justify-content: center;
@@ -360,7 +354,6 @@
 }
 
 @media (max-width: 639px) {
-
   .categories__jobs-categories {
     margin-bottom: 50px;
   }
@@ -381,7 +374,7 @@
     max-width: 250px;
     text-align: center;
     font-size: var(--FONT_SIZE_14);
-    margin-bottom: 30px
+    margin-bottom: 30px;
   }
 
   .left-wrapper_dots {
@@ -395,7 +388,6 @@
 }
 
 @media (max-width: 413px) {
-
   .categories__sign-up-block {
     min-width: 185px;
   }

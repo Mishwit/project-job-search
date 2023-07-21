@@ -35,33 +35,33 @@
 
 .card:hover {
   background-color: var(--COLOR_HOVER_CARD);
-  transition: 0.3s;
+  transition: var(--TRANSITION_FAST);
 }
 
 .card:hover .card-content__title {
   color: var(--COLOR_WHITE);
-  transition: 0.3s;
+  transition: var(--TRANSITION_FAST);
 }
 
 .card:hover .card-content__middle_title {
   color: var(--COLOR_WHITE);
-  transition: 0.3s;
+  transition: var(--TRANSITION_FAST);
 }
 
 .card:hover .card-content__middle_subtitle {
   color: var(--COLOR_WHITE);
-  transition: 0.3s;
+  transition: var(--TRANSITION_FAST);
 }
 
 .card:hover .card-content__button {
   background: var(--COLOR_CARD_BTN_BACKGROUND);
   color: var(--COLOR_WHITE);
-  transition: 0.3s;
+  transition: var(--TRANSITION_FAST);
 }
 
 .card:hover .card-content__button-text {
   color: var(--COLOR_WHITE);
-  transition: 0.3s;
+  transition: var(--TRANSITION_FAST);
 }
 
 .card-content__top {
@@ -184,7 +184,7 @@
 
 .scroll-block__text:hover {
   color: var(--COLOR_ORANGE);
-  transition: 0.5s;
+  transition: var(--TRANSITION_NORMAL);
 }
 
 .arrow {
@@ -199,12 +199,12 @@
 
 .scroll-block__text:hover .arrow {
   opacity: 0;
-  transition: 0.5s;
+  transition: var(--TRANSITION_NORMAL);
 }
 
 .scroll-block__text:hover .arrow-active {
   opacity: 1;
-  transition: 0.5s;
+  transition: var(--TRANSITION_NORMAL);
 }
 
 @media (max-width: 1279px) {

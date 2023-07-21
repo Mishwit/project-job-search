@@ -29,7 +29,7 @@
   --COLOR_PLAY_BTN_BACKGROUND: rgba(255, 255, 255, 0.7);
   --COLOR_SHADOW: rgba(204, 204, 204, 0.5);
   --COLOR_CARD_CIRCLE_SHADOW: rgba(153, 153, 153, 0.25);
-  --COLOR_HOVER_BTN: rgba(255, 111, 0, 1);
+  --COLOR_HOVER_BTN: rgba(255, 61, 40, 1);
   --COLOR_HOVER_CARD: rgba(238, 79, 60, 0.5);
 
   --FONT_SIZE_10: 10px;
@@ -47,6 +47,9 @@
   --FONT_SIZE_72: 72px;
 
   --FONT_WEIGHT_700: 700;
+
+  --TRANSITION_NORMAL: 0.5s;
+  --TRANSITION_FAST: 0.3s;
 }
 
 html {
@@ -83,7 +86,7 @@ button {
 
 button:hover {
   background-color: var(--COLOR_HOVER_BTN);
-  transition: 0.5s;
+  transition: var(--TRANSITION_NORMAL);
 }
 
 header {
@@ -116,7 +119,7 @@ header {
 .hover-orange:hover {
   cursor: pointer;
   color: var(--COLOR_ORANGE);
-  transition: 0.3s;
+  transition: var(--TRANSITION_FAST);
 }
 
 .buttons {
@@ -139,7 +142,7 @@ header {
 
 .nav-link:hover {
   color: var(--COLOR_ORANGE);
-  transition: 0.5s;
+  transition: var(--TRANSITION_NORMAL);
 }
 
 @media (max-width: 1023px) {
