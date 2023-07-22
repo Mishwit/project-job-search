@@ -225,7 +225,7 @@
   }
 
   .job-posts__container {
-    padding: 95px 20px 0 20px;
+    padding: 95px 20px 50px 20px;
   }
 }
 
@@ -240,7 +240,7 @@
 
   .job-posts__card-wrapper {
     flex-wrap: wrap;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
   }
 
   .job-posts__container {

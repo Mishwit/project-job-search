@@ -15,3 +15,21 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+const feedbackScroll = document.querySelector(".feedback__feedback-wrapper");
+
+feedbackScroll.addEventListener(
+  "wheel",
+  function (e) {
+    if (e.wheelDelta > 0) {
+      this.scrollLeft -= 50;
+    } else {
+      this.scrollLeft += 50;
+    }
+  },
+  { passive: true }
+);
+
+feedbackScroll.addEventListener("wheel", (e) => {
+  e.preventDefault();
+});
