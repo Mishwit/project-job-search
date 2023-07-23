@@ -1,6 +1,7 @@
 .header-wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 0 20px;
 }
 
 header .menu {
@@ -9,7 +10,7 @@ header .menu {
 }
 
 .hamburger {
-display: none;
+  display: none;
 }
 
 .menu__list {
@@ -19,11 +20,10 @@ display: none;
 
 .menu__list-item {
   margin-right: 40px;
-
 }
 
 .menu__list-item:last-child {
-  margin-right: 0
+  margin-right: 0;
 }
 
 .buttons__cta-button {
@@ -31,14 +31,16 @@ display: none;
 }
 
 @media (max-width: 1023px) {
-
   header {
     padding: 50px 0 50px 0;
+  }
+
+  .header-wrapper {
+    max-width: 980px;
   }
 }
 
 @media (max-width: 767px) {
-
   .hamburger {
     display: block;
     background: none;

@@ -1,6 +1,7 @@
 .feedback__container {
   padding-bottom: 239px;
   overflow: hidden;
+  padding-left: 20px;
 }
 
 .feedback__title {
@@ -125,12 +126,6 @@
 
 .scroll-circle:last-child {
   margin-right: 0;
-}
-
-@media (max-width: 1279px) {
-  .feedback__container {
-    padding-left: 10px;
-  }
 }
 
 @media (max-width: 1023px) {

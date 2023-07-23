@@ -26,6 +26,8 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   width: 370px;
   height: 250px;
   border-radius: 20px;
@@ -220,6 +222,10 @@
     width: 80px;
   }
 
+  .job-posts__title {
+    text-align: center;
+  }
+
   .job-posts {
     min-height: 480px;
   }
@@ -248,15 +254,14 @@
   }
 
   .card {
+    gap: 16px;
     margin-right: 15px;
     margin-bottom: 15px;
     padding: 15px 15px 15px 15px;
-    width: 310px;
-    height: 220px;
   }
 
   .card-content__middle_subtitle {
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 
   .scroll-block__text {

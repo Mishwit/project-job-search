@@ -14,6 +14,14 @@
   min-width: 1170px;
 }
 
+.jobs-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .content-container__job-blocks {
   display: flex;
   justify-content: center;
@@ -24,11 +32,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  text-align: center;
   width: 270px;
   height: 270px;
   border: 1px solid var(--COLOR_LIGHT_GREY);
   border-radius: 20px;
-  padding-top: 30px;
+  padding: 30px 5px 5px 5px;
   line-height: 25px;
 }
 
@@ -51,13 +60,6 @@
 
 .job-block:hover .job-block__circle {
   background-color: var(--COLOR_ORANGE);
-}
-
-.jobs-group {
-  display: flex;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-  gap: 30px;
 }
 
 .job-block__img {
@@ -209,6 +211,10 @@
     padding: 50px 10px 0 10px;
   }
 
+  .categories__title {
+    text-align: center;
+  }
+
   .left-wrapper_dots {
     display: none;
   }
@@ -219,6 +225,7 @@
 
   .categories__sign-up-block {
     min-width: 960px;
+    padding: 0 20px;
   }
 
   .rectangle {

@@ -37,44 +37,20 @@ footer .logo {
   line-height: 30px;
 }
 
-.social-media__icons {
-  display: inline-block;
-  margin-right: 25px;
-  height: 30px;
-  width: 30px;
+.footer-section__social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
 }
 
-/* /* .social-media__icons:last-child {
-  margin-right: 0;
-} */
-
-.social-media__icons:hover {
-  cursor: pointer;
+svg path {
+  fill: currentColor;
 }
 
-svg:hover {
-  fill: var(--COLOR_ORANGE);
+.social-media__icons svg:hover {
+  color: var(--COLOR_ORANGE);
+  transition: var(--TRANSITION_NORMAL);
 }
-
-/* .icon-unactive {
-  opacity: 1;
-}
-
-.icon-active {
-  position: relative;
-  top: -34px;
-  opacity: 0;
-}
-
-.icon-unactive:hover {
-  opacity: 0;
-  transition: 0.2s;
-}
-
-.icon-active:hover {
-  opacity: 1;
-  transition: 0.2s;
-} */
 
 .footer-section__nav-wrapper {
   display: flex;
@@ -183,20 +159,15 @@ footer .menu__list-item:last-child {
 }
 
 @media (max-width: 1840px) {
-  /* .footer-dots-left {
-    bottom: -110px;
-    left: -55px;
-  }
-
   .footer-dots-right {
     top: -200px;
     right: -55px;
-  } */
+  }
 }
 
 @media (max-width: 1279px) {
   .footer-section__nav-container {
-    padding-left: 10px;
+    padding: 0 20px;
   }
 
   .footer-section__our-contacts {
@@ -204,14 +175,9 @@ footer .menu__list-item:last-child {
     max-width: none;
   }
 
-  /* .footer-dots-left {
-    bottom: -110px;
-    left: -50px;
-  }
-
   .footer-dots-right {
     right: 5px;
-  } */
+  }
 }
 
 @media (max-width: 1023px) {
