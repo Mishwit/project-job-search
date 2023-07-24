@@ -261,10 +261,6 @@
     max-width: 465px;
   }
 
-  .search-input {
-    max-width: 167px;
-  }
-
   .location-input {
     max-width: 130px;
   }
@@ -554,7 +550,7 @@
   }
 
   .hero {
-    min-height: 540px;
+    min-height: 440px;
   }
 
   .info__title {
@@ -564,23 +560,21 @@
   }
 
   .info__subtitle {
-    max-width: 345px;
     text-align: center;
     font-size: var(--FONT_SIZE_14);
-  }
-
-  ::placeholder {
-    font-size: var(--FONT_SIZE_14);
+    line-height: 25px;
+    margin-bottom: 25px;
   }
 
   .search-container__search-form {
     width: auto;
-  }
-
-  .search-container__search-form {
-    padding: 0;
+    padding: 10px;
     flex-direction: column;
     border-radius: 10px;
+  }
+
+  .search-area {
+    width: 340px;
   }
 
   .search-container__search-icon {
@@ -588,8 +582,12 @@
     margin-left: 5px;
   }
 
+  ::placeholder {
+    font-size: var(--FONT_SIZE_14);
+  }
+
   .search-input {
-    min-width: 205px;
+    min-width: 300px;
     min-height: 50px;
   }
 
@@ -604,7 +602,7 @@
   }
 
   .location-input {
-    min-width: 205px;
+    min-width: 300px;
     min-height: 50px;
   }
 
@@ -618,7 +616,7 @@
 
   .buttons__search-button {
     height: 50px;
-    min-width: 250px;
+    min-width: 340px;
     font-size: var(--FONT_SIZE_18);
     border-radius: 10px;
   }
@@ -640,5 +638,21 @@
   .info__subtitle {
     max-width: 275px;
     font-size: var(--FONT_SIZE_12);
+  }
+
+  .search-area {
+    width: 260px;
+  }
+
+  .search-input {
+    min-width: 230px;
+  }
+
+  .location-input {
+    min-width: 230px;
+  }
+
+  .buttons__search-button {
+    min-width: 260px;
   }
 }

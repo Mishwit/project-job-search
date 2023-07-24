@@ -41,6 +41,7 @@
   --FONT_SIZE_24: 24px;
   --FONT_SIZE_30: 30px;
   --FONT_SIZE_36: 36px;
+  --FONT_SIZE_42: 42px;
   --FONT_SIZE_44: 44px;
   --FONT_SIZE_48: 48px;
   --FONT_SIZE_50: 50px;
@@ -148,6 +149,10 @@ header {
 @media (max-width: 1023px) {
   .container {
     max-width: 700px;
+  }
+
+  .nav-link {
+    font-size: 14px;
   }
 }
 

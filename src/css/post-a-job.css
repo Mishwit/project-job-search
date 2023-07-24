@@ -33,6 +33,10 @@
   border: none;
 }
 
+.play-button:hover {
+  background-color: var(--COLOR_SHADOW);
+}
+
 .post-a-job__right-wrapper {
   padding-top: 190px;
   max-width: 425px;
@@ -94,7 +98,7 @@
 @media (max-width: 639px) {
   .post-a-job {
     padding-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     min-height: 720px;
   }
 

@@ -13,6 +13,10 @@ header .menu {
   display: none;
 }
 
+.hamburger:hover {
+  background-color: var(--COLOR_SHADOW);
+}
+
 .menu__list {
   display: flex;
   font-size: var(--FONT_SIZE_18);
@@ -43,14 +47,15 @@ header .menu {
 @media (max-width: 767px) {
   .hamburger {
     display: block;
-    background: none;
+    background-color: var(--COLOR_PLAY_BTN_BACKGROUND);
     border: none;
     width: 30px;
     position: fixed;
     top: 40px;
     right: 30px;
-    height: 14px;
+    height: 30px;
     z-index: 30;
+    border-radius: 30px;
   }
 
   .hamburger__item {
