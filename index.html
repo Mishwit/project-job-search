@@ -43,7 +43,7 @@
   </head>
 
   <body>
-    <header>
+    <header id="home">
       <!-- Hamburger -->
       <button class="hamburger">
         <span class="hamburger__item"></span>
@@ -57,20 +57,31 @@
         </a>
 
         <!-- Navigation menu -->
-        <nav class="menu">
+        <nav class="nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__list-item"><a href="#home">Home</a></li>
+            <li class="nav-menu__list-item">
+              <a href="#categories">Categories</a>
+            </li>
+            <li class="nav-menu__list-item"><a href="#service">Service</a></li>
+            <li class="nav-menu__list-item"><a href="#jobs">Jobs</a></li>
+            <button class="buttons nav__button" href="#">Post a vacancy</button>
+          </ul>
+        </nav>
+        <nav class="menu nav-menu">
           <!-- Navigation list items -->
           <ul class="menu__list">
             <li class="menu__list-item list-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="menu__list-item list-item">
-              <a class="nav-link" href="#">Categories</a>
+              <a class="nav-link" href="#categories">Categories</a>
             </li>
             <li class="menu__list-item list-item">
-              <a class="nav-link" href="#">Service</a>
+              <a class="nav-link" href="#service">Service</a>
             </li>
             <li class="menu__list-item list-item">
-              <a class="nav-link" href="#">Jobs</a>
+              <a class="nav-link" href="#jobs">Jobs</a>
             </li>
           </ul>
         </nav>
@@ -382,7 +393,7 @@
       </section>
 
       <!-- Second section -->
-      <section class="categories">
+      <section id="categories" class="categories">
         <div class="container categories__container">
           <h2 class="categories__title title">Job Categories</h2>
           <div class="categories__jobs-categories">
@@ -581,7 +592,7 @@
         </div>
       </section>
       <!-- Third section -->
-      <section class="post-a-job">
+      <section id="service" class="post-a-job">
         <div class="post-a-job__background">
           <div class="container post-a-job__container">
             <!-- Third section left wrapper -->
@@ -893,7 +904,7 @@
       </section>
 
       <!-- subscribe -->
-      <section class="subscribe">
+      <section id="jobs" class="subscribe">
         <div class="container subscribe__container">
           <div class="subscribe__subscribe-block subscribe-block">
             <img
