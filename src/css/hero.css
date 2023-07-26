@@ -340,7 +340,6 @@
     right: -410px;
   }
 }
-
 @media (max-width: 1279px) {
   .hero {
     max-height: 580px;
@@ -407,7 +406,6 @@
     right: -275px;
   }
 }
-
 @media (max-width: 1023px) {
   .hero {
     min-height: 940px;
@@ -521,7 +519,6 @@
     right: -405px;
   }
 }
-
 @media (max-width: 767px) {
   .hero {
     min-height: 940px;
@@ -543,7 +540,6 @@
     right: -370px;
   }
 }
-
 @media (max-width: 639px) {
   .title {
     font-size: var(--FONT_SIZE_30);
@@ -556,10 +552,11 @@
   .info__title {
     max-width: 345px;
     text-align: center;
-    line-height: 50px;
+    line-height: 35px;
   }
 
   .info__subtitle {
+    max-width: 360px;
     text-align: center;
     font-size: var(--FONT_SIZE_14);
     line-height: 25px;
@@ -621,7 +618,6 @@
     border-radius: 10px;
   }
 }
-
 @media (max-width: 413px) {
   .title {
     font-size: var(--FONT_SIZE_24);

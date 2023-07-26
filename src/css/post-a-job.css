@@ -64,7 +64,6 @@
     padding: 0 20px;
   }
 }
-
 @media (max-width: 1023px) {
   .post-a-job {
     margin-bottom: 100px;
@@ -88,13 +87,11 @@
     top: 50px;
   }
 }
-
 @media (max-width: 767px) {
   .post-a-job__left-wrapper {
     top: 50px;
   }
 }
-
 @media (max-width: 639px) {
   .post-a-job {
     padding-top: 0;
@@ -104,10 +101,12 @@
 
   .post-a-job__title {
     margin-bottom: 30px;
+    line-height: 35px;
   }
 
   .post-a-job__subtitle {
     max-width: 250px;
+    line-height: 25px;
   }
 
   .post-a-job__img {
@@ -120,7 +119,6 @@
     left: 35%;
   }
 }
-
 @media (max-width: 413px) {
   .post-a-job {
     min-height: 620px;

@@ -1,7 +1,7 @@
 .feedback__container {
   padding-bottom: 239px;
   overflow: hidden;
-  padding-left: 20px;
+  padding: 0 20px 240px 20px;
 }
 
 .feedback__title {
@@ -21,6 +21,9 @@
 }
 
 .feedback-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   border-radius: 5px;
   margin-bottom: 45px;
@@ -134,7 +137,6 @@
     max-width: 700px;
   }
 }
-
 @media (max-width: 767px) {
   .feedback__feedback-wrapper {
     min-width: 590px;
@@ -148,7 +150,6 @@
     margin-right: 25px;
   }
 }
-
 @media (max-width: 639px) {
   .feedback {
     margin-bottom: 50px;
@@ -162,11 +163,12 @@
     max-width: 345px;
     font-size: var(--FONT_SIZE_30);
     margin-bottom: 30px;
+    line-height: 35px;
   }
 
   .feedback__feedback-wrapper {
     /* padding: 0 calc((100vw - 345px - (100vw - 100%)) / 2); */
-    min-width: 335px;
+    min-width: 263px;
   }
 
   .feedback-card {
@@ -181,6 +183,7 @@
 
   .feedback-card__paragraph {
     font-size: var(--FONT_SIZE_14);
+    line-height: 25px;
   }
 
   .profile-img {
@@ -201,7 +204,6 @@
     left: 10px;
   }
 }
-
 @media (max-width: 413px) {
   .feedback-card {
     width: 260px;

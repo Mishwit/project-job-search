@@ -110,7 +110,7 @@
 }
 
 .sign-up-block__title {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   line-height: 55px;
   letter-spacing: 0.02em;
 }
@@ -119,7 +119,7 @@
   margin-bottom: 30px;
   max-width: 415px;
   font-size: var(--FONT_SIZE_18);
-  line-height: 34px;
+  line-height: 25px;
 }
 
 .sign-up-block__button {
@@ -241,7 +241,6 @@
     right: -205px;
   }
 }
-
 @media (max-width: 1023px) {
   .categories {
     min-height: 1600px;
@@ -317,7 +316,6 @@
     left: -109px;
   }
 }
-
 @media (max-width: 767px) {
   .jobs-group {
     flex-wrap: wrap;
@@ -359,7 +357,6 @@
     right: -120px;
   }
 }
-
 @media (max-width: 639px) {
   .categories__jobs-categories {
     margin-bottom: 50px;
@@ -393,7 +390,6 @@
     display: none;
   }
 }
-
 @media (max-width: 413px) {
   .categories__sign-up-block {
     min-width: 185px;

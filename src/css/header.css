@@ -43,7 +43,6 @@ header .menu {
     max-width: 980px;
   }
 }
-
 @media (max-width: 767px) {
   .hamburger {
     display: block;
@@ -88,7 +87,6 @@ header .menu {
     display: none;
   }
 }
-
 @media (max-width: 413px) {
   header .logo {
     font-size: var(--FONT_SIZE_48);
