@@ -1,7 +1,6 @@
 .feedback__container {
-  padding-bottom: 239px;
   overflow: hidden;
-  padding: 0 20px 240px 20px;
+  padding: 0 20px 240px 0;
 }
 
 .feedback__title {
