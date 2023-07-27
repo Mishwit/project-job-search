@@ -65,7 +65,7 @@
             </li>
             <li class="nav-menu__list-item"><a href="#service">Service</a></li>
             <li class="nav-menu__list-item"><a href="#jobs">Jobs</a></li>
-            <button class="buttons nav__button" href="#">Post a vacancy</button>
+            <button class="button nav__button" href="#">Post a vacancy</button>
           </ul>
         </nav>
         <nav class="menu nav-menu">
@@ -87,9 +87,7 @@
         </nav>
 
         <!-- Navigation button -->
-        <button class="buttons buttons__cta-button" href="#">
-          Post a vacancy
-        </button>
+        <button class="button button__cta" href="#">Post a vacancy</button>
       </div>
     </header>
 
@@ -110,6 +108,7 @@
           <!-- Search container -->
           <div class="search-container">
             <!-- Search form -->
+
             <form class="search-container__search-form" method="get">
               <div class="search-area">
                 <img
@@ -123,7 +122,6 @@
                   type="text"
                   placeholder="Job title or Keyword"
                   name="text"
-                  value=""
                 />
               </div>
 
@@ -131,7 +129,7 @@
 
               <div class="search-area">
                 <img
-                  class="search-container__location-icon"
+                  class="location-icon"
                   src="./src/icons/location-icon.svg"
                   alt="location"
                 />
@@ -145,20 +143,10 @@
                 />
               </div>
 
-              <button
-                type="submit"
-                class="buttons buttons__search-button"
-                href="#"
-              >
+              <button type="submit" class="button search-button" href="#">
                 Search
               </button>
             </form>
-
-            <!-- Search form -->
-
-            <!-- <form class="search-container__location-form" method="get">
-
-            </form> -->
           </div>
         </div>
 
@@ -256,7 +244,7 @@
                   <div class="card-content__card-circle">
                     <img src="./src/icons/slack-2.svg" alt="slack-icon" />
                   </div>
-                  <span class="card-content__title">Slack</span>
+                  <span class="card-content__company-name">Slack</span>
                 </div>
                 <div class="card-content__right-side">
                   <div class="right-side__first-circle">
@@ -274,10 +262,8 @@
 
               <!-- cards content middle -->
               <div class="card-content__middle">
-                <p class="card-content__middle_title">Sr. Product Designer</p>
-                <p class="card-content__middle_subtitle">
-                  Full Time - New York City
-                </p>
+                <p class="card-content__title">Sr. Product Designer</p>
+                <p class="card-content__subtitle">Full Time - New York City</p>
               </div>
 
               <!-- cards content bottom -->
@@ -297,7 +283,7 @@
                   <div class="card-content__card-circle">
                     <img src="./src/icons/google-2.svg" alt="google icon" />
                   </div>
-                  <span class="card-content__title">Google</span>
+                  <span class="card-content__company-name">Google</span>
                 </div>
                 <div class="card-content__right-side">
                   <div class="right-side__first-circle">
@@ -315,10 +301,8 @@
 
               <!-- card content middle -->
               <div class="card-content__middle">
-                <p class="card-content__middle_title">UX Researcher</p>
-                <p class="card-content__middle_subtitle">
-                  Full Time - United States
-                </p>
+                <p class="card-content__title">UX Researcher</p>
+                <p class="card-content__subtitle">Full Time - United States</p>
               </div>
 
               <!-- card content bottom -->
@@ -338,7 +322,7 @@
                   <div class="card-content__card-circle">
                     <img src="./src/icons/indeed-2.svg" alt="indeed icon" />
                   </div>
-                  <span class="card-content__title">Indeed</span>
+                  <span class="card-content__company-name">Indeed</span>
                 </div>
                 <div class="card-content__right-side">
                   <div class="right-side__first-circle">
@@ -356,10 +340,8 @@
 
               <!-- card content middle -->
               <div class="card-content__middle">
-                <p class="card-content__middle_title">Project Manager</p>
-                <p class="card-content__middle_subtitle">
-                  Full Time - Singapore
-                </p>
+                <p class="card-content__title">Project Manager</p>
+                <p class="card-content__subtitle">Full Time - Singapore</p>
               </div>
 
               <!-- card content bottom -->
@@ -561,7 +543,7 @@
 
               <!-- Sign up button -->
               <div class="sign-up-block__button">
-                <button class="buttons" href="#">Create an Account</button>
+                <button class="button" href="#">Create an Account</button>
               </div>
             </div>
             <!-- Sign up block right wrapper -->
@@ -616,7 +598,7 @@
                 Create an account so you can get job information that suits you,
                 and you can apply the salary your demand.
               </p>
-              <button class="post-a-job__buttons buttons" href="#">
+              <button class="post-a-job__button button" href="#">
                 Post a Job
               </button>
             </div>
@@ -928,7 +910,7 @@
                 />
 
                 <!-- Subscribe button -->
-                <button type="submit" class="buttons subscribe-button">
+                <button type="submit" class="button subscribe-button">
                   Subscribe
                   <img class="telegram" src="./src/icons/telegram.svg" alt="" />
                 </button>
@@ -970,7 +952,7 @@
             </p>
             <a
               href="tel:+99-8569-5234"
-              class="footer-section__call-us hover-orange"
+              class="footer-section__call-us hover_orange"
             >
               Call Us: +99-8569-5234
             </a>

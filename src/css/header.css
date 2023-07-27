@@ -59,7 +59,7 @@ header .menu {
   width: 140px;
 }
 
-.buttons__cta-button {
+.button__cta {
   font-size: var(--FONT_SIZE_20);
 }
 
@@ -160,7 +160,7 @@ header .menu {
     display: none;
   }
 
-  .buttons__cta-button {
+  .button__cta {
     display: none;
   }
 }

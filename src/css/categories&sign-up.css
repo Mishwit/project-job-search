@@ -112,7 +112,7 @@
 .sign-up-block__title {
   margin-bottom: 50px;
   line-height: 55px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0, 32px;
 }
 
 .sign-up-block__subtitle {

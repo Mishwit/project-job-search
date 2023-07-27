@@ -7,7 +7,7 @@
   max-width: 440px;
   margin-bottom: 50px;
   line-height: 55px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0, 32px;
 }
 
 .feedback__feedback-wrapper {

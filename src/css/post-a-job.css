@@ -46,7 +46,7 @@
 .post-a-job__title {
   margin-bottom: 50px;
   line-height: 55px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0, 32px;
 }
 
 .post-a-job__subtitle {

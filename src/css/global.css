@@ -69,7 +69,7 @@ input,
 button,
 span {
   font-family: "Axiforma";
-  letter-spacing: 0.02em;
+  letter-spacing: 0, 32px;
 }
 
 p {
@@ -128,13 +128,13 @@ header {
   color: var(--COLOR_ORANGE);
 }
 
-.hover-orange:hover {
+.hover_orange:hover {
   cursor: pointer;
   color: var(--COLOR_ORANGE);
   transition: var(--TRANSITION_FAST);
 }
 
-.buttons {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
