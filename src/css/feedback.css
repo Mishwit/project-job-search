@@ -1,6 +1,6 @@
 .feedback__container {
   overflow: hidden;
-  padding: 0 20px 240px 0;
+  padding: 0 20px 240px 20px;
 }
 
 .feedback__title {
@@ -13,10 +13,9 @@
 .feedback__feedback-wrapper {
   display: flex;
   margin: 0 auto;
-  max-width: 1490px;
   gap: 30px;
-  overflow-x: scroll;
-  /* padding: 0 calc((100vw - 1140px - (100vw - 100%)) / 2); */
+  overflow-x: hidden;
+  padding: 0 calc((100vw - 1140px - (100vw - 100%)) / 2);
 }
 
 .feedback-card {
@@ -131,6 +130,10 @@
 }
 
 @media (max-width: 1023px) {
+  .feedback__feedback-wrapper {
+    padding: 0 calc((100vw - 555px - (100vw - 100%)) / 2);
+  }
+
   .feedback__title {
     text-align: center;
     max-width: 700px;
@@ -166,7 +169,7 @@
   }
 
   .feedback__feedback-wrapper {
-    /* padding: 0 calc((100vw - 345px - (100vw - 100%)) / 2); */
+    padding: 0 calc((100vw - 345px - (100vw - 100%)) / 2);
     min-width: 263px;
   }
 

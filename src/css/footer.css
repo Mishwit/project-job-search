@@ -44,7 +44,7 @@ footer .logo {
 }
 
 svg path {
-  fill: currentColor;
+  stroke: currentColor;
 }
 
 .social-media__icons svg:hover {
