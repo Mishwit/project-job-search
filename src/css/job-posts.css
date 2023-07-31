@@ -104,24 +104,21 @@
   position: relative;
   z-index: 1;
   left: 39px;
-  max-height: 44px;
 }
 
 .right-side__second-circle {
   position: relative;
   z-index: 2;
   left: 19px;
-  max-height: 44px;
 }
 
 .right-side__third-circle {
   position: relative;
   z-index: 3;
   text-align: center;
-  max-height: 42px;
 }
 
-.avatar-text {
+.avatar_text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -204,19 +201,11 @@
     text-align: center;
   }
 
-  .job-posts {
-    min-height: 480px;
-  }
-
   .job-posts__container {
     padding: 95px 20px 50px 20px;
   }
 }
 @media (max-width: 1023px) {
-  .job-posts {
-    min-height: auto;
-  }
-
   .job-posts__title {
     text-align: center;
   }

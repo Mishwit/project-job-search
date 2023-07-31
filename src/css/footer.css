@@ -1,4 +1,4 @@
-.footer-section {
+.footer {
   padding-top: 112px;
 }
 
@@ -7,13 +7,13 @@ footer .menu {
   gap: 25px;
 }
 
-.footer-section__nav-container {
+.footer__nav-container {
   display: flex;
   margin-bottom: 50px;
   flex-direction: row;
 }
 
-.footer-section__our-contacts {
+.footer__our-contacts {
   display: flex;
   flex-direction: column;
   margin-right: 108px;
@@ -26,18 +26,18 @@ footer .logo {
   margin-bottom: 30px;
 }
 
-.footer-section__address {
+.footer__address {
   margin-bottom: 10px;
   line-height: 30px;
 }
 
-.footer-section__call-us {
+.footer__call-us {
   margin-bottom: 30px;
   text-decoration-line: underline;
   line-height: 30px;
 }
 
-.footer-section__social-media {
+.footer__social-media {
   display: flex;
   flex-direction: row;
   gap: 25px;
@@ -52,13 +52,13 @@ svg path {
   transition: var(--TRANSITION_NORMAL);
 }
 
-.footer-section__nav-wrapper {
+.footer__nav-wrapper {
   display: flex;
   flex-direction: row;
   margin-right: 73px;
 }
 
-.menu-title {
+.menu__title {
   margin-bottom: 30px;
   font-weight: var(--FONT_WEIGHT_700);
   color: var(--COLOR_BLACK);
@@ -82,7 +82,7 @@ footer .menu__list-item:last-child {
   margin-bottom: 0;
 }
 
-.footer-section__news {
+.footer__news {
   display: flex;
   flex-direction: column;
   max-width: 365px;
@@ -108,7 +108,7 @@ footer .menu__list-item:last-child {
   margin-right: 20px;
 }
 
-.news-text {
+.news_text {
   display: flex;
   flex-direction: column;
   max-width: 300px;
@@ -138,7 +138,7 @@ footer .menu__list-item:last-child {
   margin-bottom: 30px;
 }
 
-.copyright-text {
+.copyright_text {
   font-size: var(--FONT_SIZE_14);
   display: flex;
   justify-content: center;
@@ -146,7 +146,7 @@ footer .menu__list-item:last-child {
   padding-bottom: 30px;
 }
 
-.footer-dots-left {
+.footer-dots_left {
   position: absolute;
   bottom: -121px;
   left: -359px;
@@ -165,11 +165,11 @@ footer .menu__list-item:last-child {
   }
 }
 @media (max-width: 1279px) {
-  .footer-section__nav-container {
+  .footer__nav-container {
     padding: 0 20px;
   }
 
-  .footer-section__our-contacts {
+  .footer__our-contacts {
     margin-right: 20px;
     max-width: none;
   }
@@ -179,22 +179,21 @@ footer .menu__list-item:last-child {
   }
 }
 @media (max-width: 1023px) {
-  .footer-section {
-    min-height: 435px;
+  .footer {
     padding-top: 50px;
   }
 
-  .footer-section__nav-wrapper {
+  .footer__nav-wrapper {
     margin-right: 0;
   }
 
-  .footer-section__our-contacts {
+  .footer__our-contacts {
     margin-right: 20px;
     min-width: 200px;
     font-size: var(--FONT_SIZE_12);
   }
 
-  .footer-section__call-us {
+  .footer__call-us {
     margin-bottom: 10px;
   }
 
@@ -203,7 +202,7 @@ footer .menu__list-item:last-child {
     gap: 20px;
   }
 
-  footer .menu-title {
+  footer .menu__title {
     min-width: 96px;
     font-size: var(--FONT_SIZE_16);
   }
@@ -217,7 +216,7 @@ footer .menu__list-item:last-child {
     line-height: 20px;
   }
 
-  .news-text {
+  .news_text {
     font-size: var(--FONT_SIZE_10);
   }
 
@@ -229,7 +228,7 @@ footer .menu__list-item:last-child {
     margin-bottom: 0;
   }
 
-  .footer-dots-left {
+  .footer-dots_left {
     display: none;
   }
 
@@ -238,13 +237,13 @@ footer .menu__list-item:last-child {
   }
 }
 @media (max-width: 767px) {
-  .footer-section__nav-container {
+  .footer__nav-container {
     flex-direction: column;
     align-items: center;
     margin-bottom: 0px;
   }
 
-  .footer-section__our-contacts {
+  .footer__our-contacts {
     align-items: center;
     margin-right: 35px;
     margin-bottom: 30px;
@@ -254,12 +253,12 @@ footer .menu__list-item:last-child {
     margin-bottom: 30px;
   }
 
-  .footer-section__news {
+  .footer__news {
     margin-bottom: 30px;
   }
 }
 @media (max-width: 639px) {
-  .footer-section__our-contacts {
+  .footer__our-contacts {
     text-align: center;
     margin: 0;
   }
@@ -269,19 +268,19 @@ footer .menu__list-item:last-child {
     margin-right: 0;
   }
 
-  .footer-section__nav-container {
+  .footer__nav-container {
     gap: 20px;
   }
 
-  .footer-section__nav-wrapper {
+  .footer__nav-wrapper {
     display: flex;
   }
 
-  .footer-section__news {
+  .footer__news {
     text-align: center;
   }
 
-  .news-text {
+  .news_text {
     text-align: left;
   }
 }

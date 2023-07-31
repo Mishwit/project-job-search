@@ -1,18 +1,18 @@
-.post-a-job {
+.post-job {
   padding-top: 130px;
   margin-bottom: 250px;
 }
 
-.post-a-job__background {
+.post-job__background {
   background: url(../backgound-svg/background-3.svg)
     var(--COLOR_BACKGROUND_PEACH) no-repeat center;
 }
 
-.post-a-job__container {
+.post-job__container {
   display: flex;
 }
 
-.post-a-job__left-wrapper {
+.post-job__video-block {
   position: relative;
   top: 100px;
   margin-right: 85px;
@@ -37,44 +37,44 @@
   background-color: var(--COLOR_SHADOW);
 }
 
-.post-a-job__right-wrapper {
+.post-job__info {
   padding-top: 190px;
   max-width: 425px;
   font-size: var(--FONT_SIZE_18);
 }
 
-.post-a-job__title {
+.post-job__title {
   margin-bottom: 50px;
   line-height: 55px;
   letter-spacing: 0, 32px;
 }
 
-.post-a-job__subtitle {
+.post-job__subtitle {
   max-width: 360px;
   margin-bottom: 30px;
   line-height: 34px;
 }
 
 @media (max-width: 1279px) {
-  .post-a-job {
+  .post-job {
     padding-top: 50px;
   }
 
-  .post-a-job__container {
+  .post-job__container {
     padding: 0 20px;
   }
 }
 @media (max-width: 1023px) {
-  .post-a-job {
+  .post-job {
     margin-bottom: 100px;
   }
 
-  .post-a-job__container {
+  .post-job__container {
     flex-direction: column-reverse;
     align-items: center;
   }
 
-  .post-a-job__right-wrapper {
+  .post-job__info {
     display: flex;
     flex-direction: column;
     padding-top: 50px;
@@ -82,33 +82,33 @@
     align-items: center;
   }
 
-  .post-a-job__left-wrapper {
+  .post-job__video-block {
     margin-right: 0;
     top: 50px;
   }
 }
 @media (max-width: 767px) {
-  .post-a-job__left-wrapper {
+  .post-job__video-block {
     top: 50px;
   }
 }
 @media (max-width: 639px) {
-  .post-a-job {
+  .post-job {
     padding-top: 0;
     margin-bottom: 70px;
   }
 
-  .post-a-job__title {
+  .post-job__title {
     margin-bottom: 30px;
     line-height: 35px;
   }
 
-  .post-a-job__subtitle {
+  .post-job__subtitle {
     max-width: 250px;
     line-height: 25px;
   }
 
-  .post-a-job__img {
+  .post-job__img {
     height: 500px;
     width: 345px;
   }
@@ -119,11 +119,11 @@
   }
 }
 @media (max-width: 413px) {
-  .post-a-job__subtitle {
+  .post-job__subtitle {
     margin-bottom: 30px;
   }
 
-  .post-a-job__img {
+  .post-job__img {
     height: 350px;
     width: 250px;
   }

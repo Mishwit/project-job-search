@@ -586,7 +586,6 @@
 
   .search-input {
     min-width: 300px;
-    min-height: 50px;
   }
 
   .search-container__location-form {
@@ -601,7 +600,6 @@
 
   .location-input {
     min-width: 300px;
-    min-height: 50px;
   }
 
   .line {

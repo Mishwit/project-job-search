@@ -90,10 +90,6 @@
   }
 }
 @media (max-width: 1023px) {
-  .subscribe {
-    min-height: 300px;
-  }
-
   .subscribe-block {
     padding: 50px 0 0 50px;
     height: 300px;
@@ -198,10 +194,6 @@
   .subscribe-block__dots {
     left: -195px;
     bottom: 25px;
-  }
-
-  .subscribe {
-    min-height: 250px;
   }
 }
 @media (max-width: 413px) {
