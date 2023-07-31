@@ -96,7 +96,6 @@
   .post-a-job {
     padding-top: 0;
     margin-bottom: 70px;
-    min-height: 720px;
   }
 
   .post-a-job__title {
@@ -120,10 +119,6 @@
   }
 }
 @media (max-width: 413px) {
-  .post-a-job {
-    min-height: 620px;
-  }
-
   .post-a-job__subtitle {
     margin-bottom: 30px;
   }

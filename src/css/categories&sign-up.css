@@ -5,7 +5,7 @@
 
 .categories__title {
   margin-bottom: 50px;
-  letter-spacing: 0.05em;
+  letter-spacing: 1px;
   line-height: 55px;
 }
 
@@ -71,17 +71,17 @@
   opacity: 0;
 }
 
-.job-block__img-active {
+.job-block__img_active {
   position: absolute;
   opacity: 0;
   transition: opacity 0.2s;
 }
 
-.job-block:hover .job-block__img-active {
+.job-block:hover .job-block__img_active {
   opacity: 1;
 }
 
-.job-block__img-active:hover {
+.job-block__img_active:hover {
   display: block;
 }
 

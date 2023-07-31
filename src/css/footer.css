@@ -125,7 +125,7 @@ footer .menu__list-item:last-child {
   font-family: "Axiforma";
   font-weight: 600;
   font-size: var(--FONT_SIZE_12);
-  letter-spacing: 0.05em;
+  letter-spacing: 1;
 }
 
 .news-paragraph {

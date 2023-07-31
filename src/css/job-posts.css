@@ -14,7 +14,7 @@
   font-weight: var(--FONT_WEIGHT_700);
   color: var(--COLOR_WHITE);
   font-size: var(--FONT_SIZE_48);
-  letter-spacing: 0.05em;
+  letter-spacing: 1px;
 }
 
 .job-posts__card-wrapper {
@@ -54,13 +54,13 @@
   transition: var(--TRANSITION_NORMAL);
 }
 
-.card:hover .card-content__button {
+.card:hover .card-content__feature {
   background: var(--COLOR_CARD_BTN_BACKGROUND);
   color: var(--COLOR_WHITE);
   transition: var(--TRANSITION_NORMAL);
 }
 
-.card:hover .card-content__button-text {
+.card:hover .feature__text {
   color: var(--COLOR_WHITE);
   transition: var(--TRANSITION_NORMAL);
 }
@@ -72,7 +72,7 @@
   margin-bottom: 20px;
 }
 
-.card-content__left-side {
+.card-content__company-info {
   display: flex;
   align-items: center;
 }
@@ -93,7 +93,7 @@
   font-size: var(--FONT_SIZE_20);
 }
 
-.card-content__right-side {
+.card-content__avatars {
   position: relative;
   margin: 10px -5px 0 0;
   display: flex;
@@ -153,21 +153,20 @@
   justify-content: space-between;
 }
 
-.card-content__button {
+.card-content__feature {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 35px;
-  width: 100px;
+  padding: 8px 16px;
   background: var(--COLOR_GREY);
   border-radius: 5px;
   font-size: var(--FONT_SIZE_14);
-  letter-spacing: 0.05em;
+  letter-spacing: 1px;
 }
 
-.card-content__button-text {
+.feature__text {
   font-size: var(--FONT_SIZE_14);
-  letter-spacing: 0.05em;
+  letter-spacing: 1px;
   font-weight: 600;
   color: var(--COLOR_BLACK);
 }
@@ -180,7 +179,7 @@
 .scroll-block__text {
   color: var(--COLOR_WHITE);
   font-size: var(--FONT_SIZE_24);
-  letter-spacing: 0.05em;
+  letter-spacing: 1px;
 }
 
 .scroll-block__text:hover {
@@ -197,7 +196,7 @@
     font-size: var(--FONT_SIZE_20);
   }
 
-  .card-content__button {
+  .card-content__feature {
     width: 80px;
   }
 
@@ -247,7 +246,7 @@
     font-size: var(--FONT_SIZE_20);
   }
 
-  .card-content__button {
+  .card-content__feature {
     width: 100px;
   }
 }
@@ -265,7 +264,7 @@
     justify-content: center;
   }
 
-  .card-content__button {
+  .card-content__feature {
     width: 80px;
   }
 }
@@ -285,7 +284,7 @@
     gap: 20px;
   }
 
-  .card-content__right-side {
+  .card-content__avatars {
     margin: 10px -5px 0 0;
   }
 
@@ -311,11 +310,11 @@
     gap: 16px;
   }
 
-  .card-content__button {
+  .card-content__feature {
     width: 100px;
   }
 
-  .card-content__button-text {
+  .feature__text {
     font-size: var(--FONT_SIZE_12);
   }
 

@@ -112,6 +112,7 @@ header {
   font-weight: var(--FONT_WEIGHT_700);
   font-size: var(--FONT_SIZE_50);
   line-height: 57px;
+  text-transform: uppercase;
 }
 
 .logo span {
