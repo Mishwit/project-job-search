@@ -3,7 +3,7 @@
   overflow: hidden;
 }
 
-.categories__title {
+.categories .title {
   margin-bottom: 50px;
   letter-spacing: 1px;
   line-height: 55px;
@@ -109,13 +109,13 @@
   justify-content: center;
 }
 
-.sign-up__title {
+.sign-up__info .title {
   margin-bottom: 50px;
   line-height: 55px;
-  letter-spacing: 0, 32px;
+  letter-spacing: 0.32px;
 }
 
-.sign-up__subtitle {
+.sign-up__info .subtitle {
   margin-bottom: 30px;
   max-width: 415px;
   font-size: var(--FONT_SIZE_18);
@@ -206,7 +206,7 @@
     padding: 50px 10px 0 10px;
   }
 
-  .categories__title {
+  .categories .title {
     text-align: center;
   }
 
@@ -241,7 +241,7 @@
     padding-top: 50px;
   }
 
-  .categories__title {
+  .categories .title {
     text-align: center;
   }
 
@@ -272,11 +272,11 @@
     align-items: center;
   }
 
-  .sign-up__title {
+  .sign-up__info .title {
     margin-bottom: 30px;
   }
 
-  .sign-up__subtitle {
+  .sign-up__info .subtitle {
     max-width: 490px;
     margin-bottom: 30px;
   }
@@ -364,11 +364,11 @@
     min-width: 250px;
   }
 
-  .sign-up__title {
+  .sign-up__info .title {
     text-align: center;
   }
 
-  .sign-up__subtitle {
+  .sign-up__info .subtitle {
     max-width: 250px;
     text-align: center;
     font-size: var(--FONT_SIZE_14);

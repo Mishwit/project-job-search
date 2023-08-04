@@ -19,13 +19,13 @@
   max-width: 655px;
 }
 
-.info__title {
+.info .title {
   margin-bottom: 30px;
   font-size: var(--FONT_SIZE_72);
   letter-spacing: 1.44px;
 }
 
-.info__subtitle {
+.info .subtitle {
   max-width: 600px;
   margin-bottom: 35px;
   font-size: var(--FONT_SIZE_18);
@@ -252,12 +252,12 @@
     max-width: 575px;
   }
 
-  .info__title {
+  .info .title {
     font-size: var(--FONT_SIZE_50);
     line-height: 60px;
   }
 
-  .info__subtitle {
+  .info .subtitle {
     font-size: var(--FONT_SIZE_16);
     max-width: 465px;
   }
@@ -416,7 +416,7 @@
     gap: 32px;
   }
 
-  .info__title {
+  .info .title {
     text-align: center;
     line-height: 70px;
   }
@@ -550,13 +550,13 @@
     min-height: 440px;
   }
 
-  .info__title {
+  .info .title {
     max-width: 345px;
     text-align: center;
     line-height: 35px;
   }
 
-  .info__subtitle {
+  .info .subtitle {
     max-width: 360px;
     text-align: center;
     font-size: var(--FONT_SIZE_14);
@@ -626,11 +626,11 @@
     min-height: 500px;
   }
 
-  .info__title {
+  .info .title {
     max-width: 275px;
   }
 
-  .info__subtitle {
+  .info .subtitle {
     max-width: 275px;
     font-size: var(--FONT_SIZE_12);
   }
