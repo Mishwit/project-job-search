@@ -47,9 +47,12 @@ svg path {
   stroke: currentColor;
 }
 
+svg {
+  transition: var(--TRANSITION_NORMAL);
+}
+
 .social-media__icons svg:hover {
   color: var(--COLOR_ORANGE);
-  transition: var(--TRANSITION_NORMAL);
 }
 
 .footer__nav-wrapper {

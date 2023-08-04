@@ -89,11 +89,11 @@ input {
 
 button {
   cursor: pointer;
+  transition: var(--TRANSITION_NORMAL);
 }
 
 button:hover {
   background-color: var(--COLOR_HOVER_BTN);
-  transition: var(--TRANSITION_NORMAL);
 }
 
 header {
@@ -151,11 +151,11 @@ header {
 
 .nav-link {
   color: var(--COLOR_DARK);
+  transition: var(--TRANSITION_NORMAL);
 }
 
 .nav-link:hover {
   color: var(--COLOR_ORANGE);
-  transition: var(--TRANSITION_NORMAL);
 }
 
 @media (max-width: 1023px) {

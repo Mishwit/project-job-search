@@ -32,11 +32,11 @@
   border-radius: 20px;
   padding: 15px 30px 20px 20px;
   background: var(--COLOR_WHITE);
+  transition: var(--TRANSITION_NORMAL);
 }
 
 .card:hover {
   background-color: var(--COLOR_HOVER_CARD);
-  transition: var(--TRANSITION_NORMAL);
 }
 
 .card:hover .card-content__company-name {
@@ -177,11 +177,11 @@
   color: var(--COLOR_WHITE);
   font-size: var(--FONT_SIZE_24);
   letter-spacing: 1px;
+  transition: var(--TRANSITION_NORMAL);
 }
 
 .scroll-block__text:hover {
   color: var(--COLOR_ORANGE);
-  transition: var(--TRANSITION_NORMAL);
 }
 
 @media (max-width: 1279px) {

@@ -121,7 +121,6 @@ header .menu {
     background: var(--COLOR_GREY);
     z-index: 20;
     width: 50%;
-    transition: var(--TRANSITION_NORMAL);
   }
 
   .nav-menu__list {
@@ -139,8 +138,11 @@ header .menu {
     margin-right: 0;
   }
 
-  .nav-menu__list-item a:hover {
+  .nav-menu__list-item a {
     transition: var(--TRANSITION_NORMAL);
+  }
+
+  .nav-menu__list-item a:hover {
     color: var(--COLOR_ORANGE);
   }
 
