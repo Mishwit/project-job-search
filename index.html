@@ -90,16 +90,16 @@
           <div class="search-container">
             <!-- Search form -->
 
-            <form class="search-container__search-form" method="get">
-              <div class="search-area">
+            <form class="search-form" method="get">
+              <div class="search-form__search-area">
                 <img
-                  class="search-container__search-icon"
+                  class="search-icon"
                   src="./src/icons/search-icon.svg"
                   alt="search"
                 />
 
                 <input
-                  class="search-input"
+                  class="search-form__input"
                   type="text"
                   placeholder="Job title or Keyword"
                   name="text"
@@ -108,7 +108,7 @@
 
               <span class="line"></span>
 
-              <div class="search-area">
+              <div class="search-form__search-area">
                 <img
                   class="location-icon"
                   src="./src/icons/location-icon.svg"
@@ -116,7 +116,7 @@
                 />
 
                 <input
-                  class="location-input"
+                  class="search-form__location-input"
                   type="text"
                   placeholder="Location"
                   name="text"
@@ -134,7 +134,7 @@
         <!-- Graphics -->
         <div class="graphics">
           <img
-            class="graphics__img"
+            class="img"
             src="./src/img/satisfied-lovely-woman-holds-modern-cell-phone-1.png"
             alt="A satisfied lovely woman holds a modern cell phone"
           />
@@ -152,8 +152,8 @@
             alt="small ellipse"
           />
 
-          <!-- Flying icons -->
-          <div class="graphics__flying-icon google-icon">
+          <!-- floating icons -->
+          <div class="graphics__floating-icon google-icon">
             <img
               class="google-img"
               src="./src/icons/flat-color-icons_google.svg"
@@ -161,7 +161,7 @@
             />
           </div>
 
-          <div class="graphics__flying-icon paypal-icon">
+          <div class="graphics__floating-icon paypal-icon">
             <img
               class="paypal-img"
               src="./src/icons/simple-icons_paypal.svg"
@@ -169,7 +169,7 @@
             />
           </div>
 
-          <div class="graphics__flying-icon indeed-icon">
+          <div class="graphics__floating-icon indeed-icon">
             <img
               class="indeed-img"
               src="./src/icons/simple-icons_indeed.svg"
@@ -177,7 +177,7 @@
             />
           </div>
 
-          <div class="graphics__flying-icon slack-icon">
+          <div class="graphics__floating-icon slack-icon">
             <img
               class="slack-img"
               src="./src/icons/grommet-icons_slack.svg"
@@ -185,58 +185,58 @@
             />
           </div>
 
-          <!-- First flying card -->
-          <div class="graphics__flying-card first-flying-card">
-            <div class="flying-card__img-block first-img">
-              <div class="flying-card__circle">
+          <!-- First floating card -->
+          <div class="floating-card floating-card_purple">
+            <div class="floating-card__img">
+              <div class="floating-card__circle">
                 <img src="./src/icons/star.svg" alt="star" />
-                <p class="flying-card__rating">4.8</p>
+                <p class="floating-card__rating">4.8</p>
               </div>
             </div>
-            <p class="flying-card__title">Maliha</p>
-            <p class="flying-card__subtitle">UX Designer</p>
+            <p class="floating-card__title">Maliha</p>
+            <p class="floating-card__subtitle">UX Designer</p>
           </div>
 
-          <!-- Second flying card -->
-          <div class="graphics__flying-card second-flying-card">
-            <div class="flying-card__img-block second-img">
-              <div class="flying-card__circle">
+          <!-- Second floating card -->
+          <div class="floating-card floating-card_yellow">
+            <div class="floating-card__img">
+              <div class="floating-card__circle">
                 <img src="./src/icons/star.svg" alt="star" />
-                <p class="flying-card__rating">4.5</p>
+                <p class="floating-card__rating">4.5</p>
               </div>
             </div>
-            <p class="flying-card__title">Adam</p>
-            <p class="flying-card__subtitle">Project Manager</p>
+            <p class="floating-card__title">Adam</p>
+            <p class="floating-card__subtitle">Project Manager</p>
           </div>
         </div>
       </section>
 
       <!-- Job posts -->
       <section class="job-posts">
-        <div class="container job-posts__container">
-          <h2 class="job-posts__title title">Popular Job Posts</h2>
+        <div class="container">
+          <h2 class="title">Popular Job Posts</h2>
           <!-- card -->
-          <div class="job-posts__card-wrapper">
+          <div class="job-posts__cards-wrapper">
             <!-- First card -->
-            <a href="#" class="card">
+            <a href="#" class="job-card">
               <!-- card content top -->
-              <div class="card-content__top">
-                <div class="card-content__company-info">
-                  <div class="card-content__card-circle">
+              <div class="job-card__top">
+                <div class="job-card__company-info">
+                  <div class="job-card__company-logo">
                     <img src="./src/icons/slack-2.svg" alt="slack-icon" />
                   </div>
-                  <span class="card-content__company-name">Slack</span>
+                  <span class="job-card__company-name">Slack</span>
                 </div>
-                <div class="card-content__avatars">
-                  <div class="right-side__first-circle">
-                    <img src="./src/icons/avatar-1.svg" alt="first avatar" />
+                <div class="job-card__avatars">
+                  <div class="job-card__avatar">
+                    <img src="./src/icons/avatar-1.svg" alt="avatar" />
                   </div>
-                  <div class="right-side__second-circle">
-                    <img src="./src/icons/avatar-2.svg" alt="second avatar" />
+                  <div class="job-card__avatar">
+                    <img src="./src/icons/avatar-2.svg" alt="avatar" />
                   </div>
-                  <div class="right-side__third-circle">
+                  <div class="job-card__avatar">
                     <p class="avatar_text">5+</p>
-                    <img src="./src/icons/avatar-3.svg" alt="third avatar" />
+                    <img src="./src/icons/avatar-3.svg" alt="avatar" />
                   </div>
                 </div>
               </div>
@@ -256,26 +256,26 @@
             </a>
 
             <!-- Second card -->
-            <a href="#" class="card">
+            <a href="#" class="job-card">
               <!-- card content top -->
 
-              <div class="card-content__top">
-                <div class="card-content__company-info">
-                  <div class="card-content__card-circle">
+              <div class="job-card__top">
+                <div class="job-card__company-info">
+                  <div class="job-card__company-logo">
                     <img src="./src/icons/google-2.svg" alt="google icon" />
                   </div>
-                  <span class="card-content__company-name">Google</span>
+                  <span class="job-card__company-name">Google</span>
                 </div>
-                <div class="card-content__avatars">
-                  <div class="right-side__first-circle">
-                    <img src="./src/icons/avatar-5.svg" alt="first avatar" />
+                <div class="job-card__avatars">
+                  <div class="job-card__avatar">
+                    <img src="./src/icons/avatar-5.svg" alt="avatar" />
                   </div>
-                  <div class="right-side__second-circle">
-                    <img src="./src/icons/avatar-4.svg" alt="second avatar" />
+                  <div class="job-card__avatar">
+                    <img src="./src/icons/avatar-4.svg" alt="avatar" />
                   </div>
-                  <div class="right-side__third-circle">
+                  <div class="job-card__avatar">
                     <p class="avatar_text">5+</p>
-                    <img src="./src/icons/avatar-3.svg" alt="third avatar" />
+                    <img src="./src/icons/avatar-3.svg" alt="avatar" />
                   </div>
                 </div>
               </div>
@@ -295,26 +295,26 @@
             </a>
 
             <!-- Third card -->
-            <a href="#" class="card">
+            <a href="#" class="job-card">
               <!-- card content top -->
 
-              <div class="card-content__top">
-                <div class="card-content__company-info">
-                  <div class="card-content__card-circle">
+              <div class="job-card__top">
+                <div class="job-card__company-info">
+                  <div class="job-card__company-logo">
                     <img src="./src/icons/indeed-2.svg" alt="indeed icon" />
                   </div>
-                  <span class="card-content__company-name">Indeed</span>
+                  <span class="job-card__company-name">Indeed</span>
                 </div>
-                <div class="card-content__avatars">
-                  <div class="right-side__first-circle">
-                    <img src="./src/icons/avatar-7.svg" alt="first avatar" />
+                <div class="job-card__avatars">
+                  <div class="job-card__avatar">
+                    <img src="./src/icons/avatar-7.svg" alt="avatar" />
                   </div>
-                  <div class="right-side__second-circle">
-                    <img src="./src/icons/avatar-6.svg" alt="second avatar" />
+                  <div class="job-card__avatar">
+                    <img src="./src/icons/avatar-6.svg" alt="avatar" />
                   </div>
-                  <div class="right-side__third-circle">
+                  <div class="job-card__avatar">
                     <p class="avatar_text">5+</p>
-                    <img src="./src/icons/avatar-3.svg" alt="third avatar" />
+                    <img src="./src/icons/avatar-3.svg" alt="avatar" />
                   </div>
                 </div>
               </div>
@@ -335,22 +335,20 @@
           </div>
 
           <!-- Scroll block -->
-          <a class="job-posts__scroll-block" href="#">
-            <h2 class="scroll-block__text">
-              View All
-              <svg
-                width="28"
-                height="18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M.875 9a.937.937 0 0 1 .938-.938h22.111l-5.9-5.898A.938.938 0 1 1 19.35.836l7.5 7.5a.937.937 0 0 1 0 1.328l-7.5 7.5a.938.938 0 1 1-1.327-1.328l5.9-5.899H1.813A.938.938 0 0 1 .875 9Z"
-                />
-              </svg>
-            </h2>
+          <a class="link_white" href="#">
+            View All
+            <svg
+              width="28"
+              height="18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M.875 9a.937.937 0 0 1 .938-.938h22.111l-5.9-5.898A.938.938 0 1 1 19.35.836l7.5 7.5a.937.937 0 0 1 0 1.328l-7.5 7.5a.938.938 0 1 1-1.327-1.328l5.9-5.899H1.813A.938.938 0 0 1 .875 9Z"
+              />
+            </svg>
           </a>
         </div>
       </section>
@@ -622,8 +620,8 @@
                 />
 
                 <div class="feedback-card__user-description">
-                  <p class="feedback-card__username">Maria Jannat</p>
-                  <p class="feedback-card__profession">Content Writer</p>
+                  <p class="reviewer__username">Maria Jannat</p>
+                  <p class="reviewer__profession">Content Writer</p>
                   <div class="feedback-card__stars stars">
                     <img class="star" src="./src/icons/star.svg" alt="star" />
                     <img class="star" src="./src/icons/star.svg" alt="star" />
@@ -665,8 +663,8 @@
                 />
 
                 <div class="feedback-card__user-description">
-                  <p class="feedback-card__username">Mithela</p>
-                  <p class="feedback-card__profession">UI Designer</p>
+                  <p class="reviewer__username">Mithela</p>
+                  <p class="reviewer__profession">UI Designer</p>
                   <div class="feedback-card__stars stars">
                     <img class="star" src="./src/icons/star.svg" alt="star" />
                     <img class="star" src="./src/icons/star.svg" alt="star" />
@@ -708,8 +706,8 @@
                 />
 
                 <div class="feedback-card__user-description">
-                  <p class="feedback-card__username">Adam</p>
-                  <p class="feedback-card__profession">Developer</p>
+                  <p class="reviewer__username">Adam</p>
+                  <p class="reviewer__profession">Developer</p>
                   <div class="feedback-card__stars stars">
                     <img class="star" src="./src/icons/star.svg" alt="star" />
                     <img class="star" src="./src/icons/star.svg" alt="star" />
@@ -752,8 +750,8 @@
                 />
 
                 <div class="feedback-card__user-description">
-                  <p class="feedback-card__username">Maria Jannat</p>
-                  <p class="feedback-card__profession">Content Writer</p>
+                  <p class="reviewer__username">Maria Jannat</p>
+                  <p class="reviewer__profession">Content Writer</p>
                   <div class="feedback-card__stars stars">
                     <img class="star" src="./src/icons/star.svg" alt="star" />
                     <img class="star" src="./src/icons/star.svg" alt="star" />
@@ -796,8 +794,8 @@
                 />
 
                 <div class="feedback-card__user-description">
-                  <p class="feedback-card__username">Mithela</p>
-                  <p class="feedback-card__profession">UI Designer</p>
+                  <p class="reviewer__username">Mithela</p>
+                  <p class="reviewer__profession">UI Designer</p>
                   <div class="feedback-card__stars stars">
                     <img class="star" src="./src/icons/star.svg" alt="star" />
                     <img class="star" src="./src/icons/star.svg" alt="star" />
@@ -840,8 +838,8 @@
                 />
 
                 <div class="feedback-card__user-description">
-                  <p class="feedback-card__username">Adam</p>
-                  <p class="feedback-card__profession">Developer</p>
+                  <p class="reviewer__username">Adam</p>
+                  <p class="reviewer__profession">Developer</p>
                   <div class="feedback-card__stars stars">
                     <img class="star" src="./src/icons/star.svg" alt="star" />
                     <img class="star" src="./src/icons/star.svg" alt="star" />
@@ -877,7 +875,7 @@
             <div class="search-container subscribe-wrapper">
               <!-- Search form -->
 
-              <form class="search-container__search-form mail-form">
+              <form class="search-form mail-form">
                 <input
                   class="mail-input"
                   type="text"

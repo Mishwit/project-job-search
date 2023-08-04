@@ -47,7 +47,7 @@ svg path {
   stroke: currentColor;
 }
 
-svg {
+.footer svg {
   transition: var(--TRANSITION_NORMAL);
 }
 

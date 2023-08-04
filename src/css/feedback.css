@@ -76,14 +76,14 @@
   justify-content: center;
 }
 
-.feedback-card__username {
+.reviewer__username {
   margin-bottom: 5px;
   font-weight: var(--FONT_WEIGHT_700);
   color: var(--COLOR_BLACK);
   font-size: var(--FONT_SIZE_24);
 }
 
-.feedback-card__profession {
+.reviewer__profession {
   margin-bottom: 15px;
   font-size: var(--FONT_SIZE_20);
 }
@@ -194,11 +194,11 @@
     margin-right: 15px;
   }
 
-  .feedback-card__username {
+  .reviewer__username {
     font-size: var(--FONT_SIZE_14);
   }
 
-  .feedback-card__profession {
+  .reviewer__profession {
     font-size: var(--FONT_SIZE_14);
   }
 
@@ -225,11 +225,11 @@
     margin-bottom: var(--FONT_SIZE_18);
   }
 
-  .feedback-card__username {
+  .reviewer__username {
     font-size: 18px;
   }
 
-  .feedback-card__profession {
+  .reviewer__profession {
     margin-bottom: 5px;
     font-size: var(--FONT_SIZE_16);
   }
