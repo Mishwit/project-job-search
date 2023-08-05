@@ -2,7 +2,7 @@
 
 window.addEventListener("DOMContentLoaded", () => {
   const menu = document.querySelector(".nav-menu"),
-    menuItem = document.querySelectorAll(".nav-menu__list-item"),
+    menuItem = document.querySelectorAll(".nav-menu .list-item"),
     hamburger = document.querySelector(".hamburger");
 
   hamburger.addEventListener("click", () => {
@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const feedbackScroll = document.querySelector(".feedback__feedback-wrapper");
+const feedbackScroll = document.querySelector(".feedback-wrapper");
 
 feedbackScroll.addEventListener(
   "wheel",
@@ -34,20 +34,4 @@ feedbackScroll.addEventListener(
 
 feedbackScroll.addEventListener("wheel", (e) => {
   e.preventDefault();
-});
-
-$(document).ready(function () {
-  $("a[href*='#']").on("click", function (e) {
-    var anchor = $(this);
-    $("html, body")
-      .stop()
-      .animate(
-        {
-          scrollTop: $(anchor.attr("href")).offset().top,
-        },
-        1000
-      );
-    e.preventDefault();
-    return false;
-  });
 });

@@ -79,6 +79,7 @@ p {
 a {
   text-decoration: none;
   color: var(--COLOR_BLACK);
+  transition: var(--TRANSITION_NORMAL);
 }
 
 input {
@@ -127,12 +128,6 @@ header {
 
 .decor_orange {
   color: var(--COLOR_ORANGE);
-}
-
-.hover_orange:hover {
-  cursor: pointer;
-  color: var(--COLOR_ORANGE);
-  transition: var(--TRANSITION_FAST);
 }
 
 .button {

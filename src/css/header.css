@@ -18,16 +18,16 @@ header .menu {
   flex-direction: row;
 }
 
-.nav-menu__list-item {
+header .list-item {
   margin-right: 64px;
   font-size: var(--FONT_SIZE_18);
 }
 
-.nav-menu__list-item:last-child {
+header .list-item:last-child {
   margin-right: 0;
 }
 
-.nav-menu__list-item a {
+header .list-item a {
   text-decoration: none;
   color: var(--COLOR_BLACK);
   font-size: var(--FONT_SIZE_20);
@@ -46,11 +46,11 @@ header .menu {
   font-size: var(--FONT_SIZE_18);
 }
 
-.menu__list-item {
+.nav-menu .list-item {
   margin-right: 40px;
 }
 
-.menu__list-item:last-child {
+.nav-menu .list-item:last-child {
   margin-right: 0;
 }
 
@@ -131,18 +131,18 @@ header .menu {
     height: 100%;
   }
 
-  .nav-menu__list-item {
+  header .list-item {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 0;
   }
 
-  .nav-menu__list-item a {
+  header .list-item a {
     transition: var(--TRANSITION_NORMAL);
   }
 
-  .nav-menu__list-item a:hover {
+  .header .list-item a:hover {
     color: var(--COLOR_ORANGE);
   }
 

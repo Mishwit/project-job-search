@@ -94,7 +94,7 @@
   font-size: var(--FONT_SIZE_20);
 }
 
-.graphics {
+.hero-graphics {
   position: relative;
 }
 
@@ -104,21 +104,21 @@
   right: -159px;
 }
 
-.graphics__ellipse-big {
+.hero-graphics__ellipse-big {
   position: absolute;
   z-index: -1;
   bottom: -60px;
   right: -295px;
 }
 
-.graphics__ellipse-small {
+.hero-graphics__ellipse-small {
   position: absolute;
   z-index: -1;
   bottom: 80px;
   right: -159px;
 }
 
-.graphics__floating-icon {
+.hero-graphics__floating-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,7 +209,7 @@
   transform: rotate(324deg);
 }
 
-.graphics__floating-icon .google-img {
+.hero-graphics__floating-icon .google-img {
   transform: rotate(36deg);
 }
 
@@ -219,7 +219,7 @@
   transform: rotate(18deg);
 }
 
-.graphics__floating-icon .paypal-img {
+.hero-graphics__floating-icon .paypal-img {
   transform: rotate(341deg);
 }
 
@@ -229,7 +229,7 @@
   transform: rotate(-72.74deg);
 }
 
-.graphics__floating-icon .indeed-img {
+.hero-graphics__floating-icon .indeed-img {
   transform: rotate(74deg);
 }
 
@@ -239,7 +239,7 @@
   transform: rotate(15deg);
 }
 
-.graphics__floating-icon .slack-img {
+.hero-graphics__floating-icon .slack-img {
   transform: rotate(72deg);
 }
 
@@ -277,21 +277,21 @@
     right: -40px;
   }
 
-  .graphics__ellipse-big {
+  .hero-graphics__ellipse-big {
     height: 600px;
     width: 600px;
     bottom: 55px;
     right: -115px;
   }
 
-  .graphics__ellipse-small {
+  .hero-graphics__ellipse-small {
     height: 425px;
     width: 425px;
     bottom: 140px;
     right: -28px;
   }
 
-  .graphics__floating-icon {
+  .hero-graphics__floating-icon {
     height: 70px;
     width: 70px;
   }
@@ -354,21 +354,21 @@
     right: -5px;
   }
 
-  .graphics__ellipse-big {
+  .hero-graphics__ellipse-big {
     height: 425px;
     width: 425px;
     bottom: 130px;
     right: -15px;
   }
 
-  .graphics__ellipse-small {
+  .hero-graphics__ellipse-small {
     height: 275px;
     width: 275px;
     bottom: 205px;
     right: 60px;
   }
 
-  .graphics__floating-icon {
+  .hero-graphics__floating-icon {
     height: 60px;
     width: 60px;
   }
@@ -421,7 +421,7 @@
     line-height: 70px;
   }
 
-  .menu__list-item {
+  .nav-menu .list-item {
     margin-right: 20px;
   }
 
@@ -450,21 +450,21 @@
     right: 0;
   }
 
-  .graphics__ellipse-big {
+  .hero-graphics__ellipse-big {
     height: 650px;
     width: 650px;
     bottom: 470px;
     right: -135px;
   }
 
-  .graphics__ellipse-small {
+  .hero-graphics__ellipse-small {
     height: 450px;
     width: 450px;
     bottom: 575px;
     right: -35px;
   }
 
-  .graphics__floating-icon {
+  .hero-graphics__floating-icon {
     height: 60px;
     width: 60px;
   }
@@ -553,7 +553,7 @@
   .info .title {
     max-width: 345px;
     text-align: center;
-    line-height: 35px;
+    line-height: 58px;
   }
 
   .info .subtitle {
@@ -606,7 +606,7 @@
     display: none;
   }
 
-  .graphics {
+  .hero-graphics {
     display: none;
   }
 

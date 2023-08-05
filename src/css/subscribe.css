@@ -37,14 +37,14 @@
   background-color: var(--COLOR_WHITE);
 }
 
-.mail-input {
+.input_lg {
   border: none;
   outline: none;
   min-width: 390px;
   letter-spacing: 1px;
 }
 
-.subscribe-button {
+.button_subscribe {
   height: 60px;
   gap: 16px;
   font-size: var(--FONT_SIZE_18);
@@ -52,7 +52,7 @@
   letter-spacing: 1px;
 }
 
-.subscribe-button:hover {
+.button_subscribe:hover {
   box-shadow: 0 0 0;
 }
 
@@ -62,7 +62,7 @@
   left: -100px;
 }
 
-.subscribe-rectangles {
+.subscribe__stripes-pattern {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -74,7 +74,7 @@
   }
 }
 @media (max-width: 1279px) {
-  .subscribe__container {
+  .subscribe {
     display: flex;
     justify-content: center;
   }
@@ -83,7 +83,7 @@
     width: 960px;
   }
 
-  .subscribe-rectangles {
+  .subscribe__stripes-pattern {
     height: 340px;
     width: 345px;
     right: -20px;
@@ -105,11 +105,11 @@
     width: auto;
   }
 
-  .mail-input {
+  .input_lg {
     min-width: 340px;
   }
 
-  .subscribe-rectangles {
+  .subscribe__stripes-pattern {
     height: 205px;
     width: 235px;
     right: -25px;
@@ -135,13 +135,13 @@
     display: none;
   }
 
-  .subscribe-rectangles {
+  .subscribe__stripes-pattern {
     height: 175px;
     width: 180px;
     right: -10px;
   }
 
-  .mail-input {
+  .input_lg {
     min-width: 293px;
   }
 }
@@ -160,12 +160,12 @@
     bottom: 50px;
   }
 
-  .subscribe-button {
+  .button_subscribe {
     width: 250px;
     border: 2px solid var(--COLOR_WHITE);
   }
 
-  .subscribe-rectangles {
+  .subscribe__stripes-pattern {
     display: none;
   }
 
@@ -183,11 +183,11 @@
     gap: 5px;
   }
 
-  .mail-input {
+  .input_lg {
     min-width: 310px;
   }
 
-  .subscribe-button {
+  .button_subscribe {
     width: 310px;
   }
 
@@ -210,11 +210,11 @@
     min-width: 270px;
   }
 
-  .mail-input {
+  .input_lg {
     min-width: 250px;
   }
 
-  .subscribe-button {
+  .button_subscribe {
     width: 250px;
   }
 }

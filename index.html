@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jobply - job search</title>
-    <link rel="icon" href="./src/favicons/favicon.ico" sizes="any" />
+    <link type="image/x-icon" href="favicon.ico" rel="icon" sizes="any" />
     <!-- 32×32 -->
     <link rel="icon" href="./src/favicons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./src/favicons/apple-touch-icon.png" />
@@ -40,28 +40,28 @@
         <!-- Navigation menu -->
         <nav class="nav-menu">
           <ul class="nav-menu__list">
-            <li class="nav-menu__list-item"><a href="#">Home</a></li>
-            <li class="nav-menu__list-item">
+            <li class="list-item"><a href="#">Home</a></li>
+            <li class="list-item">
               <a href="#">Categories</a>
             </li>
-            <li class="nav-menu__list-item"><a href="#">Service</a></li>
-            <li class="nav-menu__list-item"><a href="#">Jobs</a></li>
+            <li class="list-item"><a href="#">Service</a></li>
+            <li class="list-item"><a href="#">Jobs</a></li>
             <button class="button nav__button" href="#">Post a vacancy</button>
           </ul>
         </nav>
         <nav class="menu nav-menu">
           <!-- Navigation list items -->
           <ul class="menu__list">
-            <li class="menu__list-item list-item">
+            <li class="list-item">
               <a class="nav-link" href="#">Home</a>
             </li>
-            <li class="menu__list-item list-item">
+            <li class="list-item">
               <a class="nav-link" href="#">Categories</a>
             </li>
-            <li class="menu__list-item list-item">
+            <li class="list-item">
               <a class="nav-link" href="#s">Service</a>
             </li>
-            <li class="menu__list-item list-item">
+            <li class="list-item">
               <a class="nav-link" href="#">Jobs</a>
             </li>
           </ul>
@@ -131,8 +131,8 @@
           </div>
         </div>
 
-        <!-- Graphics -->
-        <div class="graphics">
+        <!-- Hero-graphics -->
+        <div class="hero-graphics">
           <img
             class="img"
             src="./src/img/satisfied-lovely-woman-holds-modern-cell-phone-1.png"
@@ -141,19 +141,19 @@
 
           <!-- Big ellipse -->
           <img
-            class="graphics__ellipse-big"
+            class="hero-graphics__ellipse-big"
             src="./src/img/ellipse-big.svg"
             alt="big ellipse"
           />
           <!-- Small ellipse -->
           <img
-            class="graphics__ellipse-small"
+            class="hero-graphics__ellipse-small"
             src="./src/img/ellipse-small.svg"
             alt="small ellipse"
           />
 
           <!-- floating icons -->
-          <div class="graphics__floating-icon google-icon">
+          <div class="hero-graphics__floating-icon google-icon">
             <img
               class="google-img"
               src="./src/icons/flat-color-icons_google.svg"
@@ -161,7 +161,7 @@
             />
           </div>
 
-          <div class="graphics__floating-icon paypal-icon">
+          <div class="hero-graphics__floating-icon paypal-icon">
             <img
               class="paypal-img"
               src="./src/icons/simple-icons_paypal.svg"
@@ -169,7 +169,7 @@
             />
           </div>
 
-          <div class="graphics__floating-icon indeed-icon">
+          <div class="hero-graphics__floating-icon indeed-icon">
             <img
               class="indeed-img"
               src="./src/icons/simple-icons_indeed.svg"
@@ -177,7 +177,7 @@
             />
           </div>
 
-          <div class="graphics__floating-icon slack-icon">
+          <div class="hero-graphics__floating-icon slack-icon">
             <img
               class="slack-img"
               src="./src/icons/grommet-icons_slack.svg"
@@ -357,160 +357,159 @@
       <section class="categories">
         <div class="container">
           <h2 class="title">Job Categories</h2>
-          <div class="categories__jobs-categories">
+          <div class="jobs-categories-wrapper">
             <!-- Job card -->
-            <div class="jobs-group">
-              <a href="#" class="jobs-group__job-blocks job-block">
-                <div class="job-block__circle">
-                  <img
-                    class="job-block__img"
-                    src="./src/icons/accouting&finance.svg"
-                    alt="accouting&finance"
-                  />
 
-                  <img
-                    class="job-block__img_active"
-                    src="./src/icons/accouting&finance-active.svg"
-                    alt="accouting&finance"
-                  />
-                </div>
-                <p class="job-block__title">Accouting & Finance</p>
-                <p class="job-block__subtitle">125 Job Vacancy</p>
-              </a>
+            <a href="#" class="category-card">
+              <div class="category-card__circle">
+                <img
+                  class="category-icon"
+                  src="./src/icons/accouting&finance.svg"
+                  alt="accouting&finance"
+                />
 
-              <a href="#" class="jobs-group__job-blocks job-block">
-                <div class="job-block__circle circle-active">
-                  <img
-                    class="job-block__img"
-                    src="./src/icons/ui-ux-design.svg"
-                    alt="ui/ux design"
-                  />
+                <img
+                  class="category-icon_active"
+                  src="./src/icons/accouting&finance-active.svg"
+                  alt="accouting&finance"
+                />
+              </div>
+              <p class="title">Accouting & Finance</p>
+              <p class="subtitle">125 Job Vacancy</p>
+            </a>
 
-                  <img
-                    class="job-block__img_active"
-                    src="./src/icons/ui-ux-design-active.svg"
-                    alt="ui/ux design"
-                  />
-                </div>
-                <p class="job-block__title">UI/UX Design</p>
-                <p class="job-block__subtitle">52 Job Vacancy</p>
-              </a>
-              <a href="#" class="jobs-group__job-blocks job-block">
-                <div class="job-block__circle">
-                  <img
-                    class="job-block__img"
-                    src="./src/icons/content-writing.svg"
-                    alt="content writing"
-                  />
+            <a href="#" class="category-card">
+              <div class="category-card__circle circle-active">
+                <img
+                  class="category-icon"
+                  src="./src/icons/ui-ux-design.svg"
+                  alt="ui/ux design"
+                />
 
-                  <img
-                    class="job-block__img_active"
-                    src="./src/icons/content-writing-active.svg"
-                    alt="content writing"
-                  />
-                </div>
-                <p class="job-block__title">Content Writing</p>
-                <p class="job-block__subtitle">150 Job Vacancy</p>
-              </a>
+                <img
+                  class="category-icon_active"
+                  src="./src/icons/ui-ux-design-active.svg"
+                  alt="ui/ux design"
+                />
+              </div>
+              <p class="title">UI/UX Design</p>
+              <p class="subtitle">52 Job Vacancy</p>
+            </a>
+            <a href="#" class="category-card">
+              <div class="category-card__circle">
+                <img
+                  class="category-icon"
+                  src="./src/icons/content-writing.svg"
+                  alt="content writing"
+                />
 
-              <a href="#" class="jobs-group__job-blocks job-block">
-                <div class="job-block__circle">
-                  <img
-                    class="job-block__img"
-                    src="./src/icons/accouting&finance-2.svg"
-                    alt="accouting&finance"
-                  />
+                <img
+                  class="category-icon_active"
+                  src="./src/icons/content-writing-active.svg"
+                  alt="content writing"
+                />
+              </div>
+              <p class="title">Content Writing</p>
+              <p class="subtitle">150 Job Vacancy</p>
+            </a>
 
-                  <img
-                    class="job-block__img_active"
-                    src="./src/icons/accouting&finance-2-active.svg"
-                    alt="accouting&finance"
-                  />
-                </div>
-                <p class="job-block__title">Accouting & Finance</p>
-                <p class="job-block__subtitle">125 Job Vacancy</p>
-              </a>
+            <a href="#" class="category-card">
+              <div class="category-card__circle">
+                <img
+                  class="category-icon"
+                  src="./src/icons/accouting&finance-2.svg"
+                  alt="accouting&finance"
+                />
 
-              <a href="#" class="jobs-group__job-blocks job-block">
-                <div class="job-block__circle">
-                  <img
-                    class="job-block__img"
-                    src="./src/icons/digital-marketing.svg"
-                    alt="digital marketing"
-                  />
+                <img
+                  class="category-icon_active"
+                  src="./src/icons/accouting&finance-2-active.svg"
+                  alt="accouting&finance"
+                />
+              </div>
+              <p class="title">Accouting & Finance</p>
+              <p class="subtitle">125 Job Vacancy</p>
+            </a>
 
-                  <img
-                    class="job-block__img_active"
-                    src="./src/icons/digital-marketing-active.svg"
-                    alt="digital marketing"
-                  />
-                </div>
-                <p class="job-block__title">Digital Marketing</p>
-                <p class="job-block__subtitle">150 Job Vacancy</p>
-              </a>
+            <a href="#" class="category-card">
+              <div class="category-card__circle">
+                <img
+                  class="category-icon"
+                  src="./src/icons/digital-marketing.svg"
+                  alt="digital marketing"
+                />
 
-              <a href="#" class="jobs-group__job-blocks job-block">
-                <div class="job-block__circle">
-                  <img
-                    class="job-block__img"
-                    src="./src/icons/technical-support.svg"
-                    alt="technical support"
-                  />
+                <img
+                  class="category-icon_active"
+                  src="./src/icons/digital-marketing-active.svg"
+                  alt="digital marketing"
+                />
+              </div>
+              <p class="title">Digital Marketing</p>
+              <p class="subtitle">150 Job Vacancy</p>
+            </a>
 
-                  <img
-                    class="job-block__img_active"
-                    src="./src/icons/technical-support-active.svg"
-                    alt="technical support"
-                  />
-                </div>
-                <p class="job-block__title">Technical Support</p>
-                <p class="job-block__subtitle">350 Job Vacancy</p>
-              </a>
+            <a href="#" class="category-card">
+              <div class="category-card__circle">
+                <img
+                  class="category-icon"
+                  src="./src/icons/technical-support.svg"
+                  alt="technical support"
+                />
 
-              <a href="#" class="jobs-group__job-blocks job-block">
-                <div class="job-block__circle">
-                  <img
-                    class="job-block__img"
-                    src="./src/icons/human-resourse.svg"
-                    alt="human resourse"
-                  />
+                <img
+                  class="category-icon_active"
+                  src="./src/icons/technical-support-active.svg"
+                  alt="technical support"
+                />
+              </div>
+              <p class="title">Technical Support</p>
+              <p class="subtitle">350 Job Vacancy</p>
+            </a>
 
-                  <img
-                    class="job-block__img_active"
-                    src="./src/icons/human-resourse-active.svg"
-                    alt="human resourse"
-                  />
-                </div>
-                <p class="job-block__title">Human Resource</p>
-                <p class="job-block__subtitle">35 Job Vacancy</p>
-              </a>
+            <a href="#" class="category-card">
+              <div class="category-card__circle">
+                <img
+                  class="category-icon"
+                  src="./src/icons/human-resourse.svg"
+                  alt="human resourse"
+                />
 
-              <a href="#" class="jobs-group__job-blocks job-block">
-                <div class="job-block__circle">
-                  <img
-                    class="job-block__img"
-                    src="./src/icons/art&illustration.svg"
-                    alt="art&illustration"
-                  />
+                <img
+                  class="category-icon_active"
+                  src="./src/icons/human-resourse-active.svg"
+                  alt="human resourse"
+                />
+              </div>
+              <p class="title">Human Resource</p>
+              <p class="subtitle">35 Job Vacancy</p>
+            </a>
 
-                  <img
-                    class="job-block__img_active"
-                    src="./src/icons/art&illustration-active.svg"
-                    alt="art&illustration"
-                  />
-                </div>
-                <p class="job-block__title">Art & Illustration</p>
-                <p class="job-block__subtitle">52 Job Vacancy</p>
-              </a>
-            </div>
+            <a href="#" class="category-card">
+              <div class="category-card__circle">
+                <img
+                  class="category-icon"
+                  src="./src/icons/art&illustration.svg"
+                  alt="art&illustration"
+                />
+
+                <img
+                  class="category-icon_active"
+                  src="./src/icons/art&illustration-active.svg"
+                  alt="art&illustration"
+                />
+              </div>
+              <p class="title">Art & Illustration</p>
+              <p class="subtitle">52 Job Vacancy</p>
+            </a>
           </div>
 
           <!-- Sign up block -->
-          <div class="categories__sign-up">
+          <div class="sign-up">
             <!-- Sign up block left wrapper -->
             <div class="sign-up__info">
               <img
-                class="sign-up__dots"
+                class="sign-up-dot-pattern"
                 src="./src/backgound-svg/dots-design.svg"
                 alt="dots"
               />
@@ -521,354 +520,349 @@
               </p>
 
               <!-- Sign up button -->
-              <div class="sign-up__button">
-                <button class="button" href="#">Create an Account</button>
-              </div>
+              <button class="button" href="#">Create an Account</button>
             </div>
+
             <!-- Sign up block right wrapper -->
-            <div class="sign-up__graphics">
+            <div class="sign-up-graphics">
               <img
-                class="right-wrapper__dots"
+                class="sign-up-graphics-dot-pattern"
                 src="./src/backgound-svg/dots-design.svg"
                 alt="dots"
               />
 
               <!-- Vectors -->
               <img
-                class="right-wrapper__vector-3"
+                class="sign-up-graphics__vector-vector-3"
                 src="./src/backgound-svg/vector-2.svg"
                 alt=""
               />
               <img
-                class="right-wrapper__vector-4"
+                class="sign-up-graphics__vector-vector-4"
                 src="./src/backgound-svg/vector-3.svg"
                 alt=""
               />
 
               <!-- Rectangles -->
-              <div class="right-wrapper__rectangle-1 rectangle"></div>
-              <div class="right-wrapper__rectangle-2 rectangle"></div>
+              <div class="rectangle"></div>
+              <div class="rectangle"></div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Third section -->
+      <!-- Post a job section -->
       <section class="post-job">
-        <div class="post-job__background">
-          <div class="container post-job__container">
-            <!-- Third section left wrapper -->
+        <div class="container post-job__container">
+          <!-- Third section left wrapper -->
 
-            <div class="post-job__video-block">
-              <img
-                class="post-job__img"
-                src="./src/img/post-job-img.png"
-                alt=""
-              />
+          <div class="video-block">
+            <img
+              class="video-block__cover"
+              src="./src/img/post-job-img.png"
+              alt=""
+            />
 
-              <button class="play-button">
-                <img src="./src/icons/play-button.svg" alt="play button" />
-              </button>
-            </div>
-            <!-- Third section right wrapper -->
-            <div class="post-job__info">
-              <h2 class="title">Post a Job for UX Designer</h2>
-              <p class="subtitle">
-                Create an account so you can get job information that suits you,
-                and you can apply the salary your demand.
-              </p>
-              <button class="button" href="#">Post a Job</button>
-            </div>
+            <button class="button_play">
+              <img src="./src/icons/play-button.svg" alt="play button" />
+            </button>
+          </div>
+          <!-- Third section right wrapper -->
+          <div class="post-job__info">
+            <h2 class="title">Post a Job for UX Designer</h2>
+            <p class="subtitle">
+              Create an account so you can get job information that suits you,
+              and you can apply the salary your demand.
+            </p>
+            <button class="button" href="#">Post a Job</button>
           </div>
         </div>
       </section>
 
       <!-- feedback -->
       <section class="feedback">
-        <div class="feedback__container">
-          <div class="container">
-            <h2 class="title">Great Feedback From Candidates</h2>
+        <div class="container">
+          <h2 class="title">Great Feedback From Candidates</h2>
+        </div>
+        <div class="feedback-wrapper">
+          <!-- Feedback card -->
+          <div class="feedback-card">
+            <div class="feedback-card__qoute">
+              <img
+                class="feedback-card__quote-icon"
+                src="./src/icons/double-quotes.svg"
+                alt="double quotes"
+              />
+
+              <img
+                class="feedback-card__quote-icon_active"
+                src="./src/icons/double-quotes-active.svg"
+                alt="double quotes"
+              />
+
+              <p class="feedback-card__paragraph">
+                Very decent services & care about my health. Really happy with
+                his advice. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry Very decent services & care about my
+                health. Really happy with his advice.
+              </p>
+            </div>
+
+            <div class="reviewer">
+              <img
+                class="reviewer__avatar"
+                src="./src/img/user-1.png"
+                alt="Maria Jannat"
+              />
+
+              <div class="reviewer__description">
+                <p class="reviewer__name">Maria Jannat</p>
+                <p class="reviewer__profession">Content Writer</p>
+                <div class="stars">
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="feedback__feedback-wrapper">
-            <!-- Feedback card -->
-            <div class="feedback-card">
-              <div class="feedback-card__title">
-                <img
-                  class="feedback-card__quotes"
-                  src="./src/icons/double-quotes.svg"
-                  alt="double quotes"
-                />
+          <!-- Feedback card -->
+          <div class="feedback-card">
+            <div class="feedback-card__qoute">
+              <img
+                class="feedback-card__quote-icon"
+                src="./src/icons/double-quotes.svg"
+                alt="double quotes"
+              />
 
-                <img
-                  class="feedback-card__quotes-active"
-                  src="./src/icons/double-quotes-active.svg"
-                  alt="double quotes"
-                />
+              <img
+                class="feedback-card__quote-icon_active"
+                src="./src/icons/double-quotes-active.svg"
+                alt="double quotes"
+              />
 
-                <p class="feedback-card__paragraph">
-                  Very decent services & care about my health. Really happy with
-                  his advice. Lorem Ipsum is simply dummy text of the printing
-                  and typesetting industry Very decent services & care about my
-                  health. Really happy with his advice.
-                </p>
-              </div>
+              <p class="feedback-card__paragraph">
+                Very decent services & care about my health. Really happy with
+                his advice. Lorem Ipsum is simply dummy text of the printing and
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
 
-              <div class="feedback-card__user-preview">
-                <img
-                  class="profile-img"
-                  src="./src/img/user-1.png"
-                  alt="Maria Jannat"
-                />
+            <div class="reviewer">
+              <img
+                class="reviewer__avatar"
+                src="./src/img/user-2.png"
+                alt="Maria Jannat"
+              />
 
-                <div class="feedback-card__user-description">
-                  <p class="reviewer__username">Maria Jannat</p>
-                  <p class="reviewer__profession">Content Writer</p>
-                  <div class="feedback-card__stars stars">
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                  </div>
+              <div class="reviewer__description">
+                <p class="reviewer__name">Mithela</p>
+                <p class="reviewer__profession">UI Designer</p>
+                <div class="stars">
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
                 </div>
               </div>
             </div>
-            <!-- Feedback card -->
-            <div class="feedback-card">
-              <div class="feedback-card__title">
-                <img
-                  class="feedback-card__quotes"
-                  src="./src/icons/double-quotes.svg"
-                  alt="double quotes"
-                />
+          </div>
+          <!-- Feedback card -->
+          <div class="feedback-card">
+            <div class="feedback-card__qoute">
+              <img
+                class="feedback-card__quote-icon"
+                src="./src/icons/double-quotes.svg"
+                alt="double quotes"
+              />
 
-                <img
-                  class="feedback-card__quotes-active"
-                  src="./src/icons/double-quotes-active.svg"
-                  alt="double quotes"
-                />
+              <img
+                class="feedback-card__quote-icon_active"
+                src="./src/icons/double-quotes-active.svg"
+                alt="double quotes"
+              />
 
-                <p class="feedback-card__paragraph">
-                  Very decent services & care about my health. Really happy with
-                  his advice. Lorem Ipsum is simply dummy text of the printing
-                  and Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-
-              <div class="feedback-card__user-preview">
-                <img
-                  class="profile-img"
-                  src="./src/img/user-2.png"
-                  alt="Maria Jannat"
-                />
-
-                <div class="feedback-card__user-description">
-                  <p class="reviewer__username">Mithela</p>
-                  <p class="reviewer__profession">UI Designer</p>
-                  <div class="feedback-card__stars stars">
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Feedback card -->
-            <div class="feedback-card">
-              <div class="feedback-card__title">
-                <img
-                  class="feedback-card__quotes"
-                  src="./src/icons/double-quotes.svg"
-                  alt="double quotes"
-                />
-
-                <img
-                  class="feedback-card__quotes-active"
-                  src="./src/icons/double-quotes-active.svg"
-                  alt="double quotes"
-                />
-
-                <p class="feedback-card__paragraph">
-                  Very decent services & care about my health. Really happy with
-                  his advice. Lorem Ipsum is simply dummy text of the printing
-                  and typesetting industry Very decent services & care about my
-                  health. Really happy with his advice.
-                </p>
-              </div>
-
-              <div class="feedback-card__user-preview">
-                <img
-                  class="profile-img"
-                  src="./src/img/user-3.png"
-                  alt="Maria Jannat"
-                />
-
-                <div class="feedback-card__user-description">
-                  <p class="reviewer__username">Adam</p>
-                  <p class="reviewer__profession">Developer</p>
-                  <div class="feedback-card__stars stars">
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                  </div>
-                </div>
-              </div>
+              <p class="feedback-card__paragraph">
+                Very decent services & care about my health. Really happy with
+                his advice. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry Very decent services & care about my
+                health. Really happy with his advice.
+              </p>
             </div>
 
-            <!-- Feedback card -->
-            <div class="feedback-card">
-              <div class="feedback-card__title">
-                <img
-                  class="feedback-card__quotes"
-                  src="./src/icons/double-quotes.svg"
-                  alt="double quotes"
-                />
+            <div class="reviewer">
+              <img
+                class="reviewer__avatar"
+                src="./src/img/user-3.png"
+                alt="Maria Jannat"
+              />
 
-                <img
-                  class="feedback-card__quotes-active"
-                  src="./src/icons/double-quotes-active.svg"
-                  alt="double quotes"
-                />
-
-                <p class="feedback-card__paragraph">
-                  Very decent services & care about my health. Really happy with
-                  his advice. Lorem Ipsum is simply dummy text of the printing
-                  and typesetting industry Very decent services & care about my
-                  health. Really happy with his advice.
-                </p>
-              </div>
-
-              <div class="feedback-card__user-preview">
-                <img
-                  class="profile-img"
-                  src="./src/img/user-1.png"
-                  alt="Maria Jannat"
-                />
-
-                <div class="feedback-card__user-description">
-                  <p class="reviewer__username">Maria Jannat</p>
-                  <p class="reviewer__profession">Content Writer</p>
-                  <div class="feedback-card__stars stars">
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Feedback card -->
-            <div class="feedback-card">
-              <div class="feedback-card__title">
-                <img
-                  class="feedback-card__quotes"
-                  src="./src/icons/double-quotes.svg"
-                  alt="double quotes"
-                />
-
-                <img
-                  class="feedback-card__quotes-active"
-                  src="./src/icons/double-quotes-active.svg"
-                  alt="double quotes"
-                />
-
-                <p class="feedback-card__paragraph">
-                  Very decent services & care about my health. Really happy with
-                  his advice. Lorem Ipsum is simply dummy text of the printing
-                  and Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-
-              <div class="feedback-card__user-preview">
-                <img
-                  class="profile-img"
-                  src="./src/img/user-2.png"
-                  alt="Maria Jannat"
-                />
-
-                <div class="feedback-card__user-description">
-                  <p class="reviewer__username">Mithela</p>
-                  <p class="reviewer__profession">UI Designer</p>
-                  <div class="feedback-card__stars stars">
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Feedback card -->
-            <div class="feedback-card">
-              <div class="feedback-card__title">
-                <img
-                  class="feedback-card__quotes"
-                  src="./src/icons/double-quotes.svg"
-                  alt="double quotes"
-                />
-
-                <img
-                  class="feedback-card__quotes-active"
-                  src="./src/icons/double-quotes-active.svg"
-                  alt="double quotes"
-                />
-
-                <p class="feedback-card__paragraph">
-                  Very decent services & care about my health. Really happy with
-                  his advice. Lorem Ipsum is simply dummy text of the printing
-                  and typesetting industry Very decent services & care about my
-                  health. Really happy with his advice.
-                </p>
-              </div>
-
-              <div class="feedback-card__user-preview">
-                <img
-                  class="profile-img"
-                  src="./src/img/user-3.png"
-                  alt="Maria Jannat"
-                />
-
-                <div class="feedback-card__user-description">
-                  <p class="reviewer__username">Adam</p>
-                  <p class="reviewer__profession">Developer</p>
-                  <div class="feedback-card__stars stars">
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                    <img class="star" src="./src/icons/star.svg" alt="star" />
-                  </div>
+              <div class="reviewer__description">
+                <p class="reviewer__name">Adam</p>
+                <p class="reviewer__profession">Developer</p>
+                <div class="stars">
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Feedback card scroll -->
-          <div class="feedback-card__scroll">
-            <div class="scroll-circle"></div>
-            <div class="scroll-circle"></div>
-            <div class="scroll-circle"></div>
-            <div class="scroll-circle"></div>
+          <!-- Feedback card -->
+          <div class="feedback-card">
+            <div class="feedback-card__qoute">
+              <img
+                class="feedback-card__quote-icon"
+                src="./src/icons/double-quotes.svg"
+                alt="double quotes"
+              />
+
+              <img
+                class="feedback-card__quote-icon_active"
+                src="./src/icons/double-quotes-active.svg"
+                alt="double quotes"
+              />
+
+              <p class="feedback-card__paragraph">
+                Very decent services & care about my health. Really happy with
+                his advice. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry Very decent services & care about my
+                health. Really happy with his advice.
+              </p>
+            </div>
+
+            <div class="reviewer">
+              <img
+                class="reviewer__avatar"
+                src="./src/img/user-1.png"
+                alt="Maria Jannat"
+              />
+
+              <div class="reviewer__description">
+                <p class="reviewer__name">Maria Jannat</p>
+                <p class="reviewer__profession">Content Writer</p>
+                <div class="stars">
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Feedback card -->
+          <div class="feedback-card">
+            <div class="feedback-card__qoute">
+              <img
+                class="feedback-card__quote-icon"
+                src="./src/icons/double-quotes.svg"
+                alt="double quotes"
+              />
+
+              <img
+                class="feedback-card__quote-icon_active"
+                src="./src/icons/double-quotes-active.svg"
+                alt="double quotes"
+              />
+
+              <p class="feedback-card__paragraph">
+                Very decent services & care about my health. Really happy with
+                his advice. Lorem Ipsum is simply dummy text of the printing and
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+
+            <div class="reviewer">
+              <img
+                class="reviewer__avatar"
+                src="./src/img/user-2.png"
+                alt="Maria Jannat"
+              />
+
+              <div class="reviewer__description">
+                <p class="reviewer__name">Mithela</p>
+                <p class="reviewer__profession">UI Designer</p>
+                <div class="stars">
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feedback card -->
+          <div class="feedback-card">
+            <div class="feedback-card__qoute">
+              <img
+                class="feedback-card__quote-icon"
+                src="./src/icons/double-quotes.svg"
+                alt="double quotes"
+              />
+
+              <img
+                class="feedback-card__quote-icon_active"
+                src="./src/icons/double-quotes-active.svg"
+                alt="double quotes"
+              />
+
+              <p class="feedback-card__paragraph">
+                Very decent services & care about my health. Really happy with
+                his advice. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry Very decent services & care about my
+                health. Really happy with his advice.
+              </p>
+            </div>
+
+            <div class="reviewer">
+              <img
+                class="reviewer__avatar"
+                src="./src/img/user-3.png"
+                alt="Maria Jannat"
+              />
+
+              <div class="reviewer__description">
+                <p class="reviewer__name">Adam</p>
+                <p class="reviewer__profession">Developer</p>
+                <div class="stars">
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                  <img class="star" src="./src/icons/star.svg" alt="star" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feedback card scroll -->
+        <div class="feedback-card__scroll">
+          <div class="scroll-circle"></div>
+          <div class="scroll-circle"></div>
+          <div class="scroll-circle"></div>
+          <div class="scroll-circle"></div>
         </div>
       </section>
 
       <!-- subscribe -->
       <section class="subscribe">
-        <div class="container subscribe__container">
+        <div class="container">
           <div class="subscribe-block">
             <img
-              class="subscribe-rectangles"
-              src="./src/backgound-svg/subscribe-rectangles.svg"
+              class="subscribe__stripes-pattern"
+              src="./src/backgound-svg/stripes-pattern.svg"
               alt=""
             />
             <h2 class="title">Subscribe to get update vacancy post</h2>
@@ -877,7 +871,7 @@
 
               <form class="search-form mail-form">
                 <input
-                  class="mail-input"
+                  class="input_lg"
                   type="text"
                   placeholder="infomail856@gmail.com"
                   name="text"
@@ -885,9 +879,13 @@
                 />
 
                 <!-- Subscribe button -->
-                <button type="submit" class="button subscribe-button">
+                <button type="submit" class="button button_subscribe">
                   Subscribe
-                  <img class="telegram" src="./src/icons/telegram.svg" alt="" />
+                  <img
+                    class="send-icon"
+                    src="./src/icons/send-icon.svg"
+                    alt=""
+                  />
                 </button>
               </form>
             </div>
@@ -905,7 +903,7 @@
       <!-- Footer section -->
       <section class="footer">
         <!-- Nav container -->
-        <div class="container footer__nav-container">
+        <div class="container footer__container">
           <!-- Footer dots -->
           <img
             class="footer-dots_left"
@@ -918,17 +916,17 @@
             alt=""
           />
 
-          <div class="footer__our-contacts">
+          <div class="footer__contacts">
             <a class="logo" href="#">
               J<span class="decor_orange">O</span>BPLY
             </a>
-            <p class="footer__address">152/3 , Western Road, New York</p>
-            <a href="tel:+99-8569-5234" class="footer__call-us hover_orange">
+            <p class="address">152/3 , Western Road, New York</p>
+            <a href="tel:+99-8569-5234" class="link_telephone">
               Call Us: +99-8569-5234
             </a>
 
             <div class="footer__social-media">
-              <a class="social-media__icons" href="#">
+              <a class="social-icon" href="#">
                 <svg
                   width="30"
                   height="30"
@@ -946,7 +944,7 @@
                 </svg>
               </a>
 
-              <a class="social-media__icons" href="#">
+              <a class="social-icon" href="#">
                 <svg
                   width="30"
                   height="30"
@@ -964,7 +962,7 @@
                 </svg>
               </a>
 
-              <a class="social-media__icons" href="#">
+              <a class="social-icon" href="#">
                 <svg
                   class="media-icon"
                   width="30"
@@ -985,48 +983,46 @@
             </div>
           </div>
 
-          <div class="footer__nav-wrapper">
-            <nav class="menu">
-              <div>
-                <h3 class="menu__title">Explore</h3>
-                <ul class="menu__list">
-                  <li class="menu__list-item list-item">
-                    <a class="nav-link" href="#"> Featured Job</a>
-                  </li>
-                  <li class="menu__list-item list-item">
-                    <a class="nav-link" href="#"> Recent Job Post</a>
-                  </li>
-                  <li class="menu__list-item list-item">
-                    <a class="nav-link" href="#"> Total Candidates</a>
-                  </li>
-                  <li class="menu__list-item list-item">
-                    <a class="nav-link" href="#">Support</a>
-                  </li>
-                </ul>
-              </div>
+          <nav class="menu">
+            <div>
+              <h3 class="title">Explore</h3>
+              <ul class="list">
+                <li class="list-item">
+                  <a class="nav-link" href="#"> Featured Job</a>
+                </li>
+                <li class="list-item">
+                  <a class="nav-link" href="#"> Recent Job Post</a>
+                </li>
+                <li class="list-item">
+                  <a class="nav-link" href="#"> Total Candidates</a>
+                </li>
+                <li class="list-item">
+                  <a class="nav-link" href="#">Support</a>
+                </li>
+              </ul>
+            </div>
 
-              <div>
-                <h3 class="menu__title">Useful Link</h3>
-                <ul class="menu__list">
-                  <li class="menu__list-item list-item">
-                    <a class="nav-link" href="#"> About Us </a>
-                  </li>
-                  <li class="menu__list-item list-item">
-                    <a class="nav-link" href="#"> Blog</a>
-                  </li>
-                  <li class="menu__list-item list-item">
-                    <a class="nav-link" href="#"> Company</a>
-                  </li>
-                  <li class="menu__list-item list-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
+            <div>
+              <h3 class="title">Useful Link</h3>
+              <ul class="list">
+                <li class="list-item">
+                  <a class="nav-link" href="#"> About Us </a>
+                </li>
+                <li class="list-item">
+                  <a class="nav-link" href="#"> Blog</a>
+                </li>
+                <li class="list-item">
+                  <a class="nav-link" href="#"> Company</a>
+                </li>
+                <li class="list-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
 
           <div class="footer__news">
-            <h3 class="menu__title">Latest News</h3>
+            <h3 class="title">Latest News</h3>
             <div class="news-card">
               <img class="news-img" src="./src/img/news-1.png" alt="" />
               <div class="news_text">

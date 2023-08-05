@@ -9,12 +9,9 @@
   line-height: 55px;
 }
 
-.categories__jobs-categories {
+.jobs-categories-wrapper {
   margin-bottom: 147px;
   min-width: 1170px;
-}
-
-.jobs-group {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -22,12 +19,7 @@
   gap: 30px;
 }
 
-.jobs-group__job-blocks {
-  display: flex;
-  justify-content: center;
-}
-
-.job-block {
+.category-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,11 +34,11 @@
   transition: var(--TRANSITION_NORMAL);
 }
 
-.job-block:hover {
+.category-card:hover {
   box-shadow: 0px 70px 70px var(--COLOR_LIGHT_GREY);
 }
 
-.job-block__circle {
+.category-card__circle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,34 +50,34 @@
   transition: background-color 0.5s;
 }
 
-.job-block:hover .job-block__circle {
+.category-card:hover .category-card__circle {
   background-color: var(--COLOR_ORANGE);
 }
 
-.job-block__img {
+.category-icon {
   opacity: 1;
   transition: opacity 0.5s;
 }
 
-.job-block:hover .job-block__img {
+.category-card:hover .category-icon {
   opacity: 0;
 }
 
-.job-block__img_active {
+.category-icon_active {
   position: absolute;
   opacity: 0;
   transition: opacity 0.2s;
 }
 
-.job-block:hover .job-block__img_active {
+.category-card:hover .category-icon_active {
   opacity: 1;
 }
 
-.job-block__img_active:hover {
+.category-icon_active:hover {
   display: block;
 }
 
-.job-block__title {
+.category-card .title {
   font-size: var(--FONT_SIZE_20);
   font-weight: var(--FONT_WEIGHT_700);
   margin-bottom: 10px;
@@ -93,11 +85,11 @@
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.job-block__subtitle {
+.category-card .subtitle {
   color: var(--COLOR_BLACK);
 }
 
-.categories__sign-up {
+.sign-up {
   display: flex;
   min-width: 1381px;
 }
@@ -109,49 +101,39 @@
   justify-content: center;
 }
 
-.sign-up__info .title {
+.sign-up .title {
   margin-bottom: 50px;
   line-height: 55px;
   letter-spacing: 0.32px;
 }
 
-.sign-up__info .subtitle {
+.sign-up .subtitle {
   margin-bottom: 30px;
   max-width: 415px;
   font-size: var(--FONT_SIZE_18);
   line-height: 25px;
 }
 
-.sign-up__button {
+.sign-up .button {
   font-size: var(--FONT_SIZE_18);
 }
 
-.sign-up__graphics {
+.sign-up-graphics {
   display: flex;
   position: relative;
   top: -8px;
 }
 
-.right-wrapper__vector-3 {
+.sign-up-graphics__vector-vector-3 {
   position: absolute;
   top: -8px;
   right: -88px;
 }
-.right-wrapper__vector-4 {
+
+.sign-up-graphics__vector-vector-4 {
   position: absolute;
   bottom: -131px;
   left: -88px;
-}
-
-.right-wrapper__rectangle-1 {
-  margin-right: 30px;
-  background: url(../img/big-man-1.png) var(--COLOR_YELLOW) no-repeat bottom;
-  border-radius: 200px 0px 200px 200.5px;
-}
-
-.right-wrapper__rectangle-2 {
-  background: url(../img/big-woman-1.png) var(--COLOR_ORANGE) no-repeat bottom;
-  border-radius: 0px 200px 200.5px 200.5px;
 }
 
 .rectangle {
@@ -160,14 +142,25 @@
   position: relative;
 }
 
-.sign-up__dots {
+.sign-up .rectangle {
+  margin-right: 30px;
+  background: url(../img/big-man-1.png) var(--COLOR_YELLOW) no-repeat bottom;
+  border-radius: 200px 0px 200px 200.5px;
+}
+
+.sign-up .rectangle:last-child {
+  background: url(../img/big-woman-1.png) var(--COLOR_ORANGE) no-repeat bottom;
+  border-radius: 0px 200px 200.5px 200.5px;
+}
+
+.sign-up-dot-pattern {
   position: absolute;
   bottom: 708px;
   left: -341px;
   z-index: 2;
 }
 
-.right-wrapper__dots {
+.sign-up-graphics-dot-pattern {
   position: absolute;
   bottom: 0px;
   right: -125px;
@@ -184,19 +177,19 @@
     height: 700px;
   }
 
-  .sign-up__dots {
+  .sign-up-dot-pattern {
     left: -185px;
   }
 
-  .right-wrapper__dots {
+  .sign-up-graphics-dot-pattern {
     bottom: 25px;
   }
 
-  .right-wrapper__vector-3 {
+  .sign-up-graphics__vector-vector-3 {
     right: -140px;
   }
 
-  .right-wrapper__vector-4 {
+  .sign-up-graphics__vector-vector-4 {
     left: -125px;
   }
 }
@@ -210,15 +203,15 @@
     text-align: center;
   }
 
-  .sign-up__dots {
+  .sign-up-dot-pattern {
     display: none;
   }
 
-  .job-block {
+  .category-card {
     width: 225px;
   }
 
-  .categories__sign-up {
+  .sign-up {
     min-width: 960px;
     padding: 0 20px;
   }
@@ -228,11 +221,11 @@
     height: 620px;
   }
 
-  .right-wrapper__vector-4 {
+  .sign-up-graphics__vector-vector-4 {
     left: -190px;
   }
 
-  .right-wrapper__vector-3 {
+  .sign-up-graphics__vector-vector-3 {
     right: -205px;
   }
 }
@@ -245,23 +238,20 @@
     text-align: center;
   }
 
-  .categories__jobs-categories {
+  .jobs-categories-wrapper {
     min-width: auto;
     margin-bottom: 85px;
+    gap: 25px;
   }
 
-  .job-block {
+  .category-card {
     padding-top: 10px;
     text-align: center;
     width: 215px;
     height: 230px;
   }
 
-  .jobs-group {
-    gap: 25px;
-  }
-
-  .categories__sign-up {
+  .sign-up {
     flex-direction: column;
     min-width: 700px;
   }
@@ -272,16 +262,16 @@
     align-items: center;
   }
 
-  .sign-up__info .title {
+  .sign-up .title {
     margin-bottom: 30px;
   }
 
-  .sign-up__info .subtitle {
+  .sign-up .subtitle {
     max-width: 490px;
     margin-bottom: 30px;
   }
 
-  .sign-up__graphics {
+  .sign-up-graphics {
     top: 0;
     justify-content: center;
   }
@@ -291,43 +281,40 @@
     height: 630px;
   }
 
-  .sign-up__dots {
+  .sign-up-dot-pattern {
     left: -100px;
     bottom: 670px;
   }
 
-  .right-wrapper__dots {
+  .sign-up-graphics-dot-pattern {
     bottom: 25px;
     right: -70px;
   }
 
-  .right-wrapper__vector-3 {
+  .sign-up-graphics__vector-vector-3 {
     top: -45px;
     right: -225px;
   }
 
-  .right-wrapper__vector-4 {
+  .sign-up-graphics__vector-vector-4 {
     left: -109px;
   }
 }
 @media (max-width: 767px) {
-  .jobs-group {
+  .jobs-categories-wrapper {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    margin-bottom: 15px;
   }
 
-  .job-block {
+  .category-card {
     height: 230px;
     width: 270px;
     margin-right: 0px;
   }
 
-  .jobs-group {
-    margin-bottom: 15px;
-  }
-
-  .categories__sign-up {
+  .sign-up {
     min-width: 600px;
   }
 
@@ -335,57 +322,57 @@
     margin-right: 0;
   }
 
-  .sign-up__dots {
+  .sign-up-dot-pattern {
     left: -135px;
   }
 
-  .right-wrapper__vector-3 {
+  .sign-up-graphics__vector-vector-3 {
     display: none;
   }
 
-  .right-wrapper__vector-4 {
+  .sign-up-graphics__vector-vector-4 {
     display: none;
   }
 
-  .right-wrapper__dots {
+  .sign-up-graphics-dot-pattern {
     right: -120px;
   }
 }
 @media (max-width: 639px) {
-  .categories__jobs-categories {
+  .jobs-categories-wrapper {
     margin-bottom: 50px;
   }
 
-  .job-block {
+  .category-card {
     width: 250px;
   }
 
-  .categories__sign-up {
+  .sign-up {
     min-width: 250px;
   }
 
-  .sign-up__info .title {
+  .sign-up .title {
     text-align: center;
   }
 
-  .sign-up__info .subtitle {
+  .sign-up .subtitle {
     max-width: 250px;
     text-align: center;
     font-size: var(--FONT_SIZE_14);
     margin-bottom: 30px;
   }
 
-  .sign-up__dots {
+  .sign-up-dot-pattern {
     left: -165px;
     bottom: 720px;
   }
 
-  .sign-up__graphics {
+  .sign-up-graphics {
     display: none;
   }
 }
 @media (max-width: 413px) {
-  .categories__sign-up {
+  .sign-up {
     min-width: 185px;
   }
 }
