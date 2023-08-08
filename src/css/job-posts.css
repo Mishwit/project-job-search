@@ -40,12 +40,12 @@
   transition: var(--TRANSITION_NORMAL);
 }
 
-.job-card:hover .card-content__title {
+.job-card:hover .title_vacancy {
   color: var(--COLOR_WHITE);
   transition: var(--TRANSITION_NORMAL);
 }
 
-.job-card:hover .card-content__subtitle {
+.job-card:hover .subtitle_occupation {
   color: var(--COLOR_WHITE);
   transition: var(--TRANSITION_NORMAL);
 }
@@ -128,7 +128,7 @@
   line-height: 25px;
 }
 
-.card-content__title {
+.title_vacancy {
   color: var(--COLOR_BLACK);
   margin-bottom: 12px;
   font-weight: var(--FONT_WEIGHT_700);
@@ -136,7 +136,7 @@
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.card-content__subtitle {
+.subtitle_occupation {
   margin-bottom: 36px;
 }
 
@@ -183,7 +183,7 @@
     padding: 15px 25px 20px 20px;
   }
 
-  .card-content__title {
+  .title_vacancy {
     font-size: var(--FONT_SIZE_20);
   }
 
@@ -220,7 +220,7 @@
     padding: 15px 15px 15px 15px;
   }
 
-  .card-content__subtitle {
+  .subtitle_occupation {
     margin-bottom: 0;
   }
 
@@ -279,11 +279,11 @@
     margin-bottom: 0;
   }
 
-  .card-content__title {
+  .title_vacancy {
     font-size: var(--FONT_SIZE_18);
   }
 
-  .card-content__subtitle {
+  .subtitle_occupation {
     font-size: var(--FONT_SIZE_14);
   }
 
