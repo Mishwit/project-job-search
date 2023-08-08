@@ -1,36 +1,43 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-html{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+@font-face {
+  font-family: "Axiforma";
+  src: url(../fonts/Axiforma-Regular.ttf);
+  font-display: swap;
+  font-style: normal;
 }
 
-p{
-  font-family: 'Axiforma';
-  color: var(--COLOR_DARK);
+@font-face {
+  font-family: "Perpetua";
+  src: url(../fonts/Perpetua-Bold-font.ttf);
+  font-display: swap;
+  font-style: bold;
 }
 
-.logo{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: var(--FONT_WEIGHT_700);
-  font-size: var(--FONT_SIZE_50);
-}
-
-:root{
+:root {
   --COLOR_DEEP_BLACK: rgba(0, 0, 0, 1);
-  --COLOR_BLACK:rgba(53, 53, 64, 1);
-  --COLOR_WHITE:rgba(255, 255, 255, 1);
-  --COLOR_ORANGE:rgba(238, 79, 60, 1);
-  --COLOR_DARK:rgba(93, 93, 97, 1);
-  --COLOR_GREY:rgba(245, 245, 245, 1);
-  --COLOR_LIGHT_BROWN:rgba(211, 198, 196, 1);
-  --COLOR_LIGHT_GREY:rgba(238, 238, 238, 1);
-  --COLOR_SHADOW:rgba(204, 204, 204, 0.5);
-  --COLOR_PURPLE:rgba(107, 90, 204, 1);
-  --COLOR_YELLOW:rgba(254, 194, 71, 1);
-  --COLOR_DARK_BLUE:rgba(35, 36, 67, 1);
-  --COLOR_BACKGROUND_PEACH:rgba(255, 248, 248, 1);
+  --COLOR_BLACK: rgba(53, 53, 64, 1);
+  --COLOR_DARK_BLUE: rgba(35, 36, 67, 1);
+  --COLOR_DARK: rgba(93, 93, 97, 1);
+  --COLOR_LIGHT_BROWN: rgba(211, 198, 196, 1);
+  --COLOR_LIGHT_GREY: rgba(238, 238, 238, 1);
+  --COLOR_GREY: rgba(245, 245, 245, 1);
+  --COLOR_WHITE: rgba(255, 255, 255, 1);
+  --COLOR_ORANGE: rgba(238, 79, 60, 1);
+  --COLOR_YELLOW: rgba(254, 194, 71, 1);
+  --COLOR_PURPLE: rgba(107, 90, 204, 1);
+
+  --COLOR_BORDER: rgba(204, 204, 204, 1);
+
+  --COLOR_BACKGROUND_PEACH: rgba(255, 248, 248, 1);
+  --COLOR_CARD_BTN_BACKGROUND: rgba(255, 255, 255, 0.1);
+  --COLOR_PLAY_BTN_BACKGROUND: rgba(255, 255, 255, 0.7);
+  --COLOR_SHADOW: rgba(204, 204, 204, 0.5);
+  --COLOR_CARD_CIRCLE_SHADOW: rgba(153, 153, 153, 0.25);
+  --COLOR_HOVER_BTN: rgba(255, 61, 40, 1);
+  --COLOR_HOVER_CARD: rgba(238, 79, 60, 0.5);
 
   --FONT_SIZE_10: 10px;
   --FONT_SIZE_12: 12px;
@@ -40,62 +47,93 @@ p{
   --FONT_SIZE_20: 20px;
   --FONT_SIZE_24: 24px;
   --FONT_SIZE_30: 30px;
+  --FONT_SIZE_36: 36px;
+  --FONT_SIZE_42: 42px;
+  --FONT_SIZE_44: 44px;
   --FONT_SIZE_48: 48px;
   --FONT_SIZE_50: 50px;
   --FONT_SIZE_72: 72px;
-  --FONT_SIZE_44: 44px;
 
   --FONT_WEIGHT_700: 700;
+
+  --TRANSITION_NORMAL: 0.5s;
 }
 
-@font-face {
-  font-family: 'Axiforma';
-  src: url(../fonts/Axiforma-Regular.ttf);
-  font-display: swap;
-  font-style: normal;
+html {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.black-txt{
-color: var(--COLOR_BLACK);
+p,
+a,
+input,
+button,
+span {
+  font-family: "Axiforma";
+  letter-spacing: 0.32px;
 }
 
-.white-txt{
-  color: var(--COLOR_WHITE);
+p {
+  color: var(--COLOR_DARK);
 }
 
-.container{
-  position: relative;
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.title{
-  font-size: var(--FONT_SIZE_48);
-  font-weight: 700;
-}
-
-
-
-a{
-  font-family: 'Axiforma';
+a {
   text-decoration: none;
   color: var(--COLOR_BLACK);
+  transition: var(--TRANSITION_NORMAL);
 }
 
-.decor-orange{
-  color:var(--COLOR_ORANGE);
+input {
+  min-height: 50px;
+  border-radius: 10px;
+  letter-spacing: 0.32px;
 }
 
-.hover-orange:hover{
+button {
   cursor: pointer;
-  color:var(--COLOR_ORANGE);
-  transition: 0.3s;
+  transition: var(--TRANSITION_NORMAL);
 }
 
-.buttons{
+button:hover {
+  background-color: var(--COLOR_HOVER_BTN);
+}
+
+header {
+  padding: 50px 10px 125px 10px;
+}
+
+.container {
+  position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-family: "Perpetua";
+  font-weight: var(--FONT_WEIGHT_700);
+  font-size: var(--FONT_SIZE_50);
+  line-height: 57px;
+  text-transform: uppercase;
+}
+
+.logo span {
+  font-family: "Perpetua";
+}
+
+.title {
+  font-size: var(--FONT_SIZE_48);
+  font-weight: 700;
+  line-height: 95px;
+}
+
+.decor_orange {
+  color: var(--COLOR_ORANGE);
+}
+
+.button {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   background-color: var(--COLOR_ORANGE);
   border-radius: 10px;
   border: none;
@@ -103,18 +141,55 @@ a{
   width: 220px;
   font-weight: 600;
   color: var(--COLOR_WHITE);
+  letter-spacing: 0.4px;
 }
 
-input{
-  font-family: 'Axiforma';
-  min-height: 50px;
-}
-
-.list-link{
+.nav-link {
   color: var(--COLOR_DARK);
+  transition: var(--TRANSITION_NORMAL);
 }
 
-.list-link:hover{
+.nav-link:hover {
   color: var(--COLOR_ORANGE);
-  transition: 0.3s;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  a {
+    font-size: var(--FONT_SIZE_14);
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 600px;
+  }
+}
+@media (max-width: 639px) {
+  p {
+    font-size: var(--FONT_SIZE_14);
+  }
+
+  .container {
+    max-width: 345px;
+  }
+}
+@media (max-width: 413px) {
+  p {
+    font-size: var(--FONT_SIZE_14);
+  }
+
+  a {
+    font-size: var(--FONT_SIZE_14);
+  }
+
+  .container {
+    max-width: 280px;
+  }
 }
