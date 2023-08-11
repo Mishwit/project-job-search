@@ -6,7 +6,6 @@
 
 .nav-container {
   display: flex;
-  gap: 20%;
 }
 
 header .menu {
@@ -59,18 +58,14 @@ header .list-item a {
   margin-right: 0;
 }
 
-.nav__button {
-  height: 50px;
-  width: 140px;
-}
-
 .button_cta {
   font-size: var(--FONT_SIZE_20);
+  margin-left: 5vw;
 }
 
 @media (max-width: 1023px) {
   header {
-    padding: 50px 0 50px 0;
+    padding: 18px 0;
   }
 
   .header-wrapper {
@@ -84,7 +79,7 @@ header .list-item a {
     height: 30px;
     width: 30px;
     top: 30px;
-    right: 30px;
+    right: 20px;
     background-color: var(--COLOR_PLAY_BTN_BACKGROUND);
     border: none;
     border-radius: 30px;
@@ -124,7 +119,7 @@ header .list-item a {
     height: 100vh;
     background: var(--COLOR_GREY);
     z-index: 20;
-    width: 50%;
+    width: 100%;
   }
 
   .nav-menu__list {
@@ -162,12 +157,12 @@ header .list-item a {
     right: 0;
   }
 
-  .header-wrapper {
-    justify-content: center;
+  .nav-menu .list-item {
+    margin-right: 0;
   }
 
   header .logo {
-    font-size: var(--FONT_SIZE_72);
+    text-align: left;
   }
 
   header .menu__list {
