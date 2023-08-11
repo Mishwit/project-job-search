@@ -4,6 +4,11 @@
   align-items: center;
 }
 
+.nav-container {
+  display: flex;
+  gap: 20%;
+}
+
 header .menu {
   display: flex;
   align-items: center;
@@ -71,8 +76,7 @@ header .list-item a {
   .header-wrapper {
     max-width: 980px;
   }
-}
-@media (max-width: 767px) {
+
   .hamburger {
     display: block;
     position: fixed;
