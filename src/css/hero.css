@@ -46,7 +46,6 @@
   align-items: center;
   border-radius: 10px;
   width: 658px;
-  background-color: bisque;
 }
 
 .search-wrapper {
@@ -55,10 +54,12 @@
 
 .search-form__search-area {
   display: flex;
-  border-radius: 10px;
   width: 50%;
   padding: 0 20px;
-  background-color: #e28686;
+}
+
+.search-form__search-area:last-child {
+  border-left: 1px solid var(--COLOR_BORDER);
 }
 
 .search-form__input {
@@ -70,16 +71,11 @@
 .search-form__location-input {
   border: none;
   outline: none;
-  margin-right: 5px;
   background: none;
 }
 
-.search-icon {
-  margin-right: 20px;
-}
-
-.location-icon {
-  margin-right: 10px;
+.search-form__icon {
+  margin-right: 12px;
 }
 
 .button_search {
