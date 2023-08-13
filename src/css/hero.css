@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   max-height: 677px;
-  padding-left: 75px;
+  padding-left: 50px;
 }
 
 .hero__ellipse-big {
@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
   max-width: 655px;
+  background-color: beige;
 }
 
 .info .title {
@@ -45,7 +46,7 @@
   display: flex;
   align-items: center;
   border-radius: 10px;
-  width: 658px;
+  background-color: pink;
 }
 
 .search-wrapper {
