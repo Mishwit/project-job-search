@@ -2,7 +2,7 @@
 
 window.addEventListener("DOMContentLoaded", () => {
   const menu = document.querySelector(".nav-menu"),
-    menuItem = document.querySelectorAll(".nav-menu .list-item"),
+    menuItem = document.querySelectorAll(".list-item"),
     hamburger = document.querySelector(".hamburger");
 
   hamburger.addEventListener("click", () => {
