@@ -28,7 +28,7 @@
   max-width: 600px;
   margin-bottom: 35px;
   font-size: var(--FONT_SIZE_18);
-  line-height: 34px;
+  line-height: 175%;
   letter-spacing: 0.36px;
 }
 
@@ -251,7 +251,7 @@
 
   .info .title {
     font-size: var(--FONT_SIZE_50);
-    line-height: 60px;
+    margin-bottom: 24px;
   }
 
   .info .subtitle {
@@ -417,7 +417,6 @@
 
   .info .title {
     text-align: center;
-    line-height: 70px;
   }
 
   .info .subtitle {
@@ -526,13 +525,21 @@
 
 @media (max-width: 767px) {
   .hero {
-    min-height: 940px;
+    min-height: initial;
+    max-height: initial;
+    padding-bottom: 50px;
   }
 
   .info {
     margin-right: 0;
     display: flex;
     justify-content: center;
+  }
+
+  .info .title {
+    font-size: var(--FONT_SIZE_42);
+    max-width: 400px;
+    margin-bottom: 20px;
   }
 
   .floating-card {
@@ -551,26 +558,35 @@
     font-size: var(--FONT_SIZE_30);
   }
 
-  .hero {
-    min-height: 440px;
-  }
-
   .info .title {
-    max-width: none;
+    max-width: 350px;
+    font-size: var(--FONT_SIZE_30);
     text-align: center;
-    line-height: 58px;
   }
 
   .info .subtitle {
-    max-width: none;
     text-align: center;
     font-size: var(--FONT_SIZE_14);
-    line-height: 25px;
     margin-bottom: 25px;
+  }
+
+  .search-container {
+    width: 100%;
   }
 
   .search-wrapper {
     flex-direction: column;
+  }
+
+  .search-form {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+
+  .search-form__search-area {
+    width: 100%;
   }
 
   .search-form__search-area:first-child {
@@ -581,17 +597,6 @@
     border-left: none;
     border-top: 1px solid var(--COLOR_BORDER);
     padding: 5px 0 0;
-  }
-
-  .search-form {
-    width: auto;
-    padding: 10px;
-    flex-direction: column;
-    border-radius: 10px;
-  }
-
-  .search-form__search-area {
-    width: 340px;
   }
 
   .search-icon {
@@ -619,35 +624,20 @@
 
   .button_search {
     height: 50px;
-    min-width: 340px;
+    width: 100%;
+    max-width: none;
     font-size: var(--FONT_SIZE_18);
     border-radius: 10px;
   }
 }
 
 @media (max-width: 413px) {
-  .title {
-    font-size: var(--FONT_SIZE_24);
-  }
-
-  .hero {
-    min-height: 500px;
-  }
-
   .info .title {
-    max-width: 275px;
+    font-size: var(--FONT_SIZE_24);
+    margin-bottom: 14px;
   }
 
   .info .subtitle {
-    max-width: 275px;
     font-size: var(--FONT_SIZE_12);
-  }
-
-  .search-form__search-area {
-    width: 260px;
-  }
-
-  .button_search {
-    min-width: 260px;
   }
 }

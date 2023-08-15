@@ -122,7 +122,7 @@ header {
 .title {
   font-size: var(--FONT_SIZE_48);
   font-weight: 700;
-  line-height: 95px;
+  line-height: 120%;
 }
 
 .decor_orange {
@@ -170,6 +170,12 @@ header {
 
   a {
     font-size: var(--FONT_SIZE_14);
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: var(--FONT_SIZE_42);
   }
 }
 
