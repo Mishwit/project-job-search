@@ -84,9 +84,8 @@
   margin-right: 12px;
 }
 
-.search-form__input:focus ~ svg {
-  /* stroke: var(--COLOR_ORANGE); */
-  background-color: red;
+.search-form__input:focus ~ svg path {
+  stroke: var(--COLOR_ORANGE);
 }
 
 .button_search {
