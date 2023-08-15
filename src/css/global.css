@@ -98,7 +98,7 @@ button:hover {
 }
 
 header {
-  padding: 50px 10px 125px 10px;
+  padding: 50px 0 125px;
 }
 
 .container {
@@ -160,10 +160,6 @@ header {
 }
 
 @media (max-width: 1023px) {
-  .container {
-    max-width: 700px;
-  }
-
   header {
     padding: 18px 0;
   }
@@ -176,20 +172,13 @@ header {
     font-size: var(--FONT_SIZE_14);
   }
 }
-@media (max-width: 767px) {
-  .container {
-    max-width: 600px;
-  }
-}
+
 @media (max-width: 639px) {
   p {
     font-size: var(--FONT_SIZE_14);
   }
-
-  .container {
-    max-width: 345px;
-  }
 }
+
 @media (max-width: 413px) {
   p {
     font-size: var(--FONT_SIZE_14);
@@ -197,9 +186,5 @@ header {
 
   a {
     font-size: var(--FONT_SIZE_14);
-  }
-
-  .container {
-    max-width: 280px;
   }
 }
