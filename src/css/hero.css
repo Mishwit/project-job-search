@@ -84,10 +84,6 @@
   margin-right: 12px;
 }
 
-.search-form__input:focus ~ svg path {
-  stroke: var(--COLOR_ORANGE);
-}
-
 .button_search {
   max-width: 180px;
   border-radius: 0 10px 10px 0;
