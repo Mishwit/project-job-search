@@ -94,11 +94,12 @@
 
 .hero-graphics {
   position: relative;
+  top: 0px;
 }
 
 .img {
   position: relative;
-  top: -82px;
+  top: -84px;
   right: -159px;
 }
 
@@ -244,12 +245,13 @@
 @media (max-width: 1919px) {
   .hero-graphics {
     transform: scale(0.9);
+    top: 33px;
   }
 }
 
 @media (max-width: 1840px) {
   .hero {
-    max-height: 560px;
+    max-height: 425px;
   }
 
   .info {
@@ -266,75 +268,33 @@
     max-width: 465px;
   }
 
-  .img {
-    height: 650px;
-    width: 450px;
-    top: -90px;
-    right: -40px;
+  .hero-graphics {
+    transform: scale(0.6);
+    top: -50px;
   }
 
   .hero-graphics__ellipse-big {
-    height: 600px;
-    width: 600px;
-    bottom: 55px;
-    right: -115px;
+    bottom: -220px;
   }
 
   .hero-graphics__ellipse-small {
-    height: 425px;
-    width: 425px;
-    bottom: 140px;
-    right: -28px;
-  }
-
-  .hero-graphics__floating-icon {
-    height: 70px;
-    width: 70px;
-  }
-
-  .google-icon {
-    top: -545px;
-    right: 35px;
+    bottom: -88px;
   }
 
   .paypal-icon {
-    bottom: 435px;
-    left: 485px;
+    bottom: 465px;
   }
 
   .indeed-icon {
-    top: -870px;
-    right: -80px;
+    top: -1050px;
   }
 
   .slack-icon {
-    top: -900px;
-    right: -410px;
-  }
-
-  .floating-card {
-    height: 175px;
-    width: 145px;
-  }
-
-  .floating-card__img {
-    height: 110px;
-    width: 130px;
-  }
-
-  .floating-card__circle {
-    height: 35px;
-    width: 35px;
-  }
-
-  .floating-card_purple {
-    top: -565px;
-    right: -5px;
+    top: -1070px;
   }
 
   .floating-card_yellow {
-    top: -1055px;
-    right: -410px;
+    top: -1180px;
   }
 }
 /* TODO: add new breakpoint for better graphics positioning */

@@ -1,4 +1,5 @@
 .job-posts {
+  position: relative;
   padding-top: 95px;
   padding-bottom: 70px;
   background: url(/src/backgound-svg/2-background.svg) var(--COLOR_DARK_BLUE)
