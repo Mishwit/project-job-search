@@ -1,6 +1,5 @@
 .hero {
   display: flex;
-  justify-content: center;
   max-height: 677px;
 }
 
@@ -15,6 +14,7 @@
 .info {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   max-width: 665px;
 }
 
@@ -35,6 +35,7 @@
 .search-container {
   display: flex;
   align-items: center;
+  width: 100%;
   background: none;
   border-radius: 10px;
   box-shadow: 0px 30px 70px var(--COLOR_SHADOW);
@@ -240,6 +241,12 @@
   transform: rotate(72deg);
 }
 
+@media (max-width: 1919px) {
+  .hero-graphics {
+    transform: scale(0.9);
+  }
+}
+
 @media (max-width: 1840px) {
   .hero {
     max-height: 560px;
@@ -257,10 +264,6 @@
   .info .subtitle {
     font-size: var(--FONT_SIZE_16);
     max-width: 465px;
-  }
-
-  .search-form {
-    width: 575px;
   }
 
   .img {
