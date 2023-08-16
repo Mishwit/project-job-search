@@ -63,6 +63,12 @@ header .list-item a {
   margin-left: 5vw;
 }
 
+@media (max-width: 1279px) {
+  header {
+    padding-bottom: 60px;
+  }
+}
+
 @media (max-width: 1023px) {
   .header-wrapper {
     max-width: 980px;
