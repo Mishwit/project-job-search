@@ -402,6 +402,23 @@
     max-width: 400px;
     margin-bottom: 20px;
   }
+
+  .google-icon {
+    right: -60px;
+  }
+
+  .paypal-icon {
+    bottom: 450px;
+    left: 755px;
+  }
+
+  .indeed-icon {
+    top: -970px;
+  }
+
+  .slack-icon {
+    top: -1015px;
+  }
 }
 
 @media (max-width: 639px) {
