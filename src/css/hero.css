@@ -94,34 +94,33 @@
 
 .hero-graphics {
   position: relative;
-  top: 0px;
+  top: -80px;
+  left: 145px;
 }
 
 .img {
   position: relative;
-  top: -84px;
-  right: -159px;
 }
 
 .hero-graphics__ellipse-big {
   position: absolute;
   z-index: -1;
-  bottom: -60px;
-  right: -295px;
+  bottom: -140px;
+  right: -140px;
 }
 
 .hero-graphics__ellipse-small {
   position: absolute;
   z-index: -1;
-  bottom: 80px;
-  right: -159px;
+  bottom: 0px;
+  right: 0px;
 }
 
 .hero-graphics__floating-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   z-index: 2;
   box-shadow: 0px 20px 50px var(--COLOR_LIGHT_GREY);
   border-radius: 20px;
@@ -131,7 +130,7 @@
 }
 
 .floating-card {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -185,8 +184,8 @@
 }
 
 .floating-card_purple {
-  top: -675px;
-  right: -51px;
+  top: 490px;
+  right: 485px;
 }
 
 .floating-card_purple .floating-card__img {
@@ -194,8 +193,8 @@
 }
 
 .floating-card_yellow {
-  top: -1154px;
-  right: -681px;
+  top: 215px;
+  right: -145px;
 }
 
 .floating-card_yellow .floating-card__img {
@@ -203,8 +202,8 @@
 }
 
 .google-icon {
-  top: -637px;
-  right: -59px;
+  top: 210px;
+  right: 570px;
   transform: rotate(324deg);
 }
 
@@ -213,8 +212,8 @@
 }
 
 .paypal-icon {
-  bottom: 437px;
-  left: 729px;
+  bottom: 110px;
+  left: 575px;
   transform: rotate(18deg);
 }
 
@@ -223,8 +222,8 @@
 }
 
 .indeed-icon {
-  top: -993px;
-  right: -190px;
+  top: 10px;
+  right: 440px;
   transform: rotate(-72.74deg);
 }
 
@@ -233,8 +232,8 @@
 }
 
 .slack-icon {
-  top: -1000px;
-  right: -657px;
+  top: 85px;
+  right: -30px;
   transform: rotate(15deg);
 }
 
@@ -243,9 +242,36 @@
 }
 
 @media (max-width: 1919px) {
+  .hero {
+    max-height: 627px;
+  }
+
   .hero-graphics {
     transform: scale(0.9);
-    top: 33px;
+    top: -90px;
+  }
+
+  .hero-graphics__ellipse-big {
+    bottom: -185px;
+  }
+
+  .hero-graphics__ellipse-small {
+    bottom: -50px;
+  }
+
+  .paypal-icon {
+    bottom: 60px;
+    left: 575px;
+  }
+
+  .floating-card_purple {
+    top: 490px;
+    right: 485px;
+  }
+
+  .floating-card_yellow {
+    top: 213px;
+    right: -145px;
   }
 }
 
@@ -270,34 +296,41 @@
 
   .hero-graphics {
     transform: scale(0.6);
-    top: -50px;
+    top: -117px;
+    left: 45px;
   }
 
   .hero-graphics__ellipse-big {
-    bottom: -220px;
+    bottom: -390px;
   }
 
   .hero-graphics__ellipse-small {
-    bottom: -88px;
+    bottom: -255px;
   }
 
   .paypal-icon {
-    bottom: 465px;
+    bottom: -145px;
+    left: 570px;
   }
 
   .indeed-icon {
-    top: -1050px;
+    top: 15px;
   }
 
   .slack-icon {
-    top: -1070px;
+    top: 85px;
+  }
+
+  .floating-card_purple {
+    top: 490px;
+    right: 490px;
   }
 
   .floating-card_yellow {
-    top: -1180px;
+    top: 215px;
+    right: -139px;
   }
 }
-/* TODO: add new breakpoint for better graphics positioning */
 
 @media (max-width: 1279px) {
   .hero {
@@ -308,24 +341,38 @@
 
   .hero-graphics {
     transform: scale(0.4);
-    left: -120px;
-    top: 9px;
+    left: -75px;
+    top: -25px;
+  }
+
+  .hero-graphics__ellipse-big {
+    bottom: -410px;
+  }
+
+  .hero-graphics__ellipse-small {
+    bottom: -270px;
   }
 
   .google-icon {
-    right: -20px;
+    top: 206px;
+    right: 573px;
   }
 
   .paypal-icon {
-    bottom: 485px;
+    bottom: -165px;
+    left: 575px;
   }
 
   .indeed-icon {
-    top: -1070px;
+    top: 6px;
   }
 
   .slack-icon {
-    top: -1115px;
+    top: 80px;
+  }
+
+  .floating-card_yellow {
+    top: 205px;
   }
 }
 
@@ -373,15 +420,56 @@
 
   .hero-graphics {
     transform: scale(0.6);
-    top: -199px;
+    top: -104px;
+    left: 0;
+  }
+
+  .img {
+    top: 0;
+    right: 0;
   }
 
   .hero-graphics__ellipse-big {
-    bottom: 765px;
+    bottom: -50px;
+    right: -135px;
   }
 
   .hero-graphics__ellipse-small {
-    bottom: 900px;
+    bottom: 85px;
+    right: 0px;
+  }
+
+  .google-icon {
+    top: 210px;
+    left: -100px;
+    right: 0;
+  }
+
+  .paypal-icon {
+    bottom: 195px;
+    right: 0;
+    left: 570px;
+  }
+
+  .indeed-icon {
+    top: 15px;
+    right: 0;
+    left: 30px;
+  }
+
+  .slack-icon {
+    top: 90px;
+    right: -25px;
+  }
+
+  .floating-card_purple {
+    top: 490px;
+    right: 490px;
+  }
+
+  .floating-card_yellow {
+    top: 210px;
+    right: -140px;
   }
 }
 
@@ -401,23 +489,6 @@
     font-size: var(--FONT_SIZE_42);
     max-width: 400px;
     margin-bottom: 20px;
-  }
-
-  .google-icon {
-    right: -60px;
-  }
-
-  .paypal-icon {
-    bottom: 450px;
-    left: 755px;
-  }
-
-  .indeed-icon {
-    top: -970px;
-  }
-
-  .slack-icon {
-    top: -1015px;
   }
 }
 

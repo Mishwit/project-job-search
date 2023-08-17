@@ -65,6 +65,7 @@
     padding: 0 20px;
   }
 }
+
 @media (max-width: 1023px) {
   .post-job {
     margin-bottom: 100px;
@@ -88,11 +89,13 @@
     top: 50px;
   }
 }
+
 @media (max-width: 767px) {
   .video-block {
     top: 50px;
   }
 }
+
 @media (max-width: 639px) {
   .post-job {
     padding-top: 0;
@@ -119,6 +122,7 @@
     left: 35%;
   }
 }
+
 @media (max-width: 413px) {
   .post-job__info .subtitle {
     margin-bottom: 30px;
