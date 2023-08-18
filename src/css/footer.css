@@ -49,9 +49,9 @@ footer .logo {
   gap: 25px;
 }
 
-svg path {
+/* svg path {
   stroke: currentColor;
-}
+} */
 
 .footer svg {
   transition: var(--TRANSITION_NORMAL);

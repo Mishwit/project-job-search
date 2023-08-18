@@ -31,6 +31,7 @@
 
   --COLOR_BORDER: rgba(204, 204, 204, 1);
 
+  --COLOR_GREY_AVATAR: rgba(235, 235, 240, 1);
   --COLOR_BACKGROUND_PEACH: rgba(255, 248, 248, 1);
   --COLOR_CARD_BTN_BACKGROUND: rgba(255, 255, 255, 0.1);
   --COLOR_PLAY_BTN_BACKGROUND: rgba(255, 255, 255, 0.7);
@@ -99,6 +100,10 @@ button:hover {
 
 header {
   padding: 50px 10px 125px 10px;
+}
+
+svg path {
+  transition: var(--TRANSITION_NORMAL);
 }
 
 .container {
