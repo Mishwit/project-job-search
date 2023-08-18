@@ -1,5 +1,6 @@
 .hero {
   display: flex;
+  position: relative;
   max-height: 677px;
 }
 
