@@ -95,8 +95,10 @@
 
 .hero-graphics {
   position: relative;
-  top: -80px;
-  left: 145px;
+  left: 5px;
+  bottom: 90px;
+  padding: 0 130px;
+  border: 5px solid black;
 }
 
 .img {
@@ -105,16 +107,16 @@
 
 .hero-graphics__ellipse-big {
   position: absolute;
+  left: 0;
+  top: 0;
   z-index: -1;
-  bottom: -140px;
-  right: -140px;
 }
 
 .hero-graphics__ellipse-small {
   position: absolute;
+  left: 135px;
+  top: 135px;
   z-index: -1;
-  bottom: 0px;
-  right: 0px;
 }
 
 .hero-graphics__floating-icon {
@@ -185,8 +187,8 @@
 }
 
 .floating-card_purple {
-  top: 490px;
-  right: 485px;
+  bottom: -18px;
+  left: 24px;
 }
 
 .floating-card_purple .floating-card__img {
@@ -194,8 +196,8 @@
 }
 
 .floating-card_yellow {
-  top: 215px;
-  right: -145px;
+  top: 210px;
+  right: -7px;
 }
 
 .floating-card_yellow .floating-card__img {
@@ -203,8 +205,8 @@
 }
 
 .google-icon {
-  top: 210px;
-  right: 570px;
+  top: 208px;
+  left: 32px;
   transform: rotate(324deg);
 }
 
@@ -213,8 +215,8 @@
 }
 
 .paypal-icon {
-  bottom: 110px;
-  left: 575px;
+  bottom: 100px;
+  right: 35px;
   transform: rotate(18deg);
 }
 
@@ -223,8 +225,8 @@
 }
 
 .indeed-icon {
-  top: 10px;
-  right: 440px;
+  top: 13px;
+  left: 162px;
   transform: rotate(-72.74deg);
 }
 
@@ -234,7 +236,7 @@
 
 .slack-icon {
   top: 85px;
-  right: -30px;
+  right: 105px;
   transform: rotate(15deg);
 }
 
