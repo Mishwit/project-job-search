@@ -107,7 +107,6 @@ svg path {
 }
 
 .container {
-  position: relative;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -127,7 +126,7 @@ svg path {
 .title {
   font-size: var(--FONT_SIZE_48);
   font-weight: 700;
-  line-height: 95px;
+  line-height: 120%;
 }
 
 .decor_orange {
@@ -160,41 +159,34 @@ svg path {
 
 @media (max-width: 1279px) {
   .container {
-    padding: 0 20px;
+    padding: 0 32px;
   }
 }
 
 @media (max-width: 1023px) {
-  .container {
-    max-width: 700px;
-  }
-
   header {
     padding: 18px 0;
-  }
-
-  .nav-link {
-    font-size: 14px;
   }
 
   a {
     font-size: var(--FONT_SIZE_14);
   }
-}
-@media (max-width: 767px) {
-  .container {
-    max-width: 600px;
+
+  .nav-link {
+    font-size: 14px;
   }
 }
+
 @media (max-width: 639px) {
   p {
     font-size: var(--FONT_SIZE_14);
   }
 
   .container {
-    max-width: 345px;
+    padding: 0 20px;
   }
 }
+
 @media (max-width: 413px) {
   p {
     font-size: var(--FONT_SIZE_14);
@@ -205,6 +197,6 @@ svg path {
   }
 
   .container {
-    max-width: 280px;
+    padding: 0 16px;
   }
 }
