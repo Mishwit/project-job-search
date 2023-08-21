@@ -1,15 +1,10 @@
 .hero {
   display: flex;
+  justify-content: space-between;
+  gap: 30px;
   position: relative;
-  max-height: 677px;
-}
-
-.hero__ellipse-big {
-  position: relative;
-}
-
-.hero__ellipse-small {
-  position: relative;
+  padding-top: 75px;
+  padding-bottom: 244px;
 }
 
 .info {
@@ -93,31 +88,49 @@
   font-size: var(--FONT_SIZE_20);
 }
 
+/* --- GRAPHICS --- */
+
+.graphics {
+  width: 100%;
+}
+
+.graphics-wrapper {
+  position: absolute;
+  top: -8px;
+  z-index: -1;
+}
+
 .hero-graphics {
   position: relative;
-  top: -80px;
-  left: 145px;
+  width: 814px;
+  height: 762px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .img {
-  position: relative;
+  height: 100%;
+  width: auto;
+  z-index: 2;
 }
 
 .hero-graphics__ellipse-big {
   position: absolute;
-  z-index: -1;
-  bottom: -140px;
-  right: -140px;
+  width: 814px;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
-.hero-graphics__ellipse-small {
+/* .hero-graphics__ellipse-small {
   position: absolute;
   z-index: -1;
   bottom: 0px;
   right: 0px;
-}
+} */
 
-.hero-graphics__floating-icon {
+/* .hero-graphics__floating-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,47 +253,21 @@
 
 .slack-icon img {
   transform: rotate(72deg);
-}
+} */
 
 @media (max-width: 1919px) {
   .hero {
-    max-height: 627px;
+    padding-bottom: 200px;
   }
 
-  .hero-graphics {
+  .graphics-wrapper {
     transform: scale(0.9);
-    top: -90px;
-  }
-
-  .hero-graphics__ellipse-big {
-    bottom: -185px;
-  }
-
-  .hero-graphics__ellipse-small {
-    bottom: -50px;
-  }
-
-  .paypal-icon {
-    bottom: 60px;
-    left: 575px;
-  }
-
-  .floating-card_purple {
-    top: 490px;
-    right: 485px;
-  }
-
-  .floating-card_yellow {
-    top: 213px;
-    right: -145px;
+    top: -47px;
+    right: -298px;
   }
 }
 
 @media (max-width: 1840px) {
-  .hero {
-    max-height: 425px;
-  }
-
   .info {
     max-width: 575px;
   }
@@ -295,96 +282,47 @@
     max-width: 465px;
   }
 
-  .hero-graphics {
-    transform: scale(0.6);
-    top: -117px;
-    left: 45px;
+  .graphics-wrapper {
+    transform: scale(0.8);
+    top: -78px;
+    right: -12vw;
+  }
+}
+
+@media (max-width: 1535px) {
+  .hero {
+    padding-bottom: 72px;
   }
 
-  .hero-graphics__ellipse-big {
-    bottom: -390px;
-  }
-
-  .hero-graphics__ellipse-small {
-    bottom: -255px;
-  }
-
-  .paypal-icon {
-    bottom: -145px;
-    left: 570px;
-  }
-
-  .indeed-icon {
-    top: 15px;
-  }
-
-  .slack-icon {
-    top: 85px;
-  }
-
-  .floating-card_purple {
-    top: 490px;
-    right: 490px;
-  }
-
-  .floating-card_yellow {
-    top: 215px;
-    right: -139px;
+  .graphics-wrapper {
+    transform: scale(0.65);
+    top: -148px;
+    right: -143px;
   }
 }
 
 @media (max-width: 1279px) {
   .hero {
-    justify-content: start;
-    max-height: 400px;
-    overflow: hidden;
+    padding-top: 0px;
+    padding-bottom: 34px;
   }
 
-  .hero-graphics {
-    transform: scale(0.4);
-    left: -75px;
-    top: -25px;
-  }
-
-  .hero-graphics__ellipse-big {
-    bottom: -410px;
-  }
-
-  .hero-graphics__ellipse-small {
-    bottom: -270px;
-  }
-
-  .google-icon {
-    top: 206px;
-    right: 573px;
-  }
-
-  .paypal-icon {
-    bottom: -165px;
-    left: 575px;
-  }
-
-  .indeed-icon {
-    top: 6px;
-  }
-
-  .slack-icon {
-    top: 80px;
-  }
-
-  .floating-card_yellow {
-    top: 205px;
+  .graphics-wrapper {
+    transform: scale(0.45);
+    top: -185px;
+    right: auto;
+    left: 39vw;
   }
 }
 
 @media (max-width: 1023px) {
   .hero {
-    max-height: 900px;
     flex-direction: column;
     align-items: center;
     justify-content: normal;
     padding-top: 30px;
-    gap: 32px;
+    padding-bottom: 0;
+    gap: 65px;
   }
 
   .info .title {
@@ -419,67 +357,21 @@
     padding: 0 10px 0 10px;
   }
 
-  .hero-graphics {
+  .graphics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 458px;
+  }
+
+  .graphics-wrapper {
+    position: static;
+    width: fit-content;
     transform: scale(0.6);
-    top: -104px;
-    left: 0;
-  }
-
-  .img {
-    top: 0;
-    right: 0;
-  }
-
-  .hero-graphics__ellipse-big {
-    bottom: -50px;
-    right: -135px;
-  }
-
-  .hero-graphics__ellipse-small {
-    bottom: 85px;
-    right: 0px;
-  }
-
-  .google-icon {
-    top: 210px;
-    left: -100px;
-    right: 0;
-  }
-
-  .paypal-icon {
-    bottom: 195px;
-    right: 0;
-    left: 570px;
-  }
-
-  .indeed-icon {
-    top: 15px;
-    right: 0;
-    left: 30px;
-  }
-
-  .slack-icon {
-    top: 90px;
-    right: -25px;
-  }
-
-  .floating-card_purple {
-    top: 490px;
-    right: 490px;
-  }
-
-  .floating-card_yellow {
-    top: 210px;
-    right: -140px;
   }
 }
 
 @media (max-width: 767px) {
-  .hero {
-    max-height: 875px;
-    padding-bottom: 50px;
-  }
-
   .info {
     margin-right: 0;
     display: flex;
@@ -494,6 +386,10 @@
 }
 
 @media (max-width: 639px) {
+  .hero {
+    padding-bottom: 40px;
+  }
+
   .title {
     font-size: var(--FONT_SIZE_30);
   }
@@ -558,16 +454,16 @@
     margin-left: 5px;
   }
 
-  .hero-graphics {
-    display: none;
-  }
-
   .button_search {
     height: 50px;
     width: 100%;
     max-width: none;
     font-size: var(--FONT_SIZE_18);
     border-radius: 10px;
+  }
+
+  .graphics {
+    display: none;
   }
 }
 

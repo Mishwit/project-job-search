@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .nav-container {
@@ -61,12 +63,6 @@ header .list-item a {
 .button_cta {
   font-size: var(--FONT_SIZE_20);
   margin-left: 5vw;
-}
-
-@media (max-width: 1279px) {
-  header {
-    padding-bottom: 60px;
-  }
 }
 
 @media (max-width: 1023px) {

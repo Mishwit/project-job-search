@@ -3,14 +3,14 @@
 }
 
 @font-face {
-  font-family: "Axiforma";
+  font-family: 'Axiforma';
   src: url(../fonts/Axiforma-Regular.ttf);
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Perpetua";
+  font-family: 'Perpetua';
   src: url(../fonts/Perpetua-Bold-font.ttf);
   font-display: swap;
   font-style: bold;
@@ -60,7 +60,7 @@
 }
 
 html {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p,
@@ -68,7 +68,7 @@ a,
 input,
 button,
 span {
-  font-family: "Axiforma";
+  font-family: 'Axiforma';
   letter-spacing: 0.32px;
 }
 
@@ -98,18 +98,13 @@ button:hover {
   background-color: var(--COLOR_HOVER_BTN);
 }
 
-header {
-  padding: 50px 10px 125px 10px;
-}
-
 .container {
-  position: relative;
   max-width: 1170px;
   margin: 0 auto;
 }
 
 .logo {
-  font-family: "Perpetua";
+  font-family: 'Perpetua';
   font-weight: var(--FONT_WEIGHT_700);
   font-size: var(--FONT_SIZE_50);
   line-height: 57px;
@@ -117,7 +112,7 @@ header {
 }
 
 .logo span {
-  font-family: "Perpetua";
+  font-family: 'Perpetua';
 }
 
 .title {
