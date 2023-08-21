@@ -6,12 +6,10 @@
 .categories .title {
   margin-bottom: 50px;
   letter-spacing: 1px;
-  line-height: 55px;
 }
 
 .jobs-categories-wrapper {
   margin-bottom: 147px;
-  min-width: 1170px;
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -95,7 +93,7 @@
 }
 
 .sign-up__info {
-  margin-right: 85px;
+  margin-right: 68px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,7 +101,6 @@
 
 .sign-up .title {
   margin-bottom: 50px;
-  line-height: 55px;
   letter-spacing: 0.32px;
 }
 
@@ -207,10 +204,6 @@
     display: none;
   }
 
-  .category-card {
-    width: 225px;
-  }
-
   .sign-up {
     min-width: 960px;
     padding: 0 20px;
@@ -229,6 +222,7 @@
     right: -205px;
   }
 }
+
 @media (max-width: 1023px) {
   .categories {
     padding-top: 50px;
@@ -245,10 +239,7 @@
   }
 
   .category-card {
-    padding-top: 10px;
     text-align: center;
-    width: 215px;
-    height: 230px;
   }
 
   .sign-up {
@@ -300,17 +291,14 @@
     left: -109px;
   }
 }
+
 @media (max-width: 767px) {
   .jobs-categories-wrapper {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 15px;
   }
 
   .category-card {
-    height: 230px;
-    width: 270px;
     margin-right: 0px;
   }
 
@@ -338,13 +326,10 @@
     right: -120px;
   }
 }
+
 @media (max-width: 639px) {
   .jobs-categories-wrapper {
     margin-bottom: 50px;
-  }
-
-  .category-card {
-    width: 250px;
   }
 
   .sign-up {
@@ -371,6 +356,7 @@
     display: none;
   }
 }
+
 @media (max-width: 413px) {
   .sign-up {
     min-width: 185px;
