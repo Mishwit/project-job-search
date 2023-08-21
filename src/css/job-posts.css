@@ -251,18 +251,6 @@
     justify-content: flex-start;
     gap: 24px;
   }
-
-  .feature__text {
-  }
-
-  /* .subtitle_occupation {
-    margin-bottom: 0;
-  }
-
-  .text {
-    margin-bottom: 10px;
-    font-size: var(--FONT_SIZE_20);
-  } */
 }
 
 @media (max-width: 767px) {
@@ -283,8 +271,11 @@
 @media (max-width: 500px) {
   .card-content__bottom {
     flex-wrap: wrap;
-    align-items: start;
     gap: 16px;
+  }
+
+  .job-posts__cards-wrapper {
+    margin-bottom: 30px;
   }
 }
 
@@ -294,10 +285,22 @@
   }
 
   .job-posts .title {
-    margin-bottom: 36px;
+    margin-bottom: 30px;
   }
 
   .job-posts__cards-wrapper {
     gap: 22px;
+  }
+
+  .job-card__avatars {
+    display: none;
+  }
+
+  .subtitle_occupation {
+    margin-bottom: 24px;
+  }
+
+  .card-content__bottom {
+    justify-content: center;
   }
 }
