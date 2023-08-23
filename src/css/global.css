@@ -123,7 +123,7 @@ header {
 .title {
   font-size: var(--FONT_SIZE_48);
   font-weight: 700;
-  line-height: 120%;
+  line-height: 130%;
 }
 
 .decor_orange {
