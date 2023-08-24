@@ -543,7 +543,7 @@
 }
 @media (max-width: 639px) {
   .title {
-    font-size: var(--FONT_SIZE_30);
+    font-size: var(--FONT_SIZE_28);
   }
 
   .hero {

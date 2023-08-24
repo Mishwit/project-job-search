@@ -30,6 +30,7 @@
   padding: 30px 5px 5px 5px;
   line-height: 25px;
   transition: var(--TRANSITION_NORMAL);
+  user-select: none;
 }
 
 .category-card:hover {
@@ -81,6 +82,7 @@
   margin-bottom: 10px;
   color: var(--COLOR_BLACK);
   font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
 }
 
 .category-card .subtitle {
@@ -196,8 +198,8 @@
     padding: 50px 10px 0 10px;
   }
 
-  .categories .title {
-    text-align: center;
+  .jobs-categories-wrapper {
+    justify-content: flex-start;
   }
 
   .sign-up-dot-pattern {
@@ -226,10 +228,6 @@
 @media (max-width: 1023px) {
   .categories {
     padding-top: 50px;
-  }
-
-  .categories .title {
-    text-align: center;
   }
 
   .jobs-categories-wrapper {
@@ -289,6 +287,16 @@
 
   .sign-up-graphics__vector-vector-4 {
     left: -109px;
+  }
+}
+
+@media (max-width: 936px) {
+  .categories .title {
+    text-align: center;
+  }
+
+  .jobs-categories-wrapper {
+    justify-content: center;
   }
 }
 

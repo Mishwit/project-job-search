@@ -194,18 +194,11 @@
   .job-posts {
     padding: 95px 20px 50px 20px;
   }
-
-  .job-posts .title {
-    text-align: center;
-  }
 }
+
 @media (max-width: 1023px) {
   .job-posts {
     padding-top: 50px;
-  }
-
-  .job-posts .title {
-    text-align: center;
   }
 
   .job-posts__cards-wrapper {
@@ -233,6 +226,13 @@
     width: 100px;
   }
 }
+
+@media (max-width: 936px) {
+  .job-posts .title {
+    text-align: center;
+  }
+}
+
 @media (max-width: 767px) {
   .job-posts {
     padding-top: 25px;
