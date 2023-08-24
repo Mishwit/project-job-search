@@ -1,9 +1,13 @@
+.header {
+  padding: 50px 10px 125px 10px;
+}
+
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .nav-container {
@@ -66,12 +70,16 @@ header .list-item a {
 }
 
 @media (max-width: 1279px) {
-  header {
+  .header {
     padding-bottom: 60px;
   }
 }
 
 @media (max-width: 1023px) {
+  .header {
+    padding: 18px 0;
+  }
+
   .header-wrapper {
     max-width: 980px;
   }

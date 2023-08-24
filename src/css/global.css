@@ -52,6 +52,7 @@
   --FONT_SIZE_44: 44px;
   --FONT_SIZE_48: 48px;
   --FONT_SIZE_50: 50px;
+  --FONT_SIZE_62: 62px;
   --FONT_SIZE_72: 72px;
 
   --FONT_WEIGHT_700: 700;
@@ -96,10 +97,6 @@ button {
 
 button:hover {
   background-color: var(--COLOR_HOVER_BTN);
-}
-
-header {
-  padding: 50px 10px 125px 10px;
 }
 
 .container {
@@ -161,10 +158,6 @@ header {
 }
 
 @media (max-width: 1023px) {
-  header {
-    padding: 18px 0;
-  }
-
   .nav-link {
     font-size: 14px;
   }
