@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  position: relative;
   padding-top: 75px;
   padding-bottom: 244px;
 }
@@ -92,6 +91,7 @@
 
 .graphics {
   width: 100%;
+  position: relative;
 }
 
 .graphics-wrapper {
@@ -307,11 +307,15 @@
     padding-bottom: 34px;
   }
 
+  .graphics {
+    width: 412px;
+  }
+
   .graphics-wrapper {
     transform: scale(0.45);
     top: -185px;
     right: auto;
-    left: 39vw;
+    left: -22vw;
   }
 }
 
@@ -362,6 +366,7 @@
     align-items: center;
     justify-content: center;
     height: 458px;
+    width: auto;
   }
 
   .graphics-wrapper {
