@@ -97,8 +97,7 @@
 
 .hero-graphics__wrapper {
   position: absolute;
-  /* top: -80px; */
-  top: -5px;
+  top: -87px;
   right: -326px;
   z-index: -1;
 }
@@ -266,7 +265,7 @@
 
   .hero-graphics__wrapper {
     transform: scale(0.9);
-    top: -47px;
+    top: -93px;
     right: -298px;
   }
 
@@ -307,7 +306,7 @@
 
   .hero-graphics__wrapper {
     transform: scale(0.8);
-    top: -78px;
+    top: -99px;
     right: -12vw;
   }
 
@@ -354,7 +353,7 @@
 
   .hero-graphics__wrapper {
     transform: scale(0.65);
-    top: -148px;
+    top: -202px;
   }
 }
 
@@ -364,11 +363,15 @@
     padding-bottom: 34px;
   }
 
+  .hero-graphics {
+    width: 412px;
+  }
+
   .hero-graphics__wrapper {
     transform: scale(0.45);
     top: -163px;
     right: auto;
-    left: 39vw;
+    left: -22vw;
   }
 
   .google-icon {
@@ -449,6 +452,7 @@
     align-items: center;
     justify-content: center;
     height: 458px;
+    width: auto;
   }
 
   .hero-graphics__wrapper {
