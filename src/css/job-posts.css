@@ -300,7 +300,7 @@
     margin-bottom: 24px;
   }
 
-  .card-content__bottom {
-    justify-content: center;
+  .feature__text {
+    font-size: var(--FONT_SIZE_14);
   }
 }
