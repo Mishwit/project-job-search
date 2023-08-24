@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   gap: 30px;
-
+  padding-top: 75px;
   padding-bottom: 244px;
 }
 
@@ -92,11 +92,13 @@
 
 .hero-graphics {
   width: 100%;
+  position: relative;
 }
 
 .hero-graphics__wrapper {
   position: absolute;
-  top: -80px;
+  /* top: -80px; */
+  top: -5px;
   right: -326px;
   z-index: -1;
 }
@@ -340,6 +342,10 @@
 @media (max-width: 1535px) {
   .hero {
     padding-bottom: 72px;
+  }
+
+  .info {
+    max-width: 500px;
   }
 
   .info .title {
