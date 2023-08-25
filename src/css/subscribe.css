@@ -47,7 +47,6 @@
 .button_subscribe {
   height: 60px;
   gap: 16px;
-  font-size: var(--FONT_SIZE_18);
   cursor: pointer;
   letter-spacing: 1px;
 }
