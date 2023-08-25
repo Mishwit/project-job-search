@@ -532,6 +532,7 @@
   .info .title {
     max-width: 350px;
     text-align: center;
+    font-size: var(--FONT_SIZE_36);
   }
 
   .info .subtitle {
