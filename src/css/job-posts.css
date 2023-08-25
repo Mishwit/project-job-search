@@ -10,7 +10,6 @@
   margin-bottom: 50px;
   font-weight: var(--FONT_WEIGHT_700);
   color: var(--COLOR_WHITE);
-  font-size: var(--FONT_SIZE_48);
   letter-spacing: 1px;
 }
 
@@ -228,7 +227,7 @@
 
 @media (max-width: 1023px) {
   .job-posts {
-    padding-top: 50px;
+    padding: 70px 0 60px;
   }
 
   .job-posts .title {
@@ -256,15 +255,6 @@
 }
 
 @media (max-width: 767px) {
-  .job-posts {
-    padding-top: 25px;
-  }
-
-  .job-posts .title {
-    font-size: var(--FONT_SIZE_30);
-    margin-bottom: 25px;
-  }
-
   .job-posts__cards-wrapper {
     justify-content: center;
   }
