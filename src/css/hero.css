@@ -368,6 +368,11 @@
 
   .info .title {
     font-size: var(--FONT_SIZE_46);
+    margin-bottom: 18px;
+  }
+
+  .info .subtitle {
+    margin-bottom: 24px;
   }
 
   .button_search {
