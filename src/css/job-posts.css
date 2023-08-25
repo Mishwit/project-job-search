@@ -134,6 +134,7 @@
   flex-direction: column;
   justify-content: center;
   line-height: 25px;
+  margin-bottom: 36px;
 }
 
 .title_vacancy {
@@ -142,10 +143,6 @@
   font-weight: var(--FONT_WEIGHT_700);
   font-size: var(--FONT_SIZE_24);
   font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.subtitle_occupation {
-  margin-bottom: 36px;
 }
 
 .card-content__bottom {
@@ -170,6 +167,7 @@
   border-radius: 5px;
   font-size: var(--FONT_SIZE_14);
   letter-spacing: 1px;
+  padding-top: 3px;
 }
 
 .feature__text {
@@ -182,6 +180,8 @@
 .link_white {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+  max-width: max-content;
   color: var(--COLOR_WHITE);
   font-size: var(--FONT_SIZE_24);
   letter-spacing: 1px;
@@ -195,6 +195,11 @@
 
 .link_white:hover svg path {
   fill: var(--COLOR_ORANGE);
+}
+
+.link_white__arrow {
+  width: 28px;
+  height: auto;
 }
 
 @media (max-width: 1279px) {
@@ -211,16 +216,15 @@
   }
 
   .job-card {
-    padding: 16px;
+    padding: 16px 16px 18px 16px;
   }
 
-  .job-posts .title {
-    text-align: center;
+  .card-content__middle {
+    margin-bottom: 24px;
   }
 
   .card-content__bottom {
-    flex-direction: column;
-    align-items: start;
+    flex-wrap: wrap;
     gap: 16px;
   }
 }
@@ -238,7 +242,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
-    gap: 30px;
+    gap: 24px;
   }
 
   .job-card {
@@ -247,8 +251,6 @@
   }
 
   .card-content__bottom {
-    flex-direction: row;
-    align-items: center;
     justify-content: flex-start;
     gap: 24px;
   }
@@ -261,19 +263,33 @@
 }
 
 @media (max-width: 500px) {
+  .job-posts .title {
+    margin-bottom: 42px;
+  }
+
   .card-content__bottom {
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 16px;
   }
 
   .job-posts__cards-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+  }
+
+  .link_white {
+    font-size: var(--FONT_SIZE_20);
+  }
+
+  .link_white__arrow {
+    width: 24px;
+    height: 16px;
   }
 }
 
 @media (max-width: 413px) {
   .job-posts {
-    padding-top: 40px;
+    padding: 50px 0 40px;
   }
 
   .job-posts .title {
@@ -284,11 +300,15 @@
     gap: 22px;
   }
 
+  .job-card {
+    padding: 16px 16px 18px 16px;
+  }
+
   .job-card__avatars {
     display: none;
   }
 
-  .subtitle_occupation {
+  .card-content__middle {
     margin-bottom: 24px;
   }
 
