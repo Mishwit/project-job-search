@@ -50,6 +50,7 @@
   --FONT_SIZE_36: 36px;
   --FONT_SIZE_42: 42px;
   --FONT_SIZE_44: 44px;
+  --FONT_SIZE_46: 46px;
   --FONT_SIZE_48: 48px;
   --FONT_SIZE_50: 50px;
   --FONT_SIZE_62: 62px;
@@ -154,6 +155,10 @@ button:hover {
 @media (max-width: 1279px) {
   .container {
     padding: 0 32px;
+  }
+
+  .button {
+    height: 56px;
   }
 }
 

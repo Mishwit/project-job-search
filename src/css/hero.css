@@ -291,6 +291,10 @@
 }
 
 @media (max-width: 1840px) {
+  .hero {
+    padding-bottom: 142px;
+  }
+
   .info {
     max-width: 575px;
   }
@@ -306,7 +310,7 @@
 
   .hero-graphics__wrapper {
     transform: scale(0.8);
-    top: -99px;
+    top: -157px;
     right: -12vw;
   }
 
@@ -360,7 +364,15 @@
 @media (max-width: 1279px) {
   .hero {
     padding-top: 0px;
-    padding-bottom: 34px;
+    padding-bottom: 56px;
+  }
+
+  .info .title {
+    font-size: var(--FONT_SIZE_46);
+  }
+
+  .button_search {
+    max-width: 156px;
   }
 
   .hero-graphics {
@@ -452,7 +464,7 @@
     align-items: center;
     justify-content: center;
     height: 458px;
-    width: auto;
+    margin-bottom: -2px;
   }
 
   .hero-graphics__wrapper {
