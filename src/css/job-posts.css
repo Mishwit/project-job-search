@@ -199,6 +199,7 @@
     text-align: center;
   }
 }
+
 @media (max-width: 1023px) {
   .job-posts {
     padding-top: 50px;
@@ -233,6 +234,7 @@
     width: 100px;
   }
 }
+
 @media (max-width: 767px) {
   .job-posts {
     padding-top: 25px;
@@ -251,6 +253,7 @@
     width: 80px;
   }
 }
+
 @media (max-width: 413px) {
   .job-posts {
     padding: 95px 0 25px 0;

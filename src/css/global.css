@@ -50,8 +50,10 @@
   --FONT_SIZE_36: 36px;
   --FONT_SIZE_42: 42px;
   --FONT_SIZE_44: 44px;
+  --FONT_SIZE_46: 46px;
   --FONT_SIZE_48: 48px;
   --FONT_SIZE_50: 50px;
+  --FONT_SIZE_62: 62px;
   --FONT_SIZE_72: 72px;
 
   --FONT_WEIGHT_700: 700;
@@ -83,6 +85,7 @@ a {
 }
 
 input {
+  width: 100%;
   min-height: 50px;
   border-radius: 10px;
   letter-spacing: 0.32px;
@@ -95,10 +98,6 @@ button {
 
 button:hover {
   background-color: var(--COLOR_HOVER_BTN);
-}
-
-header {
-  padding: 50px 10px 125px 10px;
 }
 
 .container {
@@ -122,7 +121,7 @@ header {
 .title {
   font-size: var(--FONT_SIZE_48);
   font-weight: 700;
-  line-height: 95px;
+  line-height: 130%;
 }
 
 .decor_orange {
@@ -142,6 +141,8 @@ header {
   font-weight: 600;
   color: var(--COLOR_WHITE);
   letter-spacing: 0.4px;
+  padding-top: 5px;
+  font-size: var(--FONT_SIZE_20);
 }
 
 .nav-link {
@@ -155,19 +156,16 @@ header {
 
 @media (max-width: 1279px) {
   .container {
-    padding: 0 20px;
+    padding: 0 32px;
+  }
+
+  .button {
+    height: 56px;
+    font-size: var(--FONT_SIZE_16);
   }
 }
 
 @media (max-width: 1023px) {
-  .container {
-    max-width: 700px;
-  }
-
-  header {
-    padding: 18px 0;
-  }
-
   .nav-link {
     font-size: 14px;
   }
@@ -176,20 +174,16 @@ header {
     font-size: var(--FONT_SIZE_14);
   }
 }
-@media (max-width: 767px) {
-  .container {
-    max-width: 600px;
-  }
-}
+
 @media (max-width: 639px) {
+  .title {
+    font-size: var(--FONT_SIZE_36);
+  }
   p {
     font-size: var(--FONT_SIZE_14);
   }
-
-  .container {
-    max-width: 345px;
-  }
 }
+
 @media (max-width: 413px) {
   p {
     font-size: var(--FONT_SIZE_14);
@@ -197,9 +191,5 @@ header {
 
   a {
     font-size: var(--FONT_SIZE_14);
-  }
-
-  .container {
-    max-width: 280px;
   }
 }

@@ -49,10 +49,6 @@ footer .logo {
   gap: 25px;
 }
 
-svg path {
-  stroke: currentColor;
-}
-
 .footer svg {
   transition: var(--TRANSITION_NORMAL);
 }
@@ -167,6 +163,7 @@ footer .list__list-item:last-child {
     right: -55px;
   }
 }
+
 @media (max-width: 1279px) {
   .footer__container {
     padding: 0 20px;
@@ -181,6 +178,7 @@ footer .list__list-item:last-child {
     right: 5px;
   }
 }
+
 @media (max-width: 1023px) {
   .footer {
     padding-top: 50px;
@@ -235,6 +233,7 @@ footer .list__list-item:last-child {
     display: none;
   }
 }
+
 @media (max-width: 767px) {
   .footer__container {
     flex-direction: column;
@@ -256,6 +255,7 @@ footer .list__list-item:last-child {
     margin-bottom: 30px;
   }
 }
+
 @media (max-width: 639px) {
   .footer__contacts {
     text-align: center;
