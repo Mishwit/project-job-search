@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jobply - job search</title>
     <link type="image/x-icon" href="favicon.ico" rel="icon" sizes="any" />
-
     <link rel="icon" href="./src/favicons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./src/favicons/apple-touch-icon.png" />
-
     <link rel="manifest" href="./src/favicons/manifest.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
@@ -23,6 +21,7 @@
     <link rel="stylesheet" href="./src/css/feedback.css" />
     <link rel="stylesheet" href="./src/css/subscribe.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
+    <script defer src="./src/js/script.js"></script>
   </head>
 
   <body>
@@ -35,7 +34,6 @@
 
       <div class="container header-wrapper">
         <a class="logo" href="#"> J<span class="decor_orange">O</span>BPLY </a>
-
         <div class="nav-container">
           <nav class="nav-menu nav-menu_mobile">
             <ul class="nav-menu__list">
@@ -72,7 +70,7 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="container hero">
         <div class="info">
           <h1 class="title">Find & Apply For Your Dream Job</h1>
           <p class="subtitle">
@@ -84,28 +82,42 @@
           <div class="search-container">
             <form class="search-form" method="get">
               <div class="search-form__search-area">
-                <img
-                  class="search-icon"
-                  src="./src/icons/search-icon.svg"
-                  alt="search"
-                />
+                <svg
+                  class="search-form__icon"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.75 16.25a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15ZM14.375 14.375l4.375 4.375"
+                    stroke="#696973"
+                    stroke-opacity=".5"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
 
                 <input
                   class="search-form__input"
                   type="text"
-                  placeholder="Job title or Keyword"
+                  placeholder="Job title"
                   name="text"
                 />
               </div>
 
-              <span class="line"></span>
-
               <div class="search-form__search-area">
-                <img
-                  class="location-icon"
-                  src="./src/icons/location-icon.svg"
-                  alt="location"
-                />
+                <svg
+                  class="search-form__icon"
+                  viewBox="0 0 20 24"
+                  fill="#696973"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 0A9.047 9.047 0 0 0 .953 9.047c0 1.67.327 3.397 1.266 4.64L10 24l7.781-10.313c.853-1.13 1.266-3.127 1.266-4.64A9.047 9.047 0 0 0 10 0Zm0 5.24a3.808 3.808 0 1 1 0 7.615 3.808 3.808 0 0 1 0-7.615Z"
+                    fill-opacity=".5"
+                  />
+                </svg>
 
                 <input
                   class="search-form__location-input"
@@ -124,62 +136,76 @@
         </div>
 
         <div class="hero-graphics">
-          <img
-            class="img"
-            src="./src/img/satisfied-lovely-woman-holds-modern-cell-phone-1.png"
-            alt="A satisfied lovely woman holds a modern cell phone"
-          />
+          <div class="hero-graphics__wrapper">
+            <div class="hero-graphics__content">
+              <img
+                class="img"
+                src="./src/img/hero-img.png"
+                alt="A satisfied lovely woman holds a modern cell phone"
+              />
 
-          <img
-            class="hero-graphics__ellipse-big"
-            src="./src/img/ellipse-big.svg"
-            alt="big ellipse"
-          />
-          <img
-            class="hero-graphics__ellipse-small"
-            src="./src/img/ellipse-small.svg"
-            alt="small ellipse"
-          />
+              <img
+                class="hero-graphics__content__ellipse-big"
+                src="./src/img/ellipse-big.svg"
+                alt="big ellipse"
+              />
 
-          <div class="hero-graphics__floating-icon google-icon">
-            <img
-              src="./src/icons/flat-color-icons_google.svg"
-              alt="google icon"
-            />
-          </div>
+              <img
+                class="hero-graphics__content__ellipse-small"
+                src="./src/img/ellipse-small.svg"
+                alt="small ellipse"
+              />
 
-          <div class="hero-graphics__floating-icon paypal-icon">
-            <img src="./src/icons/simple-icons_paypal.svg" alt="paypal icon" />
-          </div>
+              <div class="hero-graphics__content__floating-icon google-icon">
+                <img
+                  src="./src/icons/flat-color-icons_google.svg"
+                  alt="google icon"
+                />
+              </div>
 
-          <div class="hero-graphics__floating-icon indeed-icon">
-            <img src="./src/icons/simple-icons_indeed.svg" alt="indeed icon" />
-          </div>
+              <div class="hero-graphics__content__floating-icon paypal-icon">
+                <img
+                  src="./src/icons/simple-icons_paypal.svg"
+                  alt="paypal icon"
+                />
+              </div>
 
-          <div class="hero-graphics__floating-icon slack-icon">
-            <img src="./src/icons/grommet-icons_slack.svg" alt="slack icon" />
-          </div>
+              <div class="hero-graphics__content__floating-icon indeed-icon">
+                <img
+                  src="./src/icons/simple-icons_indeed.svg"
+                  alt="indeed icon"
+                />
+              </div>
 
-          <div class="floating-card floating-card_purple">
-            <div class="floating-card__img">
-              <div class="floating-card__circle">
-                <img src="./src/icons/star.svg" alt="star" />
-                <p class="floating-card__rating">4.8</p>
+              <div class="hero-graphics__content__floating-icon slack-icon">
+                <img
+                  src="./src/icons/grommet-icons_slack.svg"
+                  alt="slack icon"
+                />
+              </div>
+
+              <div class="floating-card floating-card_purple">
+                <div class="floating-card__img">
+                  <div class="floating-card__circle">
+                    <img src="./src/icons/star.svg" alt="star" />
+                    <p class="floating-card__rating">4.8</p>
+                  </div>
+                </div>
+                <p class="title_name">Maliha</p>
+                <p class="subtitle_profession">UX Designer</p>
+              </div>
+
+              <div class="floating-card floating-card_yellow">
+                <div class="floating-card__img">
+                  <div class="floating-card__circle">
+                    <img src="./src/icons/star.svg" alt="star" />
+                    <p class="floating-card__rating">4.5</p>
+                  </div>
+                </div>
+                <p class="title_name">Adam</p>
+                <p class="subtitle_profession">Project Manager</p>
               </div>
             </div>
-            <p class="title_name">Maliha</p>
-            <p class="subtitle_profession">UX Designer</p>
-          </div>
-
-          <div class="floating-card floating-card_yellow">
-            <div class="floating-card__img">
-              <div class="floating-card__circle">
-                <img src="./src/icons/star.svg" alt="star" />
-                <p class="floating-card__rating">4.5</p>
-              </div>
-            </div>
-            <p class="title_name">Adam</p>
-            <p class="subtitle_profession">Project Manager</p>
           </div>
         </div>
       </section>
@@ -187,7 +213,6 @@
       <section class="job-posts">
         <div class="container">
           <h2 class="title">Popular Job Posts</h2>
-
           <div class="job-posts__cards-wrapper">
             <a href="#" class="job-card">
               <div class="job-card__top">
@@ -197,16 +222,26 @@
                   </div>
                   <span class="job-card__company-name">Slack</span>
                 </div>
+
                 <div class="job-card__avatars">
+                  <img
+                    class="job-card__avatar"
+                    src="./src/icons/avatar-1.png"
+                    alt="avatar"
+                    width="40"
+                    height="40"
+                  />
+
+                  <img
+                    class="job-card__avatar"
+                    src="./src/icons/avatar-2.png"
+                    alt="avatar"
+                    width="40"
+                    height="40"
+                  />
+
                   <div class="job-card__avatar">
-                    <img src="./src/icons/avatar-1.svg" alt="avatar" />
-                  </div>
-                  <div class="job-card__avatar">
-                    <img src="./src/icons/avatar-2.svg" alt="avatar" />
-                  </div>
-                  <div class="job-card__avatar">
-                    <p class="avatar_text">5+</p>
-                    <img src="./src/icons/avatar-3.svg" alt="avatar" />
+                    <span class="avatar_text">5+</span>
                   </div>
                 </div>
               </div>
@@ -217,9 +252,11 @@
               </div>
 
               <div class="card-content__bottom">
-                <span class="card-content__feature" href="#"> Remote </span>
-                <span class="card-content__feature" href="#"> Anywhere </span>
-                <p class="feature__text">$10k - $25k</p>
+                <div class="card-content__features-wrapper">
+                  <span class="card-content__feature" href="#"> Remote </span>
+                  <span class="card-content__feature" href="#"> Anywhere </span>
+                </div>
+                <span class="feature__text">$10k - $25k</span>
               </div>
             </a>
 
@@ -232,15 +269,24 @@
                   <span class="job-card__company-name">Google</span>
                 </div>
                 <div class="job-card__avatars">
+                  <img
+                    class="job-card__avatar"
+                    src="./src/icons/avatar-3.png"
+                    alt="avatar"
+                    width="40"
+                    height="40"
+                  />
+
+                  <img
+                    class="job-card__avatar"
+                    src="./src/icons/avatar-4.png"
+                    alt="avatar"
+                    width="40"
+                    height="40"
+                  />
+
                   <div class="job-card__avatar">
-                    <img src="./src/icons/avatar-5.svg" alt="avatar" />
-                  </div>
-                  <div class="job-card__avatar">
-                    <img src="./src/icons/avatar-4.svg" alt="avatar" />
-                  </div>
-                  <div class="job-card__avatar">
-                    <p class="avatar_text">5+</p>
-                    <img src="./src/icons/avatar-3.svg" alt="avatar" />
+                    <span class="avatar_text">5+</span>
                   </div>
                 </div>
               </div>
@@ -251,9 +297,11 @@
               </div>
 
               <div class="card-content__bottom">
-                <span class="card-content__feature" href="#"> Remote </span>
-                <span class="card-content__feature" href="#"> Anywhere </span>
-                <p class="feature__text">$10k - $25k</p>
+                <div class="card-content__features-wrapper">
+                  <span class="card-content__feature" href="#"> Remote </span>
+                  <span class="card-content__feature" href="#"> Anywhere </span>
+                </div>
+                <span class="feature__text">$10k - $25k</span>
               </div>
             </a>
 
@@ -266,15 +314,24 @@
                   <span class="job-card__company-name">Indeed</span>
                 </div>
                 <div class="job-card__avatars">
+                  <img
+                    class="job-card__avatar"
+                    src="./src/icons/avatar-5.png"
+                    alt="avatar"
+                    width="40"
+                    height="40"
+                  />
+
+                  <img
+                    class="job-card__avatar"
+                    src="./src/icons/avatar-6.png"
+                    alt="avatar"
+                    width="40"
+                    height="40"
+                  />
+
                   <div class="job-card__avatar">
-                    <img src="./src/icons/avatar-7.svg" alt="avatar" />
-                  </div>
-                  <div class="job-card__avatar">
-                    <img src="./src/icons/avatar-6.svg" alt="avatar" />
-                  </div>
-                  <div class="job-card__avatar">
-                    <p class="avatar_text">5+</p>
-                    <img src="./src/icons/avatar-3.svg" alt="avatar" />
+                    <span class="avatar_text">5+</span>
                   </div>
                 </div>
               </div>
@@ -285,9 +342,11 @@
               </div>
 
               <div class="card-content__bottom">
-                <span class="card-content__feature" href="#"> Remote </span>
-                <span class="card-content__feature" href="#"> Anywhere </span>
-                <p class="feature__text">$10k - $25k</p>
+                <div class="card-content__features-wrapper">
+                  <span class="card-content__feature" href="#"> Remote </span>
+                  <span class="card-content__feature" href="#"> Anywhere </span>
+                </div>
+                <span class="feature__text">$10k - $25k</span>
               </div>
             </a>
           </div>
@@ -295,8 +354,8 @@
           <a class="link_white" href="#">
             View All
             <svg
-              width="28"
-              height="18"
+              class="link_white__arrow"
+              viewBox="0 0 28 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -304,6 +363,7 @@
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M.875 9a.937.937 0 0 1 .938-.938h22.111l-5.9-5.898A.938.938 0 1 1 19.35.836l7.5 7.5a.937.937 0 0 1 0 1.328l-7.5 7.5a.938.938 0 1 1-1.327-1.328l5.9-5.899H1.813A.938.938 0 0 1 .875 9Z"
+                fill="#fff"
               />
             </svg>
           </a>
@@ -512,7 +572,6 @@
               <img src="./src/icons/play-button.svg" alt="play button" />
             </button>
           </div>
-
           <div class="post-job__info">
             <h2 class="title">Post a Job for UX Designer</h2>
             <p class="subtitle">
@@ -843,6 +902,7 @@
             src="./src/backgound-svg/footer-dots-left.svg"
             alt=""
           />
+
           <img
             class="footer__dots_right"
             src="./src/backgound-svg/footer-dots-right.svg"
@@ -853,6 +913,7 @@
             <a class="logo" href="#">
               J<span class="decor_orange">O</span>BPLY
             </a>
+
             <p class="address">152/3 , Western Road, New York</p>
             <a href="tel:+99-8569-5234" class="link_telephone">
               Call Us: +99-8569-5234
@@ -981,6 +1042,5 @@
         <p class="copyright_text">Copyright 2023, All right reserved</p>
       </section>
     </footer>
-    <script src="./src/js/script.js"></script>
   </body>
 </html>

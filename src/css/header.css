@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .nav-container {
@@ -59,13 +61,28 @@ header .list-item a {
 }
 
 .button_cta {
-  font-size: var(--FONT_SIZE_20);
   margin-left: 5vw;
+}
+
+@media (max-width: 1279px) {
+  .header-wrapper {
+    padding-bottom: 60px;
+  }
+
+  header .list-item a {
+    font-size: var(--FONT_SIZE_16);
+  }
+
+  .button_cta {
+    margin-left: 4vw;
+  }
 }
 
 @media (max-width: 1023px) {
   .header-wrapper {
     max-width: 980px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 
   .hamburger {

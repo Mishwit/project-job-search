@@ -139,6 +139,7 @@
     max-width: 700px;
   }
 }
+
 @media (max-width: 767px) {
   .feedback-wrapper {
     min-width: 590px;
@@ -152,6 +153,7 @@
     margin-right: 25px;
   }
 }
+
 @media (max-width: 639px) {
   .feedback {
     margin-bottom: 50px;
@@ -202,6 +204,7 @@
     left: 10px;
   }
 }
+
 @media (max-width: 413px) {
   .feedback-card {
     width: 260px;
