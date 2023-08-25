@@ -1,15 +1,15 @@
 .job-posts {
+  position: relative;
+  z-index: 1;
   padding-top: 95px;
   padding-bottom: 70px;
-  background: url(/src/backgound-svg/2-background.svg) var(--COLOR_DARK_BLUE)
-    center;
+  background-color: var(--COLOR_DARK_BLUE);
 }
 
 .job-posts .title {
   margin-bottom: 50px;
   font-weight: var(--FONT_WEIGHT_700);
   color: var(--COLOR_WHITE);
-  font-size: var(--FONT_SIZE_48);
   letter-spacing: 1px;
 }
 
@@ -23,10 +23,9 @@
 .job-card {
   display: flex;
   flex-direction: column;
-  width: 370px;
-  height: 250px;
+  width: 100%;
   border-radius: 20px;
-  padding: 15px 30px 20px 20px;
+  padding: 20px;
   background: var(--COLOR_WHITE);
   transition: var(--TRANSITION_NORMAL);
 }
@@ -63,9 +62,9 @@
 
 .job-card__top {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .job-card__company-info {
@@ -79,21 +78,29 @@
   align-items: center;
   height: 55px;
   width: 55px;
-  border-radius: 50px;
+  border-radius: 50%;
   background-color: var(--COLOR_WHITE);
-  margin-right: 20px;
+  margin-right: 15px;
   box-shadow: 0px 4px 50px var(--COLOR_CARD_CIRCLE_SHADOW);
 }
 
 .job-card__company-name {
   font-size: var(--FONT_SIZE_20);
+  letter-spacing: 1px;
 }
 
 .job-card__avatars {
   position: relative;
-  margin: 10px -5px 0 0;
   display: flex;
   z-index: 4;
+}
+
+.job-card__avatar {
+  box-sizing: content-box;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--COLOR_WHITE);
 }
 
 .job-card__avatar:nth-child(1) {
@@ -112,6 +119,7 @@
   position: relative;
   z-index: 3;
   text-align: center;
+  background-color: var(--COLOR_GREY_AVATAR);
 }
 
 .avatar_text {
@@ -126,6 +134,7 @@
   flex-direction: column;
   justify-content: center;
   line-height: 25px;
+  margin-bottom: 36px;
 }
 
 .title_vacancy {
@@ -136,30 +145,34 @@
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.subtitle_occupation {
-  margin-bottom: 36px;
-}
-
 .card-content__bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.card-content__features-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
 .card-content__feature {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 16px;
+  box-sizing: border-box;
+  width: 100px;
+  height: 35px;
   background: var(--COLOR_GREY);
   border-radius: 5px;
   font-size: var(--FONT_SIZE_14);
   letter-spacing: 1px;
+  padding-top: 3px;
 }
 
 .feature__text {
-  font-size: var(--FONT_SIZE_14);
-  letter-spacing: 1px;
+  font-size: var(--FONT_SIZE_16);
+  letter-spacing: 0.8px;
   font-weight: 600;
   color: var(--COLOR_BLACK);
 }
@@ -167,6 +180,8 @@
 .link_white {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+  max-width: max-content;
   color: var(--COLOR_WHITE);
   font-size: var(--FONT_SIZE_24);
   letter-spacing: 1px;
@@ -178,31 +193,45 @@
   color: var(--COLOR_ORANGE);
 }
 
-@media (max-width: 1279px) {
-  .job-card {
-    padding: 15px 25px 20px 20px;
-  }
+.link_white:hover svg path {
+  fill: var(--COLOR_ORANGE);
+}
 
+.link_white__arrow {
+  width: 28px;
+  height: auto;
+}
+
+@media (max-width: 1279px) {
   .title_vacancy {
     font-size: var(--FONT_SIZE_20);
   }
 
-  .card-content__feature {
-    width: 80px;
-  }
-
   .job-posts {
-    padding: 95px 20px 50px 20px;
+    padding: 95px 0 50px;
   }
 
-  .job-posts .title {
-    text-align: center;
+  .job-posts__cards-wrapper {
+    gap: 16px;
+  }
+
+  .job-card {
+    padding: 16px 16px 18px 16px;
+  }
+
+  .card-content__middle {
+    margin-bottom: 24px;
+  }
+
+  .card-content__bottom {
+    flex-wrap: wrap;
+    gap: 16px;
   }
 }
 
 @media (max-width: 1023px) {
   .job-posts {
-    padding-top: 50px;
+    padding: 70px 0 60px;
   }
 
   .job-posts .title {
@@ -210,105 +239,80 @@
   }
 
   .job-posts__cards-wrapper {
-    flex-wrap: wrap;
-    margin-bottom: 25px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 24px;
   }
 
   .job-card {
-    gap: 16px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    padding: 15px 15px 15px 15px;
+    max-width: 500px;
+    padding: 20px;
   }
 
-  .subtitle_occupation {
-    margin-bottom: 0;
-  }
-
-  .text {
-    margin-bottom: 10px;
-    font-size: var(--FONT_SIZE_20);
-  }
-
-  .card-content__feature {
-    width: 100px;
+  .card-content__bottom {
+    justify-content: flex-start;
+    gap: 24px;
   }
 }
 
 @media (max-width: 767px) {
-  .job-posts {
-    padding-top: 25px;
-  }
-
-  .job-posts .title {
-    font-size: var(--FONT_SIZE_30);
-    margin-bottom: 25px;
-  }
-
   .job-posts__cards-wrapper {
     justify-content: center;
   }
+}
 
-  .card-content__feature {
-    width: 80px;
+@media (max-width: 500px) {
+  .job-posts .title {
+    margin-bottom: 42px;
+  }
+
+  .card-content__bottom {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .job-posts__cards-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .link_white {
+    font-size: var(--FONT_SIZE_20);
+  }
+
+  .link_white__arrow {
+    width: 24px;
+    height: 16px;
   }
 }
 
 @media (max-width: 413px) {
   .job-posts {
-    padding: 95px 0 25px 0;
+    padding: 50px 0 40px;
   }
 
   .job-posts .title {
-    line-height: 35px;
+    margin-bottom: 30px;
+  }
+
+  .job-posts__cards-wrapper {
+    gap: 22px;
   }
 
   .job-card {
-    width: 245px;
-    padding: 15px 10px 15px 10px;
-    margin-right: 0;
-    gap: 20px;
+    padding: 16px 16px 18px 16px;
   }
 
   .job-card__avatars {
-    margin: 10px -5px 0 0;
+    display: none;
   }
 
-  .job-card__company-name {
-    font-size: var(--FONT_SIZE_20);
-  }
-
-  .job-card__top {
-    margin-bottom: 0;
-  }
-
-  .title_vacancy {
-    font-size: var(--FONT_SIZE_18);
-  }
-
-  .subtitle_occupation {
-    font-size: var(--FONT_SIZE_14);
-  }
-
-  .card-content__bottom {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-  }
-
-  .card-content__feature {
-    width: 100px;
+  .card-content__middle {
+    margin-bottom: 24px;
   }
 
   .feature__text {
-    font-size: var(--FONT_SIZE_12);
-  }
-
-  .job-card__avatar:first-child {
-    display: none;
-  }
-
-  .job-card__avatar:nth-child(2) {
-    display: none;
+    font-size: var(--FONT_SIZE_14);
   }
 }
