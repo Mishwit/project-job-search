@@ -176,6 +176,9 @@ button:hover {
 }
 
 @media (max-width: 639px) {
+  .title {
+    font-size: var(--FONT_SIZE_36);
+  }
   p {
     font-size: var(--FONT_SIZE_14);
   }
