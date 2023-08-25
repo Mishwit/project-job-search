@@ -1,4 +1,6 @@
 .job-posts {
+  position: relative;
+  z-index: 1;
   padding-top: 95px;
   padding-bottom: 70px;
   background-color: var(--COLOR_DARK_BLUE);
