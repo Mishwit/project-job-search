@@ -1,13 +1,9 @@
-.header {
-  padding: 50px 10px 50px 10px;
-}
-
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .nav-container {
@@ -69,7 +65,7 @@ header .list-item a {
 }
 
 @media (max-width: 1279px) {
-  .header {
+  .header-wrapper {
     padding-bottom: 60px;
   }
 
@@ -83,12 +79,10 @@ header .list-item a {
 }
 
 @media (max-width: 1023px) {
-  .header {
-    padding: 18px 0;
-  }
-
   .header-wrapper {
     max-width: 980px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 
   .hamburger {
