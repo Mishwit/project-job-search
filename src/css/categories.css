@@ -1,0 +1,143 @@
+.categories {
+  padding-top: 150px;
+  overflow: hidden;
+}
+
+.categories .title {
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.jobs-categories-wrapper {
+  margin-bottom: 147px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  width: 270px;
+  height: 270px;
+  border: 1px solid var(--COLOR_LIGHT_GREY);
+  border-radius: 20px;
+  padding: 30px 5px 5px 5px;
+  line-height: 25px;
+  transition: var(--TRANSITION_NORMAL);
+  user-select: none;
+}
+
+.category-card:hover {
+  box-shadow: 0px 70px 70px var(--COLOR_LIGHT_GREY);
+}
+
+.category-card__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  background: var(--COLOR_BACKGROUND_PEACH);
+  border-radius: 50px;
+  margin-bottom: 30px;
+  transition: background-color 0.5s;
+}
+
+.category-card:hover .category-card__circle {
+  background-color: var(--COLOR_ORANGE);
+}
+
+.category-icon {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.category-card:hover .category-icon {
+  opacity: 0;
+}
+
+.category-icon_active {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.category-card:hover .category-icon_active {
+  opacity: 1;
+}
+
+.category-icon_active:hover {
+  display: block;
+}
+
+.category-card .title {
+  font-size: var(--FONT_SIZE_20);
+  font-weight: var(--FONT_WEIGHT_700);
+  margin-bottom: 10px;
+  color: var(--COLOR_BLACK);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.category-card .subtitle {
+  color: var(--COLOR_BLACK);
+}
+
+@media (max-width: 1279px) {
+  .categories {
+    padding: 50px 10px 0 10px;
+  }
+
+  .jobs-categories-wrapper {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1023px) {
+  .categories {
+    padding-top: 50px;
+  }
+
+  .jobs-categories-wrapper {
+    min-width: auto;
+    margin-bottom: 85px;
+    gap: 25px;
+  }
+
+  .category-card {
+    text-align: center;
+  }
+}
+
+@media (max-width: 936px) {
+  .categories .title {
+    text-align: center;
+  }
+
+  .jobs-categories-wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .jobs-categories-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .category-card {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 639px) {
+  .jobs-categories-wrapper {
+    margin-bottom: 50px;
+  }
+}
