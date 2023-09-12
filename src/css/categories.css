@@ -104,7 +104,12 @@
     padding-top: 50px;
   }
 
+  .categories .title {
+    text-align: center;
+  }
+
   .jobs-categories-wrapper {
+    justify-content: center;
     min-width: auto;
     margin-bottom: 85px;
     gap: 25px;
@@ -112,16 +117,6 @@
 
   .category-card {
     text-align: center;
-  }
-}
-
-@media (max-width: 936px) {
-  .categories .title {
-    text-align: center;
-  }
-
-  .jobs-categories-wrapper {
-    justify-content: center;
   }
 }
 
