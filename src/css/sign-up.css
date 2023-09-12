@@ -1,7 +1,7 @@
 .sign-up {
   display: flex;
   position: relative;
-  padding-top: 125px;
+  padding: 150px 0;
 }
 
 .sign-up__wrapper {
@@ -27,7 +27,7 @@
   margin-bottom: 40px;
   max-width: 410px;
   font-size: var(--FONT_SIZE_18);
-  line-height: 34px;
+  line-height: 200%;
 }
 
 .sign-up .button {
@@ -84,6 +84,10 @@
 }
 
 @media (max-width: 1840px) {
+  .sign-up {
+    padding-bottom: 100px;
+  }
+
   .sign-up__info {
     margin-right: 45px;
   }
@@ -106,6 +110,10 @@
 }
 
 @media (max-width: 1652px) {
+  .sign-up {
+    padding-bottom: 50px;
+  }
+
   .sign-up__info {
     margin-right: 20px;
   }
@@ -120,6 +128,10 @@
 }
 
 @media (max-width: 1536px) {
+  .sign-up {
+    padding: 0;
+  }
+
   .sign-up__info {
     margin-right: 0;
   }
@@ -135,10 +147,6 @@
 }
 
 @media (max-width: 1279px) {
-  .sign-up {
-    padding-top: 0;
-  }
-
   .sign-up-dot-pattern {
     display: none;
   }
@@ -146,6 +154,7 @@
   .sign-up-graphics {
     scale: 0.5;
     margin-left: -175px;
+    max-height: 600px;
   }
 
   .sign-up-graphics-dot-pattern {
@@ -162,8 +171,12 @@
 }
 
 @media (max-width: 1023px) {
+  .sign-up {
+    padding: 50px 0 50px;
+  }
+
   .sign-up__wrapper {
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
   }
 
@@ -176,7 +189,7 @@
   }
 
   .sign-up .subtitle {
-    max-width: 490px;
+    max-width: 564px;
     margin-bottom: 30px;
   }
 
@@ -238,15 +251,19 @@
     padding: 50px 0 60px;
   }
 
+  .sign-up__info {
+    flex-shrink: 1;
+  }
+
   .sign-up .title {
     text-align: center;
+    margin-bottom: 24px;
   }
 
   .sign-up .subtitle {
-    max-width: 250px;
     text-align: center;
     font-size: var(--FONT_SIZE_14);
-    margin-bottom: 30px;
+    margin-bottom: 22px;
   }
 
   .sign-up-dot-pattern {

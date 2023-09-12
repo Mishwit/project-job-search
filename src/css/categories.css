@@ -9,10 +9,8 @@
 }
 
 .jobs-categories-wrapper {
-  margin-bottom: 147px;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -106,7 +104,6 @@
 
   .jobs-categories-wrapper {
     min-width: auto;
-    margin-bottom: 85px;
     gap: 25px;
   }
 
@@ -133,11 +130,5 @@
 
   .category-card {
     margin-right: 0px;
-  }
-}
-
-@media (max-width: 639px) {
-  .jobs-categories-wrapper {
-    margin-bottom: 50px;
   }
 }
