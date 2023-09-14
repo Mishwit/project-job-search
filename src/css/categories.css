@@ -93,8 +93,16 @@
     padding: 50px 10px 0 10px;
   }
 
+  .categories-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .jobs-categories-wrapper {
     justify-content: flex-start;
+    max-width: 870px;
+    background-color: azure;
   }
 }
 
@@ -108,13 +116,17 @@
   }
 
   .jobs-categories-wrapper {
-    justify-content: center;
-    min-width: auto;
     gap: 25px;
   }
 
   .category-card {
     text-align: center;
+  }
+}
+
+@media (max-width: 1023px) {
+  .jobs-categories-wrapper {
+    max-width: 565px;
   }
 }
 
