@@ -2,6 +2,7 @@
   margin-bottom: 250px;
   background: url(../backgound-svg/background-3.svg)
     var(--COLOR_BACKGROUND_PEACH) no-repeat center;
+  background-size: cover;
 }
 
 .post-job__container {
@@ -57,11 +58,16 @@
 
 @media (max-width: 1279px) {
   .post-job {
-    padding-top: 50px;
+    margin-bottom: 200px;
   }
 
   .post-job__container {
     padding: 0 20px;
+  }
+
+  .video-block {
+    scale: 0.9;
+    margin-right: 36px;
   }
 }
 
