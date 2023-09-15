@@ -73,6 +73,7 @@
 
 @media (max-width: 1023px) {
   .post-job {
+    max-height: 1040px;
     margin-bottom: 100px;
   }
 
@@ -84,15 +85,20 @@
   .post-job__info {
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 60px;
     text-align: center;
     align-items: center;
   }
 
   .video-block {
-    scale: 0.8;
     margin-right: 0;
     top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .video-block {
+    scale: 0.8;
   }
 }
 
@@ -100,6 +106,7 @@
   .post-job {
     padding-top: 0;
     margin-bottom: 70px;
+    max-height: 850px;
   }
 
   .post-job__info .title {
@@ -113,17 +120,22 @@
   }
 
   .video-block {
+    top: -90px;
     scale: 0.6;
   }
 }
 
 @media (max-width: 413px) {
+  .post-job {
+    max-height: 750px;
+  }
+
   .post-job__info .subtitle {
     margin-bottom: 30px;
   }
 
   .video-block {
-    margin-top: -140px;
+    top: -160px;
     scale: 0.45;
   }
 }
