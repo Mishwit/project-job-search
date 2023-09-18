@@ -15,7 +15,7 @@
   margin: 0 auto;
   gap: 30px;
   overflow-x: hidden;
-  padding: 0 calc((100vw - 1140px - (100vw - 100%)) / 2);
+  padding: 0 calc((100vw - 1170px - (100vw - 100%)) / 2);
 }
 
 .feedback-card {
