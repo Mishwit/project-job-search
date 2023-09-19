@@ -108,14 +108,13 @@
 
 .sign-up-graphics-dot-pattern {
   position: absolute;
-  top: 50vh;
+  bottom: -22vh;
   right: -17vw;
   z-index: 3;
 }
 
 @media (max-width: 1840px) {
   .sign-up {
-    /* padding-bottom: 100px; */
     padding-bottom: 260px;
   }
 
@@ -126,16 +125,12 @@
   }
 
   .sign-up-graphics-dot-pattern {
-    top: 45vh;
+    bottom: -19vh;
     right: -13vw;
   }
 }
 
 @media (max-width: 1652px) {
-  /* .sign-up {
-    padding-bottom: 50px;
-  } */
-
   .sign-up__info {
     margin-right: 63px;
   }
@@ -151,7 +146,6 @@
 
 @media (max-width: 1536px) {
   .sign-up {
-    /* padding: 0; */
     padding-bottom: 210px;
   }
 
@@ -167,7 +161,7 @@
 
   .sign-up-graphics-dot-pattern {
     right: -2vw;
-    top: 37vh;
+    bottom: -24vh;
   }
 }
 
