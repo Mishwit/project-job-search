@@ -78,13 +78,13 @@
   z-index: 2;
 }
 
-.sign-up-graphics__vector-vector-1 {
+.sign-up-graphics__vector1 {
   position: absolute;
   bottom: -135px;
   left: -128px;
 }
 
-.sign-up-graphics__vector-vector-2 {
+.sign-up-graphics__vector2 {
   position: absolute;
   top: -6px;
   right: 94px;
@@ -93,7 +93,7 @@
   height: 654px;
 }
 
-.sign-up-graphics__vector-vector-3 {
+.sign-up-graphics__vector3 {
   position: absolute;
   top: -8px;
   right: -56px;
@@ -159,15 +159,20 @@
     left: -83px;
   }
 
+  .sign-up-dot-pattern {
+    scale: 0.8;
+  }
+
   .sign-up-graphics-dot-pattern {
-    right: -2vw;
-    bottom: -24vh;
+    scale: 0.8;
+    bottom: -12vh;
+    right: -3vw;
   }
 }
 
 @media (max-width: 1279px) {
   .sign-up {
-    padding: 50px 0 55px;
+    padding: 50px 0 115px;
   }
 
   .sign-up .title {
@@ -193,6 +198,9 @@
 }
 
 @media (max-width: 1185px) {
+  .sign-up {
+    padding: 50px 0 65px;
+  }
   .sign-up-graphics__wrapper {
     scale: 0.5;
     right: 8vw;
@@ -211,11 +219,12 @@
 
   .sign-up__info {
     align-items: center;
-    padding-top: 50px;
+    padding-top: 0;
   }
 
   .sign-up .subtitle {
     max-width: 564px;
+    text-align: center;
   }
 
   .sign-up-graphics {
@@ -247,12 +256,12 @@
     right: -70px;
   }
 
-  .sign-up-graphics__vector-vector-2 {
+  .sign-up-graphics__vector2 {
     top: 24px;
     right: 118px;
   }
 
-  .sign-up-graphics__vector-vector-3 {
+  .sign-up-graphics__vector3 {
     top: 4px;
     right: -57px;
   }
@@ -282,7 +291,7 @@
 
 @media (max-width: 639px) {
   .sign-up {
-    padding: 50px 0 60px;
+    padding: 10px 0 60px;
   }
 
   .sign-up__info {
@@ -312,8 +321,15 @@
   }
 }
 
-@media (max-width: 413px) {
-  .sign-up {
-    min-width: 185px;
+@media (max-width: 540px) {
+  .sign-up .title {
+    max-width: 250px;
   }
+
+  .sign-up .subtitle {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 413px) {
 }
