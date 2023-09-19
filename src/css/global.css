@@ -47,6 +47,7 @@
   --FONT_SIZE_18: 18px;
   --FONT_SIZE_20: 20px;
   --FONT_SIZE_24: 24px;
+  --FONT_SIZE_28: 28px;
   --FONT_SIZE_30: 30px;
   --FONT_SIZE_36: 36px;
   --FONT_SIZE_42: 42px;
@@ -172,10 +173,6 @@ svg path {
 @media (max-width: 1023px) {
   .nav-link {
     font-size: 14px;
-  }
-
-  a {
-    font-size: var(--FONT_SIZE_14);
   }
 }
 
