@@ -172,7 +172,7 @@
 
 @media (max-width: 1279px) {
   .sign-up {
-    padding: 50px 0 115px;
+    padding: 100px 0 115px;
   }
 
   .sign-up .title {
@@ -209,7 +209,7 @@
 
 @media (max-width: 1023px) {
   .sign-up {
-    padding: 50px 0 65px;
+    padding: 0px 0 65px;
   }
 
   .sign-up__wrapper {
@@ -257,12 +257,14 @@
   }
 
   .sign-up-graphics__vector2 {
-    top: 24px;
-    right: 118px;
+    top: 39px;
+    right: 95px;
+    width: 350px;
+    height: 614px;
   }
 
   .sign-up-graphics__vector3 {
-    top: 4px;
+    top: 23px;
     right: -57px;
   }
 }
