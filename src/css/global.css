@@ -109,6 +109,7 @@ svg path {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .logo {
@@ -173,10 +174,6 @@ svg path {
 @media (max-width: 1023px) {
   .nav-link {
     font-size: 14px;
-  }
-
-  a {
-    font-size: var(--FONT_SIZE_14);
   }
 }
 
