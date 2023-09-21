@@ -80,7 +80,7 @@
 
 @media (max-width: 1023px) {
   .post-job {
-    max-height: 1040px;
+    max-height: 1120px;
     margin-bottom: 100px;
   }
 
@@ -92,9 +92,16 @@
   .post-job__info {
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 100px;
     text-align: center;
     align-items: center;
+    max-width: 450px;
+    margin-bottom: 40px;
+  }
+
+  .post-job__info .subtitle {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 
   .video-block {
@@ -127,6 +134,7 @@
   .post-job__info .subtitle {
     max-width: 250px;
     margin-bottom: 24px;
+    line-height: 180%;
   }
 
   .video-block {
