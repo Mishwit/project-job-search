@@ -11,6 +11,7 @@ footer .menu {
 
 .footer__container {
   display: flex;
+  position: relative;
 }
 
 .footer__contacts {
@@ -154,13 +155,13 @@ footer .list__list-item:last-child {
 .footer__dots_right {
   position: absolute;
   top: -90px;
-  right: -340px;
+  right: -300px;
 }
 
 @media (max-width: 1840px) {
   .footer__dots_right {
-    top: -200px;
-    right: -55px;
+    top: -160px;
+    right: -20px;
   }
 }
 
