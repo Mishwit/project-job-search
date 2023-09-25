@@ -9,16 +9,17 @@
   width: 1170px;
   height: 400px;
   background: var(--COLOR_ORANGE);
+  box-shadow: 0 20px 24px 0px rgba(238, 79, 60, 0.3);
   border-radius: 20px;
   padding: 85px 0 50px 150px;
 }
 
 .subscribe-block .title {
   color: var(--COLOR_WHITE);
-  max-width: 515px;
-  margin-bottom: 50px;
-  line-height: 55px;
-  letter-spacing: 0.32px;
+  max-width: 516px;
+  margin-bottom: 45px;
+  line-height: 115%;
+  letter-spacing: 1px;
 }
 
 .subscribe-wrapper {
@@ -26,7 +27,7 @@
   justify-content: space-between;
   padding: 5px 5px 5px 0;
   box-shadow: none;
-  max-width: 780px;
+  max-width: 775px;
 }
 
 .mail-form {
@@ -41,14 +42,15 @@
   border: none;
   outline: none;
   min-width: 390px;
-  letter-spacing: 1px;
+  letter-spacing: 0.6px;
 }
 
 .button_subscribe {
   height: 60px;
   gap: 16px;
+  font-size: var(--FONT_SIZE_18);
   cursor: pointer;
-  letter-spacing: 1px;
+  letter-spacing: 0.9px;
 }
 
 .button_subscribe:hover {
@@ -67,20 +69,13 @@
   right: 0px;
 }
 
-@media (max-width: 1840px) {
-  .mail-form {
-    width: 658px;
-  }
-}
-
 @media (max-width: 1279px) {
-  .subscribe {
-    display: flex;
-    justify-content: center;
+  .subscribe-block {
+    width: auto;
   }
 
-  .subscribe-block {
-    width: 960px;
+  .subscribe-block .title {
+    margin-bottom: 30px;
   }
 
   .subscribe__stripes-pattern {
@@ -88,9 +83,22 @@
     width: 345px;
     right: -20px;
   }
+
+  .mail-form {
+    width: 645px;
+  }
+
+  .input_lg {
+    min-width: 375px;
+  }
 }
 
 @media (max-width: 1023px) {
+  .subscribe__container {
+    display: flex;
+    justify-content: center;
+  }
+
   .subscribe-block {
     padding: 50px 0 0 50px;
     height: 300px;
@@ -107,7 +115,7 @@
   }
 
   .input_lg {
-    min-width: 340px;
+    min-width: 320px;
   }
 
   .subscribe__stripes-pattern {
