@@ -1,6 +1,6 @@
 .feedback {
   overflow: hidden;
-  padding: 0 20px 240px 20px;
+  padding: 0 0 240px 20px;
 }
 
 .feedback .title {
@@ -14,7 +14,7 @@
   display: flex;
   margin: 0 auto;
   gap: 30px;
-  overflow-x: hidden;
+  overflow-x: scroll;
   padding: 0 calc((100vw - 1170px - (100vw - 100%)) / 2);
 }
 
@@ -204,18 +204,19 @@
     box-shadow: 0px 15px 20px var(--COLOR_LIGHT_GREY);
   }
 
+  .feedback-card__quote-icon_active {
+  }
+
+  .feedback-card__quote-icon {
+  }
+
   .feedback-card__paragraph {
     font-size: var(--FONT_SIZE_14);
     line-height: 25px;
   }
 
   .reviewer {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .reviewer__description {
-    align-items: center;
+    gap: 15px;
   }
 
   .reviewer__avatar {
@@ -239,25 +240,28 @@
 
 @media (max-width: 413px) {
   .feedback-card {
-    width: 100%;
+    width: 99%;
   }
 
   .reviewer__description {
-    align-items: center;
+    align-items: flex-start;
   }
 
   .reviewer__avatar {
     margin-right: 0;
-    margin-bottom: var(--FONT_SIZE_18);
   }
 
   .reviewer__name {
-    font-size: 18px;
+    font-size: var(--FONT_SIZE_16);
   }
 
   .reviewer__profession {
     margin-bottom: 5px;
-    font-size: var(--FONT_SIZE_16);
+    font-size: var(--FONT_SIZE_14);
+  }
+
+  .star {
+    height: 14px;
   }
 
   .scroll-circle {
