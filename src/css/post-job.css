@@ -57,23 +57,17 @@
 
 @media (max-width: 1645px) {
   .post-job {
-    background: url(../backgound-svg/post-job-left.svg) repeat-y 0px 0%/ 750px auto,
-      url(../backgound-svg/post-job-right.svg) no-repeat right bottom/250px auto,
+    background: url(../backgound-svg/post-job-left.svg),
       linear-gradient(
         var(--COLOR_BACKGROUND_PEACH),
         var(--COLOR_BACKGROUND_PEACH)
       );
+    background-size: 70%;
   }
 }
 
 @media (max-width: 1279px) {
   .post-job {
-    background: url(../backgound-svg/post-job-left.svg) repeat-y 0px 0%/ 700px auto,
-      url(../backgound-svg/post-job-right.svg) no-repeat right bottom/200px auto,
-      linear-gradient(
-        var(--COLOR_BACKGROUND_PEACH),
-        var(--COLOR_BACKGROUND_PEACH)
-      );
     margin-bottom: 200px;
   }
 
@@ -92,13 +86,8 @@
 
 @media (max-width: 1023px) {
   .post-job {
-    background: url(../backgound-svg/post-job-left.svg) repeat-y 0px 0%/ 500px auto,
-      url(../backgound-svg/post-job-right.svg) no-repeat right bottom/170px auto,
-      linear-gradient(
-        var(--COLOR_BACKGROUND_PEACH),
-        var(--COLOR_BACKGROUND_PEACH)
-      );
-    max-height: 1100px;
+    background-size: 90%;
+    max-height: 1150px;
     margin-bottom: 100px;
   }
 
@@ -130,14 +119,10 @@
 
 @media (max-width: 639px) {
   .post-job {
-    background: url(../backgound-svg/post-job-left.svg) repeat-y 0px 0%/ 500px auto,
-      linear-gradient(
-        var(--COLOR_BACKGROUND_PEACH),
-        var(--COLOR_BACKGROUND_PEACH)
-      );
+    background-size: 150%;
     padding-top: 0;
     margin-bottom: 70px;
-    max-height: 1040px;
+    max-height: none;
   }
 
   .post-job__info {
@@ -156,8 +141,8 @@
   }
 
   .video-block {
-    width: 80%;
     margin-top: 25px;
+    margin-bottom: -35px;
   }
 
   .video-block__cover {
@@ -172,10 +157,15 @@
 @media (max-width: 413px) {
   .post-job {
     max-height: 780px;
+    background-size: 180%;
   }
 
   .post-job__info {
     max-width: 270px;
     margin-bottom: 10px;
+  }
+
+  .video-block {
+    margin-top: 15px;
   }
 }
