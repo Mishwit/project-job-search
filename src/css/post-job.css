@@ -57,7 +57,7 @@
 
 @media (max-width: 1645px) {
   .post-job {
-    background: url(../backgound-svg/post-job-left.svg),
+    background: url(../backgound-svg/post-job-left.svg) repeat-y,
       linear-gradient(
         var(--COLOR_BACKGROUND_PEACH),
         var(--COLOR_BACKGROUND_PEACH)
@@ -86,7 +86,9 @@
 
 @media (max-width: 1023px) {
   .post-job {
-    background-size: 90%;
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: repeat-x;
     max-height: 1150px;
     margin-bottom: 100px;
   }
