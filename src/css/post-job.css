@@ -57,12 +57,12 @@
 
 @media (max-width: 1645px) {
   .post-job {
-    background: url(../backgound-svg/post-job-left.svg) repeat-y,
+    background: url(../backgound-svg/post-job-left.svg) repeat-y 0/70%,
+      url(../backgound-svg/post-job-right.svg) no-repeat right bottom 0/20%,
       linear-gradient(
         var(--COLOR_BACKGROUND_PEACH),
         var(--COLOR_BACKGROUND_PEACH)
       );
-    background-size: 70%;
   }
 }
 
@@ -86,11 +86,14 @@
 
 @media (max-width: 1023px) {
   .post-job {
-    background-size: 100%;
-    background-position: bottom;
-    background-repeat: repeat-x;
     max-height: 1150px;
     margin-bottom: 100px;
+    background: url(../backgound-svg/post-job-left.svg) repeat-x 0/100%,
+      linear-gradient(
+        var(--COLOR_BACKGROUND_PEACH),
+        var(--COLOR_BACKGROUND_PEACH)
+      );
+    background-position: bottom;
   }
 
   .post-job__container {
