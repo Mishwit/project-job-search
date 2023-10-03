@@ -6,6 +6,10 @@
 
 .footer__container {
   display: flex;
+}
+
+.footer__wrapper {
+  display: flex;
   gap: 20px 64px;
 }
 
@@ -80,6 +84,11 @@ footer .list__list-item {
 
 footer .list__list-item:last-child {
   margin-bottom: 0;
+}
+
+footer .menu {
+  display: flex;
+  gap: 64px;
 }
 
 .footer__news {
@@ -164,6 +173,9 @@ footer .list__list-item:last-child {
 @media (max-width: 1279px) {
   .footer__container {
     padding: 0 20px;
+  }
+
+  .footer__wrapper {
     flex-wrap: wrap;
   }
 
@@ -220,9 +232,23 @@ footer .list__list-item:last-child {
   .footer__container {
     margin-bottom: 0px;
     gap: 20px 52px;
+    flex-direction: column;
+  }
+
+  .footer__wrapper {
+    flex-direction: column;
+  }
+
+  footer .logo {
+    display: none;
+  }
+
+  footer .logo_mobile {
+    display: block;
   }
 
   .footer__contacts {
+    order: 1;
     font-size: var(--FONT_SIZE_14);
     margin: 0;
   }
@@ -269,5 +295,9 @@ footer .list__list-item:last-child {
 
   footer .title {
     font-size: var(--FONT_SIZE_16);
+  }
+
+  footer .menu {
+    gap: 32px;
   }
 }
