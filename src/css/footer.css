@@ -189,7 +189,7 @@ footer .menu {
   }
 }
 
-@media (max-width: 1141px) {
+@media (max-width: 1165px) {
   .footer__container {
     flex-direction: column;
     gap: 40px;
@@ -256,10 +256,6 @@ footer .menu {
 
   .news-paragraph {
     margin-bottom: 0;
-  }
-
-  .footer__dots_left {
-    display: none;
   }
 
   .footer__dots_right {
