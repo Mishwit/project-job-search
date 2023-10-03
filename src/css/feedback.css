@@ -219,12 +219,6 @@
     box-shadow: 0px 15px 20px var(--COLOR_LIGHT_GREY);
   }
 
-  .feedback-card__quote-icon_active {
-  }
-
-  .feedback-card__quote-icon {
-  }
-
   .feedback-card__paragraph {
     font-size: var(--FONT_SIZE_14);
     line-height: 25px;
