@@ -16,6 +16,12 @@
   gap: 30px;
   overflow-x: scroll;
   padding: 0 calc((100vw - 1170px - (100vw - 100%)) / 2);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.feedback-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .feedback-card {
@@ -107,6 +113,15 @@
 .feedback-card__scroll {
   display: none;
   justify-content: center;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .scroll-circle {
