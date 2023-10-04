@@ -219,7 +219,8 @@
   .subscribe-block .title {
     max-width: 247px;
     margin-bottom: 16px;
-    font-size: var(--FONT_SIZE_22);
+    font-size: var(--FONT_SIZE_20);
+    letter-spacing: 0;
   }
 
   .subscribe-block {
