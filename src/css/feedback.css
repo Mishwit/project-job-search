@@ -235,7 +235,7 @@
   }
 
   .reviewer__name {
-    font-size: var(--FONT_SIZE_14);
+    font-size: var(--FONT_SIZE_16);
   }
 
   .reviewer__profession {
@@ -248,8 +248,17 @@
 }
 
 @media (max-width: 413px) {
+  .feedback .title {
+    letter-spacing: 0;
+    font-size: var(--FONT_SIZE_26);
+  }
+
   .feedback-card {
-    width: 99%;
+    width: 100%;
+  }
+
+  .reviewer {
+    gap: 10px;
   }
 
   .reviewer__description {
@@ -261,12 +270,11 @@
   }
 
   .reviewer__name {
-    font-size: var(--FONT_SIZE_16);
+    letter-spacing: 0px;
   }
 
   .reviewer__profession {
     margin-bottom: 5px;
-    font-size: var(--FONT_SIZE_14);
   }
 
   .star {
