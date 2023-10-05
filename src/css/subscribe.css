@@ -11,7 +11,7 @@
   background: var(--COLOR_ORANGE);
   box-shadow: 0 20px 24px 0px rgba(238, 79, 60, 0.3);
   border-radius: 20px;
-  padding: 85px 0 50px 150px;
+  padding: 85px 250px 50px 150px;
 }
 
 .subscribe-block .title {
@@ -65,6 +65,8 @@
 
 .subscribe__stripes-pattern {
   position: absolute;
+  width: 359px;
+  height: auto;
   top: 0px;
   right: 0px;
 }
@@ -72,6 +74,7 @@
 @media (max-width: 1279px) {
   .subscribe-block {
     width: 100%;
+    padding: 85px 150px 50px 120px;
   }
 
   .subscribe-block .title {
@@ -79,13 +82,7 @@
   }
 
   .subscribe__stripes-pattern {
-    height: 315px;
-    width: 322px;
-    right: -20px;
-  }
-
-  .mail-form {
-    width: 645px;
+    width: 310px;
   }
 
   .input_lg {
@@ -99,15 +96,22 @@
     justify-content: center;
   }
 
+  .subscribe-wrapper {
+    max-width: none;
+  }
+
   .subscribe-block {
-    padding: 50px 50px 50px 125px;
+    padding: 50px 150px 45px 50px;
     height: auto;
+    width: 100%;
   }
 
   .subscribe-block .title {
-    font-size: var(--FONT_SIZE_36);
-    max-width: 77%;
-    margin-bottom: 25px;
+    font-size: var(--FONT_SIZE_40);
+    max-width: 456px;
+    margin-bottom: 30px;
+    letter-spacing: 0;
+    line-height: 112%;
   }
 
   .mail-form {
@@ -123,20 +127,17 @@
   }
 
   .subscribe__stripes-pattern {
-    height: 200px;
-    width: 230px;
-    right: -25px;
+    width: 25.5vw;
   }
-  /*
+
   .subscribe-block__dots {
-    bottom: -70px;
-    left: -160px;
-  } */
+    left: -23px;
+  }
 }
 
 @media (max-width: 767px) {
   .subscribe-block {
-    padding: 50px 25px;
+    padding: 50px 30px 45px 30px;
   }
 
   .subscribe-block .title {
@@ -149,9 +150,7 @@
   }
 
   .subscribe__stripes-pattern {
-    height: 160px;
-    width: 165px;
-    right: -10px;
+    width: 20.5vw;
   }
 
   .button_subscribe {
@@ -173,7 +172,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 10px;
+    padding: 30px 20px;
     height: auto;
     width: 100%;
     bottom: 50px;
@@ -224,7 +223,7 @@
   }
 
   .subscribe-block {
-    padding: 20px 10px 15px;
+    padding: 20px 15px 15px;
   }
 
   .subscribe-wrapper {
