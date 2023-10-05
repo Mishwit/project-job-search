@@ -1,6 +1,6 @@
 .feedback {
   overflow: hidden;
-  padding: 0 0 240px 20px;
+  padding-bottom: 240px;
 }
 
 .feedback .title {
@@ -30,13 +30,13 @@
   justify-content: space-between;
   position: relative;
   border-radius: 5px;
-  margin-bottom: 45px;
   padding: 52px 36px;
   border: 1px solid var(--COLOR_LIGHT_GREY);
   line-height: 34px;
   flex-shrink: 0;
   cursor: pointer;
   transition: var(--TRANSITION_NORMAL);
+  gap: 20px;
 }
 
 .feedback-card:hover {
@@ -68,11 +68,9 @@
 }
 
 .feedback-card__paragraph {
-  margin-bottom: 15px;
   font-size: var(--FONT_SIZE_18);
   max-width: 500px;
   letter-spacing: 0.48px;
-  margin-bottom: 20px;
 }
 
 .reviewer {
@@ -151,18 +149,23 @@
     padding-left: 0;
   }
 
-  .feedback-wrapper__container {
-    padding-left: 32px;
+  .feedback-container {
+    max-width: none;
+    padding: 0 calc((100vw - 970px - (100vw - 100%)) / 2);
   }
 
   .feedback-wrapper {
-    padding: 0 calc((100vw - 1137px - (100vw - 100%)) / 2);
+    padding: 0 calc((100vw - 970px - (100vw - 100%)) / 2);
   }
 }
 
 @media (max-width: 1023px) {
+  .feedback-container {
+    padding: 0 calc((100vw - 690px - (100vw - 100%)) / 2);
+  }
+
   .feedback-wrapper {
-    padding: 0 calc((100vw - 920px - (100vw - 100%)) / 2);
+    padding: 0 calc((100vw - 690px - (100vw - 100%)) / 2);
   }
 
   .feedback .title {
@@ -171,8 +174,13 @@
 }
 
 @media (max-width: 767px) {
+  .feedback-container {
+    padding: 0 calc((100vw - 560px - (100vw - 100%)) / 2);
+  }
+
   .feedback-wrapper {
     min-width: 590px;
+    padding: 0 calc((100vw - 560px - (100vw - 100%)) / 2);
   }
 
   .feedback-card {
@@ -200,19 +208,19 @@
     line-height: 35px;
   }
 
-  .feedback-wrapper__container {
-    padding-left: 20px;
+  .feedback-container {
+    padding: 0 calc((100vw - 360px - (100vw - 100%)) / 2);
   }
 
   .feedback-wrapper {
-    padding: 0 calc((100vw - 574px - (100vw - 100%)) / 2);
+    padding: 0 calc((100vw - 360px - (100vw - 100%)) / 2);
     min-width: 263px;
+    gap: 20px;
   }
 
   .feedback-card {
     padding: 10px 20px 30px;
     width: 350px;
-    margin-bottom: 30px;
   }
 
   .feedback-card:hover {
@@ -251,6 +259,14 @@
   .feedback .title {
     letter-spacing: 0;
     font-size: var(--FONT_SIZE_26);
+  }
+
+  .feedback-container {
+    padding: 0 calc((100vw - 270px - (100vw - 100%)) / 2);
+  }
+
+  .feedback-wrapper {
+    padding: 0 calc((100vw - 270px - (100vw - 100%)) / 2);
   }
 
   .feedback-card {
