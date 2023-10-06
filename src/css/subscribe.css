@@ -6,12 +6,10 @@
 .subscribe-block {
   position: relative;
   bottom: 90px;
-  width: 1170px;
-  height: 400px;
   background: var(--COLOR_ORANGE);
   box-shadow: 0 20px 24px 0px rgba(238, 79, 60, 0.3);
   border-radius: 20px;
-  padding: 85px 250px 50px 150px;
+  padding: 90px 250px 85px 150px;
 }
 
 .subscribe-block .title {
@@ -25,7 +23,6 @@
 .subscribe-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 5px 5px 5px 0;
   box-shadow: none;
   max-width: 775px;
 }
@@ -41,7 +38,6 @@
 .input_lg {
   border: none;
   outline: none;
-  min-width: 390px;
   letter-spacing: 0.6px;
   padding-top: 5px;
 }
@@ -75,7 +71,7 @@
 @media (max-width: 1279px) {
   .subscribe-block {
     width: 100%;
-    padding: 85px 150px 50px 120px;
+    padding: 85px 170px 75px 100px;
   }
 
   .subscribe-block .title {
@@ -86,8 +82,9 @@
     width: 310px;
   }
 
-  .input_lg {
-    min-width: 375px;
+  .subscribe-block__dots {
+    bottom: -35px;
+    left: 20px;
   }
 }
 
@@ -102,7 +99,7 @@
   }
 
   .subscribe-block {
-    padding: 50px 150px 45px 50px;
+    padding: 55px 16vw 45px 50px;
     height: auto;
     width: 100%;
   }
@@ -112,15 +109,10 @@
     max-width: 456px;
     margin-bottom: 30px;
     letter-spacing: 0;
-    line-height: 112%;
   }
 
   .mail-form {
     width: 100%;
-  }
-
-  .input_lg {
-    min-width: auto;
   }
 
   .button_subscribe {
@@ -132,7 +124,8 @@
   }
 
   .subscribe-block__dots {
-    left: -23px;
+    left: -24px;
+    bottom: -82px;
   }
 }
 
@@ -150,30 +143,29 @@
     display: none;
   }
 
-  .subscribe__stripes-pattern {
-    width: 20.5vw;
-  }
-
   .button_subscribe {
     height: 52px;
     font-size: var(--FONT_SIZE_16);
+    gap: 12px;
+    max-width: 220px;
+    width: 31vw;
   }
 
   .send-icon {
     height: 20px;
   }
+
+  .subscribe__stripes-pattern {
+    display: none;
+  }
 }
 
 @media (max-width: 639px) {
-  .subscribe-wrapper {
-    padding: 0;
-  }
-
   .subscribe-block {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 20px;
+    padding: 38px 20px 30px;
     height: auto;
     width: 100%;
     bottom: 50px;
@@ -181,28 +173,20 @@
 
   .button_subscribe {
     width: 250px;
+    max-width: none;
     border: 2px solid var(--COLOR_WHITE);
-  }
-
-  .subscribe__stripes-pattern {
-    display: none;
   }
 
   .subscribe-block .title {
     font-size: var(--FONT_SIZE_28);
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     text-align: center;
-    line-height: 30px;
   }
 
   .mail-form {
     min-width: auto;
     padding: 10px;
     gap: 5px;
-  }
-
-  .input_lg {
-    min-width: auto;
   }
 
   .button_subscribe {
@@ -218,13 +202,13 @@
 @media (max-width: 413px) {
   .subscribe-block .title {
     max-width: 247px;
-    margin-bottom: 16px;
-    font-size: var(--FONT_SIZE_20);
+    margin-bottom: 20px;
+    font-size: var(--FONT_SIZE_22);
     letter-spacing: 0;
   }
 
   .subscribe-block {
-    padding: 20px 15px 15px;
+    padding: 26px 15px 15px;
   }
 
   .subscribe-wrapper {

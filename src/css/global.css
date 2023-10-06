@@ -150,7 +150,8 @@ svg path {
   font-weight: 600;
   color: var(--COLOR_WHITE);
   letter-spacing: 0.4px;
-  padding-top: 5px;
+  padding: 0;
+  padding-top: 3px;
   font-size: var(--FONT_SIZE_20);
 }
 
