@@ -46,10 +46,13 @@
   --FONT_SIZE_16: 16px;
   --FONT_SIZE_18: 18px;
   --FONT_SIZE_20: 20px;
+  --FONT_SIZE_22: 22px;
   --FONT_SIZE_24: 24px;
   --FONT_SIZE_28: 28px;
   --FONT_SIZE_30: 30px;
   --FONT_SIZE_36: 36px;
+  --FONT_SIZE_38: 38px;
+  --FONT_SIZE_40: 40px;
   --FONT_SIZE_42: 42px;
   --FONT_SIZE_44: 44px;
   --FONT_SIZE_46: 46px;
@@ -147,7 +150,8 @@ svg path {
   font-weight: 600;
   color: var(--COLOR_WHITE);
   letter-spacing: 0.4px;
-  padding-top: 5px;
+  padding: 0;
+  padding-top: 3px;
   font-size: var(--FONT_SIZE_20);
 }
 
