@@ -139,6 +139,7 @@ footer .menu {
 
 .news-paragraph {
   margin-bottom: 10px;
+  line-height: 140%;
   color: var(--COLOR_BLACK);
 }
 
