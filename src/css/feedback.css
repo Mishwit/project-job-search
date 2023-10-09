@@ -172,10 +172,6 @@
 }
 
 @media (max-width: 767px) {
-  .feedback-wrapper {
-    min-width: 590px;
-  }
-
   .feedback-card {
     padding: 25px 25px 25px 25px;
   }
@@ -258,6 +254,10 @@
   .feedback .title {
     letter-spacing: 0;
     font-size: var(--FONT_SIZE_26);
+  }
+
+  .feedback-card {
+    width: 100%;
   }
 
   .reviewer {
