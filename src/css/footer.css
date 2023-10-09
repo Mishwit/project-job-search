@@ -214,8 +214,12 @@ footer .menu {
     order: 1;
   }
 
+  .address {
+    margin-bottom: 0;
+  }
+
   .link_telephone {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
 }
 
@@ -226,10 +230,6 @@ footer .menu {
 
   .footer__contacts {
     min-width: 164px;
-  }
-
-  .link_telephone {
-    margin-bottom: 20px;
   }
 
   footer .menu {
