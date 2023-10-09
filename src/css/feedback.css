@@ -153,15 +153,11 @@
   }
 
   .feedback-wrapper {
-    max-width: 1170px;
     padding: 0 32px 45px;
   }
 }
 
 @media (max-width: 1023px) {
-  .feedback-wrapper {
-  }
-
   .feedback .title {
     max-width: 540px;
   }
