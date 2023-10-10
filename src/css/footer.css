@@ -75,10 +75,11 @@ footer .title {
 footer .list {
   display: flex;
   flex-direction: column;
+  gap: 40px;
 }
 
 footer .list__list-item {
-  line-height: 300%;
+  line-height: 100%;
   font-size: var(--FONT_SIZE_16);
 }
 
@@ -241,12 +242,11 @@ footer .menu {
   }
 
   footer .list {
-    gap: 10px;
+    gap: 35px;
   }
 
   footer .list__list-item {
     margin-bottom: 0;
-    line-height: 210%;
   }
 
   .news-paragraph {
@@ -302,6 +302,10 @@ footer .menu {
 
   footer .menu {
     gap: 20px 40px;
+  }
+
+  footer .list {
+    gap: 18px;
   }
 
   .copyright_text {
