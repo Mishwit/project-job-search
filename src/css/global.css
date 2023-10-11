@@ -176,12 +176,6 @@ svg path {
   }
 }
 
-@media (max-width: 1023px) {
-  .nav-link {
-    font-size: 14px;
-  }
-}
-
 @media (max-width: 639px) {
   .title {
     font-size: var(--FONT_SIZE_44);
