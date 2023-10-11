@@ -1,6 +1,6 @@
 .feedback {
   overflow: hidden;
-  padding: 0 20px 240px 20px;
+  padding-bottom: 240px;
 }
 
 .feedback .title {
@@ -14,8 +14,15 @@
   display: flex;
   margin: 0 auto;
   gap: 30px;
-  overflow-x: hidden;
+  overflow-x: scroll;
   padding: 0 calc((100vw - 1170px - (100vw - 100%)) / 2);
+  padding-bottom: 45px;
+}
+
+.feedback-wrapper::-webkit-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: none;
 }
 
 .feedback-card {
@@ -24,13 +31,12 @@
   justify-content: space-between;
   position: relative;
   border-radius: 5px;
-  margin-bottom: 45px;
   padding: 52px 36px;
   border: 1px solid var(--COLOR_LIGHT_GREY);
-  line-height: 34px;
   flex-shrink: 0;
   cursor: pointer;
   transition: var(--TRANSITION_NORMAL);
+  gap: 20px;
 }
 
 .feedback-card:hover {
@@ -58,15 +64,14 @@
 }
 
 .feedback-card__quote-icon {
-  margin: 10px 0 5px 5px;
+  margin: 10px 0 10px 5px;
 }
 
 .feedback-card__paragraph {
-  margin-bottom: 15px;
   font-size: var(--FONT_SIZE_18);
   max-width: 500px;
   letter-spacing: 0.48px;
-  margin-bottom: 20px;
+  line-height: 195%;
 }
 
 .reviewer {
@@ -89,10 +94,12 @@
   font-weight: var(--FONT_WEIGHT_700);
   color: var(--COLOR_BLACK);
   letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
 .reviewer__profession {
   font-size: var(--FONT_SIZE_16);
+  margin-bottom: 15px;
 }
 
 .stars {
@@ -107,6 +114,15 @@
 .feedback-card__scroll {
   display: none;
   justify-content: center;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .scroll-circle {
@@ -136,30 +152,22 @@
     padding-left: 0;
   }
 
-  .feedback-wrapper__container {
-    padding-left: 32px;
-  }
-
   .feedback-wrapper {
-    padding: 0 calc((100vw - 1137px - (100vw - 100%)) / 2);
+    padding: 0 32px 45px;
   }
 }
 
 @media (max-width: 1023px) {
-  .feedback-wrapper {
-    padding: 0 calc((100vw - 920px - (100vw - 100%)) / 2);
-  }
-
   .feedback .title {
     max-width: 540px;
+  }
+
+  .reviewer__profession {
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 767px) {
-  .feedback-wrapper {
-    min-width: 590px;
-  }
-
   .feedback-card {
     padding: 25px 25px 25px 25px;
   }
@@ -182,50 +190,51 @@
     max-width: 345px;
     font-size: var(--FONT_SIZE_30);
     margin-bottom: 30px;
-    line-height: 35px;
-  }
-
-  .feedback-wrapper__container {
-    padding-left: 20px;
   }
 
   .feedback-wrapper {
-    padding: 0 calc((100vw - 574px - (100vw - 100%)) / 2);
-    min-width: 263px;
+    padding: 0 20px 45px;
+    gap: 20px;
   }
 
   .feedback-card {
-    padding: 10px 20px 30px;
+    padding: 20px 20px 30px;
     width: 350px;
-    margin-bottom: 30px;
   }
 
   .feedback-card:hover {
     box-shadow: 0px 15px 20px var(--COLOR_LIGHT_GREY);
   }
 
+  .feedback-card__quote-icon {
+    margin: 10px 0 15px 5px;
+    height: auto;
+    width: 33px;
+  }
+
+  .feedback-card__quote-icon_active {
+    height: auto;
+    width: 33px;
+  }
+
   .feedback-card__paragraph {
     font-size: var(--FONT_SIZE_14);
-    line-height: 25px;
+    line-height: 180%;
+    margin-bottom: 5px;
   }
 
   .reviewer {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .reviewer__description {
-    align-items: center;
+    gap: 15px;
   }
 
   .reviewer__avatar {
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: auto;
     margin-right: 0;
   }
 
   .reviewer__name {
-    font-size: var(--FONT_SIZE_14);
+    font-size: var(--FONT_SIZE_16);
   }
 
   .reviewer__profession {
@@ -238,26 +247,37 @@
 }
 
 @media (max-width: 413px) {
+  .feedback .title {
+    letter-spacing: 0;
+    font-size: var(--FONT_SIZE_26);
+  }
+
   .feedback-card {
-    width: 100%;
+    width: 90%;
+  }
+
+  .reviewer {
+    gap: 10px;
   }
 
   .reviewer__description {
-    align-items: center;
+    align-items: flex-start;
   }
 
   .reviewer__avatar {
     margin-right: 0;
-    margin-bottom: var(--FONT_SIZE_18);
   }
 
   .reviewer__name {
-    font-size: 18px;
+    letter-spacing: 0px;
   }
 
   .reviewer__profession {
     margin-bottom: 5px;
-    font-size: var(--FONT_SIZE_16);
+  }
+
+  .star {
+    height: 14px;
   }
 
   .scroll-circle {
