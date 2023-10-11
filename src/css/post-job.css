@@ -1,6 +1,6 @@
 .post-job {
   max-height: 760px;
-  margin-bottom: 250px;
+  margin-bottom: 235px;
   background: url(../backgound-svg/post-job-left.svg) repeat-y,
     url(../backgound-svg/post-job-right.svg) no-repeat right bottom,
     linear-gradient(
@@ -68,7 +68,7 @@
 
 @media (max-width: 1279px) {
   .post-job {
-    margin-bottom: 200px;
+    margin-bottom: 170px;
   }
 
   .post-job__info .title {
@@ -87,7 +87,7 @@
 @media (max-width: 1023px) {
   .post-job {
     max-height: 1150px;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
     background: url(../backgound-svg/post-job-left.svg) repeat-x 0/100%,
       linear-gradient(
         var(--COLOR_BACKGROUND_PEACH),
@@ -104,7 +104,7 @@
   .post-job__info {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 70px;
     text-align: center;
     align-items: center;
     max-width: 450px;
@@ -126,7 +126,7 @@
   .post-job {
     background-size: 150%;
     padding-top: 0;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
     max-height: none;
   }
 
@@ -167,6 +167,7 @@
 
   .post-job__info {
     max-width: 270px;
+    padding-top: 60px;
     margin-bottom: 10px;
   }
 

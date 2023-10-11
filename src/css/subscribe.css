@@ -1,6 +1,7 @@
 .subscribe {
   background: url(../backgound-svg/background-3.svg)
     var(--COLOR_BACKGROUND_PEACH) no-repeat center;
+  padding-bottom: 85px;
 }
 
 .subscribe-block {
@@ -69,6 +70,10 @@
 }
 
 @media (max-width: 1279px) {
+  .subscribe {
+    padding-bottom: 0px;
+  }
+
   .subscribe-block {
     width: 100%;
     padding: 85px 170px 75px 100px;

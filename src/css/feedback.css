@@ -1,6 +1,6 @@
 .feedback {
   overflow: hidden;
-  padding-bottom: 240px;
+  padding-bottom: 290px;
 }
 
 .feedback .title {
@@ -150,6 +150,7 @@
 @media (max-width: 1279px) {
   .feedback {
     padding-left: 0;
+    padding-bottom: 170px;
   }
 
   .feedback-wrapper {
@@ -158,6 +159,10 @@
 }
 
 @media (max-width: 1023px) {
+  .feedback {
+    padding-bottom: 140px;
+  }
+
   .feedback .title {
     max-width: 540px;
   }
@@ -183,7 +188,7 @@
 
 @media (max-width: 639px) {
   .feedback {
-    margin-bottom: 50px;
+    padding-bottom: 100px;
   }
 
   .feedback .title {
@@ -247,6 +252,10 @@
 }
 
 @media (max-width: 413px) {
+  .feedback {
+    padding-bottom: 80px;
+  }
+
   .feedback .title {
     letter-spacing: 0;
     font-size: var(--FONT_SIZE_26);
